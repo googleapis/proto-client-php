@@ -1,0 +1,14 @@
+{
+    "name": "google/googleapis-grpc-php",
+    "type": "library",
+    "description": "Generated gRPC classes for Google Cloud Platform in PHP",
+    "keywords": ["google"],
+    "homepage": "https://github.com/googleapis/googleapis-grpc-php",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "classmap": ["src"]
+    }
+}
