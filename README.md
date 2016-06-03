@@ -11,7 +11,7 @@ This repository contains the PHP classes generated from protos contained in
 PHP Versions
 ----------------
 
-gax-php currently requires PHP 5.5 or higher.
+proto-client-php currently requires PHP 5.5 or higher.
 
 
 Contributing
@@ -21,7 +21,7 @@ Contributions to this library are always welcome and highly encouraged.
 
 See the [CONTRIBUTING][] documentation for more information on how to get started.
 
-[CONTRIBUTING]: https://github.com/googleapis/gax-php/blob/master/CONTRIBUTING.md
+[CONTRIBUTING]: https://github.com/googleapis/proto-client-php/blob/master/CONTRIBUTING.md
 
 
 Versioning
@@ -47,4 +47,4 @@ License
 
 BSD - See [LICENSE][] for more information.
 
-[LICENSE]: https://github.com/googleapis/gax-php/blob/master/LICENSE
+[LICENSE]: https://github.com/googleapis/proto-client-php/blob/master/LICENSE
