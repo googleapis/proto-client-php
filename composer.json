@@ -6,7 +6,8 @@
     "homepage": "https://github.com/googleapis/proto-client-php",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+        "grpc/grpc": "dev-release-0_13"
     },
     "autoload": {
         "classmap": ["src"]
