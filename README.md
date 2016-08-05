@@ -4,6 +4,8 @@ Generated proto and gRPC classes for Google Cloud Platform in PHP
 This repository contains the PHP classes generated from protos contained in
 [Google APIs][].
 
+- [Documentation] (http://googleapis.github.io/gax-php/phpdoc)
+
 [gRPC]: http://grpc.io
 [Google APIs]: https://github.com/googleapis/googleapis/
 

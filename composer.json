@@ -9,7 +9,12 @@
         "php": ">=5.5",
         "grpc/grpc": "v0.15.2"
     },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "^2.9"
+    },
     "autoload": {
         "classmap": ["src"]
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
