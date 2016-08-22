@@ -7,14 +7,12 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.5",
-        "grpc/grpc": "v0.15.2"
+        "grpc/grpc": "v1.0.*"
     },
     "require-dev": {
         "phpdocumentor/phpdocumentor": "^2.9"
     },
     "autoload": {
         "classmap": ["src"]
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
