@@ -937,7 +937,7 @@ namespace google\logging\v2 {
      * @param google\logging\v2\DeleteSinkRequest $input
      */
     public function DeleteSink(\google\logging\v2\DeleteSinkRequest $argument, $metadata = array(), $options = array()) {
-      return $this->_simpleRequest('/google.logging.v2.ConfigServiceV2/DeleteSink', $argument, '\google\protobuf\Empty::deserialize', $metadata, $options);
+      return $this->_simpleRequest('/google.logging.v2.ConfigServiceV2/DeleteSink', $argument, '\google\protobuf\EmptyC::deserialize', $metadata, $options);
     }
   }
 }

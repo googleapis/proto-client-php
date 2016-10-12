@@ -880,7 +880,7 @@ namespace google\logging\v2 {
      * @param google\logging\v2\DeleteLogMetricRequest $input
      */
     public function DeleteLogMetric(\google\logging\v2\DeleteLogMetricRequest $argument, $metadata = array(), $options = array()) {
-      return $this->_simpleRequest('/google.logging.v2.MetricsServiceV2/DeleteLogMetric', $argument, '\google\protobuf\Empty::deserialize', $metadata, $options);
+      return $this->_simpleRequest('/google.logging.v2.MetricsServiceV2/DeleteLogMetric', $argument, '\google\protobuf\EmptyC::deserialize', $metadata, $options);
     }
   }
 }

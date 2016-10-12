@@ -1199,7 +1199,7 @@ namespace google\logging\v2 {
      * @param google\logging\v2\DeleteLogRequest $input
      */
     public function DeleteLog(\google\logging\v2\DeleteLogRequest $argument, $metadata = array(), $options = array()) {
-      return $this->_simpleRequest('/google.logging.v2.LoggingServiceV2/DeleteLog', $argument, '\google\protobuf\Empty::deserialize', $metadata, $options);
+      return $this->_simpleRequest('/google.logging.v2.LoggingServiceV2/DeleteLog', $argument, '\google\protobuf\EmptyC::deserialize', $metadata, $options);
     }
     /**
      * @param google\logging\v2\WriteLogEntriesRequest $input
