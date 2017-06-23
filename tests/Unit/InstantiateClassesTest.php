@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright 2016, Google Inc.
+ * Copyright 2017, Google Inc.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -30,34 +30,31 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-/**
- * This script performs find/replace operations on the generated protoc
- * output. The current list of changes is:
- * - Rename class Empty to EmptyC (empty is PHP reserved keyword)
- * - Rename Case to CaseC (case is PHP reserved keyword)
- * - Rename LIST to LIST_ (list is PHP reserved keyword)
- * - Rename <X>Client to <X>GrpcClient (<X>Client conflicts with GAPIC client)
- *
- * NOTE: As new cases are handled, this script must remain idempotent.
- *
- * This script is a temporary solution, until this rename functionality
- * can be incorporated into PHP protoc, gRPC protoc plugin, or artman.
- */
+class InstantiateClassesTest extends \PHPUnit_Framework_TestCase
+{
+    /**
+     * @dataProvider classesProvider
+     */
+    public function testInstantiateClass($class)
+    {
+        if (strpos($class, 'GrpcClient') !== false) {
+            $instance = new $class('dummyhostname', ['credentials' => null]);
+        } else {
+            $instance = new $class();
+        }
+        $this->assertNotNull($instance);
+    }
 
-$dir = new RecursiveDirectoryIterator('src');
-$it = new RecursiveIteratorIterator($dir);
-$reg = new RegexIterator($it, '/^.+\.php$/i', RecursiveRegexIterator::GET_MATCH);
-foreach ($reg as $files) {
-    $file = $files[0];
-    $str = file_get_contents($file);
-    $str = str_replace("\\Google\\Protobuf\\Empty", "\\Google\\Protobuf\\GPBEmpty", $str);
-    $str = str_replace("const LIST", "const GPBLIST", $str);
-    $str = preg_replace("{class (\w+?)(Grpc)?Client}", "class $1GrpcClient", $str);
-    file_put_contents($file, $str);
-    if (preg_match("{(\w+?)(Grpc)?Client.php}", $file)) {
-        $file_dest = preg_replace("{(\w+?)(Grpc)?Client.php}", "$1GrpcClient.php", $file);
-        if ($file_dest != $file) {
-            shell_exec("mv $file $file_dest");
+    public function classesProvider()
+    {
+        $dir = new RecursiveDirectoryIterator('src/Google');
+        $it = new RecursiveIteratorIterator($dir);
+        $reg = new RegexIterator($it, '#.+\.php$#', RecursiveRegexIterator::GET_MATCH);
+        foreach ($reg as $files) {
+            $file = $files[0];
+            $namespace = str_replace("/", "\\", substr($file, 3));
+            $class = explode('.', $namespace)[0];
+            yield [$class];
         }
     }
 }

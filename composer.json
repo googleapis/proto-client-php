@@ -1,5 +1,5 @@
 {
-    "name": "google/proto-client-php",
+    "name": "google/proto-client",
     "type": "library",
     "description": "Generated proto and gRPC classes for Google Cloud Platform in PHP",
     "keywords": ["google"],
@@ -7,12 +7,16 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.5",
-        "grpc/grpc": "v1.0.*"
+        "google/protobuf": "^3.3"
     },
     "require-dev": {
-        "phpdocumentor/phpdocumentor": "^2.9"
+        "phpunit/phpunit": "4.8.*",
+        "google/gax": "dev-proto3"
     },
     "autoload": {
-        "classmap": ["src"]
+        "psr-4": {
+          "Google\\":"src/Google/",
+          "GPBMetadata\\":"src/GPBMetadata/"
+        }
     }
 }
