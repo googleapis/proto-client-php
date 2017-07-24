@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * The request message for the text annotation API, which can perform multiple
  * analysis types (sentiment, entities, and syntax) in one call.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\AnnotateTextRequest</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.AnnotateTextRequest</code>
  */
 class AnnotateTextRequest extends \Google\Protobuf\Internal\Message
 {

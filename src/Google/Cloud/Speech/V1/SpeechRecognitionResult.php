@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A speech recognition result corresponding to a portion of the audio.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1\SpeechRecognitionResult</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1.SpeechRecognitionResult</code>
  */
 class SpeechRecognitionResult extends \Google\Protobuf\Internal\Message
 {
@@ -45,7 +45,7 @@ class SpeechRecognitionResult extends \Google\Protobuf\Internal\Message
      * maximum specified in `max_alternatives`).
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1.SpeechRecognitionAlternative alternatives = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Speech\V1\SpeechRecognitionAlternative[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setAlternatives(&$var)
     {

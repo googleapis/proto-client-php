@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Relevant information for the image from the Internet.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\WebDetection</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.WebDetection</code>
  */
 class WebDetection extends \Google\Protobuf\Internal\Message
 {
@@ -64,7 +64,7 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      * Deduced entities from similar images on the Internet.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebEntity web_entities = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\WebDetection_WebEntity[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setWebEntities(&$var)
     {
@@ -91,7 +91,7 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      * merely a size change.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage full_matching_images = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\WebDetection_WebImage[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setFullMatchingImages(&$var)
     {
@@ -118,7 +118,7 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      * example an original image will likely have partial matching for its crops.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage partial_matching_images = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\WebDetection_WebImage[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setPartialMatchingImages(&$var)
     {
@@ -141,7 +141,7 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      * Web pages containing the matching images from the Internet.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebPage pages_with_matching_images = 4;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\WebDetection_WebPage[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setPagesWithMatchingImages(&$var)
     {

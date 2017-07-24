@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Data extracted for a specific group based on certain filter criteria,
  * such as a given time period and/or service filter.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\ErrorGroupStats</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats</code>
  */
 class ErrorGroupStats extends \Google\Protobuf\Internal\Message
 {
@@ -219,7 +219,7 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      * - Ordered by ascending time.
      *
      * Generated from protobuf field <code>repeated .google.devtools.clouderrorreporting.v1beta1.TimedCount timed_counts = 4;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Devtools\Clouderrorreporting\V1beta1\TimedCount[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setTimedCounts(&$var)
     {
@@ -300,7 +300,7 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      * Refer to `num_affected_services` for the total count.
      *
      * Generated from protobuf field <code>repeated .google.devtools.clouderrorreporting.v1beta1.ServiceContext affected_services = 7;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContext[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setAffectedServices(&$var)
     {

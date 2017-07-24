@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Response for the `Pull` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\PullResponse</code>
+ * Generated from protobuf message <code>google.pubsub.v1.PullResponse</code>
  */
 class PullResponse extends \Google\Protobuf\Internal\Message
 {
@@ -51,7 +51,7 @@ class PullResponse extends \Google\Protobuf\Internal\Message
      * available in the backlog.
      *
      * Generated from protobuf field <code>repeated .google.pubsub.v1.ReceivedMessage received_messages = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Pubsub\V1\ReceivedMessage[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setReceivedMessages(&$var)
     {

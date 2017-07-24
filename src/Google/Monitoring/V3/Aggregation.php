@@ -15,7 +15,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * across different time series (`cross_series_reducer`).  For more details, see
  * [Aggregation](/monitoring/api/learn_more#aggregation).
  *
- * Protobuf type <code>Google\Monitoring\V3\Aggregation</code>
+ * Generated from protobuf message <code>google.monitoring.v3.Aggregation</code>
  */
 class Aggregation extends \Google\Protobuf\Internal\Message
 {
@@ -247,7 +247,7 @@ class Aggregation extends \Google\Protobuf\Internal\Message
      * defined, this field is ignored.
      *
      * Generated from protobuf field <code>repeated string group_by_fields = 5;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setGroupByFields(&$var)
     {

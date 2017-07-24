@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Results from [Read][google.spanner.v1.Spanner.Read] or
  * [ExecuteSql][google.spanner.v1.Spanner.ExecuteSql].
  *
- * Protobuf type <code>Google\Spanner\V1\ResultSet</code>
+ * Generated from protobuf message <code>google.spanner.v1.ResultSet</code>
  */
 class ResultSet extends \Google\Protobuf\Internal\Message
 {
@@ -95,7 +95,7 @@ class ResultSet extends \Google\Protobuf\Internal\Message
      * [here][google.spanner.v1.TypeCode].
      *
      * Generated from protobuf field <code>repeated .google.protobuf.ListValue rows = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Protobuf\ListValue[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setRows(&$var)
     {

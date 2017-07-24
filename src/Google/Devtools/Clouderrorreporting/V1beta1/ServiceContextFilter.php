@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Only exact, case-sensitive matches are supported.
  * If a field is unset or empty, it matches arbitrary values.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\ServiceContextFilter</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter</code>
  */
 class ServiceContextFilter extends \Google\Protobuf\Internal\Message
 {

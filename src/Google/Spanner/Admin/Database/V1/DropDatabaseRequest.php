@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [DropDatabase][google.spanner.admin.database.v1.DatabaseAdmin.DropDatabase].
  *
- * Protobuf type <code>Google\Spanner\Admin\Database\V1\DropDatabaseRequest</code>
+ * Generated from protobuf message <code>google.spanner.admin.database.v1.DropDatabaseRequest</code>
  */
 class DropDatabaseRequest extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the ModifyPushConfig method.
  *
- * Protobuf type <code>Google\Pubsub\V1\ModifyPushConfigRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.ModifyPushConfigRequest</code>
  */
 class ModifyPushConfigRequest extends \Google\Protobuf\Internal\Message
 {

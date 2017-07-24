@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to UpdateLogMetric.
  *
- * Protobuf type <code>Google\Logging\V2\UpdateLogMetricRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.UpdateLogMetricRequest</code>
  */
 class UpdateLogMetricRequest extends \Google\Protobuf\Internal\Message
 {

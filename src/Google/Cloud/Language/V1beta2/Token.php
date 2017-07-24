@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Represents the smallest syntactic building block of the text.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\Token</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.Token</code>
  */
 class Token extends \Google\Protobuf\Internal\Message
 {

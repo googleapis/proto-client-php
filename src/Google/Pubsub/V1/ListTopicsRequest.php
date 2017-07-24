@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the `ListTopics` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\ListTopicsRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.ListTopicsRequest</code>
  */
 class ListTopicsRequest extends \Google\Protobuf\Internal\Message
 {

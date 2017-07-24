@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * SQL queries better tolerate large result sets, large rows, and large
  * values, but are a little trickier to consume.
  *
- * Protobuf type <code>Google\Spanner\V1\PartialResultSet</code>
+ * Generated from protobuf message <code>google.spanner.v1.PartialResultSet</code>
  */
 class PartialResultSet extends \Google\Protobuf\Internal\Message
 {
@@ -277,7 +277,7 @@ class PartialResultSet extends \Google\Protobuf\Internal\Message
      * field value `"World" = "W" + "orl" + "d"`.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Value values = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Protobuf\Value[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setValues(&$var)
     {

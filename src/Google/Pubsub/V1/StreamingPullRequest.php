@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * establish the initial stream as well as to stream acknowledgements and ack
  * deadline modifications from the client to the server.
  *
- * Protobuf type <code>Google\Pubsub\V1\StreamingPullRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.StreamingPullRequest</code>
  */
 class StreamingPullRequest extends \Google\Protobuf\Internal\Message
 {
@@ -129,7 +129,7 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      * malformed, the stream will be aborted with status `INVALID_ARGUMENT`.
      *
      * Generated from protobuf field <code>repeated string ack_ids = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setAckIds(&$var)
     {
@@ -172,7 +172,7 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      * be aborted with status `INVALID_ARGUMENT`.
      *
      * Generated from protobuf field <code>repeated int32 modify_deadline_seconds = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setModifyDeadlineSeconds(&$var)
     {
@@ -203,7 +203,7 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      * processing was interrupted.
      *
      * Generated from protobuf field <code>repeated string modify_deadline_ack_ids = 4;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setModifyDeadlineAckIds(&$var)
     {

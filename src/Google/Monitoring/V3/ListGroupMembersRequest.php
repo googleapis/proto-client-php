@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `ListGroupMembers` request.
  *
- * Protobuf type <code>Google\Monitoring\V3\ListGroupMembersRequest</code>
+ * Generated from protobuf message <code>google.monitoring.v3.ListGroupMembersRequest</code>
  */
 class ListGroupMembersRequest extends \Google\Protobuf\Internal\Message
 {

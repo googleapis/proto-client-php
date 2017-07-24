@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Response for the `ListTopics` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\ListTopicsResponse</code>
+ * Generated from protobuf message <code>google.pubsub.v1.ListTopicsResponse</code>
  */
 class ListTopicsResponse extends \Google\Protobuf\Internal\Message
 {
@@ -49,7 +49,7 @@ class ListTopicsResponse extends \Google\Protobuf\Internal\Message
      * The resulting topics.
      *
      * Generated from protobuf field <code>repeated .google.pubsub.v1.Topic topics = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Pubsub\V1\Topic[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setTopics(&$var)
     {

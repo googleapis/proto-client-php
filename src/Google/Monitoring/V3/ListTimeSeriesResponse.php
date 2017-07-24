@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `ListTimeSeries` response.
  *
- * Protobuf type <code>Google\Monitoring\V3\ListTimeSeriesResponse</code>
+ * Generated from protobuf message <code>google.monitoring.v3.ListTimeSeriesResponse</code>
  */
 class ListTimeSeriesResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class ListTimeSeriesResponse extends \Google\Protobuf\Internal\Message
      * One or more time series that match the filter included in the request.
      *
      * Generated from protobuf field <code>repeated .google.monitoring.v3.TimeSeries time_series = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Monitoring\V3\TimeSeries[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setTimeSeries(&$var)
     {

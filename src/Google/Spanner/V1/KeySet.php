@@ -16,7 +16,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * if two ranges, two keys, or a key and a range overlap), Cloud Spanner
  * behaves as if the key were only specified once.
  *
- * Protobuf type <code>Google\Spanner\V1\KeySet</code>
+ * Generated from protobuf message <code>google.spanner.v1.KeySet</code>
  */
 class KeySet extends \Google\Protobuf\Internal\Message
 {
@@ -71,7 +71,7 @@ class KeySet extends \Google\Protobuf\Internal\Message
      * encoded as described [here][google.spanner.v1.TypeCode].
      *
      * Generated from protobuf field <code>repeated .google.protobuf.ListValue keys = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Protobuf\ListValue[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setKeys(&$var)
     {
@@ -96,7 +96,7 @@ class KeySet extends \Google\Protobuf\Internal\Message
      * key range specifications.
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.KeyRange ranges = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Spanner\V1\KeyRange[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setRanges(&$var)
     {

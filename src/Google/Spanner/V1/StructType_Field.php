@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Message representing a single field of a struct.
  *
- * Protobuf type <code>Google\Spanner\V1\StructType\Field</code>
+ * Generated from protobuf message <code>google.spanner.v1.StructType.Field</code>
  */
 class StructType_Field extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the `CreateSnapshot` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\CreateSnapshotRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.CreateSnapshotRequest</code>
  */
 class CreateSnapshotRequest extends \Google\Protobuf\Internal\Message
 {

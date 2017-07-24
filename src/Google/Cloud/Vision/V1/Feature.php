@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * detection task to perform. Features encode the Cloud Vision API
  * vertical to operate on and the number of top-scoring results to return.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Feature</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Feature</code>
  */
 class Feature extends \Google\Protobuf\Internal\Message
 {

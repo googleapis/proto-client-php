@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The top-level message sent by the client for the `AsyncRecognize` method.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1beta1\AsyncRecognizeRequest</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1beta1.AsyncRecognizeRequest</code>
  */
 class AsyncRecognizeRequest extends \Google\Protobuf\Internal\Message
 {

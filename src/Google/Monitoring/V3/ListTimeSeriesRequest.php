@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `ListTimeSeries` request.
  *
- * Protobuf type <code>Google\Monitoring\V3\ListTimeSeriesRequest</code>
+ * Generated from protobuf message <code>google.monitoring.v3.ListTimeSeriesRequest</code>
  */
 class ListTimeSeriesRequest extends \Google\Protobuf\Internal\Message
 {

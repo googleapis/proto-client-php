@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Metadata associated with a parent-child relationship appearing in a
  * [PlanNode][google.spanner.v1.PlanNode].
  *
- * Protobuf type <code>Google\Spanner\V1\PlanNode\ChildLink</code>
+ * Generated from protobuf message <code>google.spanner.v1.PlanNode.ChildLink</code>
  */
 class PlanNode_ChildLink extends \Google\Protobuf\Internal\Message
 {

@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * If the start time is the same as the end time, then the interval
  * represents a single point in time.
  *
- * Protobuf type <code>Google\Monitoring\V3\TimeInterval</code>
+ * Generated from protobuf message <code>google.monitoring.v3.TimeInterval</code>
  */
 class TimeInterval extends \Google\Protobuf\Internal\Message
 {

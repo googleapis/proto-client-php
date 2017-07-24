@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Represents the feeling associated with the entire text or entities in
  * the text.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\Sentiment</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.Sentiment</code>
  */
 class Sentiment extends \Google\Protobuf\Internal\Message
 {

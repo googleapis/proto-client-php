@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * A message data and its attributes. The message payload must not be empty;
  * it must contain either a non-empty data field, or at least one attribute.
  *
- * Protobuf type <code>Google\Pubsub\V1\PubsubMessage</code>
+ * Generated from protobuf message <code>google.pubsub.v1.PubsubMessage</code>
  */
 class PubsubMessage extends \Google\Protobuf\Internal\Message
 {
@@ -78,7 +78,7 @@ class PubsubMessage extends \Google\Protobuf\Internal\Message
      * Optional attributes for this message.
      *
      * Generated from protobuf field <code>map<string, string> attributes = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getAttributes()
     {
@@ -89,7 +89,7 @@ class PubsubMessage extends \Google\Protobuf\Internal\Message
      * Optional attributes for this message.
      *
      * Generated from protobuf field <code>map<string, string> attributes = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setAttributes(&$var)
     {

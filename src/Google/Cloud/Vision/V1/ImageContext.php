@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Image context and/or feature-specific parameters.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\ImageContext</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.ImageContext</code>
  */
 class ImageContext extends \Google\Protobuf\Internal\Message
 {
@@ -98,7 +98,7 @@ class ImageContext extends \Google\Protobuf\Internal\Message
      * [supported languages](/vision/docs/languages).
      *
      * Generated from protobuf field <code>repeated string language_hints = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setLanguageHints(&$var)
     {

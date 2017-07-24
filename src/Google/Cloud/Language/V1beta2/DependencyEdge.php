@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Represents dependency parse tree information for a token.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\DependencyEdge</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.DependencyEdge</code>
  */
 class DependencyEdge extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * `StructType` defines the fields of a [STRUCT][google.spanner.v1.TypeCode.STRUCT] type.
  *
- * Protobuf type <code>Google\Spanner\V1\StructType</code>
+ * Generated from protobuf message <code>google.spanner.v1.StructType</code>
  */
 class StructType extends \Google\Protobuf\Internal\Message
 {
@@ -57,7 +57,7 @@ class StructType extends \Google\Protobuf\Internal\Message
      * fields in the `SELECT` clause of a query.
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.StructType.Field fields = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Spanner\V1\StructType_Field[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setFields(&$var)
     {

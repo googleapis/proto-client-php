@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A request to replace the existing data for the given group.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\UpdateGroupRequest</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.UpdateGroupRequest</code>
  */
 class UpdateGroupRequest extends \Google\Protobuf\Internal\Message
 {

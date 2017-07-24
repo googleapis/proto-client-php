@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [CreateDatabase][google.spanner.admin.database.v1.DatabaseAdmin.CreateDatabase].
  *
- * Protobuf type <code>Google\Spanner\Admin\Database\V1\CreateDatabaseRequest</code>
+ * Generated from protobuf message <code>google.spanner.admin.database.v1.CreateDatabaseRequest</code>
  */
 class CreateDatabaseRequest extends \Google\Protobuf\Internal\Message
 {
@@ -118,7 +118,7 @@ class CreateDatabaseRequest extends \Google\Protobuf\Internal\Message
      * if there is an error in any statement, the database is not created.
      *
      * Generated from protobuf field <code>repeated string extra_statements = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setExtraStatements(&$var)
     {

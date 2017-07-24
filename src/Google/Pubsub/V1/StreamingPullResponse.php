@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Response for the `StreamingPull` method. This response is used to stream
  * messages from the server to the client.
  *
- * Protobuf type <code>Google\Pubsub\V1\StreamingPullResponse</code>
+ * Generated from protobuf message <code>google.pubsub.v1.StreamingPullResponse</code>
  */
 class StreamingPullResponse extends \Google\Protobuf\Internal\Message
 {
@@ -43,7 +43,7 @@ class StreamingPullResponse extends \Google\Protobuf\Internal\Message
      * Received Pub/Sub messages. This will not be empty.
      *
      * Generated from protobuf field <code>repeated .google.pubsub.v1.ReceivedMessage received_messages = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Pubsub\V1\ReceivedMessage[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setReceivedMessages(&$var)
     {

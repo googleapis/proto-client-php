@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The text annotations response message.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\AnnotateTextResponse</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.AnnotateTextResponse</code>
  */
 class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
 {
@@ -76,7 +76,7 @@ class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
      * [AnnotateTextRequest.Features.extract_syntax][google.cloud.language.v1beta2.AnnotateTextRequest.Features.extract_syntax].
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Sentence sentences = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Language\V1beta2\Sentence[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setSentences(&$var)
     {
@@ -103,7 +103,7 @@ class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
      * [AnnotateTextRequest.Features.extract_syntax][google.cloud.language.v1beta2.AnnotateTextRequest.Features.extract_syntax].
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Token tokens = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Language\V1beta2\Token[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setTokens(&$var)
     {
@@ -130,7 +130,7 @@ class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
      * [AnnotateTextRequest.Features.extract_entities][google.cloud.language.v1beta2.AnnotateTextRequest.Features.extract_entities].
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Entity entities = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Language\V1beta2\Entity[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setEntities(&$var)
     {

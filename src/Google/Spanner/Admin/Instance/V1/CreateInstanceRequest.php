@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [CreateInstance][google.spanner.admin.instance.v1.InstanceAdmin.CreateInstance].
  *
- * Protobuf type <code>Google\Spanner\Admin\Instance\V1\CreateInstanceRequest</code>
+ * Generated from protobuf message <code>google.spanner.admin.instance.v1.CreateInstanceRequest</code>
  */
 class CreateInstanceRequest extends \Google\Protobuf\Internal\Message
 {

@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * fully-specified monitored resource and a fully-specified metric.
  * This type is used for both listing and creating time series.
  *
- * Protobuf type <code>Google\Monitoring\V3\TimeSeries</code>
+ * Generated from protobuf message <code>google.monitoring.v3.TimeSeries</code>
  */
 class TimeSeries extends \Google\Protobuf\Internal\Message
 {
@@ -218,7 +218,7 @@ class TimeSeries extends \Google\Protobuf\Internal\Message
      * must be `BOOL`, `INT64`, `DOUBLE`, or `DISTRIBUTION`.
      *
      * Generated from protobuf field <code>repeated .google.monitoring.v3.Point points = 5;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Monitoring\V3\Point[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setPoints(&$var)
     {

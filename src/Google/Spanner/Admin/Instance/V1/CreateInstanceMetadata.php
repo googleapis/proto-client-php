@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Metadata type for the operation returned by
  * [CreateInstance][google.spanner.admin.instance.v1.InstanceAdmin.CreateInstance].
  *
- * Protobuf type <code>Google\Spanner\Admin\Instance\V1\CreateInstanceMetadata</code>
+ * Generated from protobuf message <code>google.spanner.admin.instance.v1.CreateInstanceMetadata</code>
  */
 class CreateInstanceMetadata extends \Google\Protobuf\Internal\Message
 {

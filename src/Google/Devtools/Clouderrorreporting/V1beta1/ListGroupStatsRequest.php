@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Specifies a set of `ErrorGroupStats` to return.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\ListGroupStatsRequest</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest</code>
  */
 class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
 {
@@ -146,7 +146,7 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      * [Optional] List all <code>ErrorGroupStats</code> with these IDs.
      *
      * Generated from protobuf field <code>repeated string group_id = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setGroupId(&$var)
     {

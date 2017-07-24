@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Describes a logs-based metric.  The value of the metric is the
  * number of log entries that match a logs filter in a given time interval.
  *
- * Protobuf type <code>Google\Logging\V2\LogMetric</code>
+ * Generated from protobuf message <code>google.logging.v2.LogMetric</code>
  */
 class LogMetric extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Set of dominant colors and their corresponding scores.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\DominantColorsAnnotation</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.DominantColorsAnnotation</code>
  */
 class DominantColorsAnnotation extends \Google\Protobuf\Internal\Message
 {
@@ -42,7 +42,7 @@ class DominantColorsAnnotation extends \Google\Protobuf\Internal\Message
      * RGB color values with their score and pixel fraction.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.ColorInfo colors = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\ColorInfo[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setColors(&$var)
     {

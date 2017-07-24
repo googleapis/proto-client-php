@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * methods over safe-search verticals (for example, adult, spoof, medical,
  * violence).
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\SafeSearchAnnotation</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.SafeSearchAnnotation</code>
  */
 class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
 {

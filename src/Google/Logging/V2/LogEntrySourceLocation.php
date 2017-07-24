@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Additional information about the source code location that produced the log
  * entry.
  *
- * Protobuf type <code>Google\Logging\V2\LogEntrySourceLocation</code>
+ * Generated from protobuf message <code>google.logging.v2.LogEntrySourceLocation</code>
  */
 class LogEntrySourceLocation extends \Google\Protobuf\Internal\Message
 {

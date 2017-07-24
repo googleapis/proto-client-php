@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the `DeleteTopic` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\DeleteTopicRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.DeleteTopicRequest</code>
  */
 class DeleteTopicRequest extends \Google\Protobuf\Internal\Message
 {

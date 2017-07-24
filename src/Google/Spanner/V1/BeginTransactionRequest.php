@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [BeginTransaction][google.spanner.v1.Spanner.BeginTransaction].
  *
- * Protobuf type <code>Google\Spanner\V1\BeginTransactionRequest</code>
+ * Generated from protobuf message <code>google.spanner.v1.BeginTransactionRequest</code>
  */
 class BeginTransactionRequest extends \Google\Protobuf\Internal\Message
 {

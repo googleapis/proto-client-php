@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * a person, an organization, or location. The API associates information, such
  * as salience and mentions, with entities.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\Entity</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.Entity</code>
  */
 class Entity extends \Google\Protobuf\Internal\Message
 {
@@ -121,7 +121,7 @@ class Entity extends \Google\Protobuf\Internal\Message
      * available. The associated keys are "wikipedia_url" and "mid", respectively.
      *
      * Generated from protobuf field <code>map<string, string> metadata = 3;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getMetadata()
     {
@@ -134,7 +134,7 @@ class Entity extends \Google\Protobuf\Internal\Message
      * available. The associated keys are "wikipedia_url" and "mid", respectively.
      *
      * Generated from protobuf field <code>map<string, string> metadata = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setMetadata(&$var)
     {
@@ -190,7 +190,7 @@ class Entity extends \Google\Protobuf\Internal\Message
      * supports proper noun mentions.
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.EntityMention mentions = 5;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Language\V1beta2\EntityMention[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setMentions(&$var)
     {

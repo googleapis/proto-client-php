@@ -9,7 +9,7 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Protobuf type <code>Google\Pubsub\V1\SeekResponse</code>
+ * Generated from protobuf message <code>google.pubsub.v1.SeekResponse</code>
  */
 class SeekResponse extends \Google\Protobuf\Internal\Message
 {

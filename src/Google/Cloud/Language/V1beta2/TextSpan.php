@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Represents an output piece of text.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\TextSpan</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.TextSpan</code>
  */
 class TextSpan extends \Google\Protobuf\Internal\Message
 {

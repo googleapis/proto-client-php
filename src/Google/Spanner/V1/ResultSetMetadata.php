@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Metadata about a [ResultSet][google.spanner.v1.ResultSet] or [PartialResultSet][google.spanner.v1.PartialResultSet].
  *
- * Protobuf type <code>Google\Spanner\V1\ResultSetMetadata</code>
+ * Generated from protobuf message <code>google.spanner.v1.ResultSetMetadata</code>
  */
 class ResultSetMetadata extends \Google\Protobuf\Internal\Message
 {

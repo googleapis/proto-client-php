@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * [ExecuteSql][google.spanner.v1.Spanner.ExecuteSql] call runs.
  * See [TransactionOptions][google.spanner.v1.TransactionOptions] for more information about transactions.
  *
- * Protobuf type <code>Google\Spanner\V1\TransactionSelector</code>
+ * Generated from protobuf message <code>google.spanner.v1.TransactionSelector</code>
  */
 class TransactionSelector extends \Google\Protobuf\Internal\Message
 {

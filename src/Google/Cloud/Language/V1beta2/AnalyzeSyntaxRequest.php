@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The syntax analysis request message.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\AnalyzeSyntaxRequest</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.AnalyzeSyntaxRequest</code>
  */
 class AnalyzeSyntaxRequest extends \Google\Protobuf\Internal\Message
 {

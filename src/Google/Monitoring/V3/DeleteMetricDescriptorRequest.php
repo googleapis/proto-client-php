@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `DeleteMetricDescriptor` request.
  *
- * Protobuf type <code>Google\Monitoring\V3\DeleteMetricDescriptorRequest</code>
+ * Generated from protobuf message <code>google.monitoring.v3.DeleteMetricDescriptorRequest</code>
  */
 class DeleteMetricDescriptorRequest extends \Google\Protobuf\Internal\Message
 {

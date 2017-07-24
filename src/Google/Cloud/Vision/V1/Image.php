@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Client image to perform Google Cloud Vision API tasks over.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Image</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Image</code>
  */
 class Image extends \Google\Protobuf\Internal\Message
 {

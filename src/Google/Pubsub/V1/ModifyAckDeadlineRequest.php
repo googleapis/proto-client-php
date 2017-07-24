@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the ModifyAckDeadline method.
  *
- * Protobuf type <code>Google\Pubsub\V1\ModifyAckDeadlineRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.ModifyAckDeadlineRequest</code>
  */
 class ModifyAckDeadlineRequest extends \Google\Protobuf\Internal\Message
 {
@@ -86,7 +86,7 @@ class ModifyAckDeadlineRequest extends \Google\Protobuf\Internal\Message
      * List of acknowledgment IDs.
      *
      * Generated from protobuf field <code>repeated string ack_ids = 4;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setAckIds(&$var)
     {

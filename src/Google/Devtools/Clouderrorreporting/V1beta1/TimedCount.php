@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * All numbers are approximate since the error events are sampled
  * before counting them.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\TimedCount</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.TimedCount</code>
  */
 class TimedCount extends \Google\Protobuf\Internal\Message
 {

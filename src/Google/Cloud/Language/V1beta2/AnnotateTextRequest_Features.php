@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * All available features for sentiment, syntax, and semantic analysis.
  * Setting each one to true will enable that specific analysis for the input.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\AnnotateTextRequest\Features</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.AnnotateTextRequest.Features</code>
  */
 class AnnotateTextRequest_Features extends \Google\Protobuf\Internal\Message
 {

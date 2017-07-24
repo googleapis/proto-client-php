@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The sentiment analysis response message.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\AnalyzeSentimentResponse</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.AnalyzeSentimentResponse</code>
  */
 class AnalyzeSentimentResponse extends \Google\Protobuf\Internal\Message
 {
@@ -106,7 +106,7 @@ class AnalyzeSentimentResponse extends \Google\Protobuf\Internal\Message
      * The sentiment for all the sentences in the document.
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Sentence sentences = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Language\V1beta2\Sentence[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setSentences(&$var)
     {

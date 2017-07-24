@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Alternative hypotheses (a.k.a. n-best list).
  *
- * Protobuf type <code>Google\Cloud\Speech\V1\SpeechRecognitionAlternative</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1.SpeechRecognitionAlternative</code>
  */
 class SpeechRecognitionAlternative extends \Google\Protobuf\Internal\Message
 {

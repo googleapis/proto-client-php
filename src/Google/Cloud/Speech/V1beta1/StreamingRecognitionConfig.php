@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Provides information to the recognizer that specifies how to process the
  * request.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1beta1\StreamingRecognitionConfig</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1beta1.StreamingRecognitionConfig</code>
  */
 class StreamingRecognitionConfig extends \Google\Protobuf\Internal\Message
 {

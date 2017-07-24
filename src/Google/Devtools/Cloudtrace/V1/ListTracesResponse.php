@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The response message for the `ListTraces` method.
  *
- * Protobuf type <code>Google\Devtools\Cloudtrace\V1\ListTracesResponse</code>
+ * Generated from protobuf message <code>google.devtools.cloudtrace.v1.ListTracesResponse</code>
  */
 class ListTracesResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class ListTracesResponse extends \Google\Protobuf\Internal\Message
      * List of trace records returned.
      *
      * Generated from protobuf field <code>repeated .google.devtools.cloudtrace.v1.Trace traces = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Devtools\Cloudtrace\V1\Trace[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setTraces(&$var)
     {

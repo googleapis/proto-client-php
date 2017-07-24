@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Represents part of speech information for a token.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\PartOfSpeech</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.PartOfSpeech</code>
  */
 class PartOfSpeech extends \Google\Protobuf\Internal\Message
 {

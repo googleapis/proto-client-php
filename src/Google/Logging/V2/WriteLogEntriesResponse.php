@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Result returned from WriteLogEntries.
  * empty
  *
- * Protobuf type <code>Google\Logging\V2\WriteLogEntriesResponse</code>
+ * Generated from protobuf message <code>google.logging.v2.WriteLogEntriesResponse</code>
  */
 class WriteLogEntriesResponse extends \Google\Protobuf\Internal\Message
 {

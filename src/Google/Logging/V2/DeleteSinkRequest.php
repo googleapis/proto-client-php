@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to `DeleteSink`.
  *
- * Protobuf type <code>Google\Logging\V2\DeleteSinkRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.DeleteSinkRequest</code>
  */
 class DeleteSinkRequest extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Rectangle determined by min and max `LatLng` pairs.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\LatLongRect</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.LatLongRect</code>
  */
 class LatLongRect extends \Google\Protobuf\Internal\Message
 {

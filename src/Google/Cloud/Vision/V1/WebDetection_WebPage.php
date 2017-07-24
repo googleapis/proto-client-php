@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Metadata for web pages.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\WebDetection\WebPage</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.WebDetection.WebPage</code>
  */
 class WebDetection_WebPage extends \Google\Protobuf\Internal\Message
 {

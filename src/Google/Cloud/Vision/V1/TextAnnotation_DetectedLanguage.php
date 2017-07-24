@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Detected language for a structural component.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\TextAnnotation\DetectedLanguage</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.TextAnnotation.DetectedLanguage</code>
  */
 class TextAnnotation_DetectedLanguage extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `ListGroups` response.
  *
- * Protobuf type <code>Google\Monitoring\V3\ListGroupsResponse</code>
+ * Generated from protobuf message <code>google.monitoring.v3.ListGroupsResponse</code>
  */
 class ListGroupsResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class ListGroupsResponse extends \Google\Protobuf\Internal\Message
      * The groups that match the specified filters.
      *
      * Generated from protobuf field <code>repeated .google.monitoring.v3.Group group = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Monitoring\V3\Group[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setGroup(&$var)
     {

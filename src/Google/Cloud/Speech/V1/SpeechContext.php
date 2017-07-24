@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Provides "hints" to the speech recognizer to favor specific words and phrases
  * in the results.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1\SpeechContext</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1.SpeechContext</code>
  */
 class SpeechContext extends \Google\Protobuf\Internal\Message
 {
@@ -58,7 +58,7 @@ class SpeechContext extends \Google\Protobuf\Internal\Message
      * [usage limits](https://cloud.google.com/speech/limits#content).
      *
      * Generated from protobuf field <code>repeated string phrases = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setPhrases(&$var)
     {

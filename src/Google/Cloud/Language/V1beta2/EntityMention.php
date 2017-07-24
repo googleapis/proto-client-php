@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Represents a mention for an entity in the text. Currently, proper noun
  * mentions are supported.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\EntityMention</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.EntityMention</code>
  */
 class EntityMention extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Parameters for crop hints annotation request.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\CropHintsParams</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.CropHintsParams</code>
  */
 class CropHintsParams extends \Google\Protobuf\Internal\Message
 {
@@ -57,7 +57,7 @@ class CropHintsParams extends \Google\Protobuf\Internal\Message
      * ignored.
      *
      * Generated from protobuf field <code>repeated float aspect_ratios = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param float[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setAspectRatios(&$var)
     {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Logical element on the page.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Block</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Block</code>
  */
 class Block extends \Google\Protobuf\Internal\Message
 {
@@ -148,7 +148,7 @@ class Block extends \Google\Protobuf\Internal\Message
      * List of paragraphs in this block (if this blocks is of type text).
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Paragraph paragraphs = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\Paragraph[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setParagraphs(&$var)
     {

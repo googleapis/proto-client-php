@@ -33,7 +33,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * depending on what resources exist and what filters are associated with the
  * group and its ancestors.
  *
- * Protobuf type <code>Google\Monitoring\V3\Group</code>
+ * Generated from protobuf message <code>google.monitoring.v3.Group</code>
  */
 class Group extends \Google\Protobuf\Internal\Message
 {

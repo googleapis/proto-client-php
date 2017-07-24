@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * List of new or updated traces.
  *
- * Protobuf type <code>Google\Devtools\Cloudtrace\V1\Traces</code>
+ * Generated from protobuf message <code>google.devtools.cloudtrace.v1.Traces</code>
  */
 class Traces extends \Google\Protobuf\Internal\Message
 {
@@ -42,7 +42,7 @@ class Traces extends \Google\Protobuf\Internal\Message
      * List of traces.
      *
      * Generated from protobuf field <code>repeated .google.devtools.cloudtrace.v1.Trace traces = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Devtools\Cloudtrace\V1\Trace[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setTraces(&$var)
     {

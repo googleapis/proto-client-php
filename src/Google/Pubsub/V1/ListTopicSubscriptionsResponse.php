@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Response for the `ListTopicSubscriptions` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\ListTopicSubscriptionsResponse</code>
+ * Generated from protobuf message <code>google.pubsub.v1.ListTopicSubscriptionsResponse</code>
  */
 class ListTopicSubscriptionsResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class ListTopicSubscriptionsResponse extends \Google\Protobuf\Internal\Message
      * The names of the subscriptions that match the request.
      *
      * Generated from protobuf field <code>repeated string subscriptions = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setSubscriptions(&$var)
     {

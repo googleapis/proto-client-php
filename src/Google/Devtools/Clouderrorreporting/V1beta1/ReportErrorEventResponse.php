@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Response for reporting an individual error event.
  * Data may be added to this message in the future.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\ReportErrorEventResponse</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse</code>
  */
 class ReportErrorEventResponse extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Result returned from ListLogMetrics.
  *
- * Protobuf type <code>Google\Logging\V2\ListLogMetricsResponse</code>
+ * Generated from protobuf message <code>google.logging.v2.ListLogMetricsResponse</code>
  */
 class ListLogMetricsResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class ListLogMetricsResponse extends \Google\Protobuf\Internal\Message
      * A list of logs-based metrics.
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogMetric metrics = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Logging\V2\LogMetric[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setMetrics(&$var)
     {

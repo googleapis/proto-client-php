@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [Rollback][google.spanner.v1.Spanner.Rollback].
  *
- * Protobuf type <code>Google\Spanner\V1\RollbackRequest</code>
+ * Generated from protobuf message <code>google.spanner.v1.RollbackRequest</code>
  */
 class RollbackRequest extends \Google\Protobuf\Internal\Message
 {

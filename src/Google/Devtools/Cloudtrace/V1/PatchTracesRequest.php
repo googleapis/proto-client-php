@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request message for the `PatchTraces` method.
  *
- * Protobuf type <code>Google\Devtools\Cloudtrace\V1\PatchTracesRequest</code>
+ * Generated from protobuf message <code>google.devtools.cloudtrace.v1.PatchTracesRequest</code>
  */
 class PatchTracesRequest extends \Google\Protobuf\Internal\Message
 {

@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * A valid Position must have both x and y coordinates.
  * The position coordinates are in the same scale as the original image.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Position</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Position</code>
  */
 class Position extends \Google\Protobuf\Internal\Message
 {

@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * The request for
  * [GetInstanceConfigRequest][google.spanner.admin.instance.v1.InstanceAdmin.GetInstanceConfig].
  *
- * Protobuf type <code>Google\Spanner\Admin\Instance\V1\GetInstanceConfigRequest</code>
+ * Generated from protobuf message <code>google.spanner.admin.instance.v1.GetInstanceConfigRequest</code>
  */
 class GetInstanceConfigRequest extends \Google\Protobuf\Internal\Message
 {

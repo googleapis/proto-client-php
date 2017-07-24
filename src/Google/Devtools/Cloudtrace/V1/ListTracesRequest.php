@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * The request message for the `ListTraces` method. All fields are required
  * unless specified.
  *
- * Protobuf type <code>Google\Devtools\Cloudtrace\V1\ListTracesRequest</code>
+ * Generated from protobuf message <code>google.devtools.cloudtrace.v1.ListTracesRequest</code>
  */
 class ListTracesRequest extends \Google\Protobuf\Internal\Message
 {

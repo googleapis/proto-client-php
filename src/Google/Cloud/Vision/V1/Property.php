@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A `Property` consists of a user-supplied name/value pair.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Property</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Property</code>
  */
 class Property extends \Google\Protobuf\Internal\Message
 {

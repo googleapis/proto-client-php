@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [GetDatabaseDdl][google.spanner.admin.database.v1.DatabaseAdmin.GetDatabaseDdl].
  *
- * Protobuf type <code>Google\Spanner\Admin\Database\V1\GetDatabaseDdlRequest</code>
+ * Generated from protobuf message <code>google.spanner.admin.database.v1.GetDatabaseDdlRequest</code>
  */
 class GetDatabaseDdlRequest extends \Google\Protobuf\Internal\Message
 {

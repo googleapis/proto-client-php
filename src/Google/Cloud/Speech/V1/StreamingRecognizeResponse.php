@@ -45,7 +45,7 @@ use Google\Protobuf\Internal\GPBUtil;
  *     `speech_event_type`, or
  *     one or more (repeated) `results`.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1\StreamingRecognizeResponse</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1.StreamingRecognizeResponse</code>
  */
 class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
 {
@@ -123,7 +123,7 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      * followed by zero or more `is_final=false` results.
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1.StreamingRecognitionResult results = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Speech\V1\StreamingRecognitionResult[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setResults(&$var)
     {

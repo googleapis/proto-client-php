@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Information related to tracking the progress on resolving the error.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\TrackingIssue</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.TrackingIssue</code>
  */
 class TrackingIssue extends \Google\Protobuf\Internal\Message
 {

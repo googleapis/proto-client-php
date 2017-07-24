@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Single crop hint that is used to generate a new crop when serving an image.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\CropHint</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.CropHint</code>
  */
 class CropHint extends \Google\Protobuf\Internal\Message
 {

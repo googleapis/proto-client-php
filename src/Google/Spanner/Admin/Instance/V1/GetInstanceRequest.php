@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [GetInstance][google.spanner.admin.instance.v1.InstanceAdmin.GetInstance].
  *
- * Protobuf type <code>Google\Spanner\Admin\Instance\V1\GetInstanceRequest</code>
+ * Generated from protobuf message <code>google.spanner.admin.instance.v1.GetInstanceRequest</code>
  */
 class GetInstanceRequest extends \Google\Protobuf\Internal\Message
 {

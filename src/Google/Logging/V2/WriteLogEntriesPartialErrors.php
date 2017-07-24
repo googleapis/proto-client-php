@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Error details for WriteLogEntries with partial success.
  *
- * Protobuf type <code>Google\Logging\V2\WriteLogEntriesPartialErrors</code>
+ * Generated from protobuf message <code>google.logging.v2.WriteLogEntriesPartialErrors</code>
  */
 class WriteLogEntriesPartialErrors extends \Google\Protobuf\Internal\Message
 {
@@ -39,7 +39,7 @@ class WriteLogEntriesPartialErrors extends \Google\Protobuf\Internal\Message
      * per-entry errors.
      *
      * Generated from protobuf field <code>map<int32, .google.rpc.Status> log_entry_errors = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getLogEntryErrors()
     {
@@ -54,7 +54,7 @@ class WriteLogEntriesPartialErrors extends \Google\Protobuf\Internal\Message
      * per-entry errors.
      *
      * Generated from protobuf field <code>map<int32, .google.rpc.Status> log_entry_errors = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setLogEntryErrors(&$var)
     {

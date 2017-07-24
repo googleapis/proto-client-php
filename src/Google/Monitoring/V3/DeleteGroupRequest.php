@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `DeleteGroup` request. You can only delete a group if it has no children.
  *
- * Protobuf type <code>Google\Monitoring\V3\DeleteGroupRequest</code>
+ * Generated from protobuf message <code>google.monitoring.v3.DeleteGroupRequest</code>
  */
 class DeleteGroupRequest extends \Google\Protobuf\Internal\Message
 {

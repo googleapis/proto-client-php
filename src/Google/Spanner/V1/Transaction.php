@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A transaction.
  *
- * Protobuf type <code>Google\Spanner\V1\Transaction</code>
+ * Generated from protobuf message <code>google.spanner.v1.Transaction</code>
  */
 class Transaction extends \Google\Protobuf\Internal\Message
 {

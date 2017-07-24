@@ -15,7 +15,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Therefore it is NOT guaranteed that `0 <= x < width` or
  * `0 <= y < height`.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\FaceAnnotation\Landmark</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.FaceAnnotation.Landmark</code>
  */
 class FaceAnnotation_Landmark extends \Google\Protobuf\Internal\Message
 {

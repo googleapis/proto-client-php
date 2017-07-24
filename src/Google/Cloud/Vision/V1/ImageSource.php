@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * External image source (Google Cloud Storage image location).
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\ImageSource</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.ImageSource</code>
  */
 class ImageSource extends \Google\Protobuf\Internal\Message
 {

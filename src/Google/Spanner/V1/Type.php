@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * `Type` indicates the type of a Cloud Spanner value, as might be stored in a
  * table cell or returned from an SQL query.
  *
- * Protobuf type <code>Google\Spanner\V1\Type</code>
+ * Generated from protobuf message <code>google.spanner.v1.Type</code>
  */
 class Type extends \Google\Protobuf\Internal\Message
 {

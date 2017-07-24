@@ -15,7 +15,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * its suboperations. Spans do not need to be contiguous. There may be gaps
  * between spans in a trace.
  *
- * Protobuf type <code>Google\Devtools\Cloudtrace\V1\TraceSpan</code>
+ * Generated from protobuf message <code>google.devtools.cloudtrace.v1.TraceSpan</code>
  */
 class TraceSpan extends \Google\Protobuf\Internal\Message
 {
@@ -233,7 +233,7 @@ class TraceSpan extends \Google\Protobuf\Internal\Message
      * Collection of labels associated with the span.
      *
      * Generated from protobuf field <code>map<string, string> labels = 7;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getLabels()
     {
@@ -244,7 +244,7 @@ class TraceSpan extends \Google\Protobuf\Internal\Message
      * Collection of labels associated with the span.
      *
      * Generated from protobuf field <code>map<string, string> labels = 7;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setLabels(&$var)
     {

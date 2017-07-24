@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the `Pull` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\PullRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.PullRequest</code>
  */
 class PullRequest extends \Google\Protobuf\Internal\Message
 {

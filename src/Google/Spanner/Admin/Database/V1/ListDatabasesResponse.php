@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The response for [ListDatabases][google.spanner.admin.database.v1.DatabaseAdmin.ListDatabases].
  *
- * Protobuf type <code>Google\Spanner\Admin\Database\V1\ListDatabasesResponse</code>
+ * Generated from protobuf message <code>google.spanner.admin.database.v1.ListDatabasesResponse</code>
  */
 class ListDatabasesResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class ListDatabasesResponse extends \Google\Protobuf\Internal\Message
      * Databases that matched the request.
      *
      * Generated from protobuf field <code>repeated .google.spanner.admin.database.v1.Database databases = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Spanner\Admin\Database\V1\Database[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setDatabases(&$var)
     {

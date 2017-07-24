@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Additional statistics about a [ResultSet][google.spanner.v1.ResultSet] or [PartialResultSet][google.spanner.v1.PartialResultSet].
  *
- * Protobuf type <code>Google\Spanner\V1\ResultSetStats</code>
+ * Generated from protobuf message <code>google.spanner.v1.ResultSetStats</code>
  */
 class ResultSetStats extends \Google\Protobuf\Internal\Message
 {

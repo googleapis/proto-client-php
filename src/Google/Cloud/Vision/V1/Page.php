@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Detected page from OCR.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Page</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Page</code>
  */
 class Page extends \Google\Protobuf\Internal\Message
 {
@@ -129,7 +129,7 @@ class Page extends \Google\Protobuf\Internal\Message
      * List of blocks of text, images etc on this page.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Block blocks = 4;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\Block[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setBlocks(&$var)
     {

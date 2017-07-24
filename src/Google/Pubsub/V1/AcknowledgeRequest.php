@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the Acknowledge method.
  *
- * Protobuf type <code>Google\Pubsub\V1\AcknowledgeRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.AcknowledgeRequest</code>
  */
 class AcknowledgeRequest extends \Google\Protobuf\Internal\Message
 {
@@ -77,7 +77,7 @@ class AcknowledgeRequest extends \Google\Protobuf\Internal\Message
      * by the Pub/Sub system in the `Pull` response. Must not be empty.
      *
      * Generated from protobuf field <code>repeated string ack_ids = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setAckIds(&$var)
     {

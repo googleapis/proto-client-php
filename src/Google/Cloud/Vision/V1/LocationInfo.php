@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Detected entity location information.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\LocationInfo</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.LocationInfo</code>
  */
 class LocationInfo extends \Google\Protobuf\Internal\Message
 {

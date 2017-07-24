@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [DeleteSession][google.spanner.v1.Spanner.DeleteSession].
  *
- * Protobuf type <code>Google\Spanner\V1\DeleteSessionRequest</code>
+ * Generated from protobuf message <code>google.spanner.v1.DeleteSessionRequest</code>
  */
 class DeleteSessionRequest extends \Google\Protobuf\Internal\Message
 {

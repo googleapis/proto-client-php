@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to DeleteLogMetric.
  *
- * Protobuf type <code>Google\Logging\V2\DeleteLogMetricRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.DeleteLogMetricRequest</code>
  */
 class DeleteLogMetricRequest extends \Google\Protobuf\Internal\Message
 {

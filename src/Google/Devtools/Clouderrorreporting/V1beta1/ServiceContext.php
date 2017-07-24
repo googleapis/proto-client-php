@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Describes a running service that sends errors.
  * Its version changes over time and multiple versions can run in parallel.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\ServiceContext</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.ServiceContext</code>
  */
 class ServiceContext extends \Google\Protobuf\Internal\Message
 {

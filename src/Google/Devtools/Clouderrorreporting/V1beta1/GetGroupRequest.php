@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A request to return an individual group.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\GetGroupRequest</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.GetGroupRequest</code>
  */
 class GetGroupRequest extends \Google\Protobuf\Internal\Message
 {

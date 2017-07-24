@@ -178,7 +178,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * timestamp become too old while executing. Reads and SQL queries with
  * too-old read timestamps fail with the error `FAILED_PRECONDITION`.
  *
- * Protobuf type <code>Google\Spanner\V1\TransactionOptions</code>
+ * Generated from protobuf message <code>google.spanner.v1.TransactionOptions</code>
  */
 class TransactionOptions extends \Google\Protobuf\Internal\Message
 {

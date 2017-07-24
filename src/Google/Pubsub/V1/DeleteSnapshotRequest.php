@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the `DeleteSnapshot` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\DeleteSnapshotRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.DeleteSnapshotRequest</code>
  */
 class DeleteSnapshotRequest extends \Google\Protobuf\Internal\Message
 {

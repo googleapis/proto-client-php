@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Metadata type for the operation returned by
  * [CreateDatabase][google.spanner.admin.database.v1.DatabaseAdmin.CreateDatabase].
  *
- * Protobuf type <code>Google\Spanner\Admin\Database\V1\CreateDatabaseMetadata</code>
+ * Generated from protobuf message <code>google.spanner.admin.database.v1.CreateDatabaseMetadata</code>
  */
 class CreateDatabaseMetadata extends \Google\Protobuf\Internal\Message
 {

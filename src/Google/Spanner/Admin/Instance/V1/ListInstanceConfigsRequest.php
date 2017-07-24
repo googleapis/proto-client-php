@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [ListInstanceConfigs][google.spanner.admin.instance.v1.InstanceAdmin.ListInstanceConfigs].
  *
- * Protobuf type <code>Google\Spanner\Admin\Instance\V1\ListInstanceConfigsRequest</code>
+ * Generated from protobuf message <code>google.spanner.admin.instance.v1.ListInstanceConfigsRequest</code>
  */
 class ListInstanceConfigsRequest extends \Google\Protobuf\Internal\Message
 {

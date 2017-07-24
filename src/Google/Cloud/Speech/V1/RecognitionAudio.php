@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * returns [google.rpc.Code.INVALID_ARGUMENT][]. See
  * [audio limits](https://cloud.google.com/speech/limits#content).
  *
- * Protobuf type <code>Google\Cloud\Speech\V1\RecognitionAudio</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1.RecognitionAudio</code>
  */
 class RecognitionAudio extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A session in the Cloud Spanner API.
  *
- * Protobuf type <code>Google\Spanner\V1\Session</code>
+ * Generated from protobuf message <code>google.spanner.v1.Session</code>
  */
 class Session extends \Google\Protobuf\Internal\Message
 {

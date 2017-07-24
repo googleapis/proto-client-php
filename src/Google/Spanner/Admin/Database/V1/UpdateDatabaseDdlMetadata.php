@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Metadata type for the operation returned by
  * [UpdateDatabaseDdl][google.spanner.admin.database.v1.DatabaseAdmin.UpdateDatabaseDdl].
  *
- * Protobuf type <code>Google\Spanner\Admin\Database\V1\UpdateDatabaseDdlMetadata</code>
+ * Generated from protobuf message <code>google.spanner.admin.database.v1.UpdateDatabaseDdlMetadata</code>
  */
 class UpdateDatabaseDdlMetadata extends \Google\Protobuf\Internal\Message
 {
@@ -83,7 +83,7 @@ class UpdateDatabaseDdlMetadata extends \Google\Protobuf\Internal\Message
      * individual statement, this list contains only that statement.
      *
      * Generated from protobuf field <code>repeated string statements = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setStatements(&$var)
     {
@@ -110,7 +110,7 @@ class UpdateDatabaseDdlMetadata extends \Google\Protobuf\Internal\Message
      * timestamp for the statement `statements[i]`.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Timestamp commit_timestamps = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Protobuf\Timestamp[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setCommitTimestamps(&$var)
     {

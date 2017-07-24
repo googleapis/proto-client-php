@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Provides information to the recognizer that specifies how to process the
  * request.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1\RecognitionConfig</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1.RecognitionConfig</code>
  */
 class RecognitionConfig extends \Google\Protobuf\Internal\Message
 {
@@ -236,7 +236,7 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      * *Optional* A means to provide context to assist the speech recognition.
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1.SpeechContext speech_contexts = 6;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Speech\V1\SpeechContext[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setSpeechContexts(&$var)
     {

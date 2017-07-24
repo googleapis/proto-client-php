@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A message and its corresponding acknowledgment ID.
  *
- * Protobuf type <code>Google\Pubsub\V1\ReceivedMessage</code>
+ * Generated from protobuf message <code>google.pubsub.v1.ReceivedMessage</code>
  */
 class ReceivedMessage extends \Google\Protobuf\Internal\Message
 {

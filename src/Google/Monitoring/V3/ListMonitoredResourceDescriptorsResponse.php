@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `ListMonitoredResourcDescriptors` response.
  *
- * Protobuf type <code>Google\Monitoring\V3\ListMonitoredResourceDescriptorsResponse</code>
+ * Generated from protobuf message <code>google.monitoring.v3.ListMonitoredResourceDescriptorsResponse</code>
  */
 class ListMonitoredResourceDescriptorsResponse extends \Google\Protobuf\Internal\Message
 {
@@ -53,7 +53,7 @@ class ListMonitoredResourceDescriptorsResponse extends \Google\Protobuf\Internal
      * and that match `filter`, if present.
      *
      * Generated from protobuf field <code>repeated .google.api.MonitoredResourceDescriptor resource_descriptors = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Api\MonitoredResourceDescriptor[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setResourceDescriptors(&$var)
     {

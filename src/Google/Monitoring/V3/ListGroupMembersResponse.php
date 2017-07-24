@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `ListGroupMembers` response.
  *
- * Protobuf type <code>Google\Monitoring\V3\ListGroupMembersResponse</code>
+ * Generated from protobuf message <code>google.monitoring.v3.ListGroupMembersResponse</code>
  */
 class ListGroupMembersResponse extends \Google\Protobuf\Internal\Message
 {
@@ -56,7 +56,7 @@ class ListGroupMembersResponse extends \Google\Protobuf\Internal\Message
      * A set of monitored resources in the group.
      *
      * Generated from protobuf field <code>repeated .google.api.MonitoredResource members = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Api\MonitoredResource[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setMembers(&$var)
     {

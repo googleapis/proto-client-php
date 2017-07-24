@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to ListLogMetrics.
  *
- * Protobuf type <code>Google\Logging\V2\ListLogMetricsRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.ListLogMetricsRequest</code>
  */
 class ListLogMetricsRequest extends \Google\Protobuf\Internal\Message
 {

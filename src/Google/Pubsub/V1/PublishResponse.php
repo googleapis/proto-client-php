@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Response for the `Publish` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\PublishResponse</code>
+ * Generated from protobuf message <code>google.pubsub.v1.PublishResponse</code>
  */
 class PublishResponse extends \Google\Protobuf\Internal\Message
 {
@@ -48,7 +48,7 @@ class PublishResponse extends \Google\Protobuf\Internal\Message
      * the topic.
      *
      * Generated from protobuf field <code>repeated string message_ids = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setMessageIds(&$var)
     {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A single data point in a time series.
  *
- * Protobuf type <code>Google\Monitoring\V3\Point</code>
+ * Generated from protobuf message <code>google.monitoring.v3.Point</code>
  */
 class Point extends \Google\Protobuf\Internal\Message
 {

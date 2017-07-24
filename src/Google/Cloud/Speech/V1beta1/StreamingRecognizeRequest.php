@@ -15,7 +15,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * All subsequent messages must contain `audio` data and must not contain a
  * `streaming_config` message.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1beta1\StreamingRecognizeRequest</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1beta1.StreamingRecognizeRequest</code>
  */
 class StreamingRecognizeRequest extends \Google\Protobuf\Internal\Message
 {

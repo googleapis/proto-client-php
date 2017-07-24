@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Contains an ordered list of nodes appearing in the query plan.
  *
- * Protobuf type <code>Google\Spanner\V1\QueryPlan</code>
+ * Generated from protobuf message <code>google.spanner.v1.QueryPlan</code>
  */
 class QueryPlan extends \Google\Protobuf\Internal\Message
 {
@@ -48,7 +48,7 @@ class QueryPlan extends \Google\Protobuf\Internal\Message
      * `plan_nodes`.
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.PlanNode plan_nodes = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Spanner\V1\PlanNode[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setPlanNodes(&$var)
     {

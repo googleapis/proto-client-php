@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * A vertex represents a 2D point in the image.
  * NOTE: the vertex coordinates are in the same scale as the original image.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Vertex</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Vertex</code>
  */
 class Vertex extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the `ListTopicSubscriptions` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\ListTopicSubscriptionsRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.ListTopicSubscriptionsRequest</code>
  */
 class ListTopicSubscriptionsRequest extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * An individual entry in a log.
  *
- * Protobuf type <code>Google\Logging\V2\LogEntry</code>
+ * Generated from protobuf message <code>google.logging.v2.LogEntry</code>
  */
 class LogEntry extends \Google\Protobuf\Internal\Message
 {
@@ -419,7 +419,7 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      * information about the log entry.
      *
      * Generated from protobuf field <code>map<string, string> labels = 11;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getLabels()
     {
@@ -431,7 +431,7 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      * information about the log entry.
      *
      * Generated from protobuf field <code>map<string, string> labels = 11;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setLabels(&$var)
     {

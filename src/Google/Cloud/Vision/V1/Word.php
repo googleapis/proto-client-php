@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A word representation.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Word</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Word</code>
  */
 class Word extends \Google\Protobuf\Internal\Message
 {
@@ -145,7 +145,7 @@ class Word extends \Google\Protobuf\Internal\Message
      * The order of the symbols follows the natural reading order.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Symbol symbols = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\Symbol[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setSymbols(&$var)
     {

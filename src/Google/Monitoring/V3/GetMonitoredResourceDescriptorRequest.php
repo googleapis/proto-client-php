@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `GetMonitoredResourceDescriptor` request.
  *
- * Protobuf type <code>Google\Monitoring\V3\GetMonitoredResourceDescriptorRequest</code>
+ * Generated from protobuf message <code>google.monitoring.v3.GetMonitoredResourceDescriptorRequest</code>
  */
 class GetMonitoredResourceDescriptorRequest extends \Google\Protobuf\Internal\Message
 {

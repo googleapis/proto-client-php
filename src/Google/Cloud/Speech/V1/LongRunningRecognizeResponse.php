@@ -15,7 +15,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * returned by the `GetOperation` call of the `google::longrunning::Operations`
  * service.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1\LongRunningRecognizeResponse</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1.LongRunningRecognizeResponse</code>
  */
 class LongRunningRecognizeResponse extends \Google\Protobuf\Internal\Message
 {
@@ -49,7 +49,7 @@ class LongRunningRecognizeResponse extends \Google\Protobuf\Internal\Message
      * sequential portions of audio.
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1.SpeechRecognitionResult results = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Speech\V1\SpeechRecognitionResult[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setResults(&$var)
     {

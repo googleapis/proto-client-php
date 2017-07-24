@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A Cloud Spanner database.
  *
- * Protobuf type <code>Google\Spanner\Admin\Database\V1\Database</code>
+ * Generated from protobuf message <code>google.spanner.admin.database.v1.Database</code>
  */
 class Database extends \Google\Protobuf\Internal\Message
 {

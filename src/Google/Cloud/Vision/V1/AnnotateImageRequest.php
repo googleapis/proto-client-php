@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Request for performing Google Cloud Vision API tasks over a user-provided
  * image, with user-requested features.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\AnnotateImageRequest</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.AnnotateImageRequest</code>
  */
 class AnnotateImageRequest extends \Google\Protobuf\Internal\Message
 {
@@ -78,7 +78,7 @@ class AnnotateImageRequest extends \Google\Protobuf\Internal\Message
      * Requested features.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Feature features = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\Feature[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setFeatures(&$var)
     {

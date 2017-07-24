@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * operation. It consists of a set of spans, each of which represent a single
  * timed event within the operation.
  *
- * Protobuf type <code>Google\Devtools\Cloudtrace\V1\Trace</code>
+ * Generated from protobuf message <code>google.devtools.cloudtrace.v1.Trace</code>
  */
 class Trace extends \Google\Protobuf\Internal\Message
 {
@@ -105,7 +105,7 @@ class Trace extends \Google\Protobuf\Internal\Message
      * Collection of spans in the trace.
      *
      * Generated from protobuf field <code>repeated .google.devtools.cloudtrace.v1.TraceSpan spans = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Devtools\Cloudtrace\V1\TraceSpan[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setSpans(&$var)
     {

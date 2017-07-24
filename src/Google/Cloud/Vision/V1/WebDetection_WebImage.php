@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Metadata for online images.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\WebDetection\WebImage</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.WebDetection.WebImage</code>
  */
 class WebDetection_WebImage extends \Google\Protobuf\Internal\Message
 {

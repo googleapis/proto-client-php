@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * applied to a Cloud Spanner database by sending them in a
  * [Commit][google.spanner.v1.Spanner.Commit] call.
  *
- * Protobuf type <code>Google\Spanner\V1\Mutation</code>
+ * Generated from protobuf message <code>google.spanner.v1.Mutation</code>
  */
 class Mutation extends \Google\Protobuf\Internal\Message
 {

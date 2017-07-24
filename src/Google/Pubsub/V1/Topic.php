@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A topic resource.
  *
- * Protobuf type <code>Google\Pubsub\V1\Topic</code>
+ * Generated from protobuf message <code>google.pubsub.v1.Topic</code>
  */
 class Topic extends \Google\Protobuf\Internal\Message
 {

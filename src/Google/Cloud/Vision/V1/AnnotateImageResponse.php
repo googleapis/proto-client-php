@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Response to an image annotation request.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\AnnotateImageResponse</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.AnnotateImageResponse</code>
  */
 class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
 {
@@ -108,7 +108,7 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      * If present, face detection has completed successfully.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.FaceAnnotation face_annotations = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\FaceAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setFaceAnnotations(&$var)
     {
@@ -131,7 +131,7 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      * If present, landmark detection has completed successfully.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation landmark_annotations = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\EntityAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setLandmarkAnnotations(&$var)
     {
@@ -154,7 +154,7 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      * If present, logo detection has completed successfully.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation logo_annotations = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\EntityAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setLogoAnnotations(&$var)
     {
@@ -177,7 +177,7 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      * If present, label detection has completed successfully.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation label_annotations = 4;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\EntityAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setLabelAnnotations(&$var)
     {
@@ -202,7 +202,7 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      * completed successfully.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation text_annotations = 5;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\EntityAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setTextAnnotations(&$var)
     {

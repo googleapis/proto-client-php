@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The entity-level sentiment analysis response message.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\AnalyzeEntitySentimentResponse</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.AnalyzeEntitySentimentResponse</code>
  */
 class AnalyzeEntitySentimentResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class AnalyzeEntitySentimentResponse extends \Google\Protobuf\Internal\Message
      * The recognized entities in the input document with associated sentiments.
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Entity entities = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Language\V1beta2\Entity[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setEntities(&$var)
     {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Multiple image annotation requests are batched into a single service call.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\BatchAnnotateImagesRequest</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.BatchAnnotateImagesRequest</code>
  */
 class BatchAnnotateImagesRequest extends \Google\Protobuf\Internal\Message
 {
@@ -42,7 +42,7 @@ class BatchAnnotateImagesRequest extends \Google\Protobuf\Internal\Message
      * Individual image annotation requests for this batch.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.AnnotateImageRequest requests = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\AnnotateImageRequest[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setRequests(&$var)
     {

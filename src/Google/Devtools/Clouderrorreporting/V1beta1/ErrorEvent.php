@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * An error event which is returned by the Error Reporting system.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\ErrorEvent</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.ErrorEvent</code>
  */
 class ErrorEvent extends \Google\Protobuf\Internal\Message
 {

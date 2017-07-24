@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Node information for nodes appearing in a [QueryPlan.plan_nodes][google.spanner.v1.QueryPlan.plan_nodes].
  *
- * Protobuf type <code>Google\Spanner\V1\PlanNode</code>
+ * Generated from protobuf message <code>google.spanner.v1.PlanNode</code>
  */
 class PlanNode extends \Google\Protobuf\Internal\Message
 {
@@ -168,7 +168,7 @@ class PlanNode extends \Google\Protobuf\Internal\Message
      * List of child node `index`es and their relationship to this parent.
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.PlanNode.ChildLink child_links = 4;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Spanner\V1\PlanNode_ChildLink[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setChildLinks(&$var)
     {

@@ -54,7 +54,7 @@ use Google\Protobuf\Internal\GPBUtil;
  *   `results` in #6 and later correspond to the portion of audio after
  *   "to be or not to be".
  *
- * Protobuf type <code>Google\Cloud\Speech\V1beta1\StreamingRecognizeResponse</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1beta1.StreamingRecognizeResponse</code>
  */
 class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
 {
@@ -140,7 +140,7 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      * followed by zero or more `is_final=false` results.
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1beta1.StreamingRecognitionResult results = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Speech\V1beta1\StreamingRecognitionResult[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setResults(&$var)
     {

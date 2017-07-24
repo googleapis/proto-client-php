@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A single strongly-typed value.
  *
- * Protobuf type <code>Google\Monitoring\V3\TypedValue</code>
+ * Generated from protobuf message <code>google.monitoring.v3.TypedValue</code>
  */
 class TypedValue extends \Google\Protobuf\Internal\Message
 {

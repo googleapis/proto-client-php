@@ -17,7 +17,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * refer to the [google.cloud.vision.v1.TextAnnotation.TextProperty][google.cloud.vision.v1.TextAnnotation.TextProperty] message
  * definition below for more detail.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\TextAnnotation</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.TextAnnotation</code>
  */
 class TextAnnotation extends \Google\Protobuf\Internal\Message
 {
@@ -54,7 +54,7 @@ class TextAnnotation extends \Google\Protobuf\Internal\Message
      * List of pages detected by OCR.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Page pages = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\Page[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setPages(&$var)
     {

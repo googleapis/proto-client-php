@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Result returned from ListLogs.
  *
- * Protobuf type <code>Google\Logging\V2\ListLogsResponse</code>
+ * Generated from protobuf message <code>google.logging.v2.ListLogsResponse</code>
  */
 class ListLogsResponse extends \Google\Protobuf\Internal\Message
 {
@@ -56,7 +56,7 @@ class ListLogsResponse extends \Google\Protobuf\Internal\Message
      * `"organizations/123/cloudresourcemanager.googleapis.com%2Factivity"`.
      *
      * Generated from protobuf field <code>repeated string log_names = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setLogNames(&$var)
     {

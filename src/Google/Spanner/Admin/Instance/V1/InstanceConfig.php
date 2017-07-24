@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * A possible configuration for a Cloud Spanner instance. Configurations
  * define the geographic placement of nodes and their replication.
  *
- * Protobuf type <code>Google\Spanner\Admin\Instance\V1\InstanceConfig</code>
+ * Generated from protobuf message <code>google.spanner.admin.instance.v1.InstanceConfig</code>
  */
 class InstanceConfig extends \Google\Protobuf\Internal\Message
 {

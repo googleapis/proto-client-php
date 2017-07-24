@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the `ListSnapshots` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\ListSnapshotsRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.ListSnapshotsRequest</code>
  */
 class ListSnapshotsRequest extends \Google\Protobuf\Internal\Message
 {

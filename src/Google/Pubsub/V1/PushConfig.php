@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Configuration for a push delivery endpoint.
  *
- * Protobuf type <code>Google\Pubsub\V1\PushConfig</code>
+ * Generated from protobuf message <code>google.pubsub.v1.PushConfig</code>
  */
 class PushConfig extends \Google\Protobuf\Internal\Message
 {
@@ -93,7 +93,7 @@ class PushConfig extends \Google\Protobuf\Internal\Message
      * * `v1` or `v1beta2`: uses the push format defined in the v1 Pub/Sub API.
      *
      * Generated from protobuf field <code>map<string, string> attributes = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getAttributes()
     {
@@ -119,7 +119,7 @@ class PushConfig extends \Google\Protobuf\Internal\Message
      * * `v1` or `v1beta2`: uses the push format defined in the v1 Pub/Sub API.
      *
      * Generated from protobuf field <code>map<string, string> attributes = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setAttributes(&$var)
     {

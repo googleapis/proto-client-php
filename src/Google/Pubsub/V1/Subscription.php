@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A subscription resource.
  *
- * Protobuf type <code>Google\Pubsub\V1\Subscription</code>
+ * Generated from protobuf message <code>google.pubsub.v1.Subscription</code>
  */
 class Subscription extends \Google\Protobuf\Internal\Message
 {

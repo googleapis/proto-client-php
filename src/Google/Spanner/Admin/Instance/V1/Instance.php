@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * An isolated set of Cloud Spanner resources on which databases can be hosted.
  *
- * Protobuf type <code>Google\Spanner\Admin\Instance\V1\Instance</code>
+ * Generated from protobuf message <code>google.spanner.admin.instance.v1.Instance</code>
  */
 class Instance extends \Google\Protobuf\Internal\Message
 {
@@ -243,7 +243,7 @@ class Instance extends \Google\Protobuf\Internal\Message
      * allow "_" in a future release.
      *
      * Generated from protobuf field <code>map<string, string> labels = 7;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getLabels()
     {
@@ -271,7 +271,7 @@ class Instance extends \Google\Protobuf\Internal\Message
      * allow "_" in a future release.
      *
      * Generated from protobuf field <code>map<string, string> labels = 7;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setLabels(&$var)
     {

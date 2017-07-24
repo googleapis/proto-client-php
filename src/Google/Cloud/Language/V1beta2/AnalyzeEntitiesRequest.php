@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The entity analysis request message.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\AnalyzeEntitiesRequest</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.AnalyzeEntitiesRequest</code>
  */
 class AnalyzeEntitiesRequest extends \Google\Protobuf\Internal\Message
 {

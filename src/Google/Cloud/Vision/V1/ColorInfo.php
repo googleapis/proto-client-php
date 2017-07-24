@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Color information consists of RGB channels, score, and the fraction of
  * the image that the color occupies in the image.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\ColorInfo</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.ColorInfo</code>
  */
 class ColorInfo extends \Google\Protobuf\Internal\Message
 {

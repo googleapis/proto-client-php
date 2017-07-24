@@ -25,7 +25,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * [operation_id][google.spanner.admin.database.v1.UpdateDatabaseDdlRequest.operation_id] field for more
  * details.
  *
- * Protobuf type <code>Google\Spanner\Admin\Database\V1\UpdateDatabaseDdlRequest</code>
+ * Generated from protobuf message <code>google.spanner.admin.database.v1.UpdateDatabaseDdlRequest</code>
  */
 class UpdateDatabaseDdlRequest extends \Google\Protobuf\Internal\Message
 {
@@ -107,7 +107,7 @@ class UpdateDatabaseDdlRequest extends \Google\Protobuf\Internal\Message
      * DDL statements to be applied to the database.
      *
      * Generated from protobuf field <code>repeated string statements = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setStatements(&$var)
     {

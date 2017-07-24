@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [Commit][google.spanner.v1.Spanner.Commit].
  *
- * Protobuf type <code>Google\Spanner\V1\CommitRequest</code>
+ * Generated from protobuf message <code>google.spanner.v1.CommitRequest</code>
  */
 class CommitRequest extends \Google\Protobuf\Internal\Message
 {
@@ -140,7 +140,7 @@ class CommitRequest extends \Google\Protobuf\Internal\Message
      * this list.
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.Mutation mutations = 4;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Spanner\V1\Mutation[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setMutations(&$var)
     {

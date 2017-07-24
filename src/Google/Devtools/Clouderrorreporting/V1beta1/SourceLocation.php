@@ -15,7 +15,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * unless the error report has been generated automatically from Google App
  * Engine logs. All fields are optional.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\SourceLocation</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.SourceLocation</code>
  */
 class SourceLocation extends \Google\Protobuf\Internal\Message
 {

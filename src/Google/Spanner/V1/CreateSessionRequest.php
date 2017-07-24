@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request for [CreateSession][google.spanner.v1.Spanner.CreateSession].
  *
- * Protobuf type <code>Google\Spanner\V1\CreateSessionRequest</code>
+ * Generated from protobuf message <code>google.spanner.v1.CreateSessionRequest</code>
  */
 class CreateSessionRequest extends \Google\Protobuf\Internal\Message
 {

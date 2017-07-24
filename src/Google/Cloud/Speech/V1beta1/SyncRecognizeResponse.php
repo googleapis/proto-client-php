@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * contains the result as zero or more sequential `SpeechRecognitionResult`
  * messages.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1beta1\SyncRecognizeResponse</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1beta1.SyncRecognizeResponse</code>
  */
 class SyncRecognizeResponse extends \Google\Protobuf\Internal\Message
 {
@@ -47,7 +47,7 @@ class SyncRecognizeResponse extends \Google\Protobuf\Internal\Message
      * sequential portions of audio.
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1beta1.SpeechRecognitionResult results = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Speech\V1beta1\SpeechRecognitionResult[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setResults(&$var)
     {

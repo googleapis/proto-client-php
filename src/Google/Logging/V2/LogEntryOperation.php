@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Additional information about a potentially long-running operation with which
  * a log entry is associated.
  *
- * Protobuf type <code>Google\Logging\V2\LogEntryOperation</code>
+ * Generated from protobuf message <code>google.logging.v2.LogEntryOperation</code>
  */
 class LogEntryOperation extends \Google\Protobuf\Internal\Message
 {

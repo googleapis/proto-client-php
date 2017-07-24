@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * The request for [Read][google.spanner.v1.Spanner.Read] and
  * [StreamingRead][google.spanner.v1.Spanner.StreamingRead].
  *
- * Protobuf type <code>Google\Spanner\V1\ReadRequest</code>
+ * Generated from protobuf message <code>google.spanner.v1.ReadRequest</code>
  */
 class ReadRequest extends \Google\Protobuf\Internal\Message
 {
@@ -202,7 +202,7 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      * this request.
      *
      * Generated from protobuf field <code>repeated string columns = 5;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setColumns(&$var)
     {

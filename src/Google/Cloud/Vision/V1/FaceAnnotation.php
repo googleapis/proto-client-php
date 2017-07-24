@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A face annotation object contains the results of face detection.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\FaceAnnotation</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.FaceAnnotation</code>
  */
 class FaceAnnotation extends \Google\Protobuf\Internal\Message
 {
@@ -210,7 +210,7 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      * Detected face landmarks.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.FaceAnnotation.Landmark landmarks = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\FaceAnnotation_Landmark[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setLandmarks(&$var)
     {

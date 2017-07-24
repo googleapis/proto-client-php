@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `ListMetricDescriptors` response.
  *
- * Protobuf type <code>Google\Monitoring\V3\ListMetricDescriptorsResponse</code>
+ * Generated from protobuf message <code>google.monitoring.v3.ListMetricDescriptorsResponse</code>
  */
 class ListMetricDescriptorsResponse extends \Google\Protobuf\Internal\Message
 {
@@ -53,7 +53,7 @@ class ListMetricDescriptorsResponse extends \Google\Protobuf\Internal\Message
      * and that match the value of `filter`, if present.
      *
      * Generated from protobuf field <code>repeated .google.api.MetricDescriptor metric_descriptors = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Api\MetricDescriptor[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setMetricDescriptors(&$var)
     {

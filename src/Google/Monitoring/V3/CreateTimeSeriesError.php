@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Describes the result of a failed request to write data to a time series.
  *
- * Protobuf type <code>Google\Monitoring\V3\CreateTimeSeriesError</code>
+ * Generated from protobuf message <code>google.monitoring.v3.CreateTimeSeriesError</code>
  */
 class CreateTimeSeriesError extends \Google\Protobuf\Internal\Message
 {

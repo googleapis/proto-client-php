@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The top-level message sent by the client for the `Recognize` method.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1\RecognizeRequest</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1.RecognizeRequest</code>
  */
 class RecognizeRequest extends \Google\Protobuf\Internal\Message
 {

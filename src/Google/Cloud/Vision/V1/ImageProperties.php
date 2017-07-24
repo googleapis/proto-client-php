@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Stores image properties, such as dominant colors.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\ImageProperties</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.ImageProperties</code>
  */
 class ImageProperties extends \Google\Protobuf\Internal\Message
 {

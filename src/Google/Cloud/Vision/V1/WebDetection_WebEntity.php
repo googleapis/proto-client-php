@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Entity deduced from similar images on the Internet.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\WebDetection\WebEntity</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.WebDetection.WebEntity</code>
  */
 class WebDetection_WebEntity extends \Google\Protobuf\Internal\Message
 {

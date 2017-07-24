@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Contains a set of requested error events.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\ListEventsResponse</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.ListEventsResponse</code>
  */
 class ListEventsResponse extends \Google\Protobuf\Internal\Message
 {
@@ -56,7 +56,7 @@ class ListEventsResponse extends \Google\Protobuf\Internal\Message
      * The error events which match the given request.
      *
      * Generated from protobuf field <code>repeated .google.devtools.clouderrorreporting.v1beta1.ErrorEvent error_events = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Devtools\Clouderrorreporting\V1beta1\ErrorEvent[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setErrorEvents(&$var)
     {

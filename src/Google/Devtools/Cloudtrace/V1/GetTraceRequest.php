@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The request message for the `GetTrace` method.
  *
- * Protobuf type <code>Google\Devtools\Cloudtrace\V1\GetTraceRequest</code>
+ * Generated from protobuf message <code>google.devtools.cloudtrace.v1.GetTraceRequest</code>
  */
 class GetTraceRequest extends \Google\Protobuf\Internal\Message
 {

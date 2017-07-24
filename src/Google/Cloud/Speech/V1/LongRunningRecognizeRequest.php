@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * The top-level message sent by the client for the `LongRunningRecognize`
  * method.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1\LongRunningRecognizeRequest</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1.LongRunningRecognizeRequest</code>
  */
 class LongRunningRecognizeRequest extends \Google\Protobuf\Internal\Message
 {

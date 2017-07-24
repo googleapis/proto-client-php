@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The top-level message sent by the client for the `SyncRecognize` method.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1beta1\SyncRecognizeRequest</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1beta1.SyncRecognizeRequest</code>
  */
 class SyncRecognizeRequest extends \Google\Protobuf\Internal\Message
 {

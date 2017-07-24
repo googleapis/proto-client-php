@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * The request for [ExecuteSql][google.spanner.v1.Spanner.ExecuteSql] and
  * [ExecuteStreamingSql][google.spanner.v1.Spanner.ExecuteStreamingSql].
  *
- * Protobuf type <code>Google\Spanner\V1\ExecuteSqlRequest</code>
+ * Generated from protobuf message <code>google.spanner.v1.ExecuteSqlRequest</code>
  */
 class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
 {
@@ -211,7 +211,7 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      * about SQL types.
      *
      * Generated from protobuf field <code>map<string, .google.spanner.v1.Type> param_types = 5;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getParamTypes()
     {
@@ -228,7 +228,7 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      * about SQL types.
      *
      * Generated from protobuf field <code>map<string, .google.spanner.v1.Type> param_types = 5;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setParamTypes(&$var)
     {

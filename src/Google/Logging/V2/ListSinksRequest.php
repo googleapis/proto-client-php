@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to `ListSinks`.
  *
- * Protobuf type <code>Google\Logging\V2\ListSinksRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.ListSinksRequest</code>
  */
 class ListSinksRequest extends \Google\Protobuf\Internal\Message
 {

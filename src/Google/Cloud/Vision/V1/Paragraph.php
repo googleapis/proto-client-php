@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Structural unit of text representing a number of words in certain order.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Paragraph</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Paragraph</code>
  */
 class Paragraph extends \Google\Protobuf\Internal\Message
 {
@@ -142,7 +142,7 @@ class Paragraph extends \Google\Protobuf\Internal\Message
      * List of words in this paragraph.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Word words = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\Word[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setWords(&$var)
     {

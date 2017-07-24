@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Arguments to [insert][google.spanner.v1.Mutation.insert], [update][google.spanner.v1.Mutation.update], [insert_or_update][google.spanner.v1.Mutation.insert_or_update], and
  * [replace][google.spanner.v1.Mutation.replace] operations.
  *
- * Protobuf type <code>Google\Spanner\V1\Mutation\Write</code>
+ * Generated from protobuf message <code>google.spanner.v1.Mutation.Write</code>
  */
 class Mutation_Write extends \Google\Protobuf\Internal\Message
 {
@@ -94,7 +94,7 @@ class Mutation_Write extends \Google\Protobuf\Internal\Message
      * row(s) to be modified.
      *
      * Generated from protobuf field <code>repeated string columns = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setColumns(&$var)
     {
@@ -131,7 +131,7 @@ class Mutation_Write extends \Google\Protobuf\Internal\Message
      * encoded as described [here][google.spanner.v1.TypeCode].
      *
      * Generated from protobuf field <code>repeated .google.protobuf.ListValue values = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Protobuf\ListValue[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setValues(&$var)
     {

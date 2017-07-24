@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Description of a group of similar error events.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\ErrorGroup</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.ErrorGroup</code>
  */
 class ErrorGroup extends \Google\Protobuf\Internal\Message
 {
@@ -106,7 +106,7 @@ class ErrorGroup extends \Google\Protobuf\Internal\Message
      * Associated tracking issues.
      *
      * Generated from protobuf field <code>repeated .google.devtools.clouderrorreporting.v1beta1.TrackingIssue tracking_issues = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Devtools\Clouderrorreporting\V1beta1\TrackingIssue[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setTrackingIssues(&$var)
     {

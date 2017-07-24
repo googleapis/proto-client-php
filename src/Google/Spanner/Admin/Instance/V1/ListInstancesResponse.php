@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The response for [ListInstances][google.spanner.admin.instance.v1.InstanceAdmin.ListInstances].
  *
- * Protobuf type <code>Google\Spanner\Admin\Instance\V1\ListInstancesResponse</code>
+ * Generated from protobuf message <code>google.spanner.admin.instance.v1.ListInstancesResponse</code>
  */
 class ListInstancesResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class ListInstancesResponse extends \Google\Protobuf\Internal\Message
      * The list of requested instances.
      *
      * Generated from protobuf field <code>repeated .google.spanner.admin.instance.v1.Instance instances = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Spanner\Admin\Instance\V1\Instance[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setInstances(&$var)
     {

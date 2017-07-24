@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Response for the `ListSnapshots` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\ListSnapshotsResponse</code>
+ * Generated from protobuf message <code>google.pubsub.v1.ListSnapshotsResponse</code>
  */
 class ListSnapshotsResponse extends \Google\Protobuf\Internal\Message
 {
@@ -49,7 +49,7 @@ class ListSnapshotsResponse extends \Google\Protobuf\Internal\Message
      * The resulting snapshots.
      *
      * Generated from protobuf field <code>repeated .google.pubsub.v1.Snapshot snapshots = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Pubsub\V1\Snapshot[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setSnapshots(&$var)
     {

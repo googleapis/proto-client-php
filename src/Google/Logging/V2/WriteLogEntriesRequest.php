@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to WriteLogEntries.
  *
- * Protobuf type <code>Google\Logging\V2\WriteLogEntriesRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.WriteLogEntriesRequest</code>
  */
 class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
 {
@@ -168,7 +168,7 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      * See [LogEntry][google.logging.v2.LogEntry].
      *
      * Generated from protobuf field <code>map<string, string> labels = 3;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getLabels()
     {
@@ -182,7 +182,7 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      * See [LogEntry][google.logging.v2.LogEntry].
      *
      * Generated from protobuf field <code>map<string, string> labels = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setLabels(&$var)
     {
@@ -229,7 +229,7 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      * calling this method for each individual log entry.
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogEntry entries = 4;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Logging\V2\LogEntry[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setEntries(&$var)
     {

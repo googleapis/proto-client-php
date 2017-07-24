@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Deletes all events in the project.
  *
- * Protobuf type <code>Google\Devtools\Clouderrorreporting\V1beta1\DeleteEventsRequest</code>
+ * Generated from protobuf message <code>google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest</code>
  */
 class DeleteEventsRequest extends \Google\Protobuf\Internal\Message
 {

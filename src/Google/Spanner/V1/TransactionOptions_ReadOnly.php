@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Options for read-only transactions.
  *
- * Protobuf type <code>Google\Spanner\V1\TransactionOptions\ReadOnly</code>
+ * Generated from protobuf message <code>google.spanner.v1.TransactionOptions.ReadOnly</code>
  */
 class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
 {

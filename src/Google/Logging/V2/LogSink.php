@@ -15,7 +15,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * exported. The sink must be created within a project, organization, billing
  * account, or folder.
  *
- * Protobuf type <code>Google\Logging\V2\LogSink</code>
+ * Generated from protobuf message <code>google.logging.v2.LogSink</code>
  */
 class LogSink extends \Google\Protobuf\Internal\Message
 {

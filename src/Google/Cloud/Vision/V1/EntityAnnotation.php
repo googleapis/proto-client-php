@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Set of detected entity features.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\EntityAnnotation</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.EntityAnnotation</code>
  */
 class EntityAnnotation extends \Google\Protobuf\Internal\Message
 {
@@ -300,7 +300,7 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      * Location information is usually present for landmarks.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.LocationInfo locations = 8;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\LocationInfo[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setLocations(&$var)
     {
@@ -325,7 +325,7 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      * fields, such a score or string that qualifies the entity.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Property properties = 9;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\Property[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setProperties(&$var)
     {

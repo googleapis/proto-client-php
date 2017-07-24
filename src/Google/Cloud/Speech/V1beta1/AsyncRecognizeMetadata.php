@@ -13,7 +13,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * included in the `metadata` field of the `Operation` returned by the
  * `GetOperation` call of the `google::longrunning::Operations` service.
  *
- * Protobuf type <code>Google\Cloud\Speech\V1beta1\AsyncRecognizeMetadata</code>
+ * Generated from protobuf message <code>google.cloud.speech.v1beta1.AsyncRecognizeMetadata</code>
  */
 class AsyncRecognizeMetadata extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Detected start or end of a structural component.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\TextAnnotation\DetectedBreak</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.TextAnnotation.DetectedBreak</code>
  */
 class TextAnnotation_DetectedBreak extends \Google\Protobuf\Internal\Message
 {

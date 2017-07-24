@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to `ListLogEntries`.
  *
- * Protobuf type <code>Google\Logging\V2\ListLogEntriesRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.ListLogEntriesRequest</code>
  */
 class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
 {
@@ -106,7 +106,7 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      * `resource_names`.
      *
      * Generated from protobuf field <code>repeated string project_ids = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setProjectIds(&$var)
     {
@@ -141,7 +141,7 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      * Projects listed in the `project_ids` field are added to this list.
      *
      * Generated from protobuf field <code>repeated string resource_names = 8;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setResourceNames(&$var)
     {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to `GetSink`.
  *
- * Protobuf type <code>Google\Logging\V2\GetSinkRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.GetSinkRequest</code>
  */
 class GetSinkRequest extends \Google\Protobuf\Internal\Message
 {

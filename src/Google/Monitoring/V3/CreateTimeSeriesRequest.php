@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `CreateTimeSeries` request.
  *
- * Protobuf type <code>Google\Monitoring\V3\CreateTimeSeriesRequest</code>
+ * Generated from protobuf message <code>google.monitoring.v3.CreateTimeSeriesRequest</code>
  */
 class CreateTimeSeriesRequest extends \Google\Protobuf\Internal\Message
 {
@@ -86,7 +86,7 @@ class CreateTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      * all label values for the metric and the monitored resource.
      *
      * Generated from protobuf field <code>repeated .google.monitoring.v3.TimeSeries time_series = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Monitoring\V3\TimeSeries[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setTimeSeries(&$var)
     {

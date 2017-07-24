@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `UpdateGroup` request.
  *
- * Protobuf type <code>Google\Monitoring\V3\UpdateGroupRequest</code>
+ * Generated from protobuf message <code>google.monitoring.v3.UpdateGroupRequest</code>
  */
 class UpdateGroupRequest extends \Google\Protobuf\Internal\Message
 {

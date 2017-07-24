@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * A single symbol representation.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\Symbol</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.Symbol</code>
  */
 class Symbol extends \Google\Protobuf\Internal\Message
 {

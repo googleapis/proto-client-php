@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Result returned from `ListSinks`.
  *
- * Protobuf type <code>Google\Logging\V2\ListSinksResponse</code>
+ * Generated from protobuf message <code>google.logging.v2.ListSinksResponse</code>
  */
 class ListSinksResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class ListSinksResponse extends \Google\Protobuf\Internal\Message
      * A list of sinks.
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogSink sinks = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Logging\V2\LogSink[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setSinks(&$var)
     {

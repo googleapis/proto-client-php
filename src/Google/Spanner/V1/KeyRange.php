@@ -70,7 +70,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Note that 100 is passed as the start, and 1 is passed as the end,
  * because `Key` is a descending column in the schema.
  *
- * Protobuf type <code>Google\Spanner\V1\KeyRange</code>
+ * Generated from protobuf message <code>google.spanner.v1.KeyRange</code>
  */
 class KeyRange extends \Google\Protobuf\Internal\Message
 {

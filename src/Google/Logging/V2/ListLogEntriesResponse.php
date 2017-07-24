@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Result returned from `ListLogEntries`.
  *
- * Protobuf type <code>Google\Logging\V2\ListLogEntriesResponse</code>
+ * Generated from protobuf message <code>google.logging.v2.ListLogEntriesResponse</code>
  */
 class ListLogEntriesResponse extends \Google\Protobuf\Internal\Message
 {
@@ -56,7 +56,7 @@ class ListLogEntriesResponse extends \Google\Protobuf\Internal\Message
      * A list of log entries.
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogEntry entries = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Logging\V2\LogEntry[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setEntries(&$var)
     {

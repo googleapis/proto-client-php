@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The response for [Commit][google.spanner.v1.Spanner.Commit].
  *
- * Protobuf type <code>Google\Spanner\V1\CommitResponse</code>
+ * Generated from protobuf message <code>google.spanner.v1.CommitResponse</code>
  */
 class CommitResponse extends \Google\Protobuf\Internal\Message
 {

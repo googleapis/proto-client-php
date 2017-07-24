@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Options for read-write transactions.
  *
- * Protobuf type <code>Google\Spanner\V1\TransactionOptions\ReadWrite</code>
+ * Generated from protobuf message <code>google.spanner.v1.TransactionOptions.ReadWrite</code>
  */
 class TransactionOptions_ReadWrite extends \Google\Protobuf\Internal\Message
 {

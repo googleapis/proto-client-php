@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Additional information detected on the structural component.
  *
- * Protobuf type <code>Google\Cloud\Vision\V1\TextAnnotation\TextProperty</code>
+ * Generated from protobuf message <code>google.cloud.vision.v1.TextAnnotation.TextProperty</code>
  */
 class TextAnnotation_TextProperty extends \Google\Protobuf\Internal\Message
 {
@@ -48,7 +48,7 @@ class TextAnnotation_TextProperty extends \Google\Protobuf\Internal\Message
      * A list of detected languages together with confidence.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.TextAnnotation.DetectedLanguage detected_languages = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Vision\V1\TextAnnotation_DetectedLanguage[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setDetectedLanguages(&$var)
     {

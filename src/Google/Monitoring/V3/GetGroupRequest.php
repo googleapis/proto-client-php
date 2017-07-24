@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `GetGroup` request.
  *
- * Protobuf type <code>Google\Monitoring\V3\GetGroupRequest</code>
+ * Generated from protobuf message <code>google.monitoring.v3.GetGroupRequest</code>
  */
 class GetGroupRequest extends \Google\Protobuf\Internal\Message
 {

@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Arguments to [delete][google.spanner.v1.Mutation.delete] operations.
  *
- * Protobuf type <code>Google\Spanner\V1\Mutation\Delete</code>
+ * Generated from protobuf message <code>google.spanner.v1.Mutation.Delete</code>
  */
 class Mutation_Delete extends \Google\Protobuf\Internal\Message
 {

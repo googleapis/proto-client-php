@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to ListMonitoredResourceDescriptors
  *
- * Protobuf type <code>Google\Logging\V2\ListMonitoredResourceDescriptorsRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.ListMonitoredResourceDescriptorsRequest</code>
  */
 class ListMonitoredResourceDescriptorsRequest extends \Google\Protobuf\Internal\Message
 {

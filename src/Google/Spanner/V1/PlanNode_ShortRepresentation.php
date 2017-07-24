@@ -12,7 +12,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * Condensed representation of a node and its subtree. Only present for
  * `SCALAR` [PlanNode(s)][google.spanner.v1.PlanNode].
  *
- * Protobuf type <code>Google\Spanner\V1\PlanNode\ShortRepresentation</code>
+ * Generated from protobuf message <code>google.spanner.v1.PlanNode.ShortRepresentation</code>
  */
 class PlanNode_ShortRepresentation extends \Google\Protobuf\Internal\Message
 {
@@ -69,7 +69,7 @@ class PlanNode_ShortRepresentation extends \Google\Protobuf\Internal\Message
      * this node.
      *
      * Generated from protobuf field <code>map<string, int32> subqueries = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getSubqueries()
     {
@@ -84,7 +84,7 @@ class PlanNode_ShortRepresentation extends \Google\Protobuf\Internal\Message
      * this node.
      *
      * Generated from protobuf field <code>map<string, int32> subqueries = 2;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array|\Google\Protobuf\Internal\MapField $var
      */
     public function setSubqueries(&$var)
     {

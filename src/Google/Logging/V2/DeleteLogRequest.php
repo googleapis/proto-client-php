@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The parameters to DeleteLog.
  *
- * Protobuf type <code>Google\Logging\V2\DeleteLogRequest</code>
+ * Generated from protobuf message <code>google.logging.v2.DeleteLogRequest</code>
  */
 class DeleteLogRequest extends \Google\Protobuf\Internal\Message
 {

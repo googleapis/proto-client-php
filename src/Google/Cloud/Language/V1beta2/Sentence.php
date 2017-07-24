@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Represents a sentence in the input document.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\Sentence</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.Sentence</code>
  */
 class Sentence extends \Google\Protobuf\Internal\Message
 {

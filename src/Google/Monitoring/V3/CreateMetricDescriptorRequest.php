@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The `CreateMetricDescriptor` request.
  *
- * Protobuf type <code>Google\Monitoring\V3\CreateMetricDescriptorRequest</code>
+ * Generated from protobuf message <code>google.monitoring.v3.CreateMetricDescriptorRequest</code>
  */
 class CreateMetricDescriptorRequest extends \Google\Protobuf\Internal\Message
 {

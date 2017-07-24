@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Request for the `Seek` method.
  *
- * Protobuf type <code>Google\Pubsub\V1\SeekRequest</code>
+ * Generated from protobuf message <code>google.pubsub.v1.SeekRequest</code>
  */
 class SeekRequest extends \Google\Protobuf\Internal\Message
 {

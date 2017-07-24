@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * The entity analysis response message.
  *
- * Protobuf type <code>Google\Cloud\Language\V1beta2\AnalyzeEntitiesResponse</code>
+ * Generated from protobuf message <code>google.cloud.language.v1beta2.AnalyzeEntitiesResponse</code>
  */
 class AnalyzeEntitiesResponse extends \Google\Protobuf\Internal\Message
 {
@@ -50,7 +50,7 @@ class AnalyzeEntitiesResponse extends \Google\Protobuf\Internal\Message
      * The recognized entities in the input document.
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Entity entities = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Language\V1beta2\Entity[]|\Google\Protobuf\Internal\RepeatedField $var
      */
     public function setEntities(&$var)
     {
