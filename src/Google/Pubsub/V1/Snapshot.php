@@ -41,6 +41,12 @@ class Snapshot extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Timestamp expire_time = 3;</code>
      */
     private $expire_time = null;
+    /**
+     * User labels.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 4;</code>
+     */
+    private $labels;
 
     public function __construct() {
         \GPBMetadata\Google\Pubsub\V1\Pubsub::initOnce();
@@ -130,6 +136,29 @@ class Snapshot extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expire_time = $var;
+    }
+
+    /**
+     * User labels.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 4;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getLabels()
+    {
+        return $this->labels;
+    }
+
+    /**
+     * User labels.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 4;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     */
+    public function setLabels(&$var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
 }

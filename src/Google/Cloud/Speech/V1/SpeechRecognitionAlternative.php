@@ -26,13 +26,18 @@ class SpeechRecognitionAlternative extends \Google\Protobuf\Internal\Message
      * indicates an estimated greater likelihood that the recognized words are
      * correct. This field is typically provided only for the top hypothesis, and
      * only for `is_final=true` results. Clients should not rely on the
-     * `confidence` field as it is not guaranteed to be accurate, or even set, in
-     * any of the results.
+     * `confidence` field as it is not guaranteed to be accurate or consistent.
      * The default of 0.0 is a sentinel value indicating `confidence` was not set.
      *
      * Generated from protobuf field <code>float confidence = 2;</code>
      */
     private $confidence = 0.0;
+    /**
+     * *Output-only* A list of word-specific information for each recognized word.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.speech.v1.WordInfo words = 3;</code>
+     */
+    private $words;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Speech\V1\CloudSpeech::initOnce();
@@ -67,8 +72,7 @@ class SpeechRecognitionAlternative extends \Google\Protobuf\Internal\Message
      * indicates an estimated greater likelihood that the recognized words are
      * correct. This field is typically provided only for the top hypothesis, and
      * only for `is_final=true` results. Clients should not rely on the
-     * `confidence` field as it is not guaranteed to be accurate, or even set, in
-     * any of the results.
+     * `confidence` field as it is not guaranteed to be accurate or consistent.
      * The default of 0.0 is a sentinel value indicating `confidence` was not set.
      *
      * Generated from protobuf field <code>float confidence = 2;</code>
@@ -84,8 +88,7 @@ class SpeechRecognitionAlternative extends \Google\Protobuf\Internal\Message
      * indicates an estimated greater likelihood that the recognized words are
      * correct. This field is typically provided only for the top hypothesis, and
      * only for `is_final=true` results. Clients should not rely on the
-     * `confidence` field as it is not guaranteed to be accurate, or even set, in
-     * any of the results.
+     * `confidence` field as it is not guaranteed to be accurate or consistent.
      * The default of 0.0 is a sentinel value indicating `confidence` was not set.
      *
      * Generated from protobuf field <code>float confidence = 2;</code>
@@ -95,6 +98,29 @@ class SpeechRecognitionAlternative extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkFloat($var);
         $this->confidence = $var;
+    }
+
+    /**
+     * *Output-only* A list of word-specific information for each recognized word.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.speech.v1.WordInfo words = 3;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getWords()
+    {
+        return $this->words;
+    }
+
+    /**
+     * *Output-only* A list of word-specific information for each recognized word.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.speech.v1.WordInfo words = 3;</code>
+     * @param \Google\Cloud\Speech\V1\WordInfo[]|\Google\Protobuf\Internal\RepeatedField $var
+     */
+    public function setWords(&$var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\WordInfo::class);
+        $this->words = $arr;
     }
 
 }

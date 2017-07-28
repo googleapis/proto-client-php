@@ -6,9 +6,9 @@ namespace Google\Cloud\Speech\V1;
 
 /**
  * Audio encoding of the data sent in the audio message. All encodings support
- * only 1 channel (mono) audio. Only `FLAC` includes a header that describes
- * the bytes of audio that follow the header. The other encodings are raw
- * audio bytes with no header.
+ * only 1 channel (mono) audio. Only `FLAC` and `WAV` include a header that
+ * describes the bytes of audio that follow the header. The other encodings
+ * are raw audio bytes with no header.
  * For best results, the audio source should be captured and transmitted using
  * a lossless encoding (`FLAC` or `LINEAR16`). Recognition accuracy may be
  * reduced if lossy codecs, which include the other codecs listed in
@@ -20,7 +20,7 @@ namespace Google\Cloud\Speech\V1;
 class RecognitionConfig_AudioEncoding
 {
     /**
-     * Not specified. Will return result [google.rpc.Code.INVALID_ARGUMENT][].
+     * Not specified. Will return result [google.rpc.Code.INVALID_ARGUMENT][google.rpc.Code.INVALID_ARGUMENT].
      *
      * Generated from protobuf enum <code>ENCODING_UNSPECIFIED = 0;</code>
      */

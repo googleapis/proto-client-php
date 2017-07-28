@@ -73,6 +73,10 @@ class SubscriberGrpcClient extends \Grpc\BaseStub {
     /**
      * Updates an existing subscription. Note that certain properties of a
      * subscription, such as its topic, are not modifiable.
+     * NOTE:  The style guide requires body: "subscription" instead of body: "*".
+     * Keeping the latter for internal consistency in V1, however it should be
+     * corrected in V2.  See
+     * https://cloud.google.com/apis/design/standard_methods#update for details.
      * @param \Google\Pubsub\V1\UpdateSubscriptionRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -245,6 +249,25 @@ class SubscriberGrpcClient extends \Grpc\BaseStub {
     public function CreateSnapshot(\Google\Pubsub\V1\CreateSnapshotRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.pubsub.v1.Subscriber/CreateSnapshot',
+        $argument,
+        ['\Google\Pubsub\V1\Snapshot', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Updates an existing snapshot. Note that certain properties of a snapshot
+     * are not modifiable.
+     * NOTE:  The style guide requires body: "snapshot" instead of body: "*".
+     * Keeping the latter for internal consistency in V1, however it should be
+     * corrected in V2.  See
+     * https://cloud.google.com/apis/design/standard_methods#update for details.
+     * @param \Google\Pubsub\V1\UpdateSnapshotRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function UpdateSnapshot(\Google\Pubsub\V1\UpdateSnapshotRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.pubsub.v1.Subscriber/UpdateSnapshot',
         $argument,
         ['\Google\Pubsub\V1\Snapshot', 'decode'],
         $metadata, $options);

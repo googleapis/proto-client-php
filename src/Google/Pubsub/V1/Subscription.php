@@ -84,6 +84,12 @@ class Subscription extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Duration message_retention_duration = 8;</code>
      */
     private $message_retention_duration = null;
+    /**
+     * User labels.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 9;</code>
+     */
+    private $labels;
 
     public function __construct() {
         \GPBMetadata\Google\Pubsub\V1\Pubsub::initOnce();
@@ -292,6 +298,29 @@ class Subscription extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->message_retention_duration = $var;
+    }
+
+    /**
+     * User labels.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 9;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getLabels()
+    {
+        return $this->labels;
+    }
+
+    /**
+     * User labels.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 9;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     */
+    public function setLabels(&$var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
 }

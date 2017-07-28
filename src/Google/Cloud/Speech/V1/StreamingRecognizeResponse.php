@@ -25,13 +25,12 @@ use Google\Protobuf\Internal\GPBUtil;
  * 5. results { alternatives { transcript: " that's" } stability: 0.01 }
  * 6. results { alternatives { transcript: " that is" } stability: 0.9 }
  *    results { alternatives { transcript: " the question" } stability: 0.01 }
- * 7. speech_event_type: END_OF_SINGLE_UTTERANCE
- * 8. results { alternatives { transcript: " that is the question"
+ * 7. results { alternatives { transcript: " that is the question"
  *                             confidence: 0.98 }
  *              alternatives { transcript: " that was the question" }
  *              is_final: true }
  * Notes:
- * - Only two of the above responses #4 and #8 contain final results; they are
+ * - Only two of the above responses #4 and #7 contain final results; they are
  *   indicated by `is_final: true`. Concatenating these together generates the
  *   full transcript: "to be or not to be that is the question".
  * - The others contain interim `results`. #3 and #6 contain two interim
@@ -50,7 +49,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * *Output-only* If set, returns a [google.rpc.Status][] message that
+     * *Output-only* If set, returns a [google.rpc.Status][google.rpc.Status] message that
      * specifies the error for the operation.
      *
      * Generated from protobuf field <code>.google.rpc.Status error = 1;</code>
@@ -78,7 +77,7 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * *Output-only* If set, returns a [google.rpc.Status][] message that
+     * *Output-only* If set, returns a [google.rpc.Status][google.rpc.Status] message that
      * specifies the error for the operation.
      *
      * Generated from protobuf field <code>.google.rpc.Status error = 1;</code>
@@ -90,7 +89,7 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * *Output-only* If set, returns a [google.rpc.Status][] message that
+     * *Output-only* If set, returns a [google.rpc.Status][google.rpc.Status] message that
      * specifies the error for the operation.
      *
      * Generated from protobuf field <code>.google.rpc.Status error = 1;</code>

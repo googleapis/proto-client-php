@@ -26,6 +26,12 @@ class Topic extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string name = 1;</code>
      */
     private $name = '';
+    /**
+     * User labels.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 2;</code>
+     */
+    private $labels;
 
     public function __construct() {
         \GPBMetadata\Google\Pubsub\V1\Pubsub::initOnce();
@@ -63,6 +69,29 @@ class Topic extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+    }
+
+    /**
+     * User labels.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 2;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getLabels()
+    {
+        return $this->labels;
+    }
+
+    /**
+     * User labels.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 2;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     */
+    public function setLabels(&$var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
 }

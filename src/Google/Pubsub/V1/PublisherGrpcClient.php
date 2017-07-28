@@ -48,6 +48,25 @@ class PublisherGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Updates an existing topic. Note that certain properties of a topic are not
+     * modifiable.  Options settings follow the style guide:
+     * NOTE:  The style guide requires body: "topic" instead of body: "*".
+     * Keeping the latter for internal consistency in V1, however it should be
+     * corrected in V2.  See
+     * https://cloud.google.com/apis/design/standard_methods#update for details.
+     * @param \Google\Pubsub\V1\UpdateTopicRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function UpdateTopic(\Google\Pubsub\V1\UpdateTopicRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.pubsub.v1.Publisher/UpdateTopic',
+        $argument,
+        ['\Google\Pubsub\V1\Topic', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Adds one or more messages to the topic. Returns `NOT_FOUND` if the topic
      * does not exist. The message payload must not be empty; it must contain
      *  either a non-empty data field, or at least one attribute.

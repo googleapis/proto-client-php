@@ -68,6 +68,15 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1.SpeechContext speech_contexts = 6;</code>
      */
     private $speech_contexts;
+    /**
+     * *Optional* If `true`, the top result includes a list of words and
+     * the start and end time offsets (timestamps) for those words. If
+     * `false`, no word-level time offset information is returned. The default is
+     * `false`.
+     *
+     * Generated from protobuf field <code>bool enable_word_time_offsets = 8;</code>
+     */
+    private $enable_word_time_offsets = false;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Speech\V1\CloudSpeech::initOnce();
@@ -242,6 +251,35 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\SpeechContext::class);
         $this->speech_contexts = $arr;
+    }
+
+    /**
+     * *Optional* If `true`, the top result includes a list of words and
+     * the start and end time offsets (timestamps) for those words. If
+     * `false`, no word-level time offset information is returned. The default is
+     * `false`.
+     *
+     * Generated from protobuf field <code>bool enable_word_time_offsets = 8;</code>
+     * @return bool
+     */
+    public function getEnableWordTimeOffsets()
+    {
+        return $this->enable_word_time_offsets;
+    }
+
+    /**
+     * *Optional* If `true`, the top result includes a list of words and
+     * the start and end time offsets (timestamps) for those words. If
+     * `false`, no word-level time offset information is returned. The default is
+     * `false`.
+     *
+     * Generated from protobuf field <code>bool enable_word_time_offsets = 8;</code>
+     * @param bool $var
+     */
+    public function setEnableWordTimeOffsets($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->enable_word_time_offsets = $var;
     }
 
 }
