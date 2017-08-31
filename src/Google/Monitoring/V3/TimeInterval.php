@@ -53,11 +53,14 @@ class TimeInterval extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp end_time = 2;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setEndTime(&$var)
+    public function setEndTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->end_time = $var;
+
+        return $this;
     }
 
     /**
@@ -80,11 +83,14 @@ class TimeInterval extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp start_time = 1;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setStartTime(&$var)
+    public function setStartTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->start_time = $var;
+
+        return $this;
     }
 
 }

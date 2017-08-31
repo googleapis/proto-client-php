@@ -71,11 +71,14 @@ class StreamingRecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.speech.v1.RecognitionConfig config = 1;</code>
      * @param \Google\Cloud\Speech\V1\RecognitionConfig $var
+     * @return $this
      */
-    public function setConfig(&$var)
+    public function setConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Speech\V1\RecognitionConfig::class);
         $this->config = $var;
+
+        return $this;
     }
 
     /**
@@ -112,11 +115,14 @@ class StreamingRecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool single_utterance = 2;</code>
      * @param bool $var
+     * @return $this
      */
     public function setSingleUtterance($var)
     {
         GPBUtil::checkBool($var);
         $this->single_utterance = $var;
+
+        return $this;
     }
 
     /**
@@ -141,11 +147,14 @@ class StreamingRecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool interim_results = 3;</code>
      * @param bool $var
+     * @return $this
      */
     public function setInterimResults($var)
     {
         GPBUtil::checkBool($var);
         $this->interim_results = $var;
+
+        return $this;
     }
 
 }

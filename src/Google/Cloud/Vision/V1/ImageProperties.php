@@ -43,11 +43,14 @@ class ImageProperties extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.DominantColorsAnnotation dominant_colors = 1;</code>
      * @param \Google\Cloud\Vision\V1\DominantColorsAnnotation $var
+     * @return $this
      */
-    public function setDominantColors(&$var)
+    public function setDominantColors($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\DominantColorsAnnotation::class);
         $this->dominant_colors = $var;
+
+        return $this;
     }
 
 }

@@ -66,11 +66,14 @@ class PlanNode_ChildLink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 child_index = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setChildIndex($var)
     {
         GPBUtil::checkInt32($var);
         $this->child_index = $var;
+
+        return $this;
     }
 
     /**
@@ -95,11 +98,14 @@ class PlanNode_ChildLink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string type = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkString($var, True);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
@@ -132,11 +138,14 @@ class PlanNode_ChildLink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string variable = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setVariable($var)
     {
         GPBUtil::checkString($var, True);
         $this->variable = $var;
+
+        return $this;
     }
 
 }

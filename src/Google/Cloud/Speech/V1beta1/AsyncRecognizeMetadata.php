@@ -60,11 +60,14 @@ class AsyncRecognizeMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 progress_percent = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setProgressPercent($var)
     {
         GPBUtil::checkInt32($var);
         $this->progress_percent = $var;
+
+        return $this;
     }
 
     /**
@@ -83,11 +86,14 @@ class AsyncRecognizeMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp start_time = 2;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setStartTime(&$var)
+    public function setStartTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->start_time = $var;
+
+        return $this;
     }
 
     /**
@@ -106,11 +112,14 @@ class AsyncRecognizeMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp last_update_time = 3;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setLastUpdateTime(&$var)
+    public function setLastUpdateTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->last_update_time = $var;
+
+        return $this;
     }
 
 }

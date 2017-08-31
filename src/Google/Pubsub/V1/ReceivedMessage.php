@@ -49,11 +49,14 @@ class ReceivedMessage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string ack_id = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setAckId($var)
     {
         GPBUtil::checkString($var, True);
         $this->ack_id = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class ReceivedMessage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.pubsub.v1.PubsubMessage message = 2;</code>
      * @param \Google\Pubsub\V1\PubsubMessage $var
+     * @return $this
      */
-    public function setMessage(&$var)
+    public function setMessage($var)
     {
         GPBUtil::checkMessage($var, \Google\Pubsub\V1\PubsubMessage::class);
         $this->message = $var;
+
+        return $this;
     }
 
 }

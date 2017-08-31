@@ -101,11 +101,14 @@ class ListTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project_id = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setProjectId($var)
     {
         GPBUtil::checkString($var, True);
         $this->project_id = $var;
+
+        return $this;
     }
 
     /**
@@ -126,11 +129,14 @@ class ListTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.cloudtrace.v1.ListTracesRequest.ViewType view = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setView($var)
     {
         GPBUtil::checkEnum($var, \Google\Devtools\Cloudtrace\V1\ListTracesRequest_ViewType::class);
         $this->view = $var;
+
+        return $this;
     }
 
     /**
@@ -153,11 +159,14 @@ class ListTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 page_size = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setPageSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_size = $var;
+
+        return $this;
     }
 
     /**
@@ -178,11 +187,14 @@ class ListTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string page_token = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->page_token = $var;
+
+        return $this;
     }
 
     /**
@@ -203,11 +215,14 @@ class ListTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp start_time = 5;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setStartTime(&$var)
+    public function setStartTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->start_time = $var;
+
+        return $this;
     }
 
     /**
@@ -228,11 +243,14 @@ class ListTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp end_time = 6;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setEndTime(&$var)
+    public function setEndTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->end_time = $var;
+
+        return $this;
     }
 
     /**
@@ -251,11 +269,14 @@ class ListTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string filter = 7;</code>
      * @param string $var
+     * @return $this
      */
     public function setFilter($var)
     {
         GPBUtil::checkString($var, True);
         $this->filter = $var;
+
+        return $this;
     }
 
     /**
@@ -292,11 +313,14 @@ class ListTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string order_by = 8;</code>
      * @param string $var
+     * @return $this
      */
     public function setOrderBy($var)
     {
         GPBUtil::checkString($var, True);
         $this->order_by = $var;
+
+        return $this;
     }
 
 }

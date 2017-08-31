@@ -70,11 +70,14 @@ class DeleteLogRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string log_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setLogName($var)
     {
         GPBUtil::checkString($var, True);
         $this->log_name = $var;
+
+        return $this;
     }
 
 }

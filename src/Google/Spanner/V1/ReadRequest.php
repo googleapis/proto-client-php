@@ -103,11 +103,14 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string session = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSession($var)
     {
         GPBUtil::checkString($var, True);
         $this->session = $var;
+
+        return $this;
     }
 
     /**
@@ -128,11 +131,14 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionSelector transaction = 2;</code>
      * @param \Google\Spanner\V1\TransactionSelector $var
+     * @return $this
      */
-    public function setTransaction(&$var)
+    public function setTransaction($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\TransactionSelector::class);
         $this->transaction = $var;
+
+        return $this;
     }
 
     /**
@@ -151,11 +157,14 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string table = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setTable($var)
     {
         GPBUtil::checkString($var, True);
         $this->table = $var;
+
+        return $this;
     }
 
     /**
@@ -178,11 +187,14 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string index = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setIndex($var)
     {
         GPBUtil::checkString($var, True);
         $this->index = $var;
+
+        return $this;
     }
 
     /**
@@ -203,11 +215,14 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string columns = 5;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setColumns(&$var)
+    public function setColumns($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->columns = $arr;
+
+        return $this;
     }
 
     /**
@@ -240,11 +255,14 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.KeySet key_set = 6;</code>
      * @param \Google\Spanner\V1\KeySet $var
+     * @return $this
      */
-    public function setKeySet(&$var)
+    public function setKeySet($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\KeySet::class);
         $this->key_set = $var;
+
+        return $this;
     }
 
     /**
@@ -265,11 +283,14 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 limit = 8;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setLimit($var)
     {
         GPBUtil::checkInt64($var);
         $this->limit = $var;
+
+        return $this;
     }
 
     /**
@@ -298,11 +319,14 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes resume_token = 9;</code>
      * @param string $var
+     * @return $this
      */
     public function setResumeToken($var)
     {
         GPBUtil::checkString($var, False);
         $this->resume_token = $var;
+
+        return $this;
     }
 
 }

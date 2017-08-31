@@ -57,11 +57,14 @@ class Position extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float x = 1;</code>
      * @param float $var
+     * @return $this
      */
     public function setX($var)
     {
         GPBUtil::checkFloat($var);
         $this->x = $var;
+
+        return $this;
     }
 
     /**
@@ -80,11 +83,14 @@ class Position extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float y = 2;</code>
      * @param float $var
+     * @return $this
      */
     public function setY($var)
     {
         GPBUtil::checkFloat($var);
         $this->y = $var;
+
+        return $this;
     }
 
     /**
@@ -103,11 +109,14 @@ class Position extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float z = 3;</code>
      * @param float $var
+     * @return $this
      */
     public function setZ($var)
     {
         GPBUtil::checkFloat($var);
         $this->z = $var;
+
+        return $this;
     }
 
 }

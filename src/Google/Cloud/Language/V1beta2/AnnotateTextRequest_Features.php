@@ -40,6 +40,12 @@ class AnnotateTextRequest_Features extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool extract_entity_sentiment = 4;</code>
      */
     private $extract_entity_sentiment = false;
+    /**
+     * Classify the full document into categories.
+     *
+     * Generated from protobuf field <code>bool classify_text = 6;</code>
+     */
+    private $classify_text = false;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Language\V1Beta2\LanguageService::initOnce();
@@ -62,11 +68,14 @@ class AnnotateTextRequest_Features extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool extract_syntax = 1;</code>
      * @param bool $var
+     * @return $this
      */
     public function setExtractSyntax($var)
     {
         GPBUtil::checkBool($var);
         $this->extract_syntax = $var;
+
+        return $this;
     }
 
     /**
@@ -85,11 +94,14 @@ class AnnotateTextRequest_Features extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool extract_entities = 2;</code>
      * @param bool $var
+     * @return $this
      */
     public function setExtractEntities($var)
     {
         GPBUtil::checkBool($var);
         $this->extract_entities = $var;
+
+        return $this;
     }
 
     /**
@@ -108,11 +120,14 @@ class AnnotateTextRequest_Features extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool extract_document_sentiment = 3;</code>
      * @param bool $var
+     * @return $this
      */
     public function setExtractDocumentSentiment($var)
     {
         GPBUtil::checkBool($var);
         $this->extract_document_sentiment = $var;
+
+        return $this;
     }
 
     /**
@@ -131,11 +146,40 @@ class AnnotateTextRequest_Features extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool extract_entity_sentiment = 4;</code>
      * @param bool $var
+     * @return $this
      */
     public function setExtractEntitySentiment($var)
     {
         GPBUtil::checkBool($var);
         $this->extract_entity_sentiment = $var;
+
+        return $this;
+    }
+
+    /**
+     * Classify the full document into categories.
+     *
+     * Generated from protobuf field <code>bool classify_text = 6;</code>
+     * @return bool
+     */
+    public function getClassifyText()
+    {
+        return $this->classify_text;
+    }
+
+    /**
+     * Classify the full document into categories.
+     *
+     * Generated from protobuf field <code>bool classify_text = 6;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setClassifyText($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->classify_text = $var;
+
+        return $this;
     }
 
 }

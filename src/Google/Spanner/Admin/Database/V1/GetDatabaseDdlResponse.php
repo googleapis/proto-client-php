@@ -46,11 +46,14 @@ class GetDatabaseDdlResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string statements = 1;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setStatements(&$var)
+    public function setStatements($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->statements = $arr;
+
+        return $this;
     }
 
 }

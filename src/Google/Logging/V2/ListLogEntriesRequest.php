@@ -107,11 +107,14 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string project_ids = 1;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setProjectIds(&$var)
+    public function setProjectIds($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->project_ids = $arr;
+
+        return $this;
     }
 
     /**
@@ -142,11 +145,14 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string resource_names = 8;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setResourceNames(&$var)
+    public function setResourceNames($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->resource_names = $arr;
+
+        return $this;
     }
 
     /**
@@ -177,11 +183,14 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string filter = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setFilter($var)
     {
         GPBUtil::checkString($var, True);
         $this->filter = $var;
+
+        return $this;
     }
 
     /**
@@ -210,11 +219,14 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string order_by = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setOrderBy($var)
     {
         GPBUtil::checkString($var, True);
         $this->order_by = $var;
+
+        return $this;
     }
 
     /**
@@ -237,11 +249,14 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 page_size = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setPageSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_size = $var;
+
+        return $this;
     }
 
     /**
@@ -266,11 +281,14 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string page_token = 5;</code>
      * @param string $var
+     * @return $this
      */
     public function setPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->page_token = $var;
+
+        return $this;
     }
 
 }

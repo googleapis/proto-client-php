@@ -64,11 +64,14 @@ class PullRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string subscription = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSubscription($var)
     {
         GPBUtil::checkString($var, True);
         $this->subscription = $var;
+
+        return $this;
     }
 
     /**
@@ -97,11 +100,14 @@ class PullRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool return_immediately = 2;</code>
      * @param bool $var
+     * @return $this
      */
     public function setReturnImmediately($var)
     {
         GPBUtil::checkBool($var);
         $this->return_immediately = $var;
+
+        return $this;
     }
 
     /**
@@ -122,11 +128,14 @@ class PullRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 max_messages = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setMaxMessages($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_messages = $var;
+
+        return $this;
     }
 
 }

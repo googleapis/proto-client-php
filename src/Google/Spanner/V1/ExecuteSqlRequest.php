@@ -103,11 +103,14 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string session = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSession($var)
     {
         GPBUtil::checkString($var, True);
         $this->session = $var;
+
+        return $this;
     }
 
     /**
@@ -128,11 +131,14 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionSelector transaction = 2;</code>
      * @param \Google\Spanner\V1\TransactionSelector $var
+     * @return $this
      */
-    public function setTransaction(&$var)
+    public function setTransaction($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\TransactionSelector::class);
         $this->transaction = $var;
+
+        return $this;
     }
 
     /**
@@ -151,11 +157,14 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string sql = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setSql($var)
     {
         GPBUtil::checkString($var, True);
         $this->sql = $var;
+
+        return $this;
     }
 
     /**
@@ -194,11 +203,14 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Struct params = 4;</code>
      * @param \Google\Protobuf\Struct $var
+     * @return $this
      */
-    public function setParams(&$var)
+    public function setParams($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
         $this->params = $var;
+
+        return $this;
     }
 
     /**
@@ -229,11 +241,14 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, .google.spanner.v1.Type> param_types = 5;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setParamTypes(&$var)
+    public function setParamTypes($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\Type::class);
         $this->param_types = $arr;
+
+        return $this;
     }
 
     /**
@@ -262,11 +277,14 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes resume_token = 6;</code>
      * @param string $var
+     * @return $this
      */
     public function setResumeToken($var)
     {
         GPBUtil::checkString($var, False);
         $this->resume_token = $var;
+
+        return $this;
     }
 
     /**
@@ -287,11 +305,14 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.ExecuteSqlRequest.QueryMode query_mode = 7;</code>
      * @param int $var
+     * @return $this
      */
     public function setQueryMode($var)
     {
         GPBUtil::checkEnum($var, \Google\Spanner\V1\ExecuteSqlRequest_QueryMode::class);
         $this->query_mode = $var;
+
+        return $this;
     }
 
 }

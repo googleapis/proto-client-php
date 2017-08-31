@@ -93,11 +93,14 @@ class TraceSpan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>fixed64 span_id = 1;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setSpanId($var)
     {
         GPBUtil::checkUint64($var);
         $this->span_id = $var;
+
+        return $this;
     }
 
     /**
@@ -120,11 +123,14 @@ class TraceSpan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.cloudtrace.v1.TraceSpan.SpanKind kind = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setKind($var)
     {
         GPBUtil::checkEnum($var, \Google\Devtools\Cloudtrace\V1\TraceSpan_SpanKind::class);
         $this->kind = $var;
+
+        return $this;
     }
 
     /**
@@ -153,11 +159,14 @@ class TraceSpan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -176,11 +185,14 @@ class TraceSpan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp start_time = 4;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setStartTime(&$var)
+    public function setStartTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->start_time = $var;
+
+        return $this;
     }
 
     /**
@@ -199,11 +211,14 @@ class TraceSpan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp end_time = 5;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setEndTime(&$var)
+    public function setEndTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->end_time = $var;
+
+        return $this;
     }
 
     /**
@@ -222,11 +237,14 @@ class TraceSpan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>fixed64 parent_span_id = 6;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setParentSpanId($var)
     {
         GPBUtil::checkUint64($var);
         $this->parent_span_id = $var;
+
+        return $this;
     }
 
     /**
@@ -245,11 +263,14 @@ class TraceSpan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> labels = 7;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setLabels(&$var)
+    public function setLabels($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->labels = $arr;
+
+        return $this;
     }
 
 }

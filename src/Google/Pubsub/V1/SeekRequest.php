@@ -44,11 +44,14 @@ class SeekRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string subscription = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSubscription($var)
     {
         GPBUtil::checkString($var, True);
         $this->subscription = $var;
+
+        return $this;
     }
 
     /**
@@ -87,11 +90,14 @@ class SeekRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp time = 2;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setTime(&$var)
+    public function setTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -114,11 +120,14 @@ class SeekRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string snapshot = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setSnapshot($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**

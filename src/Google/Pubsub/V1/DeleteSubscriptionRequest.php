@@ -46,11 +46,14 @@ class DeleteSubscriptionRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string subscription = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSubscription($var)
     {
         GPBUtil::checkString($var, True);
         $this->subscription = $var;
+
+        return $this;
     }
 
 }

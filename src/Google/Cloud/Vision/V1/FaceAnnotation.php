@@ -155,11 +155,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_poly = 1;</code>
      * @param \Google\Cloud\Vision\V1\BoundingPoly $var
+     * @return $this
      */
-    public function setBoundingPoly(&$var)
+    public function setBoundingPoly($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\BoundingPoly::class);
         $this->bounding_poly = $var;
+
+        return $this;
     }
 
     /**
@@ -188,11 +191,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly fd_bounding_poly = 2;</code>
      * @param \Google\Cloud\Vision\V1\BoundingPoly $var
+     * @return $this
      */
-    public function setFdBoundingPoly(&$var)
+    public function setFdBoundingPoly($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\BoundingPoly::class);
         $this->fd_bounding_poly = $var;
+
+        return $this;
     }
 
     /**
@@ -211,11 +217,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.FaceAnnotation.Landmark landmarks = 3;</code>
      * @param \Google\Cloud\Vision\V1\FaceAnnotation_Landmark[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLandmarks(&$var)
+    public function setLandmarks($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\FaceAnnotation_Landmark::class);
         $this->landmarks = $arr;
+
+        return $this;
     }
 
     /**
@@ -238,11 +247,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float roll_angle = 4;</code>
      * @param float $var
+     * @return $this
      */
     public function setRollAngle($var)
     {
         GPBUtil::checkFloat($var);
         $this->roll_angle = $var;
+
+        return $this;
     }
 
     /**
@@ -265,11 +277,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float pan_angle = 5;</code>
      * @param float $var
+     * @return $this
      */
     public function setPanAngle($var)
     {
         GPBUtil::checkFloat($var);
         $this->pan_angle = $var;
+
+        return $this;
     }
 
     /**
@@ -290,11 +305,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float tilt_angle = 6;</code>
      * @param float $var
+     * @return $this
      */
     public function setTiltAngle($var)
     {
         GPBUtil::checkFloat($var);
         $this->tilt_angle = $var;
+
+        return $this;
     }
 
     /**
@@ -313,11 +331,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float detection_confidence = 7;</code>
      * @param float $var
+     * @return $this
      */
     public function setDetectionConfidence($var)
     {
         GPBUtil::checkFloat($var);
         $this->detection_confidence = $var;
+
+        return $this;
     }
 
     /**
@@ -336,11 +357,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float landmarking_confidence = 8;</code>
      * @param float $var
+     * @return $this
      */
     public function setLandmarkingConfidence($var)
     {
         GPBUtil::checkFloat($var);
         $this->landmarking_confidence = $var;
+
+        return $this;
     }
 
     /**
@@ -359,11 +383,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood joy_likelihood = 9;</code>
      * @param int $var
+     * @return $this
      */
     public function setJoyLikelihood($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->joy_likelihood = $var;
+
+        return $this;
     }
 
     /**
@@ -382,11 +409,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood sorrow_likelihood = 10;</code>
      * @param int $var
+     * @return $this
      */
     public function setSorrowLikelihood($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->sorrow_likelihood = $var;
+
+        return $this;
     }
 
     /**
@@ -405,11 +435,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood anger_likelihood = 11;</code>
      * @param int $var
+     * @return $this
      */
     public function setAngerLikelihood($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->anger_likelihood = $var;
+
+        return $this;
     }
 
     /**
@@ -428,11 +461,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood surprise_likelihood = 12;</code>
      * @param int $var
+     * @return $this
      */
     public function setSurpriseLikelihood($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->surprise_likelihood = $var;
+
+        return $this;
     }
 
     /**
@@ -451,11 +487,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood under_exposed_likelihood = 13;</code>
      * @param int $var
+     * @return $this
      */
     public function setUnderExposedLikelihood($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->under_exposed_likelihood = $var;
+
+        return $this;
     }
 
     /**
@@ -474,11 +513,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood blurred_likelihood = 14;</code>
      * @param int $var
+     * @return $this
      */
     public function setBlurredLikelihood($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->blurred_likelihood = $var;
+
+        return $this;
     }
 
     /**
@@ -497,11 +539,14 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood headwear_likelihood = 15;</code>
      * @param int $var
+     * @return $this
      */
     public function setHeadwearLikelihood($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->headwear_likelihood = $var;
+
+        return $this;
     }
 
 }

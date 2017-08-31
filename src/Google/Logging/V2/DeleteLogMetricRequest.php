@@ -46,11 +46,14 @@ class DeleteLogMetricRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string metric_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setMetricName($var)
     {
         GPBUtil::checkString($var, True);
         $this->metric_name = $var;
+
+        return $this;
     }
 
 }

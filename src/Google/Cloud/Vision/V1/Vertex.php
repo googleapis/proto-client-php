@@ -50,11 +50,14 @@ class Vertex extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 x = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setX($var)
     {
         GPBUtil::checkInt32($var);
         $this->x = $var;
+
+        return $this;
     }
 
     /**
@@ -73,11 +76,14 @@ class Vertex extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 y = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setY($var)
     {
         GPBUtil::checkInt32($var);
         $this->y = $var;
+
+        return $this;
     }
 
 }

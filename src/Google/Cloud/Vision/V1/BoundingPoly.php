@@ -43,11 +43,14 @@ class BoundingPoly extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Vertex vertices = 1;</code>
      * @param \Google\Cloud\Vision\V1\Vertex[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setVertices(&$var)
+    public function setVertices($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Vertex::class);
         $this->vertices = $arr;
+
+        return $this;
     }
 
 }

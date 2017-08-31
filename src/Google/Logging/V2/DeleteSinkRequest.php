@@ -61,11 +61,14 @@ class DeleteSinkRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string sink_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSinkName($var)
     {
         GPBUtil::checkString($var, True);
         $this->sink_name = $var;
+
+        return $this;
     }
 
 }

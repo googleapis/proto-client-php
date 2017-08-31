@@ -49,11 +49,14 @@ class CloudStorageKey extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string file_path = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setFilePath($var)
     {
         GPBUtil::checkString($var, True);
         $this->file_path = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class CloudStorageKey extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 start_offset = 2;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setStartOffset($var)
     {
         GPBUtil::checkInt64($var);
         $this->start_offset = $var;
+
+        return $this;
     }
 
 }

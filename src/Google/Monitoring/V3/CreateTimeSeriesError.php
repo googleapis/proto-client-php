@@ -58,11 +58,14 @@ class CreateTimeSeriesError extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.monitoring.v3.TimeSeries time_series = 1;</code>
      * @param \Google\Monitoring\V3\TimeSeries $var
+     * @return $this
      */
-    public function setTimeSeries(&$var)
+    public function setTimeSeries($var)
     {
         GPBUtil::checkMessage($var, \Google\Monitoring\V3\TimeSeries::class);
         $this->time_series = $var;
+
+        return $this;
     }
 
     /**
@@ -81,11 +84,14 @@ class CreateTimeSeriesError extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.rpc.Status status = 2;</code>
      * @param \Google\Rpc\Status $var
+     * @return $this
      */
-    public function setStatus(&$var)
+    public function setStatus($var)
     {
         GPBUtil::checkMessage($var, \Google\Rpc\Status::class);
         $this->status = $var;
+
+        return $this;
     }
 
 }

@@ -139,11 +139,14 @@ class PartialResultSet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.ResultSetMetadata metadata = 1;</code>
      * @param \Google\Spanner\V1\ResultSetMetadata $var
+     * @return $this
      */
-    public function setMetadata(&$var)
+    public function setMetadata($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\ResultSetMetadata::class);
         $this->metadata = $var;
+
+        return $this;
     }
 
     /**
@@ -278,11 +281,14 @@ class PartialResultSet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Value values = 2;</code>
      * @param \Google\Protobuf\Value[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setValues(&$var)
+    public function setValues($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Value::class);
         $this->values = $arr;
+
+        return $this;
     }
 
     /**
@@ -305,11 +311,14 @@ class PartialResultSet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool chunked_value = 3;</code>
      * @param bool $var
+     * @return $this
      */
     public function setChunkedValue($var)
     {
         GPBUtil::checkBool($var);
         $this->chunked_value = $var;
+
+        return $this;
     }
 
     /**
@@ -336,11 +345,14 @@ class PartialResultSet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes resume_token = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setResumeToken($var)
     {
         GPBUtil::checkString($var, False);
         $this->resume_token = $var;
+
+        return $this;
     }
 
     /**
@@ -365,11 +377,14 @@ class PartialResultSet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.ResultSetStats stats = 5;</code>
      * @param \Google\Spanner\V1\ResultSetStats $var
+     * @return $this
      */
-    public function setStats(&$var)
+    public function setStats($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\ResultSetStats::class);
         $this->stats = $var;
+
+        return $this;
     }
 
 }

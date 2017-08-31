@@ -49,11 +49,14 @@ class RollbackRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string session = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSession($var)
     {
         GPBUtil::checkString($var, True);
         $this->session = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class RollbackRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes transaction_id = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setTransactionId($var)
     {
         GPBUtil::checkString($var, False);
         $this->transaction_id = $var;
+
+        return $this;
     }
 
 }

@@ -54,11 +54,14 @@ class InspectResult extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.Finding findings = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\Finding[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFindings(&$var)
+    public function setFindings($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\Finding::class);
         $this->findings = $arr;
+
+        return $this;
     }
 
     /**
@@ -87,11 +90,14 @@ class InspectResult extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool findings_truncated = 2;</code>
      * @param bool $var
+     * @return $this
      */
     public function setFindingsTruncated($var)
     {
         GPBUtil::checkBool($var);
         $this->findings_truncated = $var;
+
+        return $this;
     }
 
 }

@@ -50,11 +50,14 @@ class ListRootCategoriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language_code = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguageCode($var)
     {
         GPBUtil::checkString($var, True);
         $this->language_code = $var;
+
+        return $this;
     }
 
 }

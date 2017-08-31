@@ -67,11 +67,14 @@ class StreamingRecognitionResult extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1.SpeechRecognitionAlternative alternatives = 1;</code>
      * @param \Google\Cloud\Speech\V1\SpeechRecognitionAlternative[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAlternatives(&$var)
+    public function setAlternatives($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\SpeechRecognitionAlternative::class);
         $this->alternatives = $arr;
+
+        return $this;
     }
 
     /**
@@ -98,11 +101,14 @@ class StreamingRecognitionResult extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool is_final = 2;</code>
      * @param bool $var
+     * @return $this
      */
     public function setIsFinal($var)
     {
         GPBUtil::checkBool($var);
         $this->is_final = $var;
+
+        return $this;
     }
 
     /**
@@ -129,11 +135,14 @@ class StreamingRecognitionResult extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float stability = 3;</code>
      * @param float $var
+     * @return $this
      */
     public function setStability($var)
     {
         GPBUtil::checkFloat($var);
         $this->stability = $var;
+
+        return $this;
     }
 
 }

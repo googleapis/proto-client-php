@@ -44,11 +44,14 @@ class QueryTimeRange extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setPeriod($var)
     {
         GPBUtil::checkEnum($var, \Google\Devtools\Clouderrorreporting\V1beta1\QueryTimeRange_Period::class);
         $this->period = $var;
+
+        return $this;
     }
 
 }

@@ -50,11 +50,14 @@ class ListSnapshotsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.pubsub.v1.Snapshot snapshots = 1;</code>
      * @param \Google\Pubsub\V1\Snapshot[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSnapshots(&$var)
+    public function setSnapshots($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\Snapshot::class);
         $this->snapshots = $arr;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class ListSnapshotsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

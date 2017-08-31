@@ -55,11 +55,14 @@ class DeleteEventsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setProjectName($var)
     {
         GPBUtil::checkString($var, True);
         $this->project_name = $var;
+
+        return $this;
     }
 
 }

@@ -91,11 +91,14 @@ class TimeSeries extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.api.Metric metric = 1;</code>
      * @param \Google\Api\Metric $var
+     * @return $this
      */
-    public function setMetric(&$var)
+    public function setMetric($var)
     {
         GPBUtil::checkMessage($var, \Google\Api\Metric::class);
         $this->metric = $var;
+
+        return $this;
     }
 
     /**
@@ -116,11 +119,14 @@ class TimeSeries extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.api.MonitoredResource resource = 2;</code>
      * @param \Google\Api\MonitoredResource $var
+     * @return $this
      */
-    public function setResource(&$var)
+    public function setResource($var)
     {
         GPBUtil::checkMessage($var, \Google\Api\MonitoredResource::class);
         $this->resource = $var;
+
+        return $this;
     }
 
     /**
@@ -153,11 +159,14 @@ class TimeSeries extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.api.MetricDescriptor.MetricKind metric_kind = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setMetricKind($var)
     {
         GPBUtil::checkEnum($var, \Google\Api\MetricDescriptor_MetricKind::class);
         $this->metric_kind = $var;
+
+        return $this;
     }
 
     /**
@@ -184,11 +193,14 @@ class TimeSeries extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.api.MetricDescriptor.ValueType value_type = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setValueType($var)
     {
         GPBUtil::checkEnum($var, \Google\Api\MetricDescriptor_ValueType::class);
         $this->value_type = $var;
+
+        return $this;
     }
 
     /**
@@ -219,11 +231,14 @@ class TimeSeries extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.monitoring.v3.Point points = 5;</code>
      * @param \Google\Monitoring\V3\Point[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPoints(&$var)
+    public function setPoints($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Monitoring\V3\Point::class);
         $this->points = $arr;
+
+        return $this;
     }
 
 }

@@ -61,11 +61,14 @@ class Token extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.TextSpan text = 1;</code>
      * @param \Google\Cloud\Language\V1beta2\TextSpan $var
+     * @return $this
      */
-    public function setText(&$var)
+    public function setText($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\TextSpan::class);
         $this->text = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class Token extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech part_of_speech = 2;</code>
      * @param \Google\Cloud\Language\V1beta2\PartOfSpeech $var
+     * @return $this
      */
-    public function setPartOfSpeech(&$var)
+    public function setPartOfSpeech($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\PartOfSpeech::class);
         $this->part_of_speech = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class Token extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.DependencyEdge dependency_edge = 3;</code>
      * @param \Google\Cloud\Language\V1beta2\DependencyEdge $var
+     * @return $this
      */
-    public function setDependencyEdge(&$var)
+    public function setDependencyEdge($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\DependencyEdge::class);
         $this->dependency_edge = $var;
+
+        return $this;
     }
 
     /**
@@ -130,11 +139,14 @@ class Token extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string lemma = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setLemma($var)
     {
         GPBUtil::checkString($var, True);
         $this->lemma = $var;
+
+        return $this;
     }
 
 }

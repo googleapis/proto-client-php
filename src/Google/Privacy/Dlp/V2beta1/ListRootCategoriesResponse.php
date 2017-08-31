@@ -43,11 +43,14 @@ class ListRootCategoriesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.CategoryDescription categories = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\CategoryDescription[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCategories(&$var)
+    public function setCategories($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\CategoryDescription::class);
         $this->categories = $arr;
+
+        return $this;
     }
 
 }

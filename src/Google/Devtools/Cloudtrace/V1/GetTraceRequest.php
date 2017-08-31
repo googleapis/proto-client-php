@@ -49,11 +49,14 @@ class GetTraceRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project_id = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setProjectId($var)
     {
         GPBUtil::checkString($var, True);
         $this->project_id = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class GetTraceRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string trace_id = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setTraceId($var)
     {
         GPBUtil::checkString($var, True);
         $this->trace_id = $var;
+
+        return $this;
     }
 
 }

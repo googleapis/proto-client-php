@@ -84,11 +84,14 @@ class UpdateSinkRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string sink_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSinkName($var)
     {
         GPBUtil::checkString($var, True);
         $this->sink_name = $var;
+
+        return $this;
     }
 
     /**
@@ -111,11 +114,14 @@ class UpdateSinkRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.logging.v2.LogSink sink = 2;</code>
      * @param \Google\Logging\V2\LogSink $var
+     * @return $this
      */
-    public function setSink(&$var)
+    public function setSink($var)
     {
         GPBUtil::checkMessage($var, \Google\Logging\V2\LogSink::class);
         $this->sink = $var;
+
+        return $this;
     }
 
     /**
@@ -152,11 +158,14 @@ class UpdateSinkRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool unique_writer_identity = 3;</code>
      * @param bool $var
+     * @return $this
      */
     public function setUniqueWriterIdentity($var)
     {
         GPBUtil::checkBool($var);
         $this->unique_writer_identity = $var;
+
+        return $this;
     }
 
 }

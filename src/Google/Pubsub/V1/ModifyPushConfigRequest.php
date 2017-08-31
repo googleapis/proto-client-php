@@ -56,11 +56,14 @@ class ModifyPushConfigRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string subscription = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSubscription($var)
     {
         GPBUtil::checkString($var, True);
         $this->subscription = $var;
+
+        return $this;
     }
 
     /**
@@ -87,11 +90,14 @@ class ModifyPushConfigRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.pubsub.v1.PushConfig push_config = 2;</code>
      * @param \Google\Pubsub\V1\PushConfig $var
+     * @return $this
      */
-    public function setPushConfig(&$var)
+    public function setPushConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Pubsub\V1\PushConfig::class);
         $this->push_config = $var;
+
+        return $this;
     }
 
 }

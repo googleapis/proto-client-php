@@ -66,11 +66,14 @@ class Mutation_Write extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string table = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setTable($var)
     {
         GPBUtil::checkString($var, True);
         $this->table = $var;
+
+        return $this;
     }
 
     /**
@@ -95,11 +98,14 @@ class Mutation_Write extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string columns = 2;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setColumns(&$var)
+    public function setColumns($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->columns = $arr;
+
+        return $this;
     }
 
     /**
@@ -132,11 +138,14 @@ class Mutation_Write extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.protobuf.ListValue values = 3;</code>
      * @param \Google\Protobuf\ListValue[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setValues(&$var)
+    public function setValues($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
         $this->values = $arr;
+
+        return $this;
     }
 
 }

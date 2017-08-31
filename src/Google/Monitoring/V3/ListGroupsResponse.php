@@ -51,11 +51,14 @@ class ListGroupsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.monitoring.v3.Group group = 1;</code>
      * @param \Google\Monitoring\V3\Group[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGroup(&$var)
+    public function setGroup($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Monitoring\V3\Group::class);
         $this->group = $arr;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class ListGroupsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

@@ -38,15 +38,23 @@ class CreateInspectOperationRequest extends \Google\Protobuf\Internal\Message
      * identifier for the Operation, and the `count` is a counter used for
      * tracking the number of files written. <p>The CSV file(s) contain the
      * following columns regardless of storage type scanned: <li>id <li>info_type
-     * <li>likelihood <li>byte size of finding <li>quote <li>time_stamp<br/>
+     * <li>likelihood <li>byte size of finding <li>quote <li>timestamp<br/>
      * <p>For Cloud Storage the next columns are: <li>file_path
      * <li>start_offset<br/>
      * <p>For Cloud Datastore the next columns are: <li>project_id
-     * <li>namespace_id <li>path <li>column_name <li>offset
+     * <li>namespace_id <li>path <li>column_name <li>offset<br/>
+     * <p>For BigQuery the next columns are: <li>row_number <li>project_id
+     * <li>dataset_id <li>table_id
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OutputStorageConfig output_config = 3;</code>
      */
     private $output_config = null;
+    /**
+     * Additional configuration settings for long running operations.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OperationConfig operation_config = 5;</code>
+     */
+    private $operation_config = null;
 
     public function __construct() {
         \GPBMetadata\Google\Privacy\Dlp\V2Beta1\Dlp::initOnce();
@@ -69,11 +77,14 @@ class CreateInspectOperationRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.InspectConfig inspect_config = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InspectConfig $var
+     * @return $this
      */
-    public function setInspectConfig(&$var)
+    public function setInspectConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\InspectConfig::class);
         $this->inspect_config = $var;
+
+        return $this;
     }
 
     /**
@@ -92,11 +103,14 @@ class CreateInspectOperationRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.StorageConfig storage_config = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\StorageConfig $var
+     * @return $this
      */
-    public function setStorageConfig(&$var)
+    public function setStorageConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\StorageConfig::class);
         $this->storage_config = $var;
+
+        return $this;
     }
 
     /**
@@ -109,11 +123,13 @@ class CreateInspectOperationRequest extends \Google\Protobuf\Internal\Message
      * identifier for the Operation, and the `count` is a counter used for
      * tracking the number of files written. <p>The CSV file(s) contain the
      * following columns regardless of storage type scanned: <li>id <li>info_type
-     * <li>likelihood <li>byte size of finding <li>quote <li>time_stamp<br/>
+     * <li>likelihood <li>byte size of finding <li>quote <li>timestamp<br/>
      * <p>For Cloud Storage the next columns are: <li>file_path
      * <li>start_offset<br/>
      * <p>For Cloud Datastore the next columns are: <li>project_id
-     * <li>namespace_id <li>path <li>column_name <li>offset
+     * <li>namespace_id <li>path <li>column_name <li>offset<br/>
+     * <p>For BigQuery the next columns are: <li>row_number <li>project_id
+     * <li>dataset_id <li>table_id
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OutputStorageConfig output_config = 3;</code>
      * @return \Google\Privacy\Dlp\V2beta1\OutputStorageConfig
@@ -133,19 +149,50 @@ class CreateInspectOperationRequest extends \Google\Protobuf\Internal\Message
      * identifier for the Operation, and the `count` is a counter used for
      * tracking the number of files written. <p>The CSV file(s) contain the
      * following columns regardless of storage type scanned: <li>id <li>info_type
-     * <li>likelihood <li>byte size of finding <li>quote <li>time_stamp<br/>
+     * <li>likelihood <li>byte size of finding <li>quote <li>timestamp<br/>
      * <p>For Cloud Storage the next columns are: <li>file_path
      * <li>start_offset<br/>
      * <p>For Cloud Datastore the next columns are: <li>project_id
-     * <li>namespace_id <li>path <li>column_name <li>offset
+     * <li>namespace_id <li>path <li>column_name <li>offset<br/>
+     * <p>For BigQuery the next columns are: <li>row_number <li>project_id
+     * <li>dataset_id <li>table_id
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OutputStorageConfig output_config = 3;</code>
      * @param \Google\Privacy\Dlp\V2beta1\OutputStorageConfig $var
+     * @return $this
      */
-    public function setOutputConfig(&$var)
+    public function setOutputConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\OutputStorageConfig::class);
         $this->output_config = $var;
+
+        return $this;
+    }
+
+    /**
+     * Additional configuration settings for long running operations.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OperationConfig operation_config = 5;</code>
+     * @return \Google\Privacy\Dlp\V2beta1\OperationConfig
+     */
+    public function getOperationConfig()
+    {
+        return $this->operation_config;
+    }
+
+    /**
+     * Additional configuration settings for long running operations.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OperationConfig operation_config = 5;</code>
+     * @param \Google\Privacy\Dlp\V2beta1\OperationConfig $var
+     * @return $this
+     */
+    public function setOperationConfig($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\OperationConfig::class);
+        $this->operation_config = $var;
+
+        return $this;
     }
 
 }

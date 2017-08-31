@@ -61,11 +61,14 @@ class GetGroupRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string group_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setGroupName($var)
     {
         GPBUtil::checkString($var, True);
         $this->group_name = $var;
+
+        return $this;
     }
 
 }

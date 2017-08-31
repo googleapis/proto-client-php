@@ -43,11 +43,14 @@ class CommitResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp commit_timestamp = 1;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setCommitTimestamp(&$var)
+    public function setCommitTimestamp($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->commit_timestamp = $var;
+
+        return $this;
     }
 
 }

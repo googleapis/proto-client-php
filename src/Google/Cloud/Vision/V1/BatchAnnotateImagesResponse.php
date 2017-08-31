@@ -43,11 +43,14 @@ class BatchAnnotateImagesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.AnnotateImageResponse responses = 1;</code>
      * @param \Google\Cloud\Vision\V1\AnnotateImageResponse[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setResponses(&$var)
+    public function setResponses($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\AnnotateImageResponse::class);
         $this->responses = $arr;
+
+        return $this;
     }
 
 }

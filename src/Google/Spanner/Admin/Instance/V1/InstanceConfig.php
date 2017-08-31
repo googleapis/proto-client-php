@@ -56,11 +56,14 @@ class InstanceConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -79,11 +82,14 @@ class InstanceConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string display_name = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setDisplayName($var)
     {
         GPBUtil::checkString($var, True);
         $this->display_name = $var;
+
+        return $this;
     }
 
 }

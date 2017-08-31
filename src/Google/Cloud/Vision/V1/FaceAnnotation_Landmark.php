@@ -53,11 +53,14 @@ class FaceAnnotation_Landmark extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.FaceAnnotation.Landmark.Type type = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\FaceAnnotation_Landmark_Type::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
@@ -76,11 +79,14 @@ class FaceAnnotation_Landmark extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Position position = 4;</code>
      * @param \Google\Cloud\Vision\V1\Position $var
+     * @return $this
      */
-    public function setPosition(&$var)
+    public function setPosition($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\Position::class);
         $this->position = $var;
+
+        return $this;
     }
 
 }

@@ -49,11 +49,14 @@ class PublishResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string message_ids = 1;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMessageIds(&$var)
+    public function setMessageIds($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->message_ids = $arr;
+
+        return $this;
     }
 
 }

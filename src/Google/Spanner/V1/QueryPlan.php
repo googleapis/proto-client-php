@@ -49,11 +49,14 @@ class QueryPlan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.PlanNode plan_nodes = 1;</code>
      * @param \Google\Spanner\V1\PlanNode[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPlanNodes(&$var)
+    public function setPlanNodes($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\PlanNode::class);
         $this->plan_nodes = $arr;
+
+        return $this;
     }
 
 }

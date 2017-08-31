@@ -56,11 +56,14 @@ class WebDetection_WebEntity extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string entity_id = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setEntityId($var)
     {
         GPBUtil::checkString($var, True);
         $this->entity_id = $var;
+
+        return $this;
     }
 
     /**
@@ -81,11 +84,14 @@ class WebDetection_WebEntity extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float score = 2;</code>
      * @param float $var
+     * @return $this
      */
     public function setScore($var)
     {
         GPBUtil::checkFloat($var);
         $this->score = $var;
+
+        return $this;
     }
 
     /**
@@ -104,11 +110,14 @@ class WebDetection_WebEntity extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string description = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
 }

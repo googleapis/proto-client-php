@@ -73,11 +73,14 @@ class ImageSource extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string gcs_image_uri = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setGcsImageUri($var)
     {
         GPBUtil::checkString($var, True);
         $this->gcs_image_uri = $var;
+
+        return $this;
     }
 
     /**
@@ -114,11 +117,14 @@ class ImageSource extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string image_uri = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setImageUri($var)
     {
         GPBUtil::checkString($var, True);
         $this->image_uri = $var;
+
+        return $this;
     }
 
 }

@@ -68,11 +68,14 @@ class ResultSetMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.StructType row_type = 1;</code>
      * @param \Google\Spanner\V1\StructType $var
+     * @return $this
      */
-    public function setRowType(&$var)
+    public function setRowType($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\StructType::class);
         $this->row_type = $var;
+
+        return $this;
     }
 
     /**
@@ -93,11 +96,14 @@ class ResultSetMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.Transaction transaction = 2;</code>
      * @param \Google\Spanner\V1\Transaction $var
+     * @return $this
      */
-    public function setTransaction(&$var)
+    public function setTransaction($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\Transaction::class);
         $this->transaction = $var;
+
+        return $this;
     }
 
 }

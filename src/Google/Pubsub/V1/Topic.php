@@ -64,11 +64,14 @@ class Topic extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -87,11 +90,14 @@ class Topic extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> labels = 2;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setLabels(&$var)
+    public function setLabels($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->labels = $arr;
+
+        return $this;
     }
 
 }

@@ -57,11 +57,14 @@ class ColorInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.type.Color color = 1;</code>
      * @param \Google\Type\Color $var
+     * @return $this
      */
-    public function setColor(&$var)
+    public function setColor($var)
     {
         GPBUtil::checkMessage($var, \Google\Type\Color::class);
         $this->color = $var;
+
+        return $this;
     }
 
     /**
@@ -80,11 +83,14 @@ class ColorInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float score = 2;</code>
      * @param float $var
+     * @return $this
      */
     public function setScore($var)
     {
         GPBUtil::checkFloat($var);
         $this->score = $var;
+
+        return $this;
     }
 
     /**
@@ -105,11 +111,14 @@ class ColorInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float pixel_fraction = 3;</code>
      * @param float $var
+     * @return $this
      */
     public function setPixelFraction($var)
     {
         GPBUtil::checkFloat($var);
         $this->pixel_fraction = $var;
+
+        return $this;
     }
 
 }

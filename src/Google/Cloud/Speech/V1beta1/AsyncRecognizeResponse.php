@@ -49,11 +49,14 @@ class AsyncRecognizeResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1beta1.SpeechRecognitionResult results = 2;</code>
      * @param \Google\Cloud\Speech\V1beta1\SpeechRecognitionResult[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setResults(&$var)
+    public function setResults($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1beta1\SpeechRecognitionResult::class);
         $this->results = $arr;
+
+        return $this;
     }
 
 }

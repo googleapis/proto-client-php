@@ -79,11 +79,14 @@ class HttpRequestContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string method = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setMethod($var)
     {
         GPBUtil::checkString($var, True);
         $this->method = $var;
+
+        return $this;
     }
 
     /**
@@ -102,11 +105,14 @@ class HttpRequestContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string url = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->url = $var;
+
+        return $this;
     }
 
     /**
@@ -125,11 +131,14 @@ class HttpRequestContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string user_agent = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setUserAgent($var)
     {
         GPBUtil::checkString($var, True);
         $this->user_agent = $var;
+
+        return $this;
     }
 
     /**
@@ -148,11 +157,14 @@ class HttpRequestContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string referrer = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setReferrer($var)
     {
         GPBUtil::checkString($var, True);
         $this->referrer = $var;
+
+        return $this;
     }
 
     /**
@@ -171,11 +183,14 @@ class HttpRequestContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 response_status_code = 5;</code>
      * @param int $var
+     * @return $this
      */
     public function setResponseStatusCode($var)
     {
         GPBUtil::checkInt32($var);
         $this->response_status_code = $var;
+
+        return $this;
     }
 
     /**
@@ -200,11 +215,14 @@ class HttpRequestContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string remote_ip = 6;</code>
      * @param string $var
+     * @return $this
      */
     public function setRemoteIp($var)
     {
         GPBUtil::checkString($var, True);
         $this->remote_ip = $var;
+
+        return $this;
     }
 
 }

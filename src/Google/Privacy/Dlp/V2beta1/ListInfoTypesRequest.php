@@ -52,11 +52,14 @@ class ListInfoTypesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string category = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setCategory($var)
     {
         GPBUtil::checkString($var, True);
         $this->category = $var;
+
+        return $this;
     }
 
     /**
@@ -79,11 +82,14 @@ class ListInfoTypesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language_code = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguageCode($var)
     {
         GPBUtil::checkString($var, True);
         $this->language_code = $var;
+
+        return $this;
     }
 
 }

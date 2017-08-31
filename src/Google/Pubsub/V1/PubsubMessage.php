@@ -67,11 +67,14 @@ class PubsubMessage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes data = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setData($var)
     {
         GPBUtil::checkString($var, False);
         $this->data = $var;
+
+        return $this;
     }
 
     /**
@@ -90,11 +93,14 @@ class PubsubMessage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> attributes = 2;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setAttributes(&$var)
+    public function setAttributes($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->attributes = $arr;
+
+        return $this;
     }
 
     /**
@@ -119,11 +125,14 @@ class PubsubMessage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string message_id = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setMessageId($var)
     {
         GPBUtil::checkString($var, True);
         $this->message_id = $var;
+
+        return $this;
     }
 
     /**
@@ -146,11 +155,14 @@ class PubsubMessage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp publish_time = 4;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setPublishTime(&$var)
+    public function setPublishTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->publish_time = $var;
+
+        return $this;
     }
 
 }

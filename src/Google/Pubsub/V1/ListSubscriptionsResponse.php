@@ -51,11 +51,14 @@ class ListSubscriptionsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.pubsub.v1.Subscription subscriptions = 1;</code>
      * @param \Google\Pubsub\V1\Subscription[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSubscriptions(&$var)
+    public function setSubscriptions($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\Subscription::class);
         $this->subscriptions = $arr;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class ListSubscriptionsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

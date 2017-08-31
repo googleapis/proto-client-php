@@ -57,11 +57,14 @@ class ListEventsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.devtools.clouderrorreporting.v1beta1.ErrorEvent error_events = 1;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ErrorEvent[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setErrorEvents(&$var)
+    public function setErrorEvents($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorEvent::class);
         $this->error_events = $arr;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class ListEventsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class ListEventsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp time_range_begin = 4;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setTimeRangeBegin(&$var)
+    public function setTimeRangeBegin($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->time_range_begin = $var;
+
+        return $this;
     }
 
 }

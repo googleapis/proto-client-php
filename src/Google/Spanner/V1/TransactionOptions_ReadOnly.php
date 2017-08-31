@@ -47,11 +47,14 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool strong = 1;</code>
      * @param bool $var
+     * @return $this
      */
     public function setStrong($var)
     {
         GPBUtil::checkBool($var);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp min_read_timestamp = 2;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setMinReadTimestamp(&$var)
+    public function setMinReadTimestamp($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -121,11 +127,14 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Duration max_staleness = 3;</code>
      * @param \Google\Protobuf\Duration $var
+     * @return $this
      */
-    public function setMaxStaleness(&$var)
+    public function setMaxStaleness($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**
@@ -158,11 +167,14 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp read_timestamp = 4;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setReadTimestamp(&$var)
+    public function setReadTimestamp($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->writeOneof(4, $var);
+
+        return $this;
     }
 
     /**
@@ -197,11 +209,14 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Duration exact_staleness = 5;</code>
      * @param \Google\Protobuf\Duration $var
+     * @return $this
      */
-    public function setExactStaleness(&$var)
+    public function setExactStaleness($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->writeOneof(5, $var);
+
+        return $this;
     }
 
     /**
@@ -222,11 +237,14 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool return_read_timestamp = 6;</code>
      * @param bool $var
+     * @return $this
      */
     public function setReturnReadTimestamp($var)
     {
         GPBUtil::checkBool($var);
         $this->return_read_timestamp = $var;
+
+        return $this;
     }
 
     /**

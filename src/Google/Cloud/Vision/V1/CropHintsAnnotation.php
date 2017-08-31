@@ -37,11 +37,14 @@ class CropHintsAnnotation extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.CropHint crop_hints = 1;</code>
      * @param \Google\Cloud\Vision\V1\CropHint[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCropHints(&$var)
+    public function setCropHints($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\CropHint::class);
         $this->crop_hints = $arr;
+
+        return $this;
     }
 
 }

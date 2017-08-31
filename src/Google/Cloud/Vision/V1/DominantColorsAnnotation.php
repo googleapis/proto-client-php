@@ -43,11 +43,14 @@ class DominantColorsAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.ColorInfo colors = 1;</code>
      * @param \Google\Cloud\Vision\V1\ColorInfo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setColors(&$var)
+    public function setColors($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\ColorInfo::class);
         $this->colors = $arr;
+
+        return $this;
     }
 
 }

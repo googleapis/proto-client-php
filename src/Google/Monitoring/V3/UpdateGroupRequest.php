@@ -52,11 +52,14 @@ class UpdateGroupRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.monitoring.v3.Group group = 2;</code>
      * @param \Google\Monitoring\V3\Group $var
+     * @return $this
      */
-    public function setGroup(&$var)
+    public function setGroup($var)
     {
         GPBUtil::checkMessage($var, \Google\Monitoring\V3\Group::class);
         $this->group = $var;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class UpdateGroupRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool validate_only = 3;</code>
      * @param bool $var
+     * @return $this
      */
     public function setValidateOnly($var)
     {
         GPBUtil::checkBool($var);
         $this->validate_only = $var;
+
+        return $this;
     }
 
 }

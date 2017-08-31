@@ -70,11 +70,14 @@ class Point extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.monitoring.v3.TimeInterval interval = 1;</code>
      * @param \Google\Monitoring\V3\TimeInterval $var
+     * @return $this
      */
-    public function setInterval(&$var)
+    public function setInterval($var)
     {
         GPBUtil::checkMessage($var, \Google\Monitoring\V3\TimeInterval::class);
         $this->interval = $var;
+
+        return $this;
     }
 
     /**
@@ -93,11 +96,14 @@ class Point extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.monitoring.v3.TypedValue value = 2;</code>
      * @param \Google\Monitoring\V3\TypedValue $var
+     * @return $this
      */
-    public function setValue(&$var)
+    public function setValue($var)
     {
         GPBUtil::checkMessage($var, \Google\Monitoring\V3\TypedValue::class);
         $this->value = $var;
+
+        return $this;
     }
 
 }

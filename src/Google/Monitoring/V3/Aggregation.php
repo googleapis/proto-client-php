@@ -117,11 +117,14 @@ class Aggregation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Duration alignment_period = 1;</code>
      * @param \Google\Protobuf\Duration $var
+     * @return $this
      */
-    public function setAlignmentPeriod(&$var)
+    public function setAlignmentPeriod($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->alignment_period = $var;
+
+        return $this;
     }
 
     /**
@@ -158,11 +161,14 @@ class Aggregation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setPerSeriesAligner($var)
     {
         GPBUtil::checkEnum($var, \Google\Monitoring\V3\Aggregation_Aligner::class);
         $this->per_series_aligner = $var;
+
+        return $this;
     }
 
     /**
@@ -199,11 +205,14 @@ class Aggregation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setCrossSeriesReducer($var)
     {
         GPBUtil::checkEnum($var, \Google\Monitoring\V3\Aggregation_Reducer::class);
         $this->cross_series_reducer = $var;
+
+        return $this;
     }
 
     /**
@@ -248,11 +257,14 @@ class Aggregation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string group_by_fields = 5;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGroupByFields(&$var)
+    public function setGroupByFields($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->group_by_fields = $arr;
+
+        return $this;
     }
 
 }

@@ -65,11 +65,14 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebEntity web_entities = 1;</code>
      * @param \Google\Cloud\Vision\V1\WebDetection_WebEntity[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setWebEntities(&$var)
+    public function setWebEntities($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebEntity::class);
         $this->web_entities = $arr;
+
+        return $this;
     }
 
     /**
@@ -92,11 +95,14 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage full_matching_images = 2;</code>
      * @param \Google\Cloud\Vision\V1\WebDetection_WebImage[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFullMatchingImages(&$var)
+    public function setFullMatchingImages($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebImage::class);
         $this->full_matching_images = $arr;
+
+        return $this;
     }
 
     /**
@@ -119,11 +125,14 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage partial_matching_images = 3;</code>
      * @param \Google\Cloud\Vision\V1\WebDetection_WebImage[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPartialMatchingImages(&$var)
+    public function setPartialMatchingImages($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebImage::class);
         $this->partial_matching_images = $arr;
+
+        return $this;
     }
 
     /**
@@ -142,11 +151,14 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebPage pages_with_matching_images = 4;</code>
      * @param \Google\Cloud\Vision\V1\WebDetection_WebPage[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPagesWithMatchingImages(&$var)
+    public function setPagesWithMatchingImages($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebPage::class);
         $this->pages_with_matching_images = $arr;
+
+        return $this;
     }
 
 }

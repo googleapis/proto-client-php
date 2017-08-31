@@ -43,11 +43,14 @@ class DatastoreKey extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.Key entity_key = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\Key $var
+     * @return $this
      */
-    public function setEntityKey(&$var)
+    public function setEntityKey($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\Key::class);
         $this->entity_key = $var;
+
+        return $this;
     }
 
 }

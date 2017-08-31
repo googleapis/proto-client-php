@@ -49,11 +49,14 @@ class Mutation_Delete extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string table = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setTable($var)
     {
         GPBUtil::checkString($var, True);
         $this->table = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class Mutation_Delete extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.KeySet key_set = 2;</code>
      * @param \Google\Spanner\V1\KeySet $var
+     * @return $this
      */
-    public function setKeySet(&$var)
+    public function setKeySet($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\KeySet::class);
         $this->key_set = $var;
+
+        return $this;
     }
 
 }

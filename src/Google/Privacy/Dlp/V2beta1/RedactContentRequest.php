@@ -63,11 +63,14 @@ class RedactContentRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.InspectConfig inspect_config = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InspectConfig $var
+     * @return $this
      */
-    public function setInspectConfig(&$var)
+    public function setInspectConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\InspectConfig::class);
         $this->inspect_config = $var;
+
+        return $this;
     }
 
     /**
@@ -86,11 +89,14 @@ class RedactContentRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.ContentItem items = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\ContentItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItems(&$var)
+    public function setItems($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\ContentItem::class);
         $this->items = $arr;
+
+        return $this;
     }
 
     /**
@@ -111,11 +117,14 @@ class RedactContentRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.RedactContentRequest.ReplaceConfig replace_configs = 3;</code>
      * @param \Google\Privacy\Dlp\V2beta1\RedactContentRequest_ReplaceConfig[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setReplaceConfigs(&$var)
+    public function setReplaceConfigs($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\RedactContentRequest_ReplaceConfig::class);
         $this->replace_configs = $arr;
+
+        return $this;
     }
 
     /**
@@ -134,11 +143,14 @@ class RedactContentRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.RedactContentRequest.ImageRedactionConfig image_redaction_configs = 4;</code>
      * @param \Google\Privacy\Dlp\V2beta1\RedactContentRequest_ImageRedactionConfig[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setImageRedactionConfigs(&$var)
+    public function setImageRedactionConfigs($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\RedactContentRequest_ImageRedactionConfig::class);
         $this->image_redaction_configs = $arr;
+
+        return $this;
     }
 
 }

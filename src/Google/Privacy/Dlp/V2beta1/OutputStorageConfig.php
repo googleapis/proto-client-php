@@ -23,6 +23,32 @@ class OutputStorageConfig extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Store findings in a new table in the dataset.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.BigQueryTable table = 1;</code>
+     * @return \Google\Privacy\Dlp\V2beta1\BigQueryTable
+     */
+    public function getTable()
+    {
+        return $this->readOneof(1);
+    }
+
+    /**
+     * Store findings in a new table in the dataset.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.BigQueryTable table = 1;</code>
+     * @param \Google\Privacy\Dlp\V2beta1\BigQueryTable $var
+     * @return $this
+     */
+    public function setTable($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\BigQueryTable::class);
+        $this->writeOneof(1, $var);
+
+        return $this;
+    }
+
+    /**
      * The path to a Google Cloud Storage location to store output.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.CloudStoragePath storage_path = 2;</code>
@@ -38,11 +64,14 @@ class OutputStorageConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.CloudStoragePath storage_path = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\CloudStoragePath $var
+     * @return $this
      */
-    public function setStoragePath(&$var)
+    public function setStoragePath($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\CloudStoragePath::class);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**

@@ -53,11 +53,14 @@ class CreateMetricDescriptorRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class CreateMetricDescriptorRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.api.MetricDescriptor metric_descriptor = 2;</code>
      * @param \Google\Api\MetricDescriptor $var
+     * @return $this
      */
-    public function setMetricDescriptor(&$var)
+    public function setMetricDescriptor($var)
     {
         GPBUtil::checkMessage($var, \Google\Api\MetricDescriptor::class);
         $this->metric_descriptor = $var;
+
+        return $this;
     }
 
 }

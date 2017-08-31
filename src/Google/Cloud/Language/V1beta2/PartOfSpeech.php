@@ -109,11 +109,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Tag tag = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setTag($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Tag::class);
         $this->tag = $var;
+
+        return $this;
     }
 
     /**
@@ -132,11 +135,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Aspect aspect = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setAspect($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Aspect::class);
         $this->aspect = $var;
+
+        return $this;
     }
 
     /**
@@ -155,11 +161,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Case case = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setCase($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Case::class);
         $this->case = $var;
+
+        return $this;
     }
 
     /**
@@ -178,11 +187,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Form form = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setForm($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Form::class);
         $this->form = $var;
+
+        return $this;
     }
 
     /**
@@ -201,11 +213,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Gender gender = 5;</code>
      * @param int $var
+     * @return $this
      */
     public function setGender($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Gender::class);
         $this->gender = $var;
+
+        return $this;
     }
 
     /**
@@ -224,11 +239,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Mood mood = 6;</code>
      * @param int $var
+     * @return $this
      */
     public function setMood($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Mood::class);
         $this->mood = $var;
+
+        return $this;
     }
 
     /**
@@ -247,11 +265,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Number number = 7;</code>
      * @param int $var
+     * @return $this
      */
     public function setNumber($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Number::class);
         $this->number = $var;
+
+        return $this;
     }
 
     /**
@@ -270,11 +291,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Person person = 8;</code>
      * @param int $var
+     * @return $this
      */
     public function setPerson($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Person::class);
         $this->person = $var;
+
+        return $this;
     }
 
     /**
@@ -293,11 +317,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Proper proper = 9;</code>
      * @param int $var
+     * @return $this
      */
     public function setProper($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Proper::class);
         $this->proper = $var;
+
+        return $this;
     }
 
     /**
@@ -316,11 +343,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Reciprocity reciprocity = 10;</code>
      * @param int $var
+     * @return $this
      */
     public function setReciprocity($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Reciprocity::class);
         $this->reciprocity = $var;
+
+        return $this;
     }
 
     /**
@@ -339,11 +369,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Tense tense = 11;</code>
      * @param int $var
+     * @return $this
      */
     public function setTense($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Tense::class);
         $this->tense = $var;
+
+        return $this;
     }
 
     /**
@@ -362,11 +395,14 @@ class PartOfSpeech extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.PartOfSpeech.Voice voice = 12;</code>
      * @param int $var
+     * @return $this
      */
     public function setVoice($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\PartOfSpeech_Voice::class);
         $this->voice = $var;
+
+        return $this;
     }
 
 }

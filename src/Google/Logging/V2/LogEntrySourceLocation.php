@@ -65,11 +65,14 @@ class LogEntrySourceLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string file = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setFile($var)
     {
         GPBUtil::checkString($var, True);
         $this->file = $var;
+
+        return $this;
     }
 
     /**
@@ -90,11 +93,14 @@ class LogEntrySourceLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 line = 2;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setLine($var)
     {
         GPBUtil::checkInt64($var);
         $this->line = $var;
+
+        return $this;
     }
 
     /**
@@ -123,11 +129,14 @@ class LogEntrySourceLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string function = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setFunction($var)
     {
         GPBUtil::checkString($var, True);
         $this->function = $var;
+
+        return $this;
     }
 
 }

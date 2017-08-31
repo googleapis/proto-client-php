@@ -60,11 +60,14 @@ class ListSnapshotsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setProject($var)
     {
         GPBUtil::checkString($var, True);
         $this->project = $var;
+
+        return $this;
     }
 
     /**
@@ -83,11 +86,14 @@ class ListSnapshotsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 page_size = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setPageSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_size = $var;
+
+        return $this;
     }
 
     /**
@@ -110,11 +116,14 @@ class ListSnapshotsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string page_token = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->page_token = $var;
+
+        return $this;
     }
 
 }

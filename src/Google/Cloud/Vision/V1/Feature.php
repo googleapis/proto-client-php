@@ -52,11 +52,14 @@ class Feature extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Feature.Type type = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Feature_Type::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class Feature extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 max_results = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setMaxResults($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_results = $var;
+
+        return $this;
     }
 
 }

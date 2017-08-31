@@ -43,11 +43,14 @@ class CloudStoragePath extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string path = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setPath($var)
     {
         GPBUtil::checkString($var, True);
         $this->path = $var;
+
+        return $this;
     }
 
 }

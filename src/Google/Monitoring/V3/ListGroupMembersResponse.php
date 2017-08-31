@@ -57,11 +57,14 @@ class ListGroupMembersResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.api.MonitoredResource members = 1;</code>
      * @param \Google\Api\MonitoredResource[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMembers(&$var)
+    public function setMembers($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MonitoredResource::class);
         $this->members = $arr;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class ListGroupMembersResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class ListGroupMembersResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 total_size = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setTotalSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->total_size = $var;
+
+        return $this;
     }
 
 }

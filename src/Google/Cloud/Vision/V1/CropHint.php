@@ -59,11 +59,14 @@ class CropHint extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_poly = 1;</code>
      * @param \Google\Cloud\Vision\V1\BoundingPoly $var
+     * @return $this
      */
-    public function setBoundingPoly(&$var)
+    public function setBoundingPoly($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\BoundingPoly::class);
         $this->bounding_poly = $var;
+
+        return $this;
     }
 
     /**
@@ -82,11 +85,14 @@ class CropHint extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float confidence = 2;</code>
      * @param float $var
+     * @return $this
      */
     public function setConfidence($var)
     {
         GPBUtil::checkFloat($var);
         $this->confidence = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class CropHint extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float importance_fraction = 3;</code>
      * @param float $var
+     * @return $this
      */
     public function setImportanceFraction($var)
     {
         GPBUtil::checkFloat($var);
         $this->importance_fraction = $var;
+
+        return $this;
     }
 
 }

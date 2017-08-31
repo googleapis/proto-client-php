@@ -43,11 +43,14 @@ class LocationInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.type.LatLng lat_lng = 1;</code>
      * @param \Google\Type\LatLng $var
+     * @return $this
      */
-    public function setLatLng(&$var)
+    public function setLatLng($var)
     {
         GPBUtil::checkMessage($var, \Google\Type\LatLng::class);
         $this->lat_lng = $var;
+
+        return $this;
     }
 
 }

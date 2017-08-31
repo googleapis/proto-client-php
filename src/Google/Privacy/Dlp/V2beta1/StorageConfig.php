@@ -38,11 +38,14 @@ class StorageConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.DatastoreOptions datastore_options = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\DatastoreOptions $var
+     * @return $this
      */
-    public function setDatastoreOptions(&$var)
+    public function setDatastoreOptions($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\DatastoreOptions::class);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -61,11 +64,40 @@ class StorageConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.CloudStorageOptions cloud_storage_options = 3;</code>
      * @param \Google\Privacy\Dlp\V2beta1\CloudStorageOptions $var
+     * @return $this
      */
-    public function setCloudStorageOptions(&$var)
+    public function setCloudStorageOptions($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\CloudStorageOptions::class);
         $this->writeOneof(3, $var);
+
+        return $this;
+    }
+
+    /**
+     * BigQuery options specification.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.BigQueryOptions big_query_options = 4;</code>
+     * @return \Google\Privacy\Dlp\V2beta1\BigQueryOptions
+     */
+    public function getBigQueryOptions()
+    {
+        return $this->readOneof(4);
+    }
+
+    /**
+     * BigQuery options specification.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.BigQueryOptions big_query_options = 4;</code>
+     * @param \Google\Privacy\Dlp\V2beta1\BigQueryOptions $var
+     * @return $this
+     */
+    public function setBigQueryOptions($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\BigQueryOptions::class);
+        $this->writeOneof(4, $var);
+
+        return $this;
     }
 
     /**

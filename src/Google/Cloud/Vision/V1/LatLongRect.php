@@ -49,11 +49,14 @@ class LatLongRect extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.type.LatLng min_lat_lng = 1;</code>
      * @param \Google\Type\LatLng $var
+     * @return $this
      */
-    public function setMinLatLng(&$var)
+    public function setMinLatLng($var)
     {
         GPBUtil::checkMessage($var, \Google\Type\LatLng::class);
         $this->min_lat_lng = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class LatLongRect extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.type.LatLng max_lat_lng = 2;</code>
      * @param \Google\Type\LatLng $var
+     * @return $this
      */
-    public function setMaxLatLng(&$var)
+    public function setMaxLatLng($var)
     {
         GPBUtil::checkMessage($var, \Google\Type\LatLng::class);
         $this->max_lat_lng = $var;
+
+        return $this;
     }
 
 }

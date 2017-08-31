@@ -67,11 +67,14 @@ class LogEntryOperation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string id = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkString($var, True);
         $this->id = $var;
+
+        return $this;
     }
 
     /**
@@ -94,11 +97,14 @@ class LogEntryOperation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string producer = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setProducer($var)
     {
         GPBUtil::checkString($var, True);
         $this->producer = $var;
+
+        return $this;
     }
 
     /**
@@ -117,11 +123,14 @@ class LogEntryOperation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool first = 3;</code>
      * @param bool $var
+     * @return $this
      */
     public function setFirst($var)
     {
         GPBUtil::checkBool($var);
         $this->first = $var;
+
+        return $this;
     }
 
     /**
@@ -140,11 +149,14 @@ class LogEntryOperation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool last = 4;</code>
      * @param bool $var
+     * @return $this
      */
     public function setLast($var)
     {
         GPBUtil::checkBool($var);
         $this->last = $var;
+
+        return $this;
     }
 
 }

@@ -67,11 +67,14 @@ class PushConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string push_endpoint = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setPushEndpoint($var)
     {
         GPBUtil::checkString($var, True);
         $this->push_endpoint = $var;
+
+        return $this;
     }
 
     /**
@@ -120,11 +123,14 @@ class PushConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> attributes = 2;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setAttributes(&$var)
+    public function setAttributes($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->attributes = $arr;
+
+        return $this;
     }
 
 }

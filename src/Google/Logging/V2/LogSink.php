@@ -147,11 +147,14 @@ class LogSink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -184,11 +187,14 @@ class LogSink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string destination = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setDestination($var)
     {
         GPBUtil::checkString($var, True);
         $this->destination = $var;
+
+        return $this;
     }
 
     /**
@@ -217,11 +223,14 @@ class LogSink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string filter = 5;</code>
      * @param string $var
+     * @return $this
      */
     public function setFilter($var)
     {
         GPBUtil::checkString($var, True);
         $this->filter = $var;
+
+        return $this;
     }
 
     /**
@@ -248,11 +257,14 @@ class LogSink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.logging.v2.LogSink.VersionFormat output_version_format = 6;</code>
      * @param int $var
+     * @return $this
      */
     public function setOutputVersionFormat($var)
     {
         GPBUtil::checkEnum($var, \Google\Logging\V2\LogSink_VersionFormat::class);
         $this->output_version_format = $var;
+
+        return $this;
     }
 
     /**
@@ -295,11 +307,14 @@ class LogSink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string writer_identity = 8;</code>
      * @param string $var
+     * @return $this
      */
     public function setWriterIdentity($var)
     {
         GPBUtil::checkString($var, True);
         $this->writer_identity = $var;
+
+        return $this;
     }
 
     /**
@@ -340,11 +355,14 @@ class LogSink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool include_children = 9;</code>
      * @param bool $var
+     * @return $this
      */
     public function setIncludeChildren($var)
     {
         GPBUtil::checkBool($var);
         $this->include_children = $var;
+
+        return $this;
     }
 
     /**
@@ -369,11 +387,14 @@ class LogSink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp start_time = 10;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setStartTime(&$var)
+    public function setStartTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->start_time = $var;
+
+        return $this;
     }
 
     /**
@@ -400,11 +421,14 @@ class LogSink extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp end_time = 11;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setEndTime(&$var)
+    public function setEndTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->end_time = $var;
+
+        return $this;
     }
 
 }

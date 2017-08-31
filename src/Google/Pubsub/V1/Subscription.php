@@ -122,11 +122,14 @@ class Subscription extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -151,11 +154,14 @@ class Subscription extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string topic = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setTopic($var)
     {
         GPBUtil::checkString($var, True);
         $this->topic = $var;
+
+        return $this;
     }
 
     /**
@@ -178,11 +184,14 @@ class Subscription extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.pubsub.v1.PushConfig push_config = 4;</code>
      * @param \Google\Pubsub\V1\PushConfig $var
+     * @return $this
      */
-    public function setPushConfig(&$var)
+    public function setPushConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Pubsub\V1\PushConfig::class);
         $this->push_config = $var;
+
+        return $this;
     }
 
     /**
@@ -231,11 +240,14 @@ class Subscription extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 ack_deadline_seconds = 5;</code>
      * @param int $var
+     * @return $this
      */
     public function setAckDeadlineSeconds($var)
     {
         GPBUtil::checkInt32($var);
         $this->ack_deadline_seconds = $var;
+
+        return $this;
     }
 
     /**
@@ -260,11 +272,14 @@ class Subscription extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool retain_acked_messages = 7;</code>
      * @param bool $var
+     * @return $this
      */
     public function setRetainAckedMessages($var)
     {
         GPBUtil::checkBool($var);
         $this->retain_acked_messages = $var;
+
+        return $this;
     }
 
     /**
@@ -293,11 +308,14 @@ class Subscription extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Duration message_retention_duration = 8;</code>
      * @param \Google\Protobuf\Duration $var
+     * @return $this
      */
-    public function setMessageRetentionDuration(&$var)
+    public function setMessageRetentionDuration($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->message_retention_duration = $var;
+
+        return $this;
     }
 
     /**
@@ -316,11 +334,14 @@ class Subscription extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> labels = 9;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setLabels(&$var)
+    public function setLabels($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->labels = $arr;
+
+        return $this;
     }
 
 }

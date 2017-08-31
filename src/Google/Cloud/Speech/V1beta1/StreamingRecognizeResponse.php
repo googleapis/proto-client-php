@@ -112,11 +112,14 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.rpc.Status error = 1;</code>
      * @param \Google\Rpc\Status $var
+     * @return $this
      */
-    public function setError(&$var)
+    public function setError($var)
     {
         GPBUtil::checkMessage($var, \Google\Rpc\Status::class);
         $this->error = $var;
+
+        return $this;
     }
 
     /**
@@ -141,11 +144,14 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1beta1.StreamingRecognitionResult results = 2;</code>
      * @param \Google\Cloud\Speech\V1beta1\StreamingRecognitionResult[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setResults(&$var)
+    public function setResults($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1beta1\StreamingRecognitionResult::class);
         $this->results = $arr;
+
+        return $this;
     }
 
     /**
@@ -168,11 +174,14 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 result_index = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setResultIndex($var)
     {
         GPBUtil::checkInt32($var);
         $this->result_index = $var;
+
+        return $this;
     }
 
     /**
@@ -191,11 +200,14 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.speech.v1beta1.StreamingRecognizeResponse.EndpointerType endpointer_type = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setEndpointerType($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Speech\V1beta1\StreamingRecognizeResponse_EndpointerType::class);
         $this->endpointer_type = $var;
+
+        return $this;
     }
 
 }

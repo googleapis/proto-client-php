@@ -51,11 +51,14 @@ class ListInstanceConfigsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.spanner.admin.instance.v1.InstanceConfig instance_configs = 1;</code>
      * @param \Google\Spanner\Admin\Instance\V1\InstanceConfig[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setInstanceConfigs(&$var)
+    public function setInstanceConfigs($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\Admin\Instance\V1\InstanceConfig::class);
         $this->instance_configs = $arr;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class ListInstanceConfigsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

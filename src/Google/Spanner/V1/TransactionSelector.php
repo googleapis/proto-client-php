@@ -45,11 +45,14 @@ class TransactionSelector extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionOptions single_use = 1;</code>
      * @param \Google\Spanner\V1\TransactionOptions $var
+     * @return $this
      */
-    public function setSingleUse(&$var)
+    public function setSingleUse($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\TransactionOptions::class);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
@@ -68,11 +71,14 @@ class TransactionSelector extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes id = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkString($var, False);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -95,11 +101,14 @@ class TransactionSelector extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionOptions begin = 3;</code>
      * @param \Google\Spanner\V1\TransactionOptions $var
+     * @return $this
      */
-    public function setBegin(&$var)
+    public function setBegin($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\TransactionOptions::class);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**

@@ -66,11 +66,14 @@ class CreateInstanceMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.admin.instance.v1.Instance instance = 1;</code>
      * @param \Google\Spanner\Admin\Instance\V1\Instance $var
+     * @return $this
      */
-    public function setInstance(&$var)
+    public function setInstance($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\Admin\Instance\V1\Instance::class);
         $this->instance = $var;
+
+        return $this;
     }
 
     /**
@@ -93,11 +96,14 @@ class CreateInstanceMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp start_time = 2;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setStartTime(&$var)
+    public function setStartTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->start_time = $var;
+
+        return $this;
     }
 
     /**
@@ -120,11 +126,14 @@ class CreateInstanceMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp cancel_time = 3;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setCancelTime(&$var)
+    public function setCancelTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->cancel_time = $var;
+
+        return $this;
     }
 
     /**
@@ -143,11 +152,14 @@ class CreateInstanceMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp end_time = 4;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setEndTime(&$var)
+    public function setEndTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->end_time = $var;
+
+        return $this;
     }
 
 }

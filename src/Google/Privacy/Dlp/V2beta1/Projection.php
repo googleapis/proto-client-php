@@ -43,11 +43,14 @@ class Projection extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.PropertyReference property = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\PropertyReference $var
+     * @return $this
      */
-    public function setProperty(&$var)
+    public function setProperty($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\PropertyReference::class);
         $this->property = $var;
+
+        return $this;
     }
 
 }

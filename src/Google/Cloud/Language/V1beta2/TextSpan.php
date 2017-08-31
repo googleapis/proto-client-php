@@ -50,11 +50,14 @@ class TextSpan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string content = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setContent($var)
     {
         GPBUtil::checkString($var, True);
         $this->content = $var;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class TextSpan extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 begin_offset = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setBeginOffset($var)
     {
         GPBUtil::checkInt32($var);
         $this->begin_offset = $var;
+
+        return $this;
     }
 
 }

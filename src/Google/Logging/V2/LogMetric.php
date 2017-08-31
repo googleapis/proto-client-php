@@ -104,11 +104,14 @@ class LogMetric extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -127,11 +130,14 @@ class LogMetric extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string description = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
     /**
@@ -158,11 +164,14 @@ class LogMetric extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string filter = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setFilter($var)
     {
         GPBUtil::checkString($var, True);
         $this->filter = $var;
+
+        return $this;
     }
 
     /**
@@ -185,11 +194,14 @@ class LogMetric extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.logging.v2.LogMetric.ApiVersion version = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setVersion($var)
     {
         GPBUtil::checkEnum($var, \Google\Logging\V2\LogMetric_ApiVersion::class);
         $this->version = $var;
+
+        return $this;
     }
 
 }

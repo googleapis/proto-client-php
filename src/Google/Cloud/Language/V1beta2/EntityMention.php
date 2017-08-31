@@ -59,11 +59,14 @@ class EntityMention extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.TextSpan text = 1;</code>
      * @param \Google\Cloud\Language\V1beta2\TextSpan $var
+     * @return $this
      */
-    public function setText(&$var)
+    public function setText($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\TextSpan::class);
         $this->text = $var;
+
+        return $this;
     }
 
     /**
@@ -82,11 +85,14 @@ class EntityMention extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.EntityMention.Type type = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\EntityMention_Type::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
@@ -111,11 +117,14 @@ class EntityMention extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.Sentiment sentiment = 3;</code>
      * @param \Google\Cloud\Language\V1beta2\Sentiment $var
+     * @return $this
      */
-    public function setSentiment(&$var)
+    public function setSentiment($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\Sentiment::class);
         $this->sentiment = $var;
+
+        return $this;
     }
 
 }

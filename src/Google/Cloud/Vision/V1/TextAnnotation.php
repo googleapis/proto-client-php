@@ -55,11 +55,14 @@ class TextAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Page pages = 1;</code>
      * @param \Google\Cloud\Vision\V1\Page[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPages(&$var)
+    public function setPages($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Page::class);
         $this->pages = $arr;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class TextAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string text = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setText($var)
     {
         GPBUtil::checkString($var, True);
         $this->text = $var;
+
+        return $this;
     }
 
 }

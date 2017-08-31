@@ -77,11 +77,14 @@ class InspectOperationMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 processed_bytes = 1;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setProcessedBytes($var)
     {
         GPBUtil::checkInt64($var);
         $this->processed_bytes = $var;
+
+        return $this;
     }
 
     /**
@@ -100,11 +103,14 @@ class InspectOperationMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 total_estimated_bytes = 4;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setTotalEstimatedBytes($var)
     {
         GPBUtil::checkInt64($var);
         $this->total_estimated_bytes = $var;
+
+        return $this;
     }
 
     /**
@@ -119,11 +125,14 @@ class InspectOperationMetadata extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.InfoTypeStatistics info_type_stats = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InfoTypeStatistics[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setInfoTypeStats(&$var)
+    public function setInfoTypeStats($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InfoTypeStatistics::class);
         $this->info_type_stats = $arr;
+
+        return $this;
     }
 
     /**
@@ -142,11 +151,14 @@ class InspectOperationMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp create_time = 3;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setCreateTime(&$var)
+    public function setCreateTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->create_time = $var;
+
+        return $this;
     }
 
     /**
@@ -165,11 +177,14 @@ class InspectOperationMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.InspectConfig request_inspect_config = 5;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InspectConfig $var
+     * @return $this
      */
-    public function setRequestInspectConfig(&$var)
+    public function setRequestInspectConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\InspectConfig::class);
         $this->request_inspect_config = $var;
+
+        return $this;
     }
 
     /**
@@ -188,11 +203,14 @@ class InspectOperationMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.StorageConfig request_storage_config = 6;</code>
      * @param \Google\Privacy\Dlp\V2beta1\StorageConfig $var
+     * @return $this
      */
-    public function setRequestStorageConfig(&$var)
+    public function setRequestStorageConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\StorageConfig::class);
         $this->request_storage_config = $var;
+
+        return $this;
     }
 
     /**
@@ -211,11 +229,14 @@ class InspectOperationMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OutputStorageConfig request_output_config = 7;</code>
      * @param \Google\Privacy\Dlp\V2beta1\OutputStorageConfig $var
+     * @return $this
      */
-    public function setRequestOutputConfig(&$var)
+    public function setRequestOutputConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\OutputStorageConfig::class);
         $this->request_output_config = $var;
+
+        return $this;
     }
 
 }

@@ -99,11 +99,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.speech.v1.RecognitionConfig.AudioEncoding encoding = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setEncoding($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Speech\V1\RecognitionConfig_AudioEncoding::class);
         $this->encoding = $var;
+
+        return $this;
     }
 
     /**
@@ -130,11 +133,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 sample_rate_hertz = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setSampleRateHertz($var)
     {
         GPBUtil::checkInt32($var);
         $this->sample_rate_hertz = $var;
+
+        return $this;
     }
 
     /**
@@ -161,11 +167,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language_code = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguageCode($var)
     {
         GPBUtil::checkString($var, True);
         $this->language_code = $var;
+
+        return $this;
     }
 
     /**
@@ -194,11 +203,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 max_alternatives = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setMaxAlternatives($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_alternatives = $var;
+
+        return $this;
     }
 
     /**
@@ -223,11 +235,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool profanity_filter = 5;</code>
      * @param bool $var
+     * @return $this
      */
     public function setProfanityFilter($var)
     {
         GPBUtil::checkBool($var);
         $this->profanity_filter = $var;
+
+        return $this;
     }
 
     /**
@@ -246,11 +261,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1.SpeechContext speech_contexts = 6;</code>
      * @param \Google\Cloud\Speech\V1\SpeechContext[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSpeechContexts(&$var)
+    public function setSpeechContexts($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\SpeechContext::class);
         $this->speech_contexts = $arr;
+
+        return $this;
     }
 
     /**
@@ -275,11 +293,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool enable_word_time_offsets = 8;</code>
      * @param bool $var
+     * @return $this
      */
     public function setEnableWordTimeOffsets($var)
     {
         GPBUtil::checkBool($var);
         $this->enable_word_time_offsets = $var;
+
+        return $this;
     }
 
 }

@@ -56,11 +56,14 @@ class AnnotateImageRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Image image = 1;</code>
      * @param \Google\Cloud\Vision\V1\Image $var
+     * @return $this
      */
-    public function setImage(&$var)
+    public function setImage($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\Image::class);
         $this->image = $var;
+
+        return $this;
     }
 
     /**
@@ -79,11 +82,14 @@ class AnnotateImageRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Feature features = 2;</code>
      * @param \Google\Cloud\Vision\V1\Feature[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFeatures(&$var)
+    public function setFeatures($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Feature::class);
         $this->features = $arr;
+
+        return $this;
     }
 
     /**
@@ -102,11 +108,14 @@ class AnnotateImageRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.ImageContext image_context = 3;</code>
      * @param \Google\Cloud\Vision\V1\ImageContext $var
+     * @return $this
      */
-    public function setImageContext(&$var)
+    public function setImageContext($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\ImageContext::class);
         $this->image_context = $var;
+
+        return $this;
     }
 
 }

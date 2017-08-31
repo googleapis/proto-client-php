@@ -43,11 +43,14 @@ class RedactContentResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.ContentItem items = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\ContentItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItems(&$var)
+    public function setItems($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\ContentItem::class);
         $this->items = $arr;
+
+        return $this;
     }
 
 }

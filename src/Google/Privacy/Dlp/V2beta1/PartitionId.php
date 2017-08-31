@@ -53,11 +53,14 @@ class PartitionId extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project_id = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setProjectId($var)
     {
         GPBUtil::checkString($var, True);
         $this->project_id = $var;
+
+        return $this;
     }
 
     /**
@@ -76,11 +79,14 @@ class PartitionId extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string namespace_id = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setNamespaceId($var)
     {
         GPBUtil::checkString($var, True);
         $this->namespace_id = $var;
+
+        return $this;
     }
 
 }

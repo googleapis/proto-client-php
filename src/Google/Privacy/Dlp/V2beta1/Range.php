@@ -49,11 +49,14 @@ class Range extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 start = 1;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setStart($var)
     {
         GPBUtil::checkInt64($var);
         $this->start = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class Range extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 end = 2;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setEnd($var)
     {
         GPBUtil::checkInt64($var);
         $this->end = $var;
+
+        return $this;
     }
 
 }

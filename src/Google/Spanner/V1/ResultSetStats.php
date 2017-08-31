@@ -56,11 +56,14 @@ class ResultSetStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.QueryPlan query_plan = 1;</code>
      * @param \Google\Spanner\V1\QueryPlan $var
+     * @return $this
      */
-    public function setQueryPlan(&$var)
+    public function setQueryPlan($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\QueryPlan::class);
         $this->query_plan = $var;
+
+        return $this;
     }
 
     /**
@@ -93,11 +96,14 @@ class ResultSetStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Struct query_stats = 2;</code>
      * @param \Google\Protobuf\Struct $var
+     * @return $this
      */
-    public function setQueryStats(&$var)
+    public function setQueryStats($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
         $this->query_stats = $var;
+
+        return $this;
     }
 
 }

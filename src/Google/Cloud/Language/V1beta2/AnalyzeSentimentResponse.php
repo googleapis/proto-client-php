@@ -57,11 +57,14 @@ class AnalyzeSentimentResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.Sentiment document_sentiment = 1;</code>
      * @param \Google\Cloud\Language\V1beta2\Sentiment $var
+     * @return $this
      */
-    public function setDocumentSentiment(&$var)
+    public function setDocumentSentiment($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\Sentiment::class);
         $this->document_sentiment = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class AnalyzeSentimentResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguage($var)
     {
         GPBUtil::checkString($var, True);
         $this->language = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class AnalyzeSentimentResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Sentence sentences = 3;</code>
      * @param \Google\Cloud\Language\V1beta2\Sentence[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSentences(&$var)
+    public function setSentences($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Sentence::class);
         $this->sentences = $arr;
+
+        return $this;
     }
 
 }

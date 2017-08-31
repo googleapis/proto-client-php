@@ -67,11 +67,14 @@ class Finding extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string quote = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setQuote($var)
     {
         GPBUtil::checkString($var, True);
         $this->quote = $var;
+
+        return $this;
     }
 
     /**
@@ -90,11 +93,14 @@ class Finding extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.InfoType info_type = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InfoType $var
+     * @return $this
      */
-    public function setInfoType(&$var)
+    public function setInfoType($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\InfoType::class);
         $this->info_type = $var;
+
+        return $this;
     }
 
     /**
@@ -113,11 +119,14 @@ class Finding extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.Likelihood likelihood = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setLikelihood($var)
     {
         GPBUtil::checkEnum($var, \Google\Privacy\Dlp\V2beta1\Likelihood::class);
         $this->likelihood = $var;
+
+        return $this;
     }
 
     /**
@@ -136,11 +145,14 @@ class Finding extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.Location location = 4;</code>
      * @param \Google\Privacy\Dlp\V2beta1\Location $var
+     * @return $this
      */
-    public function setLocation(&$var)
+    public function setLocation($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\Location::class);
         $this->location = $var;
+
+        return $this;
     }
 
     /**
@@ -159,11 +171,14 @@ class Finding extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp create_time = 6;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setCreateTime(&$var)
+    public function setCreateTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->create_time = $var;
+
+        return $this;
     }
 
 }

@@ -31,7 +31,7 @@ class RedactContentRequest_ImageRedactionConfig extends \Google\Protobuf\Interna
 
     /**
      * Only one per info_type should be provided per request. If not
-     * specified, and redact_all_text is false, the DLP API will redacts all
+     * specified, and redact_all_text is false, the DLP API will redact all
      * text that it matches against all info_types that are found, but not
      * specified in another ImageRedactionConfig.
      *
@@ -45,21 +45,24 @@ class RedactContentRequest_ImageRedactionConfig extends \Google\Protobuf\Interna
 
     /**
      * Only one per info_type should be provided per request. If not
-     * specified, and redact_all_text is false, the DLP API will redacts all
+     * specified, and redact_all_text is false, the DLP API will redact all
      * text that it matches against all info_types that are found, but not
      * specified in another ImageRedactionConfig.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.InfoType info_type = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InfoType $var
+     * @return $this
      */
-    public function setInfoType(&$var)
+    public function setInfoType($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\InfoType::class);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
-     * If true, all text found in the image, regardless if it matches an
+     * If true, all text found in the image, regardless whether it matches an
      * info_type, is redacted.
      *
      * Generated from protobuf field <code>bool redact_all_text = 2;</code>
@@ -71,16 +74,19 @@ class RedactContentRequest_ImageRedactionConfig extends \Google\Protobuf\Interna
     }
 
     /**
-     * If true, all text found in the image, regardless if it matches an
+     * If true, all text found in the image, regardless whether it matches an
      * info_type, is redacted.
      *
      * Generated from protobuf field <code>bool redact_all_text = 2;</code>
      * @param bool $var
+     * @return $this
      */
     public function setRedactAllText($var)
     {
         GPBUtil::checkBool($var);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -101,11 +107,14 @@ class RedactContentRequest_ImageRedactionConfig extends \Google\Protobuf\Interna
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.Color redaction_color = 3;</code>
      * @param \Google\Privacy\Dlp\V2beta1\Color $var
+     * @return $this
      */
-    public function setRedactionColor(&$var)
+    public function setRedactionColor($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\Color::class);
         $this->redaction_color = $var;
+
+        return $this;
     }
 
     /**

@@ -43,11 +43,14 @@ class UpdateGroupRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ErrorGroup $var
+     * @return $this
      */
-    public function setGroup(&$var)
+    public function setGroup($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorGroup::class);
         $this->group = $var;
+
+        return $this;
     }
 
 }

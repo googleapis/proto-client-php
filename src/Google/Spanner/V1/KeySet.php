@@ -72,11 +72,14 @@ class KeySet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.protobuf.ListValue keys = 1;</code>
      * @param \Google\Protobuf\ListValue[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setKeys(&$var)
+    public function setKeys($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
         $this->keys = $arr;
+
+        return $this;
     }
 
     /**
@@ -97,11 +100,14 @@ class KeySet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.KeyRange ranges = 2;</code>
      * @param \Google\Spanner\V1\KeyRange[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRanges(&$var)
+    public function setRanges($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\KeyRange::class);
         $this->ranges = $arr;
+
+        return $this;
     }
 
     /**
@@ -124,11 +130,14 @@ class KeySet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool all = 3;</code>
      * @param bool $var
+     * @return $this
      */
     public function setAll($var)
     {
         GPBUtil::checkBool($var);
         $this->all = $var;
+
+        return $this;
     }
 
 }

@@ -59,11 +59,14 @@ class SpeechContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string phrases = 1;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPhrases(&$var)
+    public function setPhrases($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->phrases = $arr;
+
+        return $this;
     }
 
 }

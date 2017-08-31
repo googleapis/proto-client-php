@@ -59,11 +59,14 @@ class UpdateDatabaseDdlMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string database = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setDatabase($var)
     {
         GPBUtil::checkString($var, True);
         $this->database = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class UpdateDatabaseDdlMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string statements = 2;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setStatements(&$var)
+    public function setStatements($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->statements = $arr;
+
+        return $this;
     }
 
     /**
@@ -111,11 +117,14 @@ class UpdateDatabaseDdlMetadata extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Timestamp commit_timestamps = 3;</code>
      * @param \Google\Protobuf\Timestamp[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setCommitTimestamps(&$var)
+    public function setCommitTimestamps($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Timestamp::class);
         $this->commit_timestamps = $arr;
+
+        return $this;
     }
 
 }

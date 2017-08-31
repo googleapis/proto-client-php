@@ -85,11 +85,14 @@ class UpdateDatabaseDdlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string database = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setDatabase($var)
     {
         GPBUtil::checkString($var, True);
         $this->database = $var;
+
+        return $this;
     }
 
     /**
@@ -108,11 +111,14 @@ class UpdateDatabaseDdlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string statements = 2;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setStatements(&$var)
+    public function setStatements($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->statements = $arr;
+
+        return $this;
     }
 
     /**
@@ -163,11 +169,14 @@ class UpdateDatabaseDdlRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string operation_id = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setOperationId($var)
     {
         GPBUtil::checkString($var, True);
         $this->operation_id = $var;
+
+        return $this;
     }
 
 }

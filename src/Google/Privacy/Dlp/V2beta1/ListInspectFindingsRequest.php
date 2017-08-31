@@ -18,7 +18,7 @@ class ListInspectFindingsRequest extends \Google\Protobuf\Internal\Message
     /**
      * Identifier of the results set returned as metadata of
      * the longrunning operation created by a call to CreateInspectOperation.
-     * Should be in the format of `inspect/results/{id}.
+     * Should be in the format of `inspect/results/{id}`.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
@@ -59,7 +59,7 @@ class ListInspectFindingsRequest extends \Google\Protobuf\Internal\Message
     /**
      * Identifier of the results set returned as metadata of
      * the longrunning operation created by a call to CreateInspectOperation.
-     * Should be in the format of `inspect/results/{id}.
+     * Should be in the format of `inspect/results/{id}`.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @return string
@@ -72,15 +72,18 @@ class ListInspectFindingsRequest extends \Google\Protobuf\Internal\Message
     /**
      * Identifier of the results set returned as metadata of
      * the longrunning operation created by a call to CreateInspectOperation.
-     * Should be in the format of `inspect/results/{id}.
+     * Should be in the format of `inspect/results/{id}`.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -101,11 +104,14 @@ class ListInspectFindingsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 page_size = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setPageSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_size = $var;
+
+        return $this;
     }
 
     /**
@@ -128,11 +134,14 @@ class ListInspectFindingsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string page_token = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->page_token = $var;
+
+        return $this;
     }
 
     /**
@@ -163,11 +172,14 @@ class ListInspectFindingsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string filter = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setFilter($var)
     {
         GPBUtil::checkString($var, True);
         $this->filter = $var;
+
+        return $this;
     }
 
 }

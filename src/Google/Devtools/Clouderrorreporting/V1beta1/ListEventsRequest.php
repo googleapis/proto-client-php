@@ -89,11 +89,14 @@ class ListEventsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setProjectName($var)
     {
         GPBUtil::checkString($var, True);
         $this->project_name = $var;
+
+        return $this;
     }
 
     /**
@@ -112,11 +115,14 @@ class ListEventsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string group_id = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setGroupId($var)
     {
         GPBUtil::checkString($var, True);
         $this->group_id = $var;
+
+        return $this;
     }
 
     /**
@@ -139,11 +145,14 @@ class ListEventsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContextFilter $var
+     * @return $this
      */
-    public function setServiceFilter(&$var)
+    public function setServiceFilter($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContextFilter::class);
         $this->service_filter = $var;
+
+        return $this;
     }
 
     /**
@@ -166,11 +175,14 @@ class ListEventsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\QueryTimeRange $var
+     * @return $this
      */
-    public function setTimeRange(&$var)
+    public function setTimeRange($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\QueryTimeRange::class);
         $this->time_range = $var;
+
+        return $this;
     }
 
     /**
@@ -189,11 +201,14 @@ class ListEventsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 page_size = 6;</code>
      * @param int $var
+     * @return $this
      */
     public function setPageSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_size = $var;
+
+        return $this;
     }
 
     /**
@@ -212,11 +227,14 @@ class ListEventsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string page_token = 7;</code>
      * @param string $var
+     * @return $this
      */
     public function setPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->page_token = $var;
+
+        return $this;
     }
 
 }

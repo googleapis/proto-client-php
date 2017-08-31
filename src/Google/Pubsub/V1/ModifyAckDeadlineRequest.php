@@ -64,11 +64,14 @@ class ModifyAckDeadlineRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string subscription = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSubscription($var)
     {
         GPBUtil::checkString($var, True);
         $this->subscription = $var;
+
+        return $this;
     }
 
     /**
@@ -87,11 +90,14 @@ class ModifyAckDeadlineRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string ack_ids = 4;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAckIds(&$var)
+    public function setAckIds($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->ack_ids = $arr;
+
+        return $this;
     }
 
     /**
@@ -122,11 +128,14 @@ class ModifyAckDeadlineRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 ack_deadline_seconds = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setAckDeadlineSeconds($var)
     {
         GPBUtil::checkInt32($var);
         $this->ack_deadline_seconds = $var;
+
+        return $this;
     }
 
 }

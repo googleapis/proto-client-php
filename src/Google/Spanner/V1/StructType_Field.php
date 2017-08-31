@@ -67,11 +67,14 @@ class StructType_Field extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -90,11 +93,14 @@ class StructType_Field extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.Type type = 2;</code>
      * @param \Google\Spanner\V1\Type $var
+     * @return $this
      */
-    public function setType(&$var)
+    public function setType($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\Type::class);
         $this->type = $var;
+
+        return $this;
     }
 
 }

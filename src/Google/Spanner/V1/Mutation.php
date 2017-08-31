@@ -42,11 +42,14 @@ class Mutation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.Mutation.Write insert = 1;</code>
      * @param \Google\Spanner\V1\Mutation_Write $var
+     * @return $this
      */
-    public function setInsert(&$var)
+    public function setInsert($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\Mutation_Write::class);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
@@ -67,11 +70,14 @@ class Mutation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.Mutation.Write update = 2;</code>
      * @param \Google\Spanner\V1\Mutation_Write $var
+     * @return $this
      */
-    public function setUpdate(&$var)
+    public function setUpdate($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\Mutation_Write::class);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -94,11 +100,14 @@ class Mutation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.Mutation.Write insert_or_update = 3;</code>
      * @param \Google\Spanner\V1\Mutation_Write $var
+     * @return $this
      */
-    public function setInsertOrUpdate(&$var)
+    public function setInsertOrUpdate($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\Mutation_Write::class);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**
@@ -123,11 +132,14 @@ class Mutation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.Mutation.Write replace = 4;</code>
      * @param \Google\Spanner\V1\Mutation_Write $var
+     * @return $this
      */
-    public function setReplace(&$var)
+    public function setReplace($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\Mutation_Write::class);
         $this->writeOneof(4, $var);
+
+        return $this;
     }
 
     /**
@@ -148,11 +160,14 @@ class Mutation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.Mutation.Delete delete = 5;</code>
      * @param \Google\Spanner\V1\Mutation_Delete $var
+     * @return $this
      */
-    public function setDelete(&$var)
+    public function setDelete($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\Mutation_Delete::class);
         $this->writeOneof(5, $var);
+
+        return $this;
     }
 
     /**

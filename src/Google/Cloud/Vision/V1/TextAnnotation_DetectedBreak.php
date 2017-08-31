@@ -43,11 +43,14 @@ class TextAnnotation_DetectedBreak extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.google.cloud.vision.v1.TextAnnotation.DetectedBreak.BreakType type = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\TextAnnotation_DetectedBreak_BreakType::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
@@ -66,11 +69,14 @@ class TextAnnotation_DetectedBreak extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool is_prefix = 2;</code>
      * @param bool $var
+     * @return $this
      */
     public function setIsPrefix($var)
     {
         GPBUtil::checkBool($var);
         $this->is_prefix = $var;
+
+        return $this;
     }
 
 }

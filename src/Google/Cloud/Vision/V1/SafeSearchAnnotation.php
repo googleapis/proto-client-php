@@ -65,11 +65,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood adult = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setAdult($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->adult = $var;
+
+        return $this;
     }
 
     /**
@@ -92,11 +95,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood spoof = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setSpoof($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->spoof = $var;
+
+        return $this;
     }
 
     /**
@@ -115,11 +121,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood medical = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setMedical($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->medical = $var;
+
+        return $this;
     }
 
     /**
@@ -138,11 +147,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.Likelihood violence = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setViolence($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Likelihood::class);
         $this->violence = $var;
+
+        return $this;
     }
 
 }

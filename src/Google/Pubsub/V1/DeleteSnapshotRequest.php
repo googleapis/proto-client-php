@@ -46,11 +46,14 @@ class DeleteSnapshotRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string snapshot = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSnapshot($var)
     {
         GPBUtil::checkString($var, True);
         $this->snapshot = $var;
+
+        return $this;
     }
 
 }

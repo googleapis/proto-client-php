@@ -16,10 +16,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class InfoType extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Name of the information type. For built-in info types, this is provided by
-     * the API call ListInfoTypes. For user-defined info types, this is
-     * provided by the user. All user-defined info types must have unique names,
-     * and cannot conflict with built-in info type names.
+     * Name of the information type.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
@@ -31,10 +28,7 @@ class InfoType extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Name of the information type. For built-in info types, this is provided by
-     * the API call ListInfoTypes. For user-defined info types, this is
-     * provided by the user. All user-defined info types must have unique names,
-     * and cannot conflict with built-in info type names.
+     * Name of the information type.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @return string
@@ -45,18 +39,18 @@ class InfoType extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Name of the information type. For built-in info types, this is provided by
-     * the API call ListInfoTypes. For user-defined info types, this is
-     * provided by the user. All user-defined info types must have unique names,
-     * and cannot conflict with built-in info type names.
+     * Name of the information type.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
 }

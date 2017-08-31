@@ -90,11 +90,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.speech.v1beta1.RecognitionConfig.AudioEncoding encoding = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setEncoding($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Speech\V1beta1\RecognitionConfig_AudioEncoding::class);
         $this->encoding = $var;
+
+        return $this;
     }
 
     /**
@@ -121,11 +124,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 sample_rate = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setSampleRate($var)
     {
         GPBUtil::checkInt32($var);
         $this->sample_rate = $var;
+
+        return $this;
     }
 
     /**
@@ -152,11 +158,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language_code = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguageCode($var)
     {
         GPBUtil::checkString($var, True);
         $this->language_code = $var;
+
+        return $this;
     }
 
     /**
@@ -185,11 +194,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 max_alternatives = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setMaxAlternatives($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_alternatives = $var;
+
+        return $this;
     }
 
     /**
@@ -214,11 +226,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool profanity_filter = 5;</code>
      * @param bool $var
+     * @return $this
      */
     public function setProfanityFilter($var)
     {
         GPBUtil::checkBool($var);
         $this->profanity_filter = $var;
+
+        return $this;
     }
 
     /**
@@ -237,11 +252,14 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.speech.v1beta1.SpeechContext speech_context = 6;</code>
      * @param \Google\Cloud\Speech\V1beta1\SpeechContext $var
+     * @return $this
      */
-    public function setSpeechContext(&$var)
+    public function setSpeechContext($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Speech\V1beta1\SpeechContext::class);
         $this->speech_context = $var;
+
+        return $this;
     }
 
 }

@@ -61,11 +61,14 @@ class ImageLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 top = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setTop($var)
     {
         GPBUtil::checkInt32($var);
         $this->top = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class ImageLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 left = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setLeft($var)
     {
         GPBUtil::checkInt32($var);
         $this->left = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class ImageLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 width = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setWidth($var)
     {
         GPBUtil::checkInt32($var);
         $this->width = $var;
+
+        return $this;
     }
 
     /**
@@ -130,11 +139,14 @@ class ImageLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 height = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setHeight($var)
     {
         GPBUtil::checkInt32($var);
         $this->height = $var;
+
+        return $this;
     }
 
 }

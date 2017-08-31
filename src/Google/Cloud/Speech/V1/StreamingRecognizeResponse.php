@@ -94,11 +94,14 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.rpc.Status error = 1;</code>
      * @param \Google\Rpc\Status $var
+     * @return $this
      */
-    public function setError(&$var)
+    public function setError($var)
     {
         GPBUtil::checkMessage($var, \Google\Rpc\Status::class);
         $this->error = $var;
+
+        return $this;
     }
 
     /**
@@ -123,11 +126,14 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1.StreamingRecognitionResult results = 2;</code>
      * @param \Google\Cloud\Speech\V1\StreamingRecognitionResult[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setResults(&$var)
+    public function setResults($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\StreamingRecognitionResult::class);
         $this->results = $arr;
+
+        return $this;
     }
 
     /**
@@ -146,11 +152,14 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.speech.v1.StreamingRecognizeResponse.SpeechEventType speech_event_type = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setSpeechEventType($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Speech\V1\StreamingRecognizeResponse_SpeechEventType::class);
         $this->speech_event_type = $var;
+
+        return $this;
     }
 
 }

@@ -55,11 +55,14 @@ class SpeechRecognitionAlternative extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string transcript = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setTranscript($var)
     {
         GPBUtil::checkString($var, True);
         $this->transcript = $var;
+
+        return $this;
     }
 
     /**
@@ -90,11 +93,14 @@ class SpeechRecognitionAlternative extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float confidence = 2;</code>
      * @param float $var
+     * @return $this
      */
     public function setConfidence($var)
     {
         GPBUtil::checkFloat($var);
         $this->confidence = $var;
+
+        return $this;
     }
 
 }

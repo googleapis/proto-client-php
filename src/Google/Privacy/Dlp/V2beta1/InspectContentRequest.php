@@ -51,11 +51,14 @@ class InspectContentRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.InspectConfig inspect_config = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InspectConfig $var
+     * @return $this
      */
-    public function setInspectConfig(&$var)
+    public function setInspectConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\InspectConfig::class);
         $this->inspect_config = $var;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class InspectContentRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.ContentItem items = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\ContentItem[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setItems(&$var)
+    public function setItems($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\ContentItem::class);
         $this->items = $arr;
+
+        return $this;
     }
 
 }

@@ -110,11 +110,14 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string mid = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setMid($var)
     {
         GPBUtil::checkString($var, True);
         $this->mid = $var;
+
+        return $this;
     }
 
     /**
@@ -135,11 +138,14 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string locale = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setLocale($var)
     {
         GPBUtil::checkString($var, True);
         $this->locale = $var;
+
+        return $this;
     }
 
     /**
@@ -158,11 +164,14 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string description = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
     /**
@@ -181,11 +190,14 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float score = 4;</code>
      * @param float $var
+     * @return $this
      */
     public function setScore($var)
     {
         GPBUtil::checkFloat($var);
         $this->score = $var;
+
+        return $this;
     }
 
     /**
@@ -210,11 +222,14 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float confidence = 5;</code>
      * @param float $var
+     * @return $this
      */
     public function setConfidence($var)
     {
         GPBUtil::checkFloat($var);
         $this->confidence = $var;
+
+        return $this;
     }
 
     /**
@@ -241,11 +256,14 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float topicality = 6;</code>
      * @param float $var
+     * @return $this
      */
     public function setTopicality($var)
     {
         GPBUtil::checkFloat($var);
         $this->topicality = $var;
+
+        return $this;
     }
 
     /**
@@ -270,11 +288,14 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_poly = 7;</code>
      * @param \Google\Cloud\Vision\V1\BoundingPoly $var
+     * @return $this
      */
-    public function setBoundingPoly(&$var)
+    public function setBoundingPoly($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\BoundingPoly::class);
         $this->bounding_poly = $var;
+
+        return $this;
     }
 
     /**
@@ -301,11 +322,14 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.LocationInfo locations = 8;</code>
      * @param \Google\Cloud\Vision\V1\LocationInfo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLocations(&$var)
+    public function setLocations($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\LocationInfo::class);
         $this->locations = $arr;
+
+        return $this;
     }
 
     /**
@@ -326,11 +350,14 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Property properties = 9;</code>
      * @param \Google\Cloud\Vision\V1\Property[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setProperties(&$var)
+    public function setProperties($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Property::class);
         $this->properties = $arr;
+
+        return $this;
     }
 
 }

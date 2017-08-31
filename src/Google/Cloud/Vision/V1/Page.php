@@ -61,11 +61,14 @@ class Page extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.TextAnnotation.TextProperty property = 1;</code>
      * @param \Google\Cloud\Vision\V1\TextAnnotation_TextProperty $var
+     * @return $this
      */
-    public function setProperty(&$var)
+    public function setProperty($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\TextAnnotation_TextProperty::class);
         $this->property = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class Page extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 width = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setWidth($var)
     {
         GPBUtil::checkInt32($var);
         $this->width = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class Page extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 height = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setHeight($var)
     {
         GPBUtil::checkInt32($var);
         $this->height = $var;
+
+        return $this;
     }
 
     /**
@@ -130,11 +139,14 @@ class Page extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Block blocks = 4;</code>
      * @param \Google\Cloud\Vision\V1\Block[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setBlocks(&$var)
+    public function setBlocks($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Block::class);
         $this->blocks = $arr;
+
+        return $this;
     }
 
 }

@@ -38,11 +38,14 @@ class CloudStorageOptions extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.CloudStorageOptions.FileSet file_set = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\CloudStorageOptions_FileSet $var
+     * @return $this
      */
-    public function setFileSet(&$var)
+    public function setFileSet($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\CloudStorageOptions_FileSet::class);
         $this->file_set = $var;
+
+        return $this;
     }
 
 }

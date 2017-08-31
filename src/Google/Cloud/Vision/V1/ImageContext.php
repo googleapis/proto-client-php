@@ -62,11 +62,14 @@ class ImageContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.LatLongRect lat_long_rect = 1;</code>
      * @param \Google\Cloud\Vision\V1\LatLongRect $var
+     * @return $this
      */
-    public function setLatLongRect(&$var)
+    public function setLatLongRect($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\LatLongRect::class);
         $this->lat_long_rect = $var;
+
+        return $this;
     }
 
     /**
@@ -99,11 +102,14 @@ class ImageContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string language_hints = 2;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLanguageHints(&$var)
+    public function setLanguageHints($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->language_hints = $arr;
+
+        return $this;
     }
 
     /**
@@ -122,11 +128,14 @@ class ImageContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.CropHintsParams crop_hints_params = 4;</code>
      * @param \Google\Cloud\Vision\V1\CropHintsParams $var
+     * @return $this
      */
-    public function setCropHintsParams(&$var)
+    public function setCropHintsParams($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\CropHintsParams::class);
         $this->crop_hints_params = $var;
+
+        return $this;
     }
 
 }

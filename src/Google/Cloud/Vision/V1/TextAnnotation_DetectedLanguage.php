@@ -55,11 +55,14 @@ class TextAnnotation_DetectedLanguage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language_code = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguageCode($var)
     {
         GPBUtil::checkString($var, True);
         $this->language_code = $var;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class TextAnnotation_DetectedLanguage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float confidence = 2;</code>
      * @param float $var
+     * @return $this
      */
     public function setConfidence($var)
     {
         GPBUtil::checkFloat($var);
         $this->confidence = $var;
+
+        return $this;
     }
 
 }

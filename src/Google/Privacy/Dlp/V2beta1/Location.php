@@ -46,6 +46,12 @@ class Location extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.FieldId field_id = 5;</code>
      */
     private $field_id = null;
+    /**
+     * Location within a `ContentItem.Table`.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.TableLocation table_location = 6;</code>
+     */
+    private $table_location = null;
 
     public function __construct() {
         \GPBMetadata\Google\Privacy\Dlp\V2Beta1\Dlp::initOnce();
@@ -68,11 +74,14 @@ class Location extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.Range byte_range = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\Range $var
+     * @return $this
      */
-    public function setByteRange(&$var)
+    public function setByteRange($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\Range::class);
         $this->byte_range = $var;
+
+        return $this;
     }
 
     /**
@@ -93,11 +102,14 @@ class Location extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.Range codepoint_range = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\Range $var
+     * @return $this
      */
-    public function setCodepointRange(&$var)
+    public function setCodepointRange($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\Range::class);
         $this->codepoint_range = $var;
+
+        return $this;
     }
 
     /**
@@ -116,11 +128,14 @@ class Location extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.ImageLocation image_boxes = 3;</code>
      * @param \Google\Privacy\Dlp\V2beta1\ImageLocation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setImageBoxes(&$var)
+    public function setImageBoxes($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\ImageLocation::class);
         $this->image_boxes = $arr;
+
+        return $this;
     }
 
     /**
@@ -139,11 +154,14 @@ class Location extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.RecordKey record_key = 4;</code>
      * @param \Google\Privacy\Dlp\V2beta1\RecordKey $var
+     * @return $this
      */
-    public function setRecordKey(&$var)
+    public function setRecordKey($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\RecordKey::class);
         $this->record_key = $var;
+
+        return $this;
     }
 
     /**
@@ -162,11 +180,40 @@ class Location extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.FieldId field_id = 5;</code>
      * @param \Google\Privacy\Dlp\V2beta1\FieldId $var
+     * @return $this
      */
-    public function setFieldId(&$var)
+    public function setFieldId($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\FieldId::class);
         $this->field_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Location within a `ContentItem.Table`.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.TableLocation table_location = 6;</code>
+     * @return \Google\Privacy\Dlp\V2beta1\TableLocation
+     */
+    public function getTableLocation()
+    {
+        return $this->table_location;
+    }
+
+    /**
+     * Location within a `ContentItem.Table`.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.TableLocation table_location = 6;</code>
+     * @param \Google\Privacy\Dlp\V2beta1\TableLocation $var
+     * @return $this
+     */
+    public function setTableLocation($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\TableLocation::class);
+        $this->table_location = $var;
+
+        return $this;
     }
 
 }

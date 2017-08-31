@@ -54,11 +54,14 @@ class ListMetricDescriptorsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.api.MetricDescriptor metric_descriptors = 1;</code>
      * @param \Google\Api\MetricDescriptor[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMetricDescriptors(&$var)
+    public function setMetricDescriptors($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MetricDescriptor::class);
         $this->metric_descriptors = $arr;
+
+        return $this;
     }
 
     /**
@@ -81,11 +84,14 @@ class ListMetricDescriptorsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

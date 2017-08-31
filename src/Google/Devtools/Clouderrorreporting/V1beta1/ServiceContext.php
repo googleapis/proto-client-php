@@ -75,11 +75,14 @@ class ServiceContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string service = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setService($var)
     {
         GPBUtil::checkString($var, True);
         $this->service = $var;
+
+        return $this;
     }
 
     /**
@@ -100,11 +103,14 @@ class ServiceContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string version = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setVersion($var)
     {
         GPBUtil::checkString($var, True);
         $this->version = $var;
+
+        return $this;
     }
 
     /**
@@ -129,11 +135,14 @@ class ServiceContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string resource_type = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setResourceType($var)
     {
         GPBUtil::checkString($var, True);
         $this->resource_type = $var;
+
+        return $this;
     }
 
 }

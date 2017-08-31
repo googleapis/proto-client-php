@@ -56,11 +56,14 @@ class CreateLogMetricRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setParent($var)
     {
         GPBUtil::checkString($var, True);
         $this->parent = $var;
+
+        return $this;
     }
 
     /**
@@ -81,11 +84,14 @@ class CreateLogMetricRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.logging.v2.LogMetric metric = 2;</code>
      * @param \Google\Logging\V2\LogMetric $var
+     * @return $this
      */
-    public function setMetric(&$var)
+    public function setMetric($var)
     {
         GPBUtil::checkMessage($var, \Google\Logging\V2\LogMetric::class);
         $this->metric = $var;
+
+        return $this;
     }
 
 }

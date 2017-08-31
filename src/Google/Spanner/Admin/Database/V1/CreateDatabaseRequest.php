@@ -63,11 +63,14 @@ class CreateDatabaseRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setParent($var)
     {
         GPBUtil::checkString($var, True);
         $this->parent = $var;
+
+        return $this;
     }
 
     /**
@@ -90,11 +93,14 @@ class CreateDatabaseRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string create_statement = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setCreateStatement($var)
     {
         GPBUtil::checkString($var, True);
         $this->create_statement = $var;
+
+        return $this;
     }
 
     /**
@@ -119,11 +125,14 @@ class CreateDatabaseRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string extra_statements = 3;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setExtraStatements(&$var)
+    public function setExtraStatements($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->extra_statements = $arr;
+
+        return $this;
     }
 
 }

@@ -58,11 +58,14 @@ class StructType extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.StructType.Field fields = 1;</code>
      * @param \Google\Spanner\V1\StructType_Field[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFields(&$var)
+    public function setFields($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\StructType_Field::class);
         $this->fields = $arr;
+
+        return $this;
     }
 
 }

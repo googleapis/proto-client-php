@@ -61,11 +61,14 @@ class ListGroupsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 7;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -88,11 +91,14 @@ class ListGroupsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string children_of_group = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setChildrenOfGroup($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -119,11 +125,14 @@ class ListGroupsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string ancestors_of_group = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setAncestorsOfGroup($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**
@@ -148,11 +157,14 @@ class ListGroupsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string descendants_of_group = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setDescendantsOfGroup($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(4, $var);
+
+        return $this;
     }
 
     /**
@@ -171,11 +183,14 @@ class ListGroupsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 page_size = 5;</code>
      * @param int $var
+     * @return $this
      */
     public function setPageSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_size = $var;
+
+        return $this;
     }
 
     /**
@@ -198,11 +213,14 @@ class ListGroupsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string page_token = 6;</code>
      * @param string $var
+     * @return $this
      */
     public function setPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->page_token = $var;
+
+        return $this;
     }
 
     /**

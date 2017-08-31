@@ -100,11 +100,14 @@ class KeyRange extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.ListValue start_closed = 1;</code>
      * @param \Google\Protobuf\ListValue $var
+     * @return $this
      */
-    public function setStartClosed(&$var)
+    public function setStartClosed($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\ListValue::class);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
@@ -125,11 +128,14 @@ class KeyRange extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.ListValue start_open = 2;</code>
      * @param \Google\Protobuf\ListValue $var
+     * @return $this
      */
-    public function setStartOpen(&$var)
+    public function setStartOpen($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\ListValue::class);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -150,11 +156,14 @@ class KeyRange extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.ListValue end_closed = 3;</code>
      * @param \Google\Protobuf\ListValue $var
+     * @return $this
      */
-    public function setEndClosed(&$var)
+    public function setEndClosed($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\ListValue::class);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**
@@ -175,11 +184,14 @@ class KeyRange extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.ListValue end_open = 4;</code>
      * @param \Google\Protobuf\ListValue $var
+     * @return $this
      */
-    public function setEndOpen(&$var)
+    public function setEndOpen($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\ListValue::class);
         $this->writeOneof(4, $var);
+
+        return $this;
     }
 
     /**

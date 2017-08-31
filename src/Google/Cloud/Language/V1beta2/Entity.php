@@ -85,11 +85,14 @@ class Entity extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -108,11 +111,14 @@ class Entity extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.Entity.Type type = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\Entity_Type::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
@@ -135,11 +141,14 @@ class Entity extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> metadata = 3;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setMetadata(&$var)
+    public function setMetadata($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->metadata = $arr;
+
+        return $this;
     }
 
     /**
@@ -166,11 +175,14 @@ class Entity extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float salience = 4;</code>
      * @param float $var
+     * @return $this
      */
     public function setSalience($var)
     {
         GPBUtil::checkFloat($var);
         $this->salience = $var;
+
+        return $this;
     }
 
     /**
@@ -191,11 +203,14 @@ class Entity extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.EntityMention mentions = 5;</code>
      * @param \Google\Cloud\Language\V1beta2\EntityMention[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMentions(&$var)
+    public function setMentions($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\EntityMention::class);
         $this->mentions = $arr;
+
+        return $this;
     }
 
     /**
@@ -220,11 +235,14 @@ class Entity extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.Sentiment sentiment = 6;</code>
      * @param \Google\Cloud\Language\V1beta2\Sentiment $var
+     * @return $this
      */
-    public function setSentiment(&$var)
+    public function setSentiment($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\Sentiment::class);
         $this->sentiment = $var;
+
+        return $this;
     }
 
 }

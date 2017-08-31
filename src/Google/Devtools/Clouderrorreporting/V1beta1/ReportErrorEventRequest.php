@@ -58,11 +58,14 @@ class ReportErrorEventRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setProjectName($var)
     {
         GPBUtil::checkString($var, True);
         $this->project_name = $var;
+
+        return $this;
     }
 
     /**
@@ -81,11 +84,14 @@ class ReportErrorEventRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent event = 2;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ReportedErrorEvent $var
+     * @return $this
      */
-    public function setEvent(&$var)
+    public function setEvent($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\ReportedErrorEvent::class);
         $this->event = $var;
+
+        return $this;
     }
 
 }

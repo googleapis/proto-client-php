@@ -56,11 +56,14 @@ class RedactContentRequest_ReplaceConfig extends \Google\Protobuf\Internal\Messa
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.InfoType info_type = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InfoType $var
+     * @return $this
      */
-    public function setInfoType(&$var)
+    public function setInfoType($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\InfoType::class);
         $this->info_type = $var;
+
+        return $this;
     }
 
     /**
@@ -79,11 +82,14 @@ class RedactContentRequest_ReplaceConfig extends \Google\Protobuf\Internal\Messa
      *
      * Generated from protobuf field <code>string replace_with = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setReplaceWith($var)
     {
         GPBUtil::checkString($var, True);
         $this->replace_with = $var;
+
+        return $this;
     }
 
 }

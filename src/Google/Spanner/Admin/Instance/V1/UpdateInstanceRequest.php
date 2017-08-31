@@ -55,11 +55,14 @@ class UpdateInstanceRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.admin.instance.v1.Instance instance = 1;</code>
      * @param \Google\Spanner\Admin\Instance\V1\Instance $var
+     * @return $this
      */
-    public function setInstance(&$var)
+    public function setInstance($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\Admin\Instance\V1\Instance::class);
         $this->instance = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class UpdateInstanceRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.FieldMask field_mask = 2;</code>
      * @param \Google\Protobuf\FieldMask $var
+     * @return $this
      */
-    public function setFieldMask(&$var)
+    public function setFieldMask($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\FieldMask::class);
         $this->field_mask = $var;
+
+        return $this;
     }
 
 }

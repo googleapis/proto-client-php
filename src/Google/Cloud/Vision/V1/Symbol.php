@@ -69,11 +69,14 @@ class Symbol extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.TextAnnotation.TextProperty property = 1;</code>
      * @param \Google\Cloud\Vision\V1\TextAnnotation_TextProperty $var
+     * @return $this
      */
-    public function setProperty(&$var)
+    public function setProperty($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\TextAnnotation_TextProperty::class);
         $this->property = $var;
+
+        return $this;
     }
 
     /**
@@ -120,11 +123,14 @@ class Symbol extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_box = 2;</code>
      * @param \Google\Cloud\Vision\V1\BoundingPoly $var
+     * @return $this
      */
-    public function setBoundingBox(&$var)
+    public function setBoundingBox($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\BoundingPoly::class);
         $this->bounding_box = $var;
+
+        return $this;
     }
 
     /**
@@ -143,11 +149,14 @@ class Symbol extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string text = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setText($var)
     {
         GPBUtil::checkString($var, True);
         $this->text = $var;
+
+        return $this;
     }
 
 }

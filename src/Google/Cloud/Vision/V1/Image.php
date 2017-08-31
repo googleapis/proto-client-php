@@ -57,11 +57,14 @@ class Image extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes content = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setContent($var)
     {
         GPBUtil::checkString($var, False);
         $this->content = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class Image extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.ImageSource source = 2;</code>
      * @param \Google\Cloud\Vision\V1\ImageSource $var
+     * @return $this
      */
-    public function setSource(&$var)
+    public function setSource($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\ImageSource::class);
         $this->source = $var;
+
+        return $this;
     }
 
 }

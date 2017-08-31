@@ -58,11 +58,14 @@ class Trace extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project_id = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setProjectId($var)
     {
         GPBUtil::checkString($var, True);
         $this->project_id = $var;
+
+        return $this;
     }
 
     /**
@@ -83,11 +86,14 @@ class Trace extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string trace_id = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setTraceId($var)
     {
         GPBUtil::checkString($var, True);
         $this->trace_id = $var;
+
+        return $this;
     }
 
     /**
@@ -106,11 +112,14 @@ class Trace extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.devtools.cloudtrace.v1.TraceSpan spans = 3;</code>
      * @param \Google\Devtools\Cloudtrace\V1\TraceSpan[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSpans(&$var)
+    public function setSpans($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudtrace\V1\TraceSpan::class);
         $this->spans = $arr;
+
+        return $this;
     }
 
 }

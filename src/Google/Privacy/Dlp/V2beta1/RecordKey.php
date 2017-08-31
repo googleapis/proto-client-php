@@ -34,11 +34,14 @@ class RecordKey extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.CloudStorageKey cloud_storage_key = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\CloudStorageKey $var
+     * @return $this
      */
-    public function setCloudStorageKey(&$var)
+    public function setCloudStorageKey($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\CloudStorageKey::class);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
@@ -53,11 +56,14 @@ class RecordKey extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.DatastoreKey datastore_key = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\DatastoreKey $var
+     * @return $this
      */
-    public function setDatastoreKey(&$var)
+    public function setDatastoreKey($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\DatastoreKey::class);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**

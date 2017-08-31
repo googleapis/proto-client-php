@@ -54,11 +54,14 @@ class PlanNode_ShortRepresentation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string description = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
     /**
@@ -85,11 +88,14 @@ class PlanNode_ShortRepresentation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, int32> subqueries = 2;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setSubqueries(&$var)
+    public function setSubqueries($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::INT32);
         $this->subqueries = $arr;
+
+        return $this;
     }
 
 }

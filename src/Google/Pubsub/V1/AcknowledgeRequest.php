@@ -53,11 +53,14 @@ class AcknowledgeRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string subscription = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSubscription($var)
     {
         GPBUtil::checkString($var, True);
         $this->subscription = $var;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class AcknowledgeRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string ack_ids = 2;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAckIds(&$var)
+    public function setAckIds($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->ack_ids = $arr;
+
+        return $this;
     }
 
 }

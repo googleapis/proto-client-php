@@ -49,11 +49,14 @@ class PatchTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project_id = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setProjectId($var)
     {
         GPBUtil::checkString($var, True);
         $this->project_id = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class PatchTracesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.cloudtrace.v1.Traces traces = 2;</code>
      * @param \Google\Devtools\Cloudtrace\V1\Traces $var
+     * @return $this
      */
-    public function setTraces(&$var)
+    public function setTraces($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Cloudtrace\V1\Traces::class);
         $this->traces = $var;
+
+        return $this;
     }
 
 }

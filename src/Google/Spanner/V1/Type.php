@@ -58,11 +58,14 @@ class Type extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.TypeCode code = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setCode($var)
     {
         GPBUtil::checkEnum($var, \Google\Spanner\V1\TypeCode::class);
         $this->code = $var;
+
+        return $this;
     }
 
     /**
@@ -83,11 +86,14 @@ class Type extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.Type array_element_type = 2;</code>
      * @param \Google\Spanner\V1\Type $var
+     * @return $this
      */
-    public function setArrayElementType(&$var)
+    public function setArrayElementType($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\Type::class);
         $this->array_element_type = $var;
+
+        return $this;
     }
 
     /**
@@ -108,11 +114,14 @@ class Type extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.StructType struct_type = 3;</code>
      * @param \Google\Spanner\V1\StructType $var
+     * @return $this
      */
-    public function setStructType(&$var)
+    public function setStructType($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\StructType::class);
         $this->struct_type = $var;
+
+        return $this;
     }
 
 }

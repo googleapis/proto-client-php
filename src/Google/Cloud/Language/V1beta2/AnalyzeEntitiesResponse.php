@@ -51,11 +51,14 @@ class AnalyzeEntitiesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Entity entities = 1;</code>
      * @param \Google\Cloud\Language\V1beta2\Entity[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEntities(&$var)
+    public function setEntities($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Entity::class);
         $this->entities = $arr;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class AnalyzeEntitiesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguage($var)
     {
         GPBUtil::checkString($var, True);
         $this->language = $var;
+
+        return $this;
     }
 
 }

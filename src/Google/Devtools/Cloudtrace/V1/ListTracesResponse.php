@@ -51,11 +51,14 @@ class ListTracesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.devtools.cloudtrace.v1.Trace traces = 1;</code>
      * @param \Google\Devtools\Cloudtrace\V1\Trace[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTraces(&$var)
+    public function setTraces($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudtrace\V1\Trace::class);
         $this->traces = $arr;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class ListTracesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

@@ -52,11 +52,14 @@ class CommitRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string session = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSession($var)
     {
         GPBUtil::checkString($var, True);
         $this->session = $var;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class CommitRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes transaction_id = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setTransactionId($var)
     {
         GPBUtil::checkString($var, False);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -114,11 +120,14 @@ class CommitRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionOptions single_use_transaction = 3;</code>
      * @param \Google\Spanner\V1\TransactionOptions $var
+     * @return $this
      */
-    public function setSingleUseTransaction(&$var)
+    public function setSingleUseTransaction($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\TransactionOptions::class);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**
@@ -141,11 +150,14 @@ class CommitRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.Mutation mutations = 4;</code>
      * @param \Google\Spanner\V1\Mutation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMutations(&$var)
+    public function setMutations($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\Mutation::class);
         $this->mutations = $arr;
+
+        return $this;
     }
 
     /**

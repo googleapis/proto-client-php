@@ -57,11 +57,14 @@ class Sentiment extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float magnitude = 2;</code>
      * @param float $var
+     * @return $this
      */
     public function setMagnitude($var)
     {
         GPBUtil::checkFloat($var);
         $this->magnitude = $var;
+
+        return $this;
     }
 
     /**
@@ -82,11 +85,14 @@ class Sentiment extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float score = 3;</code>
      * @param float $var
+     * @return $this
      */
     public function setScore($var)
     {
         GPBUtil::checkFloat($var);
         $this->score = $var;
+
+        return $this;
     }
 
 }

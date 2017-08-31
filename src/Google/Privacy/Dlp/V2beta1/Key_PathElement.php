@@ -55,11 +55,14 @@ class Key_PathElement extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string kind = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setKind($var)
     {
         GPBUtil::checkString($var, True);
         $this->kind = $var;
+
+        return $this;
     }
 
     /**
@@ -82,11 +85,14 @@ class Key_PathElement extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 id = 2;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkInt64($var);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -111,11 +117,14 @@ class Key_PathElement extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**

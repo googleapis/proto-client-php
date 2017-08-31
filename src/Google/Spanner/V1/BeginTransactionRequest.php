@@ -49,11 +49,14 @@ class BeginTransactionRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string session = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSession($var)
     {
         GPBUtil::checkString($var, True);
         $this->session = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class BeginTransactionRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionOptions options = 2;</code>
      * @param \Google\Spanner\V1\TransactionOptions $var
+     * @return $this
      */
-    public function setOptions(&$var)
+    public function setOptions($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\TransactionOptions::class);
         $this->options = $var;
+
+        return $this;
     }
 
 }

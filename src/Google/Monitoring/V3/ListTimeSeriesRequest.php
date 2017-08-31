@@ -104,11 +104,14 @@ class ListTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 10;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -137,11 +140,14 @@ class ListTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string filter = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setFilter($var)
     {
         GPBUtil::checkString($var, True);
         $this->filter = $var;
+
+        return $this;
     }
 
     /**
@@ -164,11 +170,14 @@ class ListTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.monitoring.v3.TimeInterval interval = 4;</code>
      * @param \Google\Monitoring\V3\TimeInterval $var
+     * @return $this
      */
-    public function setInterval(&$var)
+    public function setInterval($var)
     {
         GPBUtil::checkMessage($var, \Google\Monitoring\V3\TimeInterval::class);
         $this->interval = $var;
+
+        return $this;
     }
 
     /**
@@ -191,11 +200,14 @@ class ListTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.monitoring.v3.Aggregation aggregation = 5;</code>
      * @param \Google\Monitoring\V3\Aggregation $var
+     * @return $this
      */
-    public function setAggregation(&$var)
+    public function setAggregation($var)
     {
         GPBUtil::checkMessage($var, \Google\Monitoring\V3\Aggregation::class);
         $this->aggregation = $var;
+
+        return $this;
     }
 
     /**
@@ -218,11 +230,14 @@ class ListTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string order_by = 6;</code>
      * @param string $var
+     * @return $this
      */
     public function setOrderBy($var)
     {
         GPBUtil::checkString($var, True);
         $this->order_by = $var;
+
+        return $this;
     }
 
     /**
@@ -241,11 +256,14 @@ class ListTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;</code>
      * @param int $var
+     * @return $this
      */
     public function setView($var)
     {
         GPBUtil::checkEnum($var, \Google\Monitoring\V3\ListTimeSeriesRequest_TimeSeriesView::class);
         $this->view = $var;
+
+        return $this;
     }
 
     /**
@@ -270,11 +288,14 @@ class ListTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 page_size = 8;</code>
      * @param int $var
+     * @return $this
      */
     public function setPageSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_size = $var;
+
+        return $this;
     }
 
     /**
@@ -297,11 +318,14 @@ class ListTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string page_token = 9;</code>
      * @param string $var
+     * @return $this
      */
     public function setPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->page_token = $var;
+
+        return $this;
     }
 
 }

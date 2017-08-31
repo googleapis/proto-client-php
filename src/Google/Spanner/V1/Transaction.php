@@ -69,11 +69,14 @@ class Transaction extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes id = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setId($var)
     {
         GPBUtil::checkString($var, False);
         $this->id = $var;
+
+        return $this;
     }
 
     /**
@@ -96,11 +99,14 @@ class Transaction extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp read_timestamp = 2;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setReadTimestamp(&$var)
+    public function setReadTimestamp($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->read_timestamp = $var;
+
+        return $this;
     }
 
 }

@@ -59,11 +59,14 @@ class ErrorGroup extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class ErrorGroup extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string group_id = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setGroupId($var)
     {
         GPBUtil::checkString($var, True);
         $this->group_id = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class ErrorGroup extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.devtools.clouderrorreporting.v1beta1.TrackingIssue tracking_issues = 3;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\TrackingIssue[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTrackingIssues(&$var)
+    public function setTrackingIssues($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\TrackingIssue::class);
         $this->tracking_issues = $arr;
+
+        return $this;
     }
 
 }

@@ -46,11 +46,14 @@ class GetTopicRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string topic = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setTopic($var)
     {
         GPBUtil::checkString($var, True);
         $this->topic = $var;
+
+        return $this;
     }
 
 }

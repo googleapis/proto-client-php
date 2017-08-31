@@ -46,11 +46,14 @@ class PropertyReference extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
 }

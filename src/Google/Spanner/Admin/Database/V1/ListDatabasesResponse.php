@@ -51,11 +51,14 @@ class ListDatabasesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.spanner.admin.database.v1.Database databases = 1;</code>
      * @param \Google\Spanner\Admin\Database\V1\Database[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setDatabases(&$var)
+    public function setDatabases($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\Admin\Database\V1\Database::class);
         $this->databases = $arr;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class ListDatabasesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

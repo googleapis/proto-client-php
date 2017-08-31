@@ -121,11 +121,14 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string log_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setLogName($var)
     {
         GPBUtil::checkString($var, True);
         $this->log_name = $var;
+
+        return $this;
     }
 
     /**
@@ -154,11 +157,14 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.api.MonitoredResource resource = 2;</code>
      * @param \Google\Api\MonitoredResource $var
+     * @return $this
      */
-    public function setResource(&$var)
+    public function setResource($var)
     {
         GPBUtil::checkMessage($var, \Google\Api\MonitoredResource::class);
         $this->resource = $var;
+
+        return $this;
     }
 
     /**
@@ -183,11 +189,14 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> labels = 3;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setLabels(&$var)
+    public function setLabels($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->labels = $arr;
+
+        return $this;
     }
 
     /**
@@ -230,11 +239,14 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogEntry entries = 4;</code>
      * @param \Google\Logging\V2\LogEntry[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEntries(&$var)
+    public function setEntries($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogEntry::class);
         $this->entries = $arr;
+
+        return $this;
     }
 
     /**
@@ -261,11 +273,14 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool partial_success = 5;</code>
      * @param bool $var
+     * @return $this
      */
     public function setPartialSuccess($var)
     {
         GPBUtil::checkBool($var);
         $this->partial_success = $var;
+
+        return $this;
     }
 
 }

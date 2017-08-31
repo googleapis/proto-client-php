@@ -70,11 +70,14 @@ class Word extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.TextAnnotation.TextProperty property = 1;</code>
      * @param \Google\Cloud\Vision\V1\TextAnnotation_TextProperty $var
+     * @return $this
      */
-    public function setProperty(&$var)
+    public function setProperty($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\TextAnnotation_TextProperty::class);
         $this->property = $var;
+
+        return $this;
     }
 
     /**
@@ -121,11 +124,14 @@ class Word extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_box = 2;</code>
      * @param \Google\Cloud\Vision\V1\BoundingPoly $var
+     * @return $this
      */
-    public function setBoundingBox(&$var)
+    public function setBoundingBox($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\BoundingPoly::class);
         $this->bounding_box = $var;
+
+        return $this;
     }
 
     /**
@@ -146,11 +152,14 @@ class Word extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Symbol symbols = 3;</code>
      * @param \Google\Cloud\Vision\V1\Symbol[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSymbols(&$var)
+    public function setSymbols($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Symbol::class);
         $this->symbols = $arr;
+
+        return $this;
     }
 
 }

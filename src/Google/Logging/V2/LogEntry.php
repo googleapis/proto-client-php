@@ -166,11 +166,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string log_name = 12;</code>
      * @param string $var
+     * @return $this
      */
     public function setLogName($var)
     {
         GPBUtil::checkString($var, True);
         $this->log_name = $var;
+
+        return $this;
     }
 
     /**
@@ -195,11 +198,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.api.MonitoredResource resource = 8;</code>
      * @param \Google\Api\MonitoredResource $var
+     * @return $this
      */
-    public function setResource(&$var)
+    public function setResource($var)
     {
         GPBUtil::checkMessage($var, \Google\Api\MonitoredResource::class);
         $this->resource = $var;
+
+        return $this;
     }
 
     /**
@@ -222,11 +228,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Any proto_payload = 2;</code>
      * @param \Google\Protobuf\Any $var
+     * @return $this
      */
-    public function setProtoPayload(&$var)
+    public function setProtoPayload($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Any::class);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -245,11 +254,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string text_payload = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setTextPayload($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**
@@ -270,11 +282,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Struct json_payload = 6;</code>
      * @param \Google\Protobuf\Struct $var
+     * @return $this
      */
-    public function setJsonPayload(&$var)
+    public function setJsonPayload($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
         $this->writeOneof(6, $var);
+
+        return $this;
     }
 
     /**
@@ -301,11 +316,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp timestamp = 9;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setTimestamp(&$var)
+    public function setTimestamp($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->timestamp = $var;
+
+        return $this;
     }
 
     /**
@@ -324,11 +342,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp receive_timestamp = 24;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setReceiveTimestamp(&$var)
+    public function setReceiveTimestamp($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->receive_timestamp = $var;
+
+        return $this;
     }
 
     /**
@@ -349,11 +370,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.logging.type.LogSeverity severity = 10;</code>
      * @param int $var
+     * @return $this
      */
     public function setSeverity($var)
     {
         GPBUtil::checkEnum($var, \Google\Logging\Type\LogSeverity::class);
         $this->severity = $var;
+
+        return $this;
     }
 
     /**
@@ -382,11 +406,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string insert_id = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setInsertId($var)
     {
         GPBUtil::checkString($var, True);
         $this->insert_id = $var;
+
+        return $this;
     }
 
     /**
@@ -407,11 +434,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.logging.type.HttpRequest http_request = 7;</code>
      * @param \Google\Logging\Type\HttpRequest $var
+     * @return $this
      */
-    public function setHttpRequest(&$var)
+    public function setHttpRequest($var)
     {
         GPBUtil::checkMessage($var, \Google\Logging\Type\HttpRequest::class);
         $this->http_request = $var;
+
+        return $this;
     }
 
     /**
@@ -432,11 +462,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> labels = 11;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setLabels(&$var)
+    public function setLabels($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->labels = $arr;
+
+        return $this;
     }
 
     /**
@@ -457,11 +490,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.logging.v2.LogEntryOperation operation = 15;</code>
      * @param \Google\Logging\V2\LogEntryOperation $var
+     * @return $this
      */
-    public function setOperation(&$var)
+    public function setOperation($var)
     {
         GPBUtil::checkMessage($var, \Google\Logging\V2\LogEntryOperation::class);
         $this->operation = $var;
+
+        return $this;
     }
 
     /**
@@ -486,11 +522,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string trace = 22;</code>
      * @param string $var
+     * @return $this
      */
     public function setTrace($var)
     {
         GPBUtil::checkString($var, True);
         $this->trace = $var;
+
+        return $this;
     }
 
     /**
@@ -511,11 +550,14 @@ class LogEntry extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.logging.v2.LogEntrySourceLocation source_location = 23;</code>
      * @param \Google\Logging\V2\LogEntrySourceLocation $var
+     * @return $this
      */
-    public function setSourceLocation(&$var)
+    public function setSourceLocation($var)
     {
         GPBUtil::checkMessage($var, \Google\Logging\V2\LogEntrySourceLocation::class);
         $this->source_location = $var;
+
+        return $this;
     }
 
     /**

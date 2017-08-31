@@ -53,6 +53,12 @@ class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string language = 5;</code>
      */
     private $language = '';
+    /**
+     * Categories identified in the input document.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.ClassificationCategory categories = 6;</code>
+     */
+    private $categories;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Language\V1Beta2\LanguageService::initOnce();
@@ -77,11 +83,14 @@ class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Sentence sentences = 1;</code>
      * @param \Google\Cloud\Language\V1beta2\Sentence[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSentences(&$var)
+    public function setSentences($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Sentence::class);
         $this->sentences = $arr;
+
+        return $this;
     }
 
     /**
@@ -104,11 +113,14 @@ class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Token tokens = 2;</code>
      * @param \Google\Cloud\Language\V1beta2\Token[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTokens(&$var)
+    public function setTokens($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Token::class);
         $this->tokens = $arr;
+
+        return $this;
     }
 
     /**
@@ -131,11 +143,14 @@ class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.Entity entities = 3;</code>
      * @param \Google\Cloud\Language\V1beta2\Entity[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEntities(&$var)
+    public function setEntities($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Entity::class);
         $this->entities = $arr;
+
+        return $this;
     }
 
     /**
@@ -156,11 +171,14 @@ class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.Sentiment document_sentiment = 4;</code>
      * @param \Google\Cloud\Language\V1beta2\Sentiment $var
+     * @return $this
      */
-    public function setDocumentSentiment(&$var)
+    public function setDocumentSentiment($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\Sentiment::class);
         $this->document_sentiment = $var;
+
+        return $this;
     }
 
     /**
@@ -183,11 +201,40 @@ class AnnotateTextResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language = 5;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguage($var)
     {
         GPBUtil::checkString($var, True);
         $this->language = $var;
+
+        return $this;
+    }
+
+    /**
+     * Categories identified in the input document.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.ClassificationCategory categories = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getCategories()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * Categories identified in the input document.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.language.v1beta2.ClassificationCategory categories = 6;</code>
+     * @param \Google\Cloud\Language\V1beta2\ClassificationCategory[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setCategories($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\ClassificationCategory::class);
+        $this->categories = $arr;
+
+        return $this;
     }
 
 }

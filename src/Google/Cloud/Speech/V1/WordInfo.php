@@ -77,11 +77,14 @@ class WordInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Duration start_time = 1;</code>
      * @param \Google\Protobuf\Duration $var
+     * @return $this
      */
-    public function setStartTime(&$var)
+    public function setStartTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->start_time = $var;
+
+        return $this;
     }
 
     /**
@@ -110,11 +113,14 @@ class WordInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Duration end_time = 2;</code>
      * @param \Google\Protobuf\Duration $var
+     * @return $this
      */
-    public function setEndTime(&$var)
+    public function setEndTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->end_time = $var;
+
+        return $this;
     }
 
     /**
@@ -133,11 +139,14 @@ class WordInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string word = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setWord($var)
     {
         GPBUtil::checkString($var, True);
         $this->word = $var;
+
+        return $this;
     }
 
 }

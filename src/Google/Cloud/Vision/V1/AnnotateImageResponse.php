@@ -109,11 +109,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.FaceAnnotation face_annotations = 1;</code>
      * @param \Google\Cloud\Vision\V1\FaceAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setFaceAnnotations(&$var)
+    public function setFaceAnnotations($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\FaceAnnotation::class);
         $this->face_annotations = $arr;
+
+        return $this;
     }
 
     /**
@@ -132,11 +135,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation landmark_annotations = 2;</code>
      * @param \Google\Cloud\Vision\V1\EntityAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLandmarkAnnotations(&$var)
+    public function setLandmarkAnnotations($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
         $this->landmark_annotations = $arr;
+
+        return $this;
     }
 
     /**
@@ -155,11 +161,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation logo_annotations = 3;</code>
      * @param \Google\Cloud\Vision\V1\EntityAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLogoAnnotations(&$var)
+    public function setLogoAnnotations($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
         $this->logo_annotations = $arr;
+
+        return $this;
     }
 
     /**
@@ -178,11 +187,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation label_annotations = 4;</code>
      * @param \Google\Cloud\Vision\V1\EntityAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLabelAnnotations(&$var)
+    public function setLabelAnnotations($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
         $this->label_annotations = $arr;
+
+        return $this;
     }
 
     /**
@@ -203,11 +215,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation text_annotations = 5;</code>
      * @param \Google\Cloud\Vision\V1\EntityAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTextAnnotations(&$var)
+    public function setTextAnnotations($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
         $this->text_annotations = $arr;
+
+        return $this;
     }
 
     /**
@@ -232,11 +247,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.TextAnnotation full_text_annotation = 12;</code>
      * @param \Google\Cloud\Vision\V1\TextAnnotation $var
+     * @return $this
      */
-    public function setFullTextAnnotation(&$var)
+    public function setFullTextAnnotation($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\TextAnnotation::class);
         $this->full_text_annotation = $var;
+
+        return $this;
     }
 
     /**
@@ -255,11 +273,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.SafeSearchAnnotation safe_search_annotation = 6;</code>
      * @param \Google\Cloud\Vision\V1\SafeSearchAnnotation $var
+     * @return $this
      */
-    public function setSafeSearchAnnotation(&$var)
+    public function setSafeSearchAnnotation($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\SafeSearchAnnotation::class);
         $this->safe_search_annotation = $var;
+
+        return $this;
     }
 
     /**
@@ -278,11 +299,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.ImageProperties image_properties_annotation = 8;</code>
      * @param \Google\Cloud\Vision\V1\ImageProperties $var
+     * @return $this
      */
-    public function setImagePropertiesAnnotation(&$var)
+    public function setImagePropertiesAnnotation($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\ImageProperties::class);
         $this->image_properties_annotation = $var;
+
+        return $this;
     }
 
     /**
@@ -301,11 +325,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.CropHintsAnnotation crop_hints_annotation = 11;</code>
      * @param \Google\Cloud\Vision\V1\CropHintsAnnotation $var
+     * @return $this
      */
-    public function setCropHintsAnnotation(&$var)
+    public function setCropHintsAnnotation($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\CropHintsAnnotation::class);
         $this->crop_hints_annotation = $var;
+
+        return $this;
     }
 
     /**
@@ -324,11 +351,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.WebDetection web_detection = 13;</code>
      * @param \Google\Cloud\Vision\V1\WebDetection $var
+     * @return $this
      */
-    public function setWebDetection(&$var)
+    public function setWebDetection($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\WebDetection::class);
         $this->web_detection = $var;
+
+        return $this;
     }
 
     /**
@@ -351,11 +381,14 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.rpc.Status error = 9;</code>
      * @param \Google\Rpc\Status $var
+     * @return $this
      */
-    public function setError(&$var)
+    public function setError($var)
     {
         GPBUtil::checkMessage($var, \Google\Rpc\Status::class);
         $this->error = $var;
+
+        return $this;
     }
 
 }

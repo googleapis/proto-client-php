@@ -43,11 +43,14 @@ class ListInfoTypesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.InfoTypeDescription info_types = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InfoTypeDescription[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setInfoTypes(&$var)
+    public function setInfoTypes($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InfoTypeDescription::class);
         $this->info_types = $arr;
+
+        return $this;
     }
 
 }

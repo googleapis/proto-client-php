@@ -92,11 +92,14 @@ class PlanNode extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 index = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setIndex($var)
     {
         GPBUtil::checkInt32($var);
         $this->index = $var;
+
+        return $this;
     }
 
     /**
@@ -123,11 +126,14 @@ class PlanNode extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.PlanNode.Kind kind = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setKind($var)
     {
         GPBUtil::checkEnum($var, \Google\Spanner\V1\PlanNode_Kind::class);
         $this->kind = $var;
+
+        return $this;
     }
 
     /**
@@ -146,11 +152,14 @@ class PlanNode extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string display_name = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setDisplayName($var)
     {
         GPBUtil::checkString($var, True);
         $this->display_name = $var;
+
+        return $this;
     }
 
     /**
@@ -169,11 +178,14 @@ class PlanNode extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.spanner.v1.PlanNode.ChildLink child_links = 4;</code>
      * @param \Google\Spanner\V1\PlanNode_ChildLink[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setChildLinks(&$var)
+    public function setChildLinks($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\PlanNode_ChildLink::class);
         $this->child_links = $arr;
+
+        return $this;
     }
 
     /**
@@ -192,11 +204,14 @@ class PlanNode extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.PlanNode.ShortRepresentation short_representation = 5;</code>
      * @param \Google\Spanner\V1\PlanNode_ShortRepresentation $var
+     * @return $this
      */
-    public function setShortRepresentation(&$var)
+    public function setShortRepresentation($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\PlanNode_ShortRepresentation::class);
         $this->short_representation = $var;
+
+        return $this;
     }
 
     /**
@@ -227,11 +242,14 @@ class PlanNode extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Struct metadata = 6;</code>
      * @param \Google\Protobuf\Struct $var
+     * @return $this
      */
-    public function setMetadata(&$var)
+    public function setMetadata($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
         $this->metadata = $var;
+
+        return $this;
     }
 
     /**
@@ -256,11 +274,14 @@ class PlanNode extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Struct execution_stats = 7;</code>
      * @param \Google\Protobuf\Struct $var
+     * @return $this
      */
-    public function setExecutionStats(&$var)
+    public function setExecutionStats($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
         $this->execution_stats = $var;
+
+        return $this;
     }
 
 }

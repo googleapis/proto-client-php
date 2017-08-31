@@ -70,11 +70,14 @@ class ReportedErrorEvent extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp event_time = 1;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setEventTime(&$var)
+    public function setEventTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->event_time = $var;
+
+        return $this;
     }
 
     /**
@@ -93,11 +96,14 @@ class ReportedErrorEvent extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.ServiceContext service_context = 2;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContext $var
+     * @return $this
      */
-    public function setServiceContext(&$var)
+    public function setServiceContext($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContext::class);
         $this->service_context = $var;
+
+        return $this;
     }
 
     /**
@@ -122,11 +128,14 @@ class ReportedErrorEvent extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string message = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setMessage($var)
     {
         GPBUtil::checkString($var, True);
         $this->message = $var;
+
+        return $this;
     }
 
     /**
@@ -145,11 +154,14 @@ class ReportedErrorEvent extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.ErrorContext context = 4;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ErrorContext $var
+     * @return $this
      */
-    public function setContext(&$var)
+    public function setContext($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorContext::class);
         $this->context = $var;
+
+        return $this;
     }
 
 }

@@ -63,11 +63,14 @@ class ResultSet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.ResultSetMetadata metadata = 1;</code>
      * @param \Google\Spanner\V1\ResultSetMetadata $var
+     * @return $this
      */
-    public function setMetadata(&$var)
+    public function setMetadata($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\ResultSetMetadata::class);
         $this->metadata = $var;
+
+        return $this;
     }
 
     /**
@@ -96,11 +99,14 @@ class ResultSet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.protobuf.ListValue rows = 2;</code>
      * @param \Google\Protobuf\ListValue[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setRows(&$var)
+    public function setRows($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
         $this->rows = $arr;
+
+        return $this;
     }
 
     /**
@@ -123,11 +129,14 @@ class ResultSet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.ResultSetStats stats = 3;</code>
      * @param \Google\Spanner\V1\ResultSetStats $var
+     * @return $this
      */
-    public function setStats(&$var)
+    public function setStats($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\ResultSetStats::class);
         $this->stats = $var;
+
+        return $this;
     }
 
 }

@@ -51,11 +51,14 @@ class ListTimeSeriesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.monitoring.v3.TimeSeries time_series = 1;</code>
      * @param \Google\Monitoring\V3\TimeSeries[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTimeSeries(&$var)
+    public function setTimeSeries($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Monitoring\V3\TimeSeries::class);
         $this->time_series = $arr;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class ListTimeSeriesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

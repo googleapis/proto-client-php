@@ -61,11 +61,14 @@ class DependencyEdge extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 head_token_index = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setHeadTokenIndex($var)
     {
         GPBUtil::checkInt32($var);
         $this->head_token_index = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class DependencyEdge extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.DependencyEdge.Label label = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setLabel($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\DependencyEdge_Label::class);
         $this->label = $var;
+
+        return $this;
     }
 
 }

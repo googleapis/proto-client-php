@@ -50,11 +50,14 @@ class UpdateSnapshotRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.pubsub.v1.Snapshot snapshot = 1;</code>
      * @param \Google\Pubsub\V1\Snapshot $var
+     * @return $this
      */
-    public function setSnapshot(&$var)
+    public function setSnapshot($var)
     {
         GPBUtil::checkMessage($var, \Google\Pubsub\V1\Snapshot::class);
         $this->snapshot = $var;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class UpdateSnapshotRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.FieldMask update_mask = 2;</code>
      * @param \Google\Protobuf\FieldMask $var
+     * @return $this
      */
-    public function setUpdateMask(&$var)
+    public function setUpdateMask($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\FieldMask::class);
         $this->update_mask = $var;
+
+        return $this;
     }
 
 }

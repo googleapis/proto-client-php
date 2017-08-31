@@ -124,11 +124,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string project_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setProjectName($var)
     {
         GPBUtil::checkString($var, True);
         $this->project_name = $var;
+
+        return $this;
     }
 
     /**
@@ -147,11 +150,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string group_id = 2;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setGroupId(&$var)
+    public function setGroupId($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->group_id = $arr;
+
+        return $this;
     }
 
     /**
@@ -174,11 +180,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContextFilter $var
+     * @return $this
      */
-    public function setServiceFilter(&$var)
+    public function setServiceFilter($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContextFilter::class);
         $this->service_filter = $var;
+
+        return $this;
     }
 
     /**
@@ -209,11 +218,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\QueryTimeRange $var
+     * @return $this
      */
-    public function setTimeRange(&$var)
+    public function setTimeRange($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\QueryTimeRange::class);
         $this->time_range = $var;
+
+        return $this;
     }
 
     /**
@@ -234,11 +246,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Duration timed_count_duration = 6;</code>
      * @param \Google\Protobuf\Duration $var
+     * @return $this
      */
-    public function setTimedCountDuration(&$var)
+    public function setTimedCountDuration($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->timed_count_duration = $var;
+
+        return $this;
     }
 
     /**
@@ -259,11 +274,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;</code>
      * @param int $var
+     * @return $this
      */
     public function setAlignment($var)
     {
         GPBUtil::checkEnum($var, \Google\Devtools\Clouderrorreporting\V1beta1\TimedCountAlignment::class);
         $this->alignment = $var;
+
+        return $this;
     }
 
     /**
@@ -284,11 +302,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp alignment_time = 8;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setAlignmentTime(&$var)
+    public function setAlignmentTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->alignment_time = $var;
+
+        return $this;
     }
 
     /**
@@ -309,11 +330,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;</code>
      * @param int $var
+     * @return $this
      */
     public function setOrder($var)
     {
         GPBUtil::checkEnum($var, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorGroupOrder::class);
         $this->order = $var;
+
+        return $this;
     }
 
     /**
@@ -334,11 +358,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 page_size = 11;</code>
      * @param int $var
+     * @return $this
      */
     public function setPageSize($var)
     {
         GPBUtil::checkInt32($var);
         $this->page_size = $var;
+
+        return $this;
     }
 
     /**
@@ -361,11 +388,14 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string page_token = 12;</code>
      * @param string $var
+     * @return $this
      */
     public function setPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->page_token = $var;
+
+        return $this;
     }
 
 }

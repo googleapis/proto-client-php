@@ -64,11 +64,14 @@ class SourceLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string file_path = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setFilePath($var)
     {
         GPBUtil::checkString($var, True);
         $this->file_path = $var;
+
+        return $this;
     }
 
     /**
@@ -87,11 +90,14 @@ class SourceLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 line_number = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setLineNumber($var)
     {
         GPBUtil::checkInt32($var);
         $this->line_number = $var;
+
+        return $this;
     }
 
     /**
@@ -114,11 +120,14 @@ class SourceLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string function_name = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setFunctionName($var)
     {
         GPBUtil::checkString($var, True);
         $this->function_name = $var;
+
+        return $this;
     }
 
 }

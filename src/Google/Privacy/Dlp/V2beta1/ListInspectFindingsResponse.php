@@ -50,11 +50,14 @@ class ListInspectFindingsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.InspectResult result = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InspectResult $var
+     * @return $this
      */
-    public function setResult(&$var)
+    public function setResult($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\InspectResult::class);
         $this->result = $var;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class ListInspectFindingsResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

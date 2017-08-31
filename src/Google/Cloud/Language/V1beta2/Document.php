@@ -27,7 +27,7 @@ class Document extends \Google\Protobuf\Internal\Message
      * The language of the document (if not specified, the language is
      * automatically detected). Both ISO and BCP-47 language codes are
      * accepted.<br>
-     * [Language Support](https://cloud.google.com/natural-language/docs/languages)
+     * [Language Support](/natural-language/docs/languages)
      * lists currently supported languages for each API method.
      * If the language (either specified by the caller or automatically detected)
      * is not supported by the called API method, an `INVALID_ARGUMENT` error
@@ -61,11 +61,14 @@ class Document extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.Document.Type type = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\Document_Type::class);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class Document extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string content = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setContent($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -113,18 +119,21 @@ class Document extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string gcs_content_uri = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setGcsContentUri($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**
      * The language of the document (if not specified, the language is
      * automatically detected). Both ISO and BCP-47 language codes are
      * accepted.<br>
-     * [Language Support](https://cloud.google.com/natural-language/docs/languages)
+     * [Language Support](/natural-language/docs/languages)
      * lists currently supported languages for each API method.
      * If the language (either specified by the caller or automatically detected)
      * is not supported by the called API method, an `INVALID_ARGUMENT` error
@@ -142,7 +151,7 @@ class Document extends \Google\Protobuf\Internal\Message
      * The language of the document (if not specified, the language is
      * automatically detected). Both ISO and BCP-47 language codes are
      * accepted.<br>
-     * [Language Support](https://cloud.google.com/natural-language/docs/languages)
+     * [Language Support](/natural-language/docs/languages)
      * lists currently supported languages for each API method.
      * If the language (either specified by the caller or automatically detected)
      * is not supported by the called API method, an `INVALID_ARGUMENT` error
@@ -150,11 +159,14 @@ class Document extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguage($var)
     {
         GPBUtil::checkString($var, True);
         $this->language = $var;
+
+        return $this;
     }
 
     /**

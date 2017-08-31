@@ -43,11 +43,14 @@ class Traces extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.devtools.cloudtrace.v1.Trace traces = 1;</code>
      * @param \Google\Devtools\Cloudtrace\V1\Trace[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTraces(&$var)
+    public function setTraces($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudtrace\V1\Trace::class);
         $this->traces = $arr;
+
+        return $this;
     }
 
 }

@@ -73,11 +73,14 @@ class ErrorContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.HttpRequestContext http_request = 1;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\HttpRequestContext $var
+     * @return $this
      */
-    public function setHttpRequest(&$var)
+    public function setHttpRequest($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\HttpRequestContext::class);
         $this->http_request = $var;
+
+        return $this;
     }
 
     /**
@@ -110,11 +113,14 @@ class ErrorContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string user = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setUser($var)
     {
         GPBUtil::checkString($var, True);
         $this->user = $var;
+
+        return $this;
     }
 
     /**
@@ -143,11 +149,14 @@ class ErrorContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.SourceLocation report_location = 3;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\SourceLocation $var
+     * @return $this
      */
-    public function setReportLocation(&$var)
+    public function setReportLocation($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\SourceLocation::class);
         $this->report_location = $var;
+
+        return $this;
     }
 
 }

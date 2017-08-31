@@ -61,11 +61,14 @@ class UpdateLogMetricRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string metric_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setMetricName($var)
     {
         GPBUtil::checkString($var, True);
         $this->metric_name = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class UpdateLogMetricRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.logging.v2.LogMetric metric = 2;</code>
      * @param \Google\Logging\V2\LogMetric $var
+     * @return $this
      */
-    public function setMetric(&$var)
+    public function setMetric($var)
     {
         GPBUtil::checkMessage($var, \Google\Logging\V2\LogMetric::class);
         $this->metric = $var;
+
+        return $this;
     }
 
 }

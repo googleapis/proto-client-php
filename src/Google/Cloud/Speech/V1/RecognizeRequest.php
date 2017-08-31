@@ -52,11 +52,14 @@ class RecognizeRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.speech.v1.RecognitionConfig config = 1;</code>
      * @param \Google\Cloud\Speech\V1\RecognitionConfig $var
+     * @return $this
      */
-    public function setConfig(&$var)
+    public function setConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Speech\V1\RecognitionConfig::class);
         $this->config = $var;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class RecognizeRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.speech.v1.RecognitionAudio audio = 2;</code>
      * @param \Google\Cloud\Speech\V1\RecognitionAudio $var
+     * @return $this
      */
-    public function setAudio(&$var)
+    public function setAudio($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Speech\V1\RecognitionAudio::class);
         $this->audio = $var;
+
+        return $this;
     }
 
 }

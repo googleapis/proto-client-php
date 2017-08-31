@@ -61,11 +61,14 @@ class CreateInstanceRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setParent($var)
     {
         GPBUtil::checkString($var, True);
         $this->parent = $var;
+
+        return $this;
     }
 
     /**
@@ -88,11 +91,14 @@ class CreateInstanceRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string instance_id = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setInstanceId($var)
     {
         GPBUtil::checkString($var, True);
         $this->instance_id = $var;
+
+        return $this;
     }
 
     /**
@@ -113,11 +119,14 @@ class CreateInstanceRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.admin.instance.v1.Instance instance = 3;</code>
      * @param \Google\Spanner\Admin\Instance\V1\Instance $var
+     * @return $this
      */
-    public function setInstance(&$var)
+    public function setInstance($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\Admin\Instance\V1\Instance::class);
         $this->instance = $var;
+
+        return $this;
     }
 
 }

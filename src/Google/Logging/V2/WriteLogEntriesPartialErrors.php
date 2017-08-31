@@ -55,11 +55,14 @@ class WriteLogEntriesPartialErrors extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<int32, .google.rpc.Status> log_entry_errors = 1;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setLogEntryErrors(&$var)
+    public function setLogEntryErrors($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::INT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Rpc\Status::class);
         $this->log_entry_errors = $arr;
+
+        return $this;
     }
 
 }

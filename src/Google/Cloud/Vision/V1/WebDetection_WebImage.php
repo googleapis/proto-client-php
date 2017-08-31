@@ -50,11 +50,14 @@ class WebDetection_WebImage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string url = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->url = $var;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class WebDetection_WebImage extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float score = 2;</code>
      * @param float $var
+     * @return $this
      */
     public function setScore($var)
     {
         GPBUtil::checkFloat($var);
         $this->score = $var;
+
+        return $this;
     }
 
 }

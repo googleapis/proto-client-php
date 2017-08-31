@@ -107,11 +107,14 @@ class Instance extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -136,11 +139,14 @@ class Instance extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string config = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setConfig($var)
     {
         GPBUtil::checkString($var, True);
         $this->config = $var;
+
+        return $this;
     }
 
     /**
@@ -161,11 +167,14 @@ class Instance extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string display_name = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setDisplayName($var)
     {
         GPBUtil::checkString($var, True);
         $this->display_name = $var;
+
+        return $this;
     }
 
     /**
@@ -184,11 +193,14 @@ class Instance extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 node_count = 5;</code>
      * @param int $var
+     * @return $this
      */
     public function setNodeCount($var)
     {
         GPBUtil::checkInt32($var);
         $this->node_count = $var;
+
+        return $this;
     }
 
     /**
@@ -215,11 +227,14 @@ class Instance extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.admin.instance.v1.Instance.State state = 6;</code>
      * @param int $var
+     * @return $this
      */
     public function setState($var)
     {
         GPBUtil::checkEnum($var, \Google\Spanner\Admin\Instance\V1\Instance_State::class);
         $this->state = $var;
+
+        return $this;
     }
 
     /**
@@ -272,11 +287,14 @@ class Instance extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> labels = 7;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setLabels(&$var)
+    public function setLabels($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->labels = $arr;
+
+        return $this;
     }
 
 }

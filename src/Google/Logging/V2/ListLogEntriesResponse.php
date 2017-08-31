@@ -57,11 +57,14 @@ class ListLogEntriesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogEntry entries = 1;</code>
      * @param \Google\Logging\V2\LogEntry[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setEntries(&$var)
+    public function setEntries($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogEntry::class);
         $this->entries = $arr;
+
+        return $this;
     }
 
     /**
@@ -96,11 +99,14 @@ class ListLogEntriesResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

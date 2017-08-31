@@ -43,11 +43,14 @@ class CreateSessionRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string database = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setDatabase($var)
     {
         GPBUtil::checkString($var, True);
         $this->database = $var;
+
+        return $this;
     }
 
 }

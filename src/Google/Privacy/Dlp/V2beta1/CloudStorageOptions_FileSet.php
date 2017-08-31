@@ -46,11 +46,14 @@ class CloudStorageOptions_FileSet extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string url = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setUrl($var)
     {
         GPBUtil::checkString($var, True);
         $this->url = $var;
+
+        return $this;
     }
 
 }

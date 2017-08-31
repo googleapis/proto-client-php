@@ -61,11 +61,14 @@ class Database extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class Database extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.admin.database.v1.Database.State state = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setState($var)
     {
         GPBUtil::checkEnum($var, \Google\Spanner\Admin\Database\V1\Database_State::class);
         $this->state = $var;
+
+        return $this;
     }
 
 }

@@ -52,11 +52,14 @@ class SpeechRecognitionResult extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.cloud.speech.v1.SpeechRecognitionAlternative alternatives = 1;</code>
      * @param \Google\Cloud\Speech\V1\SpeechRecognitionAlternative[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAlternatives(&$var)
+    public function setAlternatives($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\SpeechRecognitionAlternative::class);
         $this->alternatives = $arr;
+
+        return $this;
     }
 
 }

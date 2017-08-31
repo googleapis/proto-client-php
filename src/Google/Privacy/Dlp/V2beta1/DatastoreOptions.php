@@ -59,11 +59,14 @@ class DatastoreOptions extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.PartitionId partition_id = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\PartitionId $var
+     * @return $this
      */
-    public function setPartitionId(&$var)
+    public function setPartitionId($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\PartitionId::class);
         $this->partition_id = $var;
+
+        return $this;
     }
 
     /**
@@ -82,11 +85,14 @@ class DatastoreOptions extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.KindExpression kind = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\KindExpression $var
+     * @return $this
      */
-    public function setKind(&$var)
+    public function setKind($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\KindExpression::class);
         $this->kind = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class DatastoreOptions extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.Projection projection = 3;</code>
      * @param \Google\Privacy\Dlp\V2beta1\Projection[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setProjection(&$var)
+    public function setProjection($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\Projection::class);
         $this->projection = $arr;
+
+        return $this;
     }
 
 }

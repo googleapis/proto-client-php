@@ -119,11 +119,14 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ErrorGroup $var
+     * @return $this
      */
-    public function setGroup(&$var)
+    public function setGroup($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorGroup::class);
         $this->group = $var;
+
+        return $this;
     }
 
     /**
@@ -144,11 +147,14 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 count = 2;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setCount($var)
     {
         GPBUtil::checkInt64($var);
         $this->count = $var;
+
+        return $this;
     }
 
     /**
@@ -189,11 +195,14 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 affected_users_count = 3;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setAffectedUsersCount($var)
     {
         GPBUtil::checkInt64($var);
         $this->affected_users_count = $var;
+
+        return $this;
     }
 
     /**
@@ -220,11 +229,14 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.devtools.clouderrorreporting.v1beta1.TimedCount timed_counts = 4;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\TimedCount[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setTimedCounts(&$var)
+    public function setTimedCounts($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\TimedCount::class);
         $this->timed_counts = $arr;
+
+        return $this;
     }
 
     /**
@@ -247,11 +259,14 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp first_seen_time = 5;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setFirstSeenTime(&$var)
+    public function setFirstSeenTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->first_seen_time = $var;
+
+        return $this;
     }
 
     /**
@@ -274,11 +289,14 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp last_seen_time = 6;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setLastSeenTime(&$var)
+    public function setLastSeenTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->last_seen_time = $var;
+
+        return $this;
     }
 
     /**
@@ -301,11 +319,14 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.devtools.clouderrorreporting.v1beta1.ServiceContext affected_services = 7;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContext[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAffectedServices(&$var)
+    public function setAffectedServices($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContext::class);
         $this->affected_services = $arr;
+
+        return $this;
     }
 
     /**
@@ -326,11 +347,14 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 num_affected_services = 8;</code>
      * @param int $var
+     * @return $this
      */
     public function setNumAffectedServices($var)
     {
         GPBUtil::checkInt32($var);
         $this->num_affected_services = $var;
+
+        return $this;
     }
 
     /**
@@ -357,11 +381,14 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;</code>
      * @param \Google\Devtools\Clouderrorreporting\V1beta1\ErrorEvent $var
+     * @return $this
      */
-    public function setRepresentative(&$var)
+    public function setRepresentative($var)
     {
         GPBUtil::checkMessage($var, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorEvent::class);
         $this->representative = $var;
+
+        return $this;
     }
 
 }

@@ -52,11 +52,14 @@ class PublishRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string topic = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setTopic($var)
     {
         GPBUtil::checkString($var, True);
         $this->topic = $var;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ class PublishRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.pubsub.v1.PubsubMessage messages = 2;</code>
      * @param \Google\Pubsub\V1\PubsubMessage[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setMessages(&$var)
+    public function setMessages($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\PubsubMessage::class);
         $this->messages = $arr;
+
+        return $this;
     }
 
 }

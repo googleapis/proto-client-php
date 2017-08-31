@@ -50,11 +50,14 @@ class ContentItem extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string type = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setType($var)
     {
         GPBUtil::checkString($var, True);
         $this->type = $var;
+
+        return $this;
     }
 
     /**
@@ -73,11 +76,14 @@ class ContentItem extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes data = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setData($var)
     {
         GPBUtil::checkString($var, False);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -96,11 +102,40 @@ class ContentItem extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string value = 3;</code>
      * @param string $var
+     * @return $this
      */
     public function setValue($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(3, $var);
+
+        return $this;
+    }
+
+    /**
+     * Structured content for inspection.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.Table table = 4;</code>
+     * @return \Google\Privacy\Dlp\V2beta1\Table
+     */
+    public function getTable()
+    {
+        return $this->readOneof(4);
+    }
+
+    /**
+     * Structured content for inspection.
+     *
+     * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.Table table = 4;</code>
+     * @param \Google\Privacy\Dlp\V2beta1\Table $var
+     * @return $this
+     */
+    public function setTable($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\Table::class);
+        $this->writeOneof(4, $var);
+
+        return $this;
     }
 
     /**

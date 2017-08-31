@@ -45,11 +45,14 @@ class RecognitionAudio extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes content = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setContent($var)
     {
         GPBUtil::checkString($var, False);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class RecognitionAudio extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string uri = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setUri($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**

@@ -16,7 +16,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class FieldId extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Column name describing the field.
+     * Name describing the field.
      *
      * Generated from protobuf field <code>string column_name = 1;</code>
      */
@@ -28,7 +28,7 @@ class FieldId extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Column name describing the field.
+     * Name describing the field.
      *
      * Generated from protobuf field <code>string column_name = 1;</code>
      * @return string
@@ -39,15 +39,18 @@ class FieldId extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Column name describing the field.
+     * Name describing the field.
      *
      * Generated from protobuf field <code>string column_name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setColumnName($var)
     {
         GPBUtil::checkString($var, True);
         $this->column_name = $var;
+
+        return $this;
     }
 
 }

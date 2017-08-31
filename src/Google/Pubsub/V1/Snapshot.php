@@ -69,11 +69,14 @@ class Snapshot extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setName($var)
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
     }
 
     /**
@@ -92,11 +95,14 @@ class Snapshot extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string topic = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setTopic($var)
     {
         GPBUtil::checkString($var, True);
         $this->topic = $var;
+
+        return $this;
     }
 
     /**
@@ -131,11 +137,14 @@ class Snapshot extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp expire_time = 3;</code>
      * @param \Google\Protobuf\Timestamp $var
+     * @return $this
      */
-    public function setExpireTime(&$var)
+    public function setExpireTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expire_time = $var;
+
+        return $this;
     }
 
     /**
@@ -154,11 +163,14 @@ class Snapshot extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, string> labels = 4;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
      */
-    public function setLabels(&$var)
+    public function setLabels($var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->labels = $arr;
+
+        return $this;
     }
 
 }

@@ -46,11 +46,14 @@ class InspectContentResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.InspectResult results = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InspectResult[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setResults(&$var)
+    public function setResults($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InspectResult::class);
         $this->results = $arr;
+
+        return $this;
     }
 
 }

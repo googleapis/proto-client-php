@@ -95,8 +95,22 @@ class LanguageServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * A convenience method that provides all syntax, sentiment, and entity
-     * features in one call.
+     * Classifies a document into categories.
+     * @param \Google\Cloud\Language\V1beta2\ClassifyTextRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function ClassifyText(\Google\Cloud\Language\V1beta2\ClassifyTextRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.cloud.language.v1beta2.LanguageService/ClassifyText',
+        $argument,
+        ['\Google\Cloud\Language\V1beta2\ClassifyTextResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * A convenience method that provides all syntax, sentiment, entity, and
+     * classification features in one call.
      * @param \Google\Cloud\Language\V1beta2\AnnotateTextRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options

@@ -38,11 +38,14 @@ class TypedValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool bool_value = 1;</code>
      * @param bool $var
+     * @return $this
      */
     public function setBoolValue($var)
     {
         GPBUtil::checkBool($var);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
@@ -61,11 +64,14 @@ class TypedValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 int64_value = 2;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setInt64Value($var)
     {
         GPBUtil::checkInt64($var);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**
@@ -88,11 +94,14 @@ class TypedValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>double double_value = 3;</code>
      * @param float $var
+     * @return $this
      */
     public function setDoubleValue($var)
     {
         GPBUtil::checkDouble($var);
         $this->writeOneof(3, $var);
+
+        return $this;
     }
 
     /**
@@ -111,11 +120,14 @@ class TypedValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string string_value = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setStringValue($var)
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(4, $var);
+
+        return $this;
     }
 
     /**
@@ -134,11 +146,14 @@ class TypedValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.api.Distribution distribution_value = 5;</code>
      * @param \Google\Api\Distribution $var
+     * @return $this
      */
-    public function setDistributionValue(&$var)
+    public function setDistributionValue($var)
     {
         GPBUtil::checkMessage($var, \Google\Api\Distribution::class);
         $this->writeOneof(5, $var);
+
+        return $this;
     }
 
     /**

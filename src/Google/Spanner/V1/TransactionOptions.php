@@ -211,11 +211,14 @@ class TransactionOptions extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionOptions.ReadWrite read_write = 1;</code>
      * @param \Google\Spanner\V1\TransactionOptions_ReadWrite $var
+     * @return $this
      */
-    public function setReadWrite(&$var)
+    public function setReadWrite($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\TransactionOptions_ReadWrite::class);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
@@ -240,11 +243,14 @@ class TransactionOptions extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionOptions.ReadOnly read_only = 2;</code>
      * @param \Google\Spanner\V1\TransactionOptions_ReadOnly $var
+     * @return $this
      */
-    public function setReadOnly(&$var)
+    public function setReadOnly($var)
     {
         GPBUtil::checkMessage($var, \Google\Spanner\V1\TransactionOptions_ReadOnly::class);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**

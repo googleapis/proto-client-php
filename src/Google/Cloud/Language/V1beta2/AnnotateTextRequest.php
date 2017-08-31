@@ -56,11 +56,14 @@ class AnnotateTextRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.Document document = 1;</code>
      * @param \Google\Cloud\Language\V1beta2\Document $var
+     * @return $this
      */
-    public function setDocument(&$var)
+    public function setDocument($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\Document::class);
         $this->document = $var;
+
+        return $this;
     }
 
     /**
@@ -79,11 +82,14 @@ class AnnotateTextRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.AnnotateTextRequest.Features features = 2;</code>
      * @param \Google\Cloud\Language\V1beta2\AnnotateTextRequest_Features $var
+     * @return $this
      */
-    public function setFeatures(&$var)
+    public function setFeatures($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Language\V1beta2\AnnotateTextRequest_Features::class);
         $this->features = $var;
+
+        return $this;
     }
 
     /**
@@ -102,11 +108,14 @@ class AnnotateTextRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.language.v1beta2.EncodingType encoding_type = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setEncodingType($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Language\V1beta2\EncodingType::class);
         $this->encoding_type = $var;
+
+        return $this;
     }
 
 }

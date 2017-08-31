@@ -32,7 +32,7 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
      */
     private $min_likelihood = 0;
     /**
-     * Limits the number of findings per content item.
+     * Limits the number of findings per content item or long running operation.
      *
      * Generated from protobuf field <code>int32 max_findings = 3;</code>
      */
@@ -50,6 +50,12 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool exclude_types = 6;</code>
      */
     private $exclude_types = false;
+    /**
+     * Configuration of findings limit given for specified info types.
+     *
+     * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.InspectConfig.InfoTypeLimit info_type_limits = 7;</code>
+     */
+    private $info_type_limits;
 
     public function __construct() {
         \GPBMetadata\Google\Privacy\Dlp\V2Beta1\Dlp::initOnce();
@@ -76,11 +82,14 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.InfoType info_types = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\InfoType[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setInfoTypes(&$var)
+    public function setInfoTypes($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InfoType::class);
         $this->info_types = $arr;
+
+        return $this;
     }
 
     /**
@@ -99,15 +108,18 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.Likelihood min_likelihood = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setMinLikelihood($var)
     {
         GPBUtil::checkEnum($var, \Google\Privacy\Dlp\V2beta1\Likelihood::class);
         $this->min_likelihood = $var;
+
+        return $this;
     }
 
     /**
-     * Limits the number of findings per content item.
+     * Limits the number of findings per content item or long running operation.
      *
      * Generated from protobuf field <code>int32 max_findings = 3;</code>
      * @return int
@@ -118,15 +130,18 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Limits the number of findings per content item.
+     * Limits the number of findings per content item or long running operation.
      *
      * Generated from protobuf field <code>int32 max_findings = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setMaxFindings($var)
     {
         GPBUtil::checkInt32($var);
         $this->max_findings = $var;
+
+        return $this;
     }
 
     /**
@@ -147,11 +162,14 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool include_quote = 4;</code>
      * @param bool $var
+     * @return $this
      */
     public function setIncludeQuote($var)
     {
         GPBUtil::checkBool($var);
         $this->include_quote = $var;
+
+        return $this;
     }
 
     /**
@@ -170,11 +188,40 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool exclude_types = 6;</code>
      * @param bool $var
+     * @return $this
      */
     public function setExcludeTypes($var)
     {
         GPBUtil::checkBool($var);
         $this->exclude_types = $var;
+
+        return $this;
+    }
+
+    /**
+     * Configuration of findings limit given for specified info types.
+     *
+     * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.InspectConfig.InfoTypeLimit info_type_limits = 7;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getInfoTypeLimits()
+    {
+        return $this->info_type_limits;
+    }
+
+    /**
+     * Configuration of findings limit given for specified info types.
+     *
+     * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.InspectConfig.InfoTypeLimit info_type_limits = 7;</code>
+     * @param \Google\Privacy\Dlp\V2beta1\InspectConfig_InfoTypeLimit[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setInfoTypeLimits($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InspectConfig_InfoTypeLimit::class);
+        $this->info_type_limits = $arr;
+
+        return $this;
     }
 
 }

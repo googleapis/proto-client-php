@@ -99,11 +99,14 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string subscription = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setSubscription($var)
     {
         GPBUtil::checkString($var, True);
         $this->subscription = $var;
+
+        return $this;
     }
 
     /**
@@ -130,11 +133,14 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string ack_ids = 2;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setAckIds(&$var)
+    public function setAckIds($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->ack_ids = $arr;
+
+        return $this;
     }
 
     /**
@@ -173,11 +179,14 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated int32 modify_deadline_seconds = 3;</code>
      * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setModifyDeadlineSeconds(&$var)
+    public function setModifyDeadlineSeconds($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
         $this->modify_deadline_seconds = $arr;
+
+        return $this;
     }
 
     /**
@@ -204,11 +213,14 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated string modify_deadline_ack_ids = 4;</code>
      * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setModifyDeadlineAckIds(&$var)
+    public function setModifyDeadlineAckIds($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->modify_deadline_ack_ids = $arr;
+
+        return $this;
     }
 
     /**
@@ -233,11 +245,14 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 stream_ack_deadline_seconds = 5;</code>
      * @param int $var
+     * @return $this
      */
     public function setStreamAckDeadlineSeconds($var)
     {
         GPBUtil::checkInt32($var);
         $this->stream_ack_deadline_seconds = $var;
+
+        return $this;
     }
 
 }

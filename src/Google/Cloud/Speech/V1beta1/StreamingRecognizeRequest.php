@@ -46,11 +46,14 @@ class StreamingRecognizeRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.speech.v1beta1.StreamingRecognitionConfig streaming_config = 1;</code>
      * @param \Google\Cloud\Speech\V1beta1\StreamingRecognitionConfig $var
+     * @return $this
      */
-    public function setStreamingConfig(&$var)
+    public function setStreamingConfig($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Speech\V1beta1\StreamingRecognitionConfig::class);
         $this->writeOneof(1, $var);
+
+        return $this;
     }
 
     /**
@@ -83,11 +86,14 @@ class StreamingRecognizeRequest extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes audio_content = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setAudioContent($var)
     {
         GPBUtil::checkString($var, False);
         $this->writeOneof(2, $var);
+
+        return $this;
     }
 
     /**

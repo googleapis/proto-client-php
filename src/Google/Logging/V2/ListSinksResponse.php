@@ -51,11 +51,14 @@ class ListSinksResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogSink sinks = 1;</code>
      * @param \Google\Logging\V2\LogSink[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSinks(&$var)
+    public function setSinks($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogSink::class);
         $this->sinks = $arr;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class ListSinksResponse extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setNextPageToken($var)
     {
         GPBUtil::checkString($var, True);
         $this->next_page_token = $var;
+
+        return $this;
     }
 
 }

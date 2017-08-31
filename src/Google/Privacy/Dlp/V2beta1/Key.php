@@ -65,11 +65,14 @@ class Key extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.PartitionId partition_id = 1;</code>
      * @param \Google\Privacy\Dlp\V2beta1\PartitionId $var
+     * @return $this
      */
-    public function setPartitionId(&$var)
+    public function setPartitionId($var)
     {
         GPBUtil::checkMessage($var, \Google\Privacy\Dlp\V2beta1\PartitionId::class);
         $this->partition_id = $var;
+
+        return $this;
     }
 
     /**
@@ -102,11 +105,14 @@ class Key extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.Key.PathElement path = 2;</code>
      * @param \Google\Privacy\Dlp\V2beta1\Key_PathElement[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setPath(&$var)
+    public function setPath($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\Key_PathElement::class);
         $this->path = $arr;
+
+        return $this;
     }
 
 }
