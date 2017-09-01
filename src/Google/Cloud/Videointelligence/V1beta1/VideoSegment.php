@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Video segment.
  *
- * Protobuf type <code>Google\Cloud\Videointelligence\V1beta1\VideoSegment</code>
+ * Generated from protobuf message <code>google.cloud.videointelligence.v1beta1.VideoSegment</code>
  */
 class VideoSegment extends \Google\Protobuf\Internal\Message
 {
@@ -49,11 +49,14 @@ class VideoSegment extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 start_time_offset = 1;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setStartTimeOffset($var)
     {
         GPBUtil::checkInt64($var);
         $this->start_time_offset = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class VideoSegment extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 end_time_offset = 2;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setEndTimeOffset($var)
     {
         GPBUtil::checkInt64($var);
         $this->end_time_offset = $var;
+
+        return $this;
     }
 
 }

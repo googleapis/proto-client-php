@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Bounding box.
  *
- * Protobuf type <code>Google\Cloud\Videointelligence\V1beta1\BoundingBox</code>
+ * Generated from protobuf message <code>google.cloud.videointelligence.v1beta1.BoundingBox</code>
  */
 class BoundingBox extends \Google\Protobuf\Internal\Message
 {
@@ -61,11 +61,14 @@ class BoundingBox extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 left = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setLeft($var)
     {
         GPBUtil::checkInt32($var);
         $this->left = $var;
+
+        return $this;
     }
 
     /**
@@ -84,11 +87,14 @@ class BoundingBox extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 right = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setRight($var)
     {
         GPBUtil::checkInt32($var);
         $this->right = $var;
+
+        return $this;
     }
 
     /**
@@ -107,11 +113,14 @@ class BoundingBox extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 bottom = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setBottom($var)
     {
         GPBUtil::checkInt32($var);
         $this->bottom = $var;
+
+        return $this;
     }
 
     /**
@@ -130,11 +139,14 @@ class BoundingBox extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 top = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setTop($var)
     {
         GPBUtil::checkInt32($var);
         $this->top = $var;
+
+        return $this;
     }
 
 }

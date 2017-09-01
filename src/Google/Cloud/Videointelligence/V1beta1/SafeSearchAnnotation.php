@@ -15,7 +15,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * have been detected in a frame, the likelihood is set to `UNKNOWN`
  * for all other types of unsafe content.
  *
- * Protobuf type <code>Google\Cloud\Videointelligence\V1beta1\SafeSearchAnnotation</code>
+ * Generated from protobuf message <code>google.cloud.videointelligence.v1beta1.SafeSearchAnnotation</code>
  */
 class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
 {
@@ -78,11 +78,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.videointelligence.v1beta1.Likelihood adult = 1;</code>
      * @param int $var
+     * @return $this
      */
     public function setAdult($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Videointelligence\V1beta1\Likelihood::class);
         $this->adult = $var;
+
+        return $this;
     }
 
     /**
@@ -103,11 +106,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.videointelligence.v1beta1.Likelihood spoof = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setSpoof($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Videointelligence\V1beta1\Likelihood::class);
         $this->spoof = $var;
+
+        return $this;
     }
 
     /**
@@ -126,11 +132,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.videointelligence.v1beta1.Likelihood medical = 3;</code>
      * @param int $var
+     * @return $this
      */
     public function setMedical($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Videointelligence\V1beta1\Likelihood::class);
         $this->medical = $var;
+
+        return $this;
     }
 
     /**
@@ -149,11 +158,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.videointelligence.v1beta1.Likelihood violent = 4;</code>
      * @param int $var
+     * @return $this
      */
     public function setViolent($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Videointelligence\V1beta1\Likelihood::class);
         $this->violent = $var;
+
+        return $this;
     }
 
     /**
@@ -172,11 +184,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.videointelligence.v1beta1.Likelihood racy = 5;</code>
      * @param int $var
+     * @return $this
      */
     public function setRacy($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Videointelligence\V1beta1\Likelihood::class);
         $this->racy = $var;
+
+        return $this;
     }
 
     /**
@@ -195,11 +210,14 @@ class SafeSearchAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 time_offset = 6;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setTimeOffset($var)
     {
         GPBUtil::checkInt64($var);
         $this->time_offset = $var;
+
+        return $this;
     }
 
 }

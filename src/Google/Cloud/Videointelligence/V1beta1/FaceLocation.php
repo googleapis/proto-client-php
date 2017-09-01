@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Face location.
  *
- * Protobuf type <code>Google\Cloud\Videointelligence\V1beta1\FaceLocation</code>
+ * Generated from protobuf message <code>google.cloud.videointelligence.v1beta1.FaceLocation</code>
  */
 class FaceLocation extends \Google\Protobuf\Internal\Message
 {
@@ -49,11 +49,14 @@ class FaceLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.videointelligence.v1beta1.BoundingBox bounding_box = 1;</code>
      * @param \Google\Cloud\Videointelligence\V1beta1\BoundingBox $var
+     * @return $this
      */
-    public function setBoundingBox(&$var)
+    public function setBoundingBox($var)
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Videointelligence\V1beta1\BoundingBox::class);
         $this->bounding_box = $var;
+
+        return $this;
     }
 
     /**
@@ -72,11 +75,14 @@ class FaceLocation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 time_offset = 2;</code>
      * @param int|string $var
+     * @return $this
      */
     public function setTimeOffset($var)
     {
         GPBUtil::checkInt64($var);
         $this->time_offset = $var;
+
+        return $this;
     }
 
 }

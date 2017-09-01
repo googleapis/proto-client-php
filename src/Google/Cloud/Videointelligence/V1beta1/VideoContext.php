@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Video context and/or feature-specific parameters.
  *
- * Protobuf type <code>Google\Cloud\Videointelligence\V1beta1\VideoContext</code>
+ * Generated from protobuf message <code>google.cloud.videointelligence.v1beta1.VideoContext</code>
  */
 class VideoContext extends \Google\Protobuf\Internal\Message
 {
@@ -91,12 +91,15 @@ class VideoContext extends \Google\Protobuf\Internal\Message
      * is treated as a single segment.
      *
      * Generated from protobuf field <code>repeated .google.cloud.videointelligence.v1beta1.VideoSegment segments = 1;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Videointelligence\V1beta1\VideoSegment[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setSegments(&$var)
+    public function setSegments($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\VideoSegment::class);
         $this->segments = $arr;
+
+        return $this;
     }
 
     /**
@@ -119,11 +122,14 @@ class VideoContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.cloud.videointelligence.v1beta1.LabelDetectionMode label_detection_mode = 2;</code>
      * @param int $var
+     * @return $this
      */
     public function setLabelDetectionMode($var)
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Videointelligence\V1beta1\LabelDetectionMode::class);
         $this->label_detection_mode = $var;
+
+        return $this;
     }
 
     /**
@@ -144,11 +150,14 @@ class VideoContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool stationary_camera = 3;</code>
      * @param bool $var
+     * @return $this
      */
     public function setStationaryCamera($var)
     {
         GPBUtil::checkBool($var);
         $this->stationary_camera = $var;
+
+        return $this;
     }
 
     /**
@@ -169,11 +178,14 @@ class VideoContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string label_detection_model = 4;</code>
      * @param string $var
+     * @return $this
      */
     public function setLabelDetectionModel($var)
     {
         GPBUtil::checkString($var, True);
         $this->label_detection_model = $var;
+
+        return $this;
     }
 
     /**
@@ -194,11 +206,14 @@ class VideoContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string face_detection_model = 5;</code>
      * @param string $var
+     * @return $this
      */
     public function setFaceDetectionModel($var)
     {
         GPBUtil::checkString($var, True);
         $this->face_detection_model = $var;
+
+        return $this;
     }
 
     /**
@@ -219,11 +234,14 @@ class VideoContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string shot_change_detection_model = 6;</code>
      * @param string $var
+     * @return $this
      */
     public function setShotChangeDetectionModel($var)
     {
         GPBUtil::checkString($var, True);
         $this->shot_change_detection_model = $var;
+
+        return $this;
     }
 
     /**
@@ -244,11 +262,14 @@ class VideoContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string safe_search_detection_model = 7;</code>
      * @param string $var
+     * @return $this
      */
     public function setSafeSearchDetectionModel($var)
     {
         GPBUtil::checkString($var, True);
         $this->safe_search_detection_model = $var;
+
+        return $this;
     }
 
 }

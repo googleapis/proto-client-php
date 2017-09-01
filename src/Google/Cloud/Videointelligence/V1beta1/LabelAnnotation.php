@@ -11,7 +11,7 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Label annotation.
  *
- * Protobuf type <code>Google\Cloud\Videointelligence\V1beta1\LabelAnnotation</code>
+ * Generated from protobuf message <code>google.cloud.videointelligence.v1beta1.LabelAnnotation</code>
  */
 class LabelAnnotation extends \Google\Protobuf\Internal\Message
 {
@@ -55,11 +55,14 @@ class LabelAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string description = 1;</code>
      * @param string $var
+     * @return $this
      */
     public function setDescription($var)
     {
         GPBUtil::checkString($var, True);
         $this->description = $var;
+
+        return $this;
     }
 
     /**
@@ -78,11 +81,14 @@ class LabelAnnotation extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string language_code = 2;</code>
      * @param string $var
+     * @return $this
      */
     public function setLanguageCode($var)
     {
         GPBUtil::checkString($var, True);
         $this->language_code = $var;
+
+        return $this;
     }
 
     /**
@@ -100,12 +106,15 @@ class LabelAnnotation extends \Google\Protobuf\Internal\Message
      * Where the label was detected and with what confidence.
      *
      * Generated from protobuf field <code>repeated .google.cloud.videointelligence.v1beta1.LabelLocation locations = 3;</code>
-     * @param array|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Google\Cloud\Videointelligence\V1beta1\LabelLocation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
      */
-    public function setLocations(&$var)
+    public function setLocations($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\LabelLocation::class);
         $this->locations = $arr;
+
+        return $this;
     }
 
 }
