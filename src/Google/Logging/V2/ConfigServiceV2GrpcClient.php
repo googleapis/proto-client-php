@@ -80,13 +80,10 @@ class ConfigServiceV2GrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Updates a sink. If the named sink doesn't exist, then this method is
-     * identical to
-     * [sinks.create](/logging/docs/api/reference/rest/v2/projects.sinks/create).
-     * If the named sink does exist, then this method replaces the following
-     * fields in the existing sink with values from the new sink: `destination`,
-     * `filter`, `output_version_format`, `start_time`, and `end_time`.
-     * The updated filter might also have a new `writer_identity`; see the
+     * Updates a sink.  This method replaces the following fields in the existing
+     * sink with values from the new sink: `destination`, `filter`,
+     * `output_version_format`, `start_time`, and `end_time`.
+     * The updated sink might also have a new `writer_identity`; see the
      * `unique_writer_identity` field.
      * @param \Google\Logging\V2\UpdateSinkRequest $argument input argument
      * @param array $metadata metadata
@@ -110,6 +107,78 @@ class ConfigServiceV2GrpcClient extends \Grpc\BaseStub {
     public function DeleteSink(\Google\Logging\V2\DeleteSinkRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.logging.v2.ConfigServiceV2/DeleteSink',
+        $argument,
+        ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Lists all the exclusions in a parent resource.
+     * @param \Google\Logging\V2\ListExclusionsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function ListExclusions(\Google\Logging\V2\ListExclusionsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.logging.v2.ConfigServiceV2/ListExclusions',
+        $argument,
+        ['\Google\Logging\V2\ListExclusionsResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Gets the description of an exclusion.
+     * @param \Google\Logging\V2\GetExclusionRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function GetExclusion(\Google\Logging\V2\GetExclusionRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.logging.v2.ConfigServiceV2/GetExclusion',
+        $argument,
+        ['\Google\Logging\V2\LogExclusion', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Creates a new exclusion in a specified parent resource.
+     * Only log entries belonging to that resource can be excluded.
+     * You can have up to 10 exclusions in a resource.
+     * @param \Google\Logging\V2\CreateExclusionRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function CreateExclusion(\Google\Logging\V2\CreateExclusionRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.logging.v2.ConfigServiceV2/CreateExclusion',
+        $argument,
+        ['\Google\Logging\V2\LogExclusion', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Changes one or more properties of an existing exclusion.
+     * @param \Google\Logging\V2\UpdateExclusionRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function UpdateExclusion(\Google\Logging\V2\UpdateExclusionRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.logging.v2.ConfigServiceV2/UpdateExclusion',
+        $argument,
+        ['\Google\Logging\V2\LogExclusion', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Deletes an exclusion.
+     * @param \Google\Logging\V2\DeleteExclusionRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function DeleteExclusion(\Google\Logging\V2\DeleteExclusionRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.logging.v2.ConfigServiceV2/DeleteExclusion',
         $argument,
         ['\Google\Protobuf\GPBEmpty', 'decode'],
         $metadata, $options);

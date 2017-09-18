@@ -29,8 +29,7 @@ class UpdateSinkRequest extends \Google\Protobuf\Internal\Message
     private $sink_name = '';
     /**
      * Required. The updated sink, whose name is the same identifier that appears
-     * as part of `sink_name`.  If `sink_name` does not exist, then
-     * this method creates a new sink.
+     * as part of `sink_name`.
      *
      * Generated from protobuf field <code>.google.logging.v2.LogSink sink = 2;</code>
      */
@@ -45,7 +44,8 @@ class UpdateSinkRequest extends \Google\Protobuf\Internal\Message
      *     then there is no change to the sink's `writer_identity`.
      * +   If the old value is false and the new value is true, then
      *     `writer_identity` is changed to a unique service account.
-     * +   It is an error if the old value is true and the new value is false.
+     * +   It is an error if the old value is true and the new value is
+     *     set to false or defaulted to false.
      *
      * Generated from protobuf field <code>bool unique_writer_identity = 3;</code>
      */
@@ -96,8 +96,7 @@ class UpdateSinkRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Required. The updated sink, whose name is the same identifier that appears
-     * as part of `sink_name`.  If `sink_name` does not exist, then
-     * this method creates a new sink.
+     * as part of `sink_name`.
      *
      * Generated from protobuf field <code>.google.logging.v2.LogSink sink = 2;</code>
      * @return \Google\Logging\V2\LogSink
@@ -109,8 +108,7 @@ class UpdateSinkRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Required. The updated sink, whose name is the same identifier that appears
-     * as part of `sink_name`.  If `sink_name` does not exist, then
-     * this method creates a new sink.
+     * as part of `sink_name`.
      *
      * Generated from protobuf field <code>.google.logging.v2.LogSink sink = 2;</code>
      * @param \Google\Logging\V2\LogSink $var
@@ -134,7 +132,8 @@ class UpdateSinkRequest extends \Google\Protobuf\Internal\Message
      *     then there is no change to the sink's `writer_identity`.
      * +   If the old value is false and the new value is true, then
      *     `writer_identity` is changed to a unique service account.
-     * +   It is an error if the old value is true and the new value is false.
+     * +   It is an error if the old value is true and the new value is
+     *     set to false or defaulted to false.
      *
      * Generated from protobuf field <code>bool unique_writer_identity = 3;</code>
      * @return bool
@@ -154,7 +153,8 @@ class UpdateSinkRequest extends \Google\Protobuf\Internal\Message
      *     then there is no change to the sink's `writer_identity`.
      * +   If the old value is false and the new value is true, then
      *     `writer_identity` is changed to a unique service account.
-     * +   It is an error if the old value is true and the new value is false.
+     * +   It is an error if the old value is true and the new value is
+     *     set to false or defaulted to false.
      *
      * Generated from protobuf field <code>bool unique_writer_identity = 3;</code>
      * @param bool $var

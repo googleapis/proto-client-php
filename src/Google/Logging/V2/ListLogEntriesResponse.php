@@ -16,7 +16,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class ListLogEntriesResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * A list of log entries.
+     * A list of log entries.  If `entries` is empty, `nextPageToken` may still be
+     * returned, indicating that more entries may exist.  See `nextPageToken` for
+     * more information.
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogEntry entries = 1;</code>
      */
@@ -42,7 +44,9 @@ class ListLogEntriesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * A list of log entries.
+     * A list of log entries.  If `entries` is empty, `nextPageToken` may still be
+     * returned, indicating that more entries may exist.  See `nextPageToken` for
+     * more information.
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogEntry entries = 1;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
@@ -53,7 +57,9 @@ class ListLogEntriesResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * A list of log entries.
+     * A list of log entries.  If `entries` is empty, `nextPageToken` may still be
+     * returned, indicating that more entries may exist.  See `nextPageToken` for
+     * more information.
      *
      * Generated from protobuf field <code>repeated .google.logging.v2.LogEntry entries = 1;</code>
      * @param \Google\Logging\V2\LogEntry[]|\Google\Protobuf\Internal\RepeatedField $var

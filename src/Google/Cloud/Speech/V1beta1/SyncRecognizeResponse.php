@@ -9,7 +9,7 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * The only message returned to the client by `SyncRecognize`. It
+ * The only message returned to the client by `SyncRecognize`. method. It
  * contains the result as zero or more sequential `SpeechRecognitionResult`
  * messages.
  *

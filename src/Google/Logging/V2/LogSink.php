@@ -54,11 +54,8 @@ class LogSink extends \Google\Protobuf\Internal\Message
      */
     private $filter = '';
     /**
-     * Optional. The log entry format to use for this sink's exported log
-     * entries.  The v2 format is used by default.
-     * **The v1 format is deprecated** and should be used only as part of a
-     * migration effort to v2.
-     * See [Migration to the v2 API](/logging/docs/api/v2/migration-to-v2).
+     * Deprecated. The log entry format to use for this sink's exported log
+     * entries.  The v2 format is used by default and cannot be changed.
      *
      * Generated from protobuf field <code>.google.logging.v2.LogSink.VersionFormat output_version_format = 6;</code>
      */
@@ -234,11 +231,8 @@ class LogSink extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Optional. The log entry format to use for this sink's exported log
-     * entries.  The v2 format is used by default.
-     * **The v1 format is deprecated** and should be used only as part of a
-     * migration effort to v2.
-     * See [Migration to the v2 API](/logging/docs/api/v2/migration-to-v2).
+     * Deprecated. The log entry format to use for this sink's exported log
+     * entries.  The v2 format is used by default and cannot be changed.
      *
      * Generated from protobuf field <code>.google.logging.v2.LogSink.VersionFormat output_version_format = 6;</code>
      * @return int
@@ -249,11 +243,8 @@ class LogSink extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Optional. The log entry format to use for this sink's exported log
-     * entries.  The v2 format is used by default.
-     * **The v1 format is deprecated** and should be used only as part of a
-     * migration effort to v2.
-     * See [Migration to the v2 API](/logging/docs/api/v2/migration-to-v2).
+     * Deprecated. The log entry format to use for this sink's exported log
+     * entries.  The v2 format is used by default and cannot be changed.
      *
      * Generated from protobuf field <code>.google.logging.v2.LogSink.VersionFormat output_version_format = 6;</code>
      * @param int $var

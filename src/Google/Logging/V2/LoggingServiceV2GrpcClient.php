@@ -50,7 +50,13 @@ class LoggingServiceV2GrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Writes log entries to Stackdriver Logging.
+     * ## Log entry resources
+     *
+     * Writes log entries to Stackdriver Logging. This API method is the
+     * only way to send log entries to Stackdriver Logging. This method
+     * is used, directly or indirectly, by the Stackdriver Logging agent
+     * (fluentd) and all logging libraries configured to use Stackdriver
+     * Logging.
      * @param \Google\Logging\V2\WriteLogEntriesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options

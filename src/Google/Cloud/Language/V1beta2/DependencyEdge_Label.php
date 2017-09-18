@@ -436,7 +436,7 @@ class DependencyEdge_Label
      *
      * Generated from protobuf enum <code>LIST = 70;</code>
      */
-    const GPBLIST = 70;
+    const PBLIST = 70;
     /**
      * Nominalized clause
      *
@@ -473,5 +473,41 @@ class DependencyEdge_Label
      * Generated from protobuf enum <code>DISLOCATED = 76;</code>
      */
     const DISLOCATED = 76;
+    /**
+     * Aspect marker
+     *
+     * Generated from protobuf enum <code>ASP = 77;</code>
+     */
+    const ASP = 77;
+    /**
+     * Genitive modifier
+     *
+     * Generated from protobuf enum <code>GMOD = 78;</code>
+     */
+    const GMOD = 78;
+    /**
+     * Genitive object
+     *
+     * Generated from protobuf enum <code>GOBJ = 79;</code>
+     */
+    const GOBJ = 79;
+    /**
+     * Infinitival modifier
+     *
+     * Generated from protobuf enum <code>INFMOD = 80;</code>
+     */
+    const INFMOD = 80;
+    /**
+     * Measure
+     *
+     * Generated from protobuf enum <code>MES = 81;</code>
+     */
+    const MES = 81;
+    /**
+     * Nominal complement of a noun
+     *
+     * Generated from protobuf enum <code>NCOMP = 82;</code>
+     */
+    const NCOMP = 82;
 }
 

@@ -11,6 +11,10 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Describes a logs-based metric.  The value of the metric is the
  * number of log entries that match a logs filter in a given time interval.
+ * A logs-based metric can also be used to extract values from logs and create a
+ * a distribution of the values. The distribution records the statistics of the
+ * extracted values along with an optional histogram of the values as specified
+ * by the bucket options.
  *
  * Generated from protobuf message <code>google.logging.v2.LogMetric</code>
  */
@@ -51,9 +55,77 @@ class LogMetric extends \Google\Protobuf\Internal\Message
      */
     private $filter = '';
     /**
-     * Output only. The API version that created or updated this metric.
-     * The version also dictates the syntax of the filter expression. When a value
-     * for this field is missing, the default value of V2 should be assumed.
+     * Optional. The metric descriptor associated with the logs-based metric.
+     * If unspecified, it uses a default metric descriptor with a DELTA metric
+     * kind, INT64 value type, with no labels and a unit of "1". Such a metric
+     * counts the number of log entries matching the `filter` expression.
+     * The `name`, `type`, and `description` fields in the `metric_descriptor`
+     * are output only, and is constructed using the `name` and `description`
+     * field in the LogMetric.
+     * To create a logs-based metric that records a distribution of log values, a
+     * DELTA metric kind with a DISTRIBUTION value type must be used along with
+     * a `value_extractor` expression in the LogMetric.
+     * Each label in the metric descriptor must have a matching label
+     * name as the key and an extractor expression as the value in the
+     * `label_extractors` map.
+     * The `metric_kind` and `value_type` fields in the `metric_descriptor` cannot
+     * be updated once initially configured. New labels can be added in the
+     * `metric_descriptor`, but existing labels cannot be modified except for
+     * their description.
+     *
+     * Generated from protobuf field <code>.google.api.MetricDescriptor metric_descriptor = 5;</code>
+     */
+    private $metric_descriptor = null;
+    /**
+     * Optional. A `value_extractor` is required when using a distribution
+     * logs-based metric to extract the values to record from a log entry.
+     * Two functions are supported for value extraction: `EXTRACT(field)` or
+     * `REGEXP_EXTRACT(field, regex)`. The argument are:
+     *   1. field: The name of the log entry field from which the value is to be
+     *      extracted.
+     *   2. regex: A regular expression using the Google RE2 syntax
+     *      (https://github.com/google/re2/wiki/Syntax) with a single capture
+     *      group to extract data from the specified log entry field. The value
+     *      of the field is converted to a string before applying the regex.
+     *      It is an error to specify a regex that does not include exactly one
+     *      capture group.
+     * The result of the extraction must be convertible to a double type, as the
+     * distribution always records double values. If either the extraction or
+     * the conversion to double fails, then those values are not recorded in the
+     * distribution.
+     * Example: `REGEXP_EXTRACT(jsonPayload.request, ".*quantity=(\d+).*")`
+     *
+     * Generated from protobuf field <code>string value_extractor = 6;</code>
+     */
+    private $value_extractor = '';
+    /**
+     * Optional. A map from a label key string to an extractor expression which is
+     * used to extract data from a log entry field and assign as the label value.
+     * Each label key specified in the LabelDescriptor must have an associated
+     * extractor expression in this map. The syntax of the extractor expression
+     * is the same as for the `value_extractor` field.
+     * The extracted value is converted to the type defined in the label
+     * descriptor. If the either the extraction or the type conversion fails,
+     * the label will have a default value. The default value for a string
+     * label is an empty string, for an integer label its 0, and for a boolean
+     * label its `false`.
+     * Note that there are upper bounds on the maximum number of labels and the
+     * number of active time series that are allowed in a project.
+     *
+     * Generated from protobuf field <code>map<string, string> label_extractors = 7;</code>
+     */
+    private $label_extractors;
+    /**
+     * Optional. The `bucket_options` are required when the logs-based metric is
+     * using a DISTRIBUTION value type and it describes the bucket boundaries
+     * used to create a histogram of the extracted values.
+     *
+     * Generated from protobuf field <code>.google.api.Distribution.BucketOptions bucket_options = 8;</code>
+     */
+    private $bucket_options = null;
+    /**
+     * Deprecated. The API version that created or updated this metric.
+     * The v2 format is used by default and cannot be changed.
      *
      * Generated from protobuf field <code>.google.logging.v2.LogMetric.ApiVersion version = 4;</code>
      */
@@ -175,9 +247,202 @@ class LogMetric extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Output only. The API version that created or updated this metric.
-     * The version also dictates the syntax of the filter expression. When a value
-     * for this field is missing, the default value of V2 should be assumed.
+     * Optional. The metric descriptor associated with the logs-based metric.
+     * If unspecified, it uses a default metric descriptor with a DELTA metric
+     * kind, INT64 value type, with no labels and a unit of "1". Such a metric
+     * counts the number of log entries matching the `filter` expression.
+     * The `name`, `type`, and `description` fields in the `metric_descriptor`
+     * are output only, and is constructed using the `name` and `description`
+     * field in the LogMetric.
+     * To create a logs-based metric that records a distribution of log values, a
+     * DELTA metric kind with a DISTRIBUTION value type must be used along with
+     * a `value_extractor` expression in the LogMetric.
+     * Each label in the metric descriptor must have a matching label
+     * name as the key and an extractor expression as the value in the
+     * `label_extractors` map.
+     * The `metric_kind` and `value_type` fields in the `metric_descriptor` cannot
+     * be updated once initially configured. New labels can be added in the
+     * `metric_descriptor`, but existing labels cannot be modified except for
+     * their description.
+     *
+     * Generated from protobuf field <code>.google.api.MetricDescriptor metric_descriptor = 5;</code>
+     * @return \Google\Api\MetricDescriptor
+     */
+    public function getMetricDescriptor()
+    {
+        return $this->metric_descriptor;
+    }
+
+    /**
+     * Optional. The metric descriptor associated with the logs-based metric.
+     * If unspecified, it uses a default metric descriptor with a DELTA metric
+     * kind, INT64 value type, with no labels and a unit of "1". Such a metric
+     * counts the number of log entries matching the `filter` expression.
+     * The `name`, `type`, and `description` fields in the `metric_descriptor`
+     * are output only, and is constructed using the `name` and `description`
+     * field in the LogMetric.
+     * To create a logs-based metric that records a distribution of log values, a
+     * DELTA metric kind with a DISTRIBUTION value type must be used along with
+     * a `value_extractor` expression in the LogMetric.
+     * Each label in the metric descriptor must have a matching label
+     * name as the key and an extractor expression as the value in the
+     * `label_extractors` map.
+     * The `metric_kind` and `value_type` fields in the `metric_descriptor` cannot
+     * be updated once initially configured. New labels can be added in the
+     * `metric_descriptor`, but existing labels cannot be modified except for
+     * their description.
+     *
+     * Generated from protobuf field <code>.google.api.MetricDescriptor metric_descriptor = 5;</code>
+     * @param \Google\Api\MetricDescriptor $var
+     * @return $this
+     */
+    public function setMetricDescriptor($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Api\MetricDescriptor::class);
+        $this->metric_descriptor = $var;
+
+        return $this;
+    }
+
+    /**
+     * Optional. A `value_extractor` is required when using a distribution
+     * logs-based metric to extract the values to record from a log entry.
+     * Two functions are supported for value extraction: `EXTRACT(field)` or
+     * `REGEXP_EXTRACT(field, regex)`. The argument are:
+     *   1. field: The name of the log entry field from which the value is to be
+     *      extracted.
+     *   2. regex: A regular expression using the Google RE2 syntax
+     *      (https://github.com/google/re2/wiki/Syntax) with a single capture
+     *      group to extract data from the specified log entry field. The value
+     *      of the field is converted to a string before applying the regex.
+     *      It is an error to specify a regex that does not include exactly one
+     *      capture group.
+     * The result of the extraction must be convertible to a double type, as the
+     * distribution always records double values. If either the extraction or
+     * the conversion to double fails, then those values are not recorded in the
+     * distribution.
+     * Example: `REGEXP_EXTRACT(jsonPayload.request, ".*quantity=(\d+).*")`
+     *
+     * Generated from protobuf field <code>string value_extractor = 6;</code>
+     * @return string
+     */
+    public function getValueExtractor()
+    {
+        return $this->value_extractor;
+    }
+
+    /**
+     * Optional. A `value_extractor` is required when using a distribution
+     * logs-based metric to extract the values to record from a log entry.
+     * Two functions are supported for value extraction: `EXTRACT(field)` or
+     * `REGEXP_EXTRACT(field, regex)`. The argument are:
+     *   1. field: The name of the log entry field from which the value is to be
+     *      extracted.
+     *   2. regex: A regular expression using the Google RE2 syntax
+     *      (https://github.com/google/re2/wiki/Syntax) with a single capture
+     *      group to extract data from the specified log entry field. The value
+     *      of the field is converted to a string before applying the regex.
+     *      It is an error to specify a regex that does not include exactly one
+     *      capture group.
+     * The result of the extraction must be convertible to a double type, as the
+     * distribution always records double values. If either the extraction or
+     * the conversion to double fails, then those values are not recorded in the
+     * distribution.
+     * Example: `REGEXP_EXTRACT(jsonPayload.request, ".*quantity=(\d+).*")`
+     *
+     * Generated from protobuf field <code>string value_extractor = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setValueExtractor($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->value_extractor = $var;
+
+        return $this;
+    }
+
+    /**
+     * Optional. A map from a label key string to an extractor expression which is
+     * used to extract data from a log entry field and assign as the label value.
+     * Each label key specified in the LabelDescriptor must have an associated
+     * extractor expression in this map. The syntax of the extractor expression
+     * is the same as for the `value_extractor` field.
+     * The extracted value is converted to the type defined in the label
+     * descriptor. If the either the extraction or the type conversion fails,
+     * the label will have a default value. The default value for a string
+     * label is an empty string, for an integer label its 0, and for a boolean
+     * label its `false`.
+     * Note that there are upper bounds on the maximum number of labels and the
+     * number of active time series that are allowed in a project.
+     *
+     * Generated from protobuf field <code>map<string, string> label_extractors = 7;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getLabelExtractors()
+    {
+        return $this->label_extractors;
+    }
+
+    /**
+     * Optional. A map from a label key string to an extractor expression which is
+     * used to extract data from a log entry field and assign as the label value.
+     * Each label key specified in the LabelDescriptor must have an associated
+     * extractor expression in this map. The syntax of the extractor expression
+     * is the same as for the `value_extractor` field.
+     * The extracted value is converted to the type defined in the label
+     * descriptor. If the either the extraction or the type conversion fails,
+     * the label will have a default value. The default value for a string
+     * label is an empty string, for an integer label its 0, and for a boolean
+     * label its `false`.
+     * Note that there are upper bounds on the maximum number of labels and the
+     * number of active time series that are allowed in a project.
+     *
+     * Generated from protobuf field <code>map<string, string> label_extractors = 7;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
+     */
+    public function setLabelExtractors($var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->label_extractors = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Optional. The `bucket_options` are required when the logs-based metric is
+     * using a DISTRIBUTION value type and it describes the bucket boundaries
+     * used to create a histogram of the extracted values.
+     *
+     * Generated from protobuf field <code>.google.api.Distribution.BucketOptions bucket_options = 8;</code>
+     * @return \Google\Api\Distribution_BucketOptions
+     */
+    public function getBucketOptions()
+    {
+        return $this->bucket_options;
+    }
+
+    /**
+     * Optional. The `bucket_options` are required when the logs-based metric is
+     * using a DISTRIBUTION value type and it describes the bucket boundaries
+     * used to create a histogram of the extracted values.
+     *
+     * Generated from protobuf field <code>.google.api.Distribution.BucketOptions bucket_options = 8;</code>
+     * @param \Google\Api\Distribution_BucketOptions $var
+     * @return $this
+     */
+    public function setBucketOptions($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Api\Distribution_BucketOptions::class);
+        $this->bucket_options = $var;
+
+        return $this;
+    }
+
+    /**
+     * Deprecated. The API version that created or updated this metric.
+     * The v2 format is used by default and cannot be changed.
      *
      * Generated from protobuf field <code>.google.logging.v2.LogMetric.ApiVersion version = 4;</code>
      * @return int
@@ -188,9 +453,8 @@ class LogMetric extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Output only. The API version that created or updated this metric.
-     * The version also dictates the syntax of the filter expression. When a value
-     * for this field is missing, the default value of V2 should be assumed.
+     * Deprecated. The API version that created or updated this metric.
+     * The v2 format is used by default and cannot be changed.
      *
      * Generated from protobuf field <code>.google.logging.v2.LogMetric.ApiVersion version = 4;</code>
      * @param int $var
