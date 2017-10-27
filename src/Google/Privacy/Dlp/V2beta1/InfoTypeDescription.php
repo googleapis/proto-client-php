@@ -9,26 +9,26 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Info type description.
+ * Description of the information type (infoType).
  *
  * Generated from protobuf message <code>google.privacy.dlp.v2beta1.InfoTypeDescription</code>
  */
 class InfoTypeDescription extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Internal name of the info type.
+     * Internal name of the infoType.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
     private $name = '';
     /**
-     * Human readable form of the info type name.
+     * Human readable form of the infoType name.
      *
      * Generated from protobuf field <code>string display_name = 2;</code>
      */
     private $display_name = '';
     /**
-     * List of categories this info type belongs to.
+     * List of categories this infoType belongs to.
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.CategoryDescription categories = 3;</code>
      */
@@ -40,7 +40,7 @@ class InfoTypeDescription extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Internal name of the info type.
+     * Internal name of the infoType.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @return string
@@ -51,7 +51,7 @@ class InfoTypeDescription extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Internal name of the info type.
+     * Internal name of the infoType.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
@@ -66,7 +66,7 @@ class InfoTypeDescription extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Human readable form of the info type name.
+     * Human readable form of the infoType name.
      *
      * Generated from protobuf field <code>string display_name = 2;</code>
      * @return string
@@ -77,7 +77,7 @@ class InfoTypeDescription extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Human readable form of the info type name.
+     * Human readable form of the infoType name.
      *
      * Generated from protobuf field <code>string display_name = 2;</code>
      * @param string $var
@@ -92,7 +92,7 @@ class InfoTypeDescription extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * List of categories this info type belongs to.
+     * List of categories this infoType belongs to.
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.CategoryDescription categories = 3;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
@@ -103,7 +103,7 @@ class InfoTypeDescription extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * List of categories this info type belongs to.
+     * List of categories this infoType belongs to.
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2beta1.CategoryDescription categories = 3;</code>
      * @param \Google\Privacy\Dlp\V2beta1\CategoryDescription[]|\Google\Protobuf\Internal\RepeatedField $var

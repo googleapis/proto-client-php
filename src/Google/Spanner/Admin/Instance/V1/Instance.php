@@ -41,7 +41,10 @@ class Instance extends \Google\Protobuf\Internal\Message
      */
     private $display_name = '';
     /**
-     * Required. The number of nodes allocated to this instance.
+     * Required. The number of nodes allocated to this instance. This may be zero
+     * in API responses for instances that are not yet in state `READY`.
+     * See [the documentation](https://cloud.google.com/spanner/docs/instances#node_count)
+     * for more information about nodes.
      *
      * Generated from protobuf field <code>int32 node_count = 5;</code>
      */
@@ -178,7 +181,10 @@ class Instance extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required. The number of nodes allocated to this instance.
+     * Required. The number of nodes allocated to this instance. This may be zero
+     * in API responses for instances that are not yet in state `READY`.
+     * See [the documentation](https://cloud.google.com/spanner/docs/instances#node_count)
+     * for more information about nodes.
      *
      * Generated from protobuf field <code>int32 node_count = 5;</code>
      * @return int
@@ -189,7 +195,10 @@ class Instance extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required. The number of nodes allocated to this instance.
+     * Required. The number of nodes allocated to this instance. This may be zero
+     * in API responses for instances that are not yet in state `READY`.
+     * See [the documentation](https://cloud.google.com/spanner/docs/instances#node_count)
+     * for more information about nodes.
      *
      * Generated from protobuf field <code>int32 node_count = 5;</code>
      * @param int $var

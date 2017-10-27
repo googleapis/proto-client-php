@@ -9,7 +9,8 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Options for read-write transactions.
+ * Message type to initiate a read-write transaction. Currently this
+ * transaction type has no options.
  *
  * Generated from protobuf message <code>google.spanner.v1.TransactionOptions.ReadWrite</code>
  */

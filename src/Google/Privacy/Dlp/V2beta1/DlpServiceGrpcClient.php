@@ -68,6 +68,21 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
+     * De-identifies potentially sensitive info from a list of strings.
+     * This method has limits on input size and output size.
+     * @param \Google\Privacy\Dlp\V2beta1\DeidentifyContentRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function DeidentifyContent(\Google\Privacy\Dlp\V2beta1\DeidentifyContentRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.privacy.dlp.v2beta1.DlpService/DeidentifyContent',
+        $argument,
+        ['\Google\Privacy\Dlp\V2beta1\DeidentifyContentResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Schedules a job scanning content in a Google Cloud Platform data
      * repository.
      * @param \Google\Privacy\Dlp\V2beta1\CreateInspectOperationRequest $argument input argument
@@ -77,6 +92,21 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     public function CreateInspectOperation(\Google\Privacy\Dlp\V2beta1\CreateInspectOperationRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.privacy.dlp.v2beta1.DlpService/CreateInspectOperation',
+        $argument,
+        ['\Google\Longrunning\Operation', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Schedules a job to compute risk analysis metrics over content in a Google
+     * Cloud Platform repository.
+     * @param \Google\Privacy\Dlp\V2beta1\AnalyzeDataSourceRiskRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function AnalyzeDataSourceRisk(\Google\Privacy\Dlp\V2beta1\AnalyzeDataSourceRiskRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.privacy.dlp.v2beta1.DlpService/AnalyzeDataSourceRisk',
         $argument,
         ['\Google\Longrunning\Operation', 'decode'],
         $metadata, $options);

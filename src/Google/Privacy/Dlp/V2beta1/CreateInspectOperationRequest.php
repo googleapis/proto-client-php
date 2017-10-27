@@ -29,22 +29,7 @@ class CreateInspectOperationRequest extends \Google\Protobuf\Internal\Message
      */
     private $storage_config = null;
     /**
-     * Optional location to store findings. The bucket must already exist and
-     * the Google APIs service account for DLP must have write permission to
-     * write to the given bucket.
-     * <p>Results are split over multiple csv files with each file name matching
-     * the pattern "[operation_id]_[count].csv", for example
-     * `3094877188788974909_1.csv`. The `operation_id` matches the
-     * identifier for the Operation, and the `count` is a counter used for
-     * tracking the number of files written. <p>The CSV file(s) contain the
-     * following columns regardless of storage type scanned: <li>id <li>info_type
-     * <li>likelihood <li>byte size of finding <li>quote <li>timestamp<br/>
-     * <p>For Cloud Storage the next columns are: <li>file_path
-     * <li>start_offset<br/>
-     * <p>For Cloud Datastore the next columns are: <li>project_id
-     * <li>namespace_id <li>path <li>column_name <li>offset<br/>
-     * <p>For BigQuery the next columns are: <li>row_number <li>project_id
-     * <li>dataset_id <li>table_id
+     * Optional location to store findings.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OutputStorageConfig output_config = 3;</code>
      */
@@ -114,22 +99,7 @@ class CreateInspectOperationRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Optional location to store findings. The bucket must already exist and
-     * the Google APIs service account for DLP must have write permission to
-     * write to the given bucket.
-     * <p>Results are split over multiple csv files with each file name matching
-     * the pattern "[operation_id]_[count].csv", for example
-     * `3094877188788974909_1.csv`. The `operation_id` matches the
-     * identifier for the Operation, and the `count` is a counter used for
-     * tracking the number of files written. <p>The CSV file(s) contain the
-     * following columns regardless of storage type scanned: <li>id <li>info_type
-     * <li>likelihood <li>byte size of finding <li>quote <li>timestamp<br/>
-     * <p>For Cloud Storage the next columns are: <li>file_path
-     * <li>start_offset<br/>
-     * <p>For Cloud Datastore the next columns are: <li>project_id
-     * <li>namespace_id <li>path <li>column_name <li>offset<br/>
-     * <p>For BigQuery the next columns are: <li>row_number <li>project_id
-     * <li>dataset_id <li>table_id
+     * Optional location to store findings.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OutputStorageConfig output_config = 3;</code>
      * @return \Google\Privacy\Dlp\V2beta1\OutputStorageConfig
@@ -140,22 +110,7 @@ class CreateInspectOperationRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Optional location to store findings. The bucket must already exist and
-     * the Google APIs service account for DLP must have write permission to
-     * write to the given bucket.
-     * <p>Results are split over multiple csv files with each file name matching
-     * the pattern "[operation_id]_[count].csv", for example
-     * `3094877188788974909_1.csv`. The `operation_id` matches the
-     * identifier for the Operation, and the `count` is a counter used for
-     * tracking the number of files written. <p>The CSV file(s) contain the
-     * following columns regardless of storage type scanned: <li>id <li>info_type
-     * <li>likelihood <li>byte size of finding <li>quote <li>timestamp<br/>
-     * <p>For Cloud Storage the next columns are: <li>file_path
-     * <li>start_offset<br/>
-     * <p>For Cloud Datastore the next columns are: <li>project_id
-     * <li>namespace_id <li>path <li>column_name <li>offset<br/>
-     * <p>For BigQuery the next columns are: <li>row_number <li>project_id
-     * <li>dataset_id <li>table_id
+     * Optional location to store findings.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2beta1.OutputStorageConfig output_config = 3;</code>
      * @param \Google\Privacy\Dlp\V2beta1\OutputStorageConfig $var

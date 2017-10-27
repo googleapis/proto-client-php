@@ -31,6 +31,8 @@ class Transaction extends \Google\Protobuf\Internal\Message
      * For snapshot read-only transactions, the read timestamp chosen
      * for the transaction. Not returned by default: see
      * [TransactionOptions.ReadOnly.return_read_timestamp][google.spanner.v1.TransactionOptions.ReadOnly.return_read_timestamp].
+     * A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
+     * Example: `"2014-10-02T15:01:23.045123456Z"`.
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp read_timestamp = 2;</code>
      */
@@ -83,6 +85,8 @@ class Transaction extends \Google\Protobuf\Internal\Message
      * For snapshot read-only transactions, the read timestamp chosen
      * for the transaction. Not returned by default: see
      * [TransactionOptions.ReadOnly.return_read_timestamp][google.spanner.v1.TransactionOptions.ReadOnly.return_read_timestamp].
+     * A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
+     * Example: `"2014-10-02T15:01:23.045123456Z"`.
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp read_timestamp = 2;</code>
      * @return \Google\Protobuf\Timestamp
@@ -96,6 +100,8 @@ class Transaction extends \Google\Protobuf\Internal\Message
      * For snapshot read-only transactions, the read timestamp chosen
      * for the transaction. Not returned by default: see
      * [TransactionOptions.ReadOnly.return_read_timestamp][google.spanner.v1.TransactionOptions.ReadOnly.return_read_timestamp].
+     * A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
+     * Example: `"2014-10-02T15:01:23.045123456Z"`.
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp read_timestamp = 2;</code>
      * @param \Google\Protobuf\Timestamp $var

@@ -26,6 +26,8 @@ class CreateDatabaseRequest extends \Google\Protobuf\Internal\Message
      * Required. A `CREATE DATABASE` statement, which specifies the ID of the
      * new database.  The database ID must conform to the regular expression
      * `[a-z][a-z0-9_\-]*[a-z0-9]` and be between 2 and 30 characters in length.
+     * If the database ID is a reserved word or if it contains a hyphen, the
+     * database ID must be enclosed in backticks (`` ` ``).
      *
      * Generated from protobuf field <code>string create_statement = 2;</code>
      */
@@ -77,6 +79,8 @@ class CreateDatabaseRequest extends \Google\Protobuf\Internal\Message
      * Required. A `CREATE DATABASE` statement, which specifies the ID of the
      * new database.  The database ID must conform to the regular expression
      * `[a-z][a-z0-9_\-]*[a-z0-9]` and be between 2 and 30 characters in length.
+     * If the database ID is a reserved word or if it contains a hyphen, the
+     * database ID must be enclosed in backticks (`` ` ``).
      *
      * Generated from protobuf field <code>string create_statement = 2;</code>
      * @return string
@@ -90,6 +94,8 @@ class CreateDatabaseRequest extends \Google\Protobuf\Internal\Message
      * Required. A `CREATE DATABASE` statement, which specifies the ID of the
      * new database.  The database ID must conform to the regular expression
      * `[a-z][a-z0-9_\-]*[a-z0-9]` and be between 2 and 30 characters in length.
+     * If the database ID is a reserved word or if it contains a hyphen, the
+     * database ID must be enclosed in backticks (`` ` ``).
      *
      * Generated from protobuf field <code>string create_statement = 2;</code>
      * @param string $var

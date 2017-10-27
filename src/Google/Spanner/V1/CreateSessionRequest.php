@@ -21,6 +21,12 @@ class CreateSessionRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string database = 1;</code>
      */
     private $database = '';
+    /**
+     * The session to create.
+     *
+     * Generated from protobuf field <code>.google.spanner.v1.Session session = 2;</code>
+     */
+    private $session = null;
 
     public function __construct() {
         \GPBMetadata\Google\Spanner\V1\Spanner::initOnce();
@@ -49,6 +55,32 @@ class CreateSessionRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->database = $var;
+
+        return $this;
+    }
+
+    /**
+     * The session to create.
+     *
+     * Generated from protobuf field <code>.google.spanner.v1.Session session = 2;</code>
+     * @return \Google\Spanner\V1\Session
+     */
+    public function getSession()
+    {
+        return $this->session;
+    }
+
+    /**
+     * The session to create.
+     *
+     * Generated from protobuf field <code>.google.spanner.v1.Session session = 2;</code>
+     * @param \Google\Spanner\V1\Session $var
+     * @return $this
+     */
+    public function setSession($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Spanner\V1\Session::class);
+        $this->session = $var;
 
         return $this;
     }

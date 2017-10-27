@@ -84,6 +84,20 @@ class SpannerGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Lists all sessions in a given database.
+     * @param \Google\Spanner\V1\ListSessionsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function ListSessions(\Google\Spanner\V1\ListSessionsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.spanner.v1.Spanner/ListSessions',
+        $argument,
+        ['\Google\Spanner\V1\ListSessionsResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Ends a session, releasing server resources associated with it.
      * @param \Google\Spanner\V1\DeleteSessionRequest $argument input argument
      * @param array $metadata metadata

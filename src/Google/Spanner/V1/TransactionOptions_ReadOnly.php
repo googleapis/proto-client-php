@@ -9,7 +9,7 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Options for read-only transactions.
+ * Message type to initiate a read-only transaction.
  *
  * Generated from protobuf message <code>google.spanner.v1.TransactionOptions.ReadOnly</code>
  */
@@ -63,6 +63,8 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      * read, or data that is fresh enough to observe the effects of some
      * previously committed transaction whose timestamp is known.
      * Note that this option can only be used in single-use transactions.
+     * A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
+     * Example: `"2014-10-02T15:01:23.045123456Z"`.
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp min_read_timestamp = 2;</code>
      * @return \Google\Protobuf\Timestamp
@@ -78,6 +80,8 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      * read, or data that is fresh enough to observe the effects of some
      * previously committed transaction whose timestamp is known.
      * Note that this option can only be used in single-use transactions.
+     * A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
+     * Example: `"2014-10-02T15:01:23.045123456Z"`.
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp min_read_timestamp = 2;</code>
      * @param \Google\Protobuf\Timestamp $var
@@ -146,6 +150,8 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      * Useful for large scale consistent reads such as mapreduces, or
      * for coordinating many reads against a consistent snapshot of the
      * data.
+     * A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
+     * Example: `"2014-10-02T15:01:23.045123456Z"`.
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp read_timestamp = 4;</code>
      * @return \Google\Protobuf\Timestamp
@@ -164,6 +170,8 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
      * Useful for large scale consistent reads such as mapreduces, or
      * for coordinating many reads against a consistent snapshot of the
      * data.
+     * A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
+     * Example: `"2014-10-02T15:01:23.045123456Z"`.
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp read_timestamp = 4;</code>
      * @param \Google\Protobuf\Timestamp $var
