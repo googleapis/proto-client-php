@@ -16,7 +16,8 @@ use Google\Protobuf\Internal\GPBUtil;
 class Session extends \Google\Protobuf\Internal\Message
 {
     /**
-     * The name of the session.
+     * The name of the session. This is always system-assigned; values provided
+     * when creating a session are ignored.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
@@ -53,7 +54,8 @@ class Session extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The name of the session.
+     * The name of the session. This is always system-assigned; values provided
+     * when creating a session are ignored.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @return string
@@ -64,7 +66,8 @@ class Session extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The name of the session.
+     * The name of the session. This is always system-assigned; values provided
+     * when creating a session are ignored.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
