@@ -60,7 +60,7 @@ class SpeechGrpcClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.cloud.speech.v1.Speech/LongRunningRecognize',
         $argument,
-        ['\Google\Longrunning\Operation', 'decode'],
+        ['\Google\LongRunning\Operation', 'decode'],
         $metadata, $options);
     }
 
