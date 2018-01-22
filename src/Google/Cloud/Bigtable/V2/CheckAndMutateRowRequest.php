@@ -25,6 +25,17 @@ class CheckAndMutateRowRequest extends \Google\Protobuf\Internal\Message
      */
     private $table_name = '';
     /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     * This value specifies routing for replication. If not specified, the
+     * "default" application profile will be used.
+     *
+     * Generated from protobuf field <code>string app_profile_id = 7;</code>
+     */
+    private $app_profile_id = '';
+    /**
      * The key of the row to which the conditional mutation should be applied.
      *
      * Generated from protobuf field <code>bytes row_key = 2;</code>
@@ -93,6 +104,42 @@ class CheckAndMutateRowRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->table_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     * This value specifies routing for replication. If not specified, the
+     * "default" application profile will be used.
+     *
+     * Generated from protobuf field <code>string app_profile_id = 7;</code>
+     * @return string
+     */
+    public function getAppProfileId()
+    {
+        return $this->app_profile_id;
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     * This value specifies routing for replication. If not specified, the
+     * "default" application profile will be used.
+     *
+     * Generated from protobuf field <code>string app_profile_id = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAppProfileId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->app_profile_id = $var;
 
         return $this;
     }
