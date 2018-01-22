@@ -26,6 +26,21 @@ class Table extends \Google\Protobuf\Internal\Message
      */
     private $name = '';
     /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     * (`OutputOnly`)
+     * Map from cluster ID to per-cluster table state.
+     * If it could not be determined whether or not the table has data in a
+     * particular cluster (for example, if its zone is unavailable), then
+     * there will be an entry for the cluster with UNKNOWN `replication_status`.
+     * Views: `FULL`
+     *
+     * Generated from protobuf field <code>map<string, .google.bigtable.admin.v2.Table.ClusterState> cluster_states = 2;</code>
+     */
+    private $cluster_states;
+    /**
      * (`CreationOnly`)
      * The column families configured for this table, mapped by column family ID.
      * Views: `SCHEMA_VIEW`, `FULL`
@@ -77,6 +92,50 @@ class Table extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     * (`OutputOnly`)
+     * Map from cluster ID to per-cluster table state.
+     * If it could not be determined whether or not the table has data in a
+     * particular cluster (for example, if its zone is unavailable), then
+     * there will be an entry for the cluster with UNKNOWN `replication_status`.
+     * Views: `FULL`
+     *
+     * Generated from protobuf field <code>map<string, .google.bigtable.admin.v2.Table.ClusterState> cluster_states = 2;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getClusterStates()
+    {
+        return $this->cluster_states;
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     * (`OutputOnly`)
+     * Map from cluster ID to per-cluster table state.
+     * If it could not be determined whether or not the table has data in a
+     * particular cluster (for example, if its zone is unavailable), then
+     * there will be an entry for the cluster with UNKNOWN `replication_status`.
+     * Views: `FULL`
+     *
+     * Generated from protobuf field <code>map<string, .google.bigtable.admin.v2.Table.ClusterState> cluster_states = 2;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
+     */
+    public function setClusterStates($var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Bigtable\Admin\V2\Table_ClusterState::class);
+        $this->cluster_states = $arr;
 
         return $this;
     }

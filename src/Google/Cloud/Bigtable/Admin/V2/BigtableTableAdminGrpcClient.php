@@ -53,6 +53,26 @@ class BigtableTableAdminGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
+     * This is a private alpha release of Cloud Bigtable snapshots. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Creates a new table from the specified snapshot. The target table must
+     * not exist. The snapshot and the table must be in the same instance.
+     * @param \Google\Cloud\Bigtable\Admin\V2\CreateTableFromSnapshotRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function CreateTableFromSnapshot(\Google\Cloud\Bigtable\Admin\V2\CreateTableFromSnapshotRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableTableAdmin/CreateTableFromSnapshot',
+        $argument,
+        ['\Google\LongRunning\Operation', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Lists all tables served from a specified instance.
      * @param \Google\Cloud\Bigtable\Admin\V2\ListTablesRequest $argument input argument
      * @param array $metadata metadata
@@ -122,6 +142,126 @@ class BigtableTableAdminGrpcClient extends \Grpc\BaseStub {
     public function DropRowRange(\Google\Cloud\Bigtable\Admin\V2\DropRowRangeRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableTableAdmin/DropRowRange',
+        $argument,
+        ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Generates a consistency token for a Table, which can be used in
+     * CheckConsistency to check whether mutations to the table that finished
+     * before this call started have been replicated. The tokens will be available
+     * for 90 days.
+     * @param \Google\Cloud\Bigtable\Admin\V2\GenerateConsistencyTokenRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function GenerateConsistencyToken(\Google\Cloud\Bigtable\Admin\V2\GenerateConsistencyTokenRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableTableAdmin/GenerateConsistencyToken',
+        $argument,
+        ['\Google\Cloud\Bigtable\Admin\V2\GenerateConsistencyTokenResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Checks replication consistency based on a consistency token, that is, if
+     * replication has caught up based on the conditions specified in the token
+     * and the check request.
+     * @param \Google\Cloud\Bigtable\Admin\V2\CheckConsistencyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function CheckConsistency(\Google\Cloud\Bigtable\Admin\V2\CheckConsistencyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableTableAdmin/CheckConsistency',
+        $argument,
+        ['\Google\Cloud\Bigtable\Admin\V2\CheckConsistencyResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable snapshots. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Creates a new snapshot in the specified cluster from the specified
+     * source table. The cluster and the table must be in the same instance.
+     * @param \Google\Cloud\Bigtable\Admin\V2\SnapshotTableRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function SnapshotTable(\Google\Cloud\Bigtable\Admin\V2\SnapshotTableRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableTableAdmin/SnapshotTable',
+        $argument,
+        ['\Google\LongRunning\Operation', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable snapshots. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Gets metadata information about the specified snapshot.
+     * @param \Google\Cloud\Bigtable\Admin\V2\GetSnapshotRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function GetSnapshot(\Google\Cloud\Bigtable\Admin\V2\GetSnapshotRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableTableAdmin/GetSnapshot',
+        $argument,
+        ['\Google\Cloud\Bigtable\Admin\V2\Snapshot', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable snapshots. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Lists all snapshots associated with the specified cluster.
+     * @param \Google\Cloud\Bigtable\Admin\V2\ListSnapshotsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function ListSnapshots(\Google\Cloud\Bigtable\Admin\V2\ListSnapshotsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableTableAdmin/ListSnapshots',
+        $argument,
+        ['\Google\Cloud\Bigtable\Admin\V2\ListSnapshotsResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable snapshots. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Permanently deletes the specified snapshot.
+     * @param \Google\Cloud\Bigtable\Admin\V2\DeleteSnapshotRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function DeleteSnapshot(\Google\Cloud\Bigtable\Admin\V2\DeleteSnapshotRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableTableAdmin/DeleteSnapshot',
         $argument,
         ['\Google\Protobuf\GPBEmpty', 'decode'],
         $metadata, $options);

@@ -28,9 +28,9 @@ class Cluster extends \Google\Protobuf\Internal\Message
     /**
      * (`CreationOnly`)
      * The location where this cluster's nodes and storage reside. For best
-     * performance, clients should be located as close as possible to this cluster.
-     * Currently only zones are supported, so values should be of the form
-     * `projects/<project>/locations/<zone>`.
+     * performance, clients should be located as close as possible to this
+     * cluster. Currently only zones are supported, so values should be of the
+     * form `projects/<project>/locations/<zone>`.
      *
      * Generated from protobuf field <code>string location = 2;</code>
      */
@@ -96,9 +96,9 @@ class Cluster extends \Google\Protobuf\Internal\Message
     /**
      * (`CreationOnly`)
      * The location where this cluster's nodes and storage reside. For best
-     * performance, clients should be located as close as possible to this cluster.
-     * Currently only zones are supported, so values should be of the form
-     * `projects/<project>/locations/<zone>`.
+     * performance, clients should be located as close as possible to this
+     * cluster. Currently only zones are supported, so values should be of the
+     * form `projects/<project>/locations/<zone>`.
      *
      * Generated from protobuf field <code>string location = 2;</code>
      * @return string
@@ -111,9 +111,9 @@ class Cluster extends \Google\Protobuf\Internal\Message
     /**
      * (`CreationOnly`)
      * The location where this cluster's nodes and storage reside. For best
-     * performance, clients should be located as close as possible to this cluster.
-     * Currently only zones are supported, so values should be of the form
-     * `projects/<project>/locations/<zone>`.
+     * performance, clients should be located as close as possible to this
+     * cluster. Currently only zones are supported, so values should be of the
+     * form `projects/<project>/locations/<zone>`.
      *
      * Generated from protobuf field <code>string location = 2;</code>
      * @param string $var

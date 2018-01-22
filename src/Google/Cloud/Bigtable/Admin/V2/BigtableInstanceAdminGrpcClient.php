@@ -91,6 +91,20 @@ class BigtableInstanceAdminGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Partially updates an instance within a project.
+     * @param \Google\Cloud\Bigtable\Admin\V2\PartialUpdateInstanceRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function PartialUpdateInstance(\Google\Cloud\Bigtable\Admin\V2\PartialUpdateInstanceRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/PartialUpdateInstance',
+        $argument,
+        ['\Google\LongRunning\Operation', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Delete an instance from a project.
      * @param \Google\Cloud\Bigtable\Admin\V2\DeleteInstanceRequest $argument input argument
      * @param array $metadata metadata
@@ -171,6 +185,163 @@ class BigtableInstanceAdminGrpcClient extends \Grpc\BaseStub {
         return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/DeleteCluster',
         $argument,
         ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Creates an app profile within an instance.
+     * @param \Google\Cloud\Bigtable\Admin\V2\CreateAppProfileRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function CreateAppProfile(\Google\Cloud\Bigtable\Admin\V2\CreateAppProfileRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/CreateAppProfile',
+        $argument,
+        ['\Google\Cloud\Bigtable\Admin\V2\AppProfile', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Gets information about an app profile.
+     * @param \Google\Cloud\Bigtable\Admin\V2\GetAppProfileRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function GetAppProfile(\Google\Cloud\Bigtable\Admin\V2\GetAppProfileRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/GetAppProfile',
+        $argument,
+        ['\Google\Cloud\Bigtable\Admin\V2\AppProfile', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Lists information about app profiles in an instance.
+     * @param \Google\Cloud\Bigtable\Admin\V2\ListAppProfilesRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function ListAppProfiles(\Google\Cloud\Bigtable\Admin\V2\ListAppProfilesRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/ListAppProfiles',
+        $argument,
+        ['\Google\Cloud\Bigtable\Admin\V2\ListAppProfilesResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Updates an app profile within an instance.
+     * @param \Google\Cloud\Bigtable\Admin\V2\UpdateAppProfileRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function UpdateAppProfile(\Google\Cloud\Bigtable\Admin\V2\UpdateAppProfileRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/UpdateAppProfile',
+        $argument,
+        ['\Google\LongRunning\Operation', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable replication. This feature
+     * is not currently available to most Cloud Bigtable customers. This feature
+     * might be changed in backward-incompatible ways and is not recommended for
+     * production use. It is not subject to any SLA or deprecation policy.
+     *
+     * Deletes an app profile from an instance.
+     * @param \Google\Cloud\Bigtable\Admin\V2\DeleteAppProfileRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function DeleteAppProfile(\Google\Cloud\Bigtable\Admin\V2\DeleteAppProfileRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/DeleteAppProfile',
+        $argument,
+        ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable instance level
+     * permissions. This feature is not currently available to most Cloud Bigtable
+     * customers. This feature might be changed in backward-incompatible ways and
+     * is not recommended for production use. It is not subject to any SLA or
+     * deprecation policy.
+     *
+     * Gets the access control policy for an instance resource. Returns an empty
+     * policy if an instance exists but does not have a policy set.
+     * @param \Google\Cloud\Iam\V1\GetIamPolicyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function GetIamPolicy(\Google\Cloud\Iam\V1\GetIamPolicyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/GetIamPolicy',
+        $argument,
+        ['\Google\Cloud\Iam\V1\Policy', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable instance level
+     * permissions. This feature is not currently available to most Cloud Bigtable
+     * customers. This feature might be changed in backward-incompatible ways and
+     * is not recommended for production use. It is not subject to any SLA or
+     * deprecation policy.
+     *
+     * Sets the access control policy on an instance resource. Replaces any
+     * existing policy.
+     * @param \Google\Cloud\Iam\V1\SetIamPolicyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function SetIamPolicy(\Google\Cloud\Iam\V1\SetIamPolicyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/SetIamPolicy',
+        $argument,
+        ['\Google\Cloud\Iam\V1\Policy', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * This is a private alpha release of Cloud Bigtable instance level
+     * permissions. This feature is not currently available to most Cloud Bigtable
+     * customers. This feature might be changed in backward-incompatible ways and
+     * is not recommended for production use. It is not subject to any SLA or
+     * deprecation policy.
+     *
+     * Returns permissions that the caller has on the specified instance resource.
+     * @param \Google\Cloud\Iam\V1\TestIamPermissionsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function TestIamPermissions(\Google\Cloud\Iam\V1\TestIamPermissionsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.bigtable.admin.v2.BigtableInstanceAdmin/TestIamPermissions',
+        $argument,
+        ['\Google\Cloud\Iam\V1\TestIamPermissionsResponse', 'decode'],
         $metadata, $options);
     }
 

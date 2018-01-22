@@ -47,6 +47,21 @@ class Instance extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.bigtable.admin.v2.Instance.Type type = 4;</code>
      */
     private $type = 0;
+    /**
+     * Labels are a flexible and lightweight mechanism for organizing cloud
+     * resources into groups that reflect a customer's organizational needs and
+     * deployment strategies. They can be used to filter resources and aggregate
+     * metrics.
+     * * Label keys must be between 1 and 63 characters long and must conform to
+     *   the regular expression: `[\p{Ll}\p{Lo}][\p{Ll}\p{Lo}\p{N}_-]{0,62}`.
+     * * Label values must be between 0 and 63 characters long and must conform to
+     *   the regular expression: `[\p{Ll}\p{Lo}\p{N}_-]{0,63}`.
+     * * No more than 64 labels can be associated with a given resource.
+     * * Keys and values must both be under 128 bytes.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 5;</code>
+     */
+    private $labels;
 
     public function __construct() {
         \GPBMetadata\Google\Bigtable\Admin\V2\Instance::initOnce();
@@ -163,6 +178,50 @@ class Instance extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Bigtable\Admin\V2\Instance_Type::class);
         $this->type = $var;
+
+        return $this;
+    }
+
+    /**
+     * Labels are a flexible and lightweight mechanism for organizing cloud
+     * resources into groups that reflect a customer's organizational needs and
+     * deployment strategies. They can be used to filter resources and aggregate
+     * metrics.
+     * * Label keys must be between 1 and 63 characters long and must conform to
+     *   the regular expression: `[\p{Ll}\p{Lo}][\p{Ll}\p{Lo}\p{N}_-]{0,62}`.
+     * * Label values must be between 0 and 63 characters long and must conform to
+     *   the regular expression: `[\p{Ll}\p{Lo}\p{N}_-]{0,63}`.
+     * * No more than 64 labels can be associated with a given resource.
+     * * Keys and values must both be under 128 bytes.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 5;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getLabels()
+    {
+        return $this->labels;
+    }
+
+    /**
+     * Labels are a flexible and lightweight mechanism for organizing cloud
+     * resources into groups that reflect a customer's organizational needs and
+     * deployment strategies. They can be used to filter resources and aggregate
+     * metrics.
+     * * Label keys must be between 1 and 63 characters long and must conform to
+     *   the regular expression: `[\p{Ll}\p{Lo}][\p{Ll}\p{Lo}\p{N}_-]{0,62}`.
+     * * Label values must be between 0 and 63 characters long and must conform to
+     *   the regular expression: `[\p{Ll}\p{Lo}\p{N}_-]{0,63}`.
+     * * No more than 64 labels can be associated with a given resource.
+     * * Keys and values must both be under 128 bytes.
+     *
+     * Generated from protobuf field <code>map<string, string> labels = 5;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
+     */
+    public function setLabels($var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
 
         return $this;
     }

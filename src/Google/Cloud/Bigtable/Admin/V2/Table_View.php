@@ -30,6 +30,18 @@ class Table_View
      */
     const SCHEMA_VIEW = 2;
     /**
+     * This is a private alpha release of Cloud Bigtable replication. This
+     * feature is not currently available to most Cloud Bigtable customers. This
+     * feature might be changed in backward-incompatible ways and is not
+     * recommended for production use. It is not subject to any SLA or
+     * deprecation policy.
+     * Only populates `name` and fields related to the table's
+     * replication state.
+     *
+     * Generated from protobuf enum <code>REPLICATION_VIEW = 3;</code>
+     */
+    const REPLICATION_VIEW = 3;
+    /**
      * Populates all fields.
      *
      * Generated from protobuf enum <code>FULL = 4;</code>
