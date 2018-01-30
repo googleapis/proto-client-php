@@ -40,6 +40,12 @@ class ImageContext extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.cloud.vision.v1.CropHintsParams crop_hints_params = 4;</code>
      */
     private $crop_hints_params = null;
+    /**
+     * Parameters for web detection.
+     *
+     * Generated from protobuf field <code>.google.cloud.vision.v1.WebDetectionParams web_detection_params = 6;</code>
+     */
+    private $web_detection_params = null;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Vision\V1\ImageAnnotator::initOnce();
@@ -134,6 +140,32 @@ class ImageContext extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\CropHintsParams::class);
         $this->crop_hints_params = $var;
+
+        return $this;
+    }
+
+    /**
+     * Parameters for web detection.
+     *
+     * Generated from protobuf field <code>.google.cloud.vision.v1.WebDetectionParams web_detection_params = 6;</code>
+     * @return \Google\Cloud\Vision\V1\WebDetectionParams
+     */
+    public function getWebDetectionParams()
+    {
+        return $this->web_detection_params;
+    }
+
+    /**
+     * Parameters for web detection.
+     *
+     * Generated from protobuf field <code>.google.cloud.vision.v1.WebDetectionParams web_detection_params = 6;</code>
+     * @param \Google\Cloud\Vision\V1\WebDetectionParams $var
+     * @return $this
+     */
+    public function setWebDetectionParams($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Cloud\Vision\V1\WebDetectionParams::class);
+        $this->web_detection_params = $var;
 
         return $this;
     }

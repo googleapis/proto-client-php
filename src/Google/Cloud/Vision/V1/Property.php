@@ -27,6 +27,12 @@ class Property extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string value = 2;</code>
      */
     private $value = '';
+    /**
+     * Value of numeric properties.
+     *
+     * Generated from protobuf field <code>uint64 uint64_value = 3;</code>
+     */
+    private $uint64_value = 0;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Vision\V1\ImageAnnotator::initOnce();
@@ -81,6 +87,32 @@ class Property extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->value = $var;
+
+        return $this;
+    }
+
+    /**
+     * Value of numeric properties.
+     *
+     * Generated from protobuf field <code>uint64 uint64_value = 3;</code>
+     * @return int|string
+     */
+    public function getUint64Value()
+    {
+        return $this->uint64_value;
+    }
+
+    /**
+     * Value of numeric properties.
+     *
+     * Generated from protobuf field <code>uint64 uint64_value = 3;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setUint64Value($var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->uint64_value = $var;
 
         return $this;
     }

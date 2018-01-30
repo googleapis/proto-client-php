@@ -9,10 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Users describe the type of Google Cloud Vision API tasks to perform over
- * images by using *Feature*s. Each Feature indicates a type of image
- * detection task to perform. Features encode the Cloud Vision API
- * vertical to operate on and the number of top-scoring results to return.
+ * The type of Google Cloud Vision API detection to perform, and the maximum
+ * number of results to return for that type. Multiple `Feature` objects can
+ * be specified in the `features` list.
  *
  * Generated from protobuf message <code>google.cloud.vision.v1.Feature</code>
  */
@@ -25,11 +24,20 @@ class Feature extends \Google\Protobuf\Internal\Message
      */
     private $type = 0;
     /**
-     * Maximum number of results of this type.
+     * Maximum number of results of this type. Does not apply to
+     * `TEXT_DETECTION`, `DOCUMENT_TEXT_DETECTION`, or `CROP_HINTS`.
      *
      * Generated from protobuf field <code>int32 max_results = 2;</code>
      */
     private $max_results = 0;
+    /**
+     * Model to use for the feature.
+     * Supported values: "builtin/stable" (the default if unset) and
+     * "builtin/latest".
+     *
+     * Generated from protobuf field <code>string model = 3;</code>
+     */
+    private $model = '';
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Vision\V1\ImageAnnotator::initOnce();
@@ -63,7 +71,8 @@ class Feature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Maximum number of results of this type.
+     * Maximum number of results of this type. Does not apply to
+     * `TEXT_DETECTION`, `DOCUMENT_TEXT_DETECTION`, or `CROP_HINTS`.
      *
      * Generated from protobuf field <code>int32 max_results = 2;</code>
      * @return int
@@ -74,7 +83,8 @@ class Feature extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Maximum number of results of this type.
+     * Maximum number of results of this type. Does not apply to
+     * `TEXT_DETECTION`, `DOCUMENT_TEXT_DETECTION`, or `CROP_HINTS`.
      *
      * Generated from protobuf field <code>int32 max_results = 2;</code>
      * @param int $var
@@ -84,6 +94,36 @@ class Feature extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->max_results = $var;
+
+        return $this;
+    }
+
+    /**
+     * Model to use for the feature.
+     * Supported values: "builtin/stable" (the default if unset) and
+     * "builtin/latest".
+     *
+     * Generated from protobuf field <code>string model = 3;</code>
+     * @return string
+     */
+    public function getModel()
+    {
+        return $this->model;
+    }
+
+    /**
+     * Model to use for the feature.
+     * Supported values: "builtin/stable" (the default if unset) and
+     * "builtin/latest".
+     *
+     * Generated from protobuf field <code>string model = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setModel($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->model = $var;
 
         return $this;
     }

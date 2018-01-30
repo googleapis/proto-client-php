@@ -16,6 +16,8 @@ use Google\Protobuf\Internal\GPBUtil;
 class TextAnnotation_DetectedBreak extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Detected break type.
+     *
      * Generated from protobuf field <code>.google.cloud.vision.v1.TextAnnotation.DetectedBreak.BreakType type = 1;</code>
      */
     private $type = 0;
@@ -32,6 +34,8 @@ class TextAnnotation_DetectedBreak extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Detected break type.
+     *
      * Generated from protobuf field <code>.google.cloud.vision.v1.TextAnnotation.DetectedBreak.BreakType type = 1;</code>
      * @return int
      */
@@ -41,6 +45,8 @@ class TextAnnotation_DetectedBreak extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Detected break type.
+     *
      * Generated from protobuf field <code>.google.cloud.vision.v1.TextAnnotation.DetectedBreak.BreakType type = 1;</code>
      * @param int $var
      * @return $this

@@ -17,7 +17,8 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
 {
     /**
      * Opaque entity ID. Some IDs may be available in
-     * [Google Knowledge Graph Search API](https://developers.google.com/knowledge-graph/).
+     * [Google Knowledge Graph Search
+     * API](https://developers.google.com/knowledge-graph/).
      *
      * Generated from protobuf field <code>string mid = 1;</code>
      */
@@ -42,6 +43,7 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      */
     private $score = 0.0;
     /**
+     * **Deprecated. Use `score` instead.**
      * The accuracy of the entity detection in an image.
      * For example, for an image in which the "Eiffel Tower" entity is detected,
      * this field represents the confidence that there is a tower in the query
@@ -61,10 +63,8 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      */
     private $topicality = 0.0;
     /**
-     * Image region to which this entity belongs. Currently not produced
-     * for `LABEL_DETECTION` features. For `TEXT_DETECTION` (OCR), `boundingPoly`s
-     * are produced for the entire text detected in an image region, followed by
-     * `boundingPoly`s for each word within the detected text.
+     * Image region to which this entity belongs. Not produced
+     * for `LABEL_DETECTION` features.
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_poly = 7;</code>
      */
@@ -94,7 +94,8 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
 
     /**
      * Opaque entity ID. Some IDs may be available in
-     * [Google Knowledge Graph Search API](https://developers.google.com/knowledge-graph/).
+     * [Google Knowledge Graph Search
+     * API](https://developers.google.com/knowledge-graph/).
      *
      * Generated from protobuf field <code>string mid = 1;</code>
      * @return string
@@ -106,7 +107,8 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
 
     /**
      * Opaque entity ID. Some IDs may be available in
-     * [Google Knowledge Graph Search API](https://developers.google.com/knowledge-graph/).
+     * [Google Knowledge Graph Search
+     * API](https://developers.google.com/knowledge-graph/).
      *
      * Generated from protobuf field <code>string mid = 1;</code>
      * @param string $var
@@ -201,6 +203,7 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * **Deprecated. Use `score` instead.**
      * The accuracy of the entity detection in an image.
      * For example, for an image in which the "Eiffel Tower" entity is detected,
      * this field represents the confidence that there is a tower in the query
@@ -215,6 +218,7 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * **Deprecated. Use `score` instead.**
      * The accuracy of the entity detection in an image.
      * For example, for an image in which the "Eiffel Tower" entity is detected,
      * this field represents the confidence that there is a tower in the query
@@ -267,10 +271,8 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Image region to which this entity belongs. Currently not produced
-     * for `LABEL_DETECTION` features. For `TEXT_DETECTION` (OCR), `boundingPoly`s
-     * are produced for the entire text detected in an image region, followed by
-     * `boundingPoly`s for each word within the detected text.
+     * Image region to which this entity belongs. Not produced
+     * for `LABEL_DETECTION` features.
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_poly = 7;</code>
      * @return \Google\Cloud\Vision\V1\BoundingPoly
@@ -281,10 +283,8 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Image region to which this entity belongs. Currently not produced
-     * for `LABEL_DETECTION` features. For `TEXT_DETECTION` (OCR), `boundingPoly`s
-     * are produced for the entire text detected in an image region, followed by
-     * `boundingPoly`s for each word within the detected text.
+     * Image region to which this entity belongs. Not produced
+     * for `LABEL_DETECTION` features.
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_poly = 7;</code>
      * @param \Google\Cloud\Vision\V1\BoundingPoly $var

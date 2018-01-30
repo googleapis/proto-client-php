@@ -5,7 +5,7 @@
 namespace Google\Cloud\Vision\V1;
 
 /**
- * Type of image feature.
+ * Type of Google Cloud Vision API feature to be extracted.
  *
  * Protobuf enum <code>Google\Cloud\Vision\V1\Feature\Type</code>
  */
@@ -42,26 +42,30 @@ class Feature_Type
      */
     const LABEL_DETECTION = 4;
     /**
-     * Run OCR.
+     * Run text detection / optical character recognition (OCR). Text detection
+     * is optimized for areas of text within a larger image; if the image is
+     * a document, use `DOCUMENT_TEXT_DETECTION` instead.
      *
      * Generated from protobuf enum <code>TEXT_DETECTION = 5;</code>
      */
     const TEXT_DETECTION = 5;
     /**
      * Run dense text document OCR. Takes precedence when both
-     * DOCUMENT_TEXT_DETECTION and TEXT_DETECTION are present.
+     * `DOCUMENT_TEXT_DETECTION` and `TEXT_DETECTION` are present.
      *
      * Generated from protobuf enum <code>DOCUMENT_TEXT_DETECTION = 11;</code>
      */
     const DOCUMENT_TEXT_DETECTION = 11;
     /**
-     * Run computer vision models to compute image safe-search properties.
+     * Run Safe Search to detect potentially unsafe
+     * or undesirable content.
      *
      * Generated from protobuf enum <code>SAFE_SEARCH_DETECTION = 6;</code>
      */
     const SAFE_SEARCH_DETECTION = 6;
     /**
-     * Compute a set of image properties, such as the image's dominant colors.
+     * Compute a set of image properties, such as the
+     * image's dominant colors.
      *
      * Generated from protobuf enum <code>IMAGE_PROPERTIES = 7;</code>
      */

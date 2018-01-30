@@ -40,8 +40,7 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      */
     private $label_annotations;
     /**
-     * If present, text (OCR) detection or document (OCR) text detection has
-     * completed successfully.
+     * If present, text (OCR) detection has completed successfully.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation text_annotations = 5;</code>
      */
@@ -198,8 +197,7 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * If present, text (OCR) detection or document (OCR) text detection has
-     * completed successfully.
+     * If present, text (OCR) detection has completed successfully.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation text_annotations = 5;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
@@ -210,8 +208,7 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * If present, text (OCR) detection or document (OCR) text detection has
-     * completed successfully.
+     * If present, text (OCR) detection has completed successfully.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.EntityAnnotation text_annotations = 5;</code>
      * @param \Google\Cloud\Vision\V1\EntityAnnotation[]|\Google\Protobuf\Internal\RepeatedField $var

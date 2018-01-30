@@ -48,6 +48,12 @@ class Word extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Symbol symbols = 3;</code>
      */
     private $symbols;
+    /**
+     * Confidence of the OCR results for the word. Range [0, 1].
+     *
+     * Generated from protobuf field <code>float confidence = 4;</code>
+     */
+    private $confidence = 0.0;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Vision\V1\TextAnnotation::initOnce();
@@ -158,6 +164,32 @@ class Word extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Symbol::class);
         $this->symbols = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Confidence of the OCR results for the word. Range [0, 1].
+     *
+     * Generated from protobuf field <code>float confidence = 4;</code>
+     * @return float
+     */
+    public function getConfidence()
+    {
+        return $this->confidence;
+    }
+
+    /**
+     * Confidence of the OCR results for the word. Range [0, 1].
+     *
+     * Generated from protobuf field <code>float confidence = 4;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setConfidence($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->confidence = $var;
 
         return $this;
     }

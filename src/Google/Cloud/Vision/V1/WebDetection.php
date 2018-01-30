@@ -23,8 +23,7 @@ class WebDetection extends \Google\Protobuf\Internal\Message
     private $web_entities;
     /**
      * Fully matching images from the Internet.
-     * They're definite neardups and most often a copy of the query image with
-     * merely a size change.
+     * Can include resized copies of the query image.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage full_matching_images = 2;</code>
      */
@@ -43,6 +42,18 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebPage pages_with_matching_images = 4;</code>
      */
     private $pages_with_matching_images;
+    /**
+     * The visually similar image results.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage visually_similar_images = 6;</code>
+     */
+    private $visually_similar_images;
+    /**
+     * Best guess text labels for the request image.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebLabel best_guess_labels = 8;</code>
+     */
+    private $best_guess_labels;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Vision\V1\WebDetection::initOnce();
@@ -77,8 +88,7 @@ class WebDetection extends \Google\Protobuf\Internal\Message
 
     /**
      * Fully matching images from the Internet.
-     * They're definite neardups and most often a copy of the query image with
-     * merely a size change.
+     * Can include resized copies of the query image.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage full_matching_images = 2;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
@@ -90,8 +100,7 @@ class WebDetection extends \Google\Protobuf\Internal\Message
 
     /**
      * Fully matching images from the Internet.
-     * They're definite neardups and most often a copy of the query image with
-     * merely a size change.
+     * Can include resized copies of the query image.
      *
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage full_matching_images = 2;</code>
      * @param \Google\Cloud\Vision\V1\WebDetection_WebImage[]|\Google\Protobuf\Internal\RepeatedField $var
@@ -157,6 +166,58 @@ class WebDetection extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebPage::class);
         $this->pages_with_matching_images = $arr;
+
+        return $this;
+    }
+
+    /**
+     * The visually similar image results.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage visually_similar_images = 6;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getVisuallySimilarImages()
+    {
+        return $this->visually_similar_images;
+    }
+
+    /**
+     * The visually similar image results.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebImage visually_similar_images = 6;</code>
+     * @param \Google\Cloud\Vision\V1\WebDetection_WebImage[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setVisuallySimilarImages($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebImage::class);
+        $this->visually_similar_images = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Best guess text labels for the request image.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebLabel best_guess_labels = 8;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getBestGuessLabels()
+    {
+        return $this->best_guess_labels;
+    }
+
+    /**
+     * Best guess text labels for the request image.
+     *
+     * Generated from protobuf field <code>repeated .google.cloud.vision.v1.WebDetection.WebLabel best_guess_labels = 8;</code>
+     * @param \Google\Cloud\Vision\V1\WebDetection_WebLabel[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setBestGuessLabels($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebLabel::class);
+        $this->best_guess_labels = $arr;
 
         return $this;
     }

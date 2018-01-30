@@ -28,14 +28,14 @@ class Block extends \Google\Protobuf\Internal\Message
      * is represented as around the top-left corner as defined when the text is
      * read in the 'natural' orientation.
      * For example:
-     *   * when the text is horizontal it might look like:
-     *      0----1
-     *      |    |
-     *      3----2
-     *   * when it's rotated 180 degrees around the top-left corner it becomes:
-     *      2----3
-     *      |    |
-     *      1----0
+     * * when the text is horizontal it might look like:
+     *         0----1
+     *         |    |
+     *         3----2
+     * * when it's rotated 180 degrees around the top-left corner it becomes:
+     *         2----3
+     *         |    |
+     *         1----0
      *   and the vertice order will still be (0, 1, 2, 3).
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_box = 2;</code>
@@ -53,6 +53,12 @@ class Block extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.cloud.vision.v1.Block.BlockType block_type = 4;</code>
      */
     private $block_type = 0;
+    /**
+     * Confidence of the OCR results on the block. Range [0, 1].
+     *
+     * Generated from protobuf field <code>float confidence = 5;</code>
+     */
+    private $confidence = 0.0;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Vision\V1\TextAnnotation::initOnce();
@@ -92,14 +98,14 @@ class Block extends \Google\Protobuf\Internal\Message
      * is represented as around the top-left corner as defined when the text is
      * read in the 'natural' orientation.
      * For example:
-     *   * when the text is horizontal it might look like:
-     *      0----1
-     *      |    |
-     *      3----2
-     *   * when it's rotated 180 degrees around the top-left corner it becomes:
-     *      2----3
-     *      |    |
-     *      1----0
+     * * when the text is horizontal it might look like:
+     *         0----1
+     *         |    |
+     *         3----2
+     * * when it's rotated 180 degrees around the top-left corner it becomes:
+     *         2----3
+     *         |    |
+     *         1----0
      *   and the vertice order will still be (0, 1, 2, 3).
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_box = 2;</code>
@@ -117,14 +123,14 @@ class Block extends \Google\Protobuf\Internal\Message
      * is represented as around the top-left corner as defined when the text is
      * read in the 'natural' orientation.
      * For example:
-     *   * when the text is horizontal it might look like:
-     *      0----1
-     *      |    |
-     *      3----2
-     *   * when it's rotated 180 degrees around the top-left corner it becomes:
-     *      2----3
-     *      |    |
-     *      1----0
+     * * when the text is horizontal it might look like:
+     *         0----1
+     *         |    |
+     *         3----2
+     * * when it's rotated 180 degrees around the top-left corner it becomes:
+     *         2----3
+     *         |    |
+     *         1----0
      *   and the vertice order will still be (0, 1, 2, 3).
      *
      * Generated from protobuf field <code>.google.cloud.vision.v1.BoundingPoly bounding_box = 2;</code>
@@ -187,6 +193,32 @@ class Block extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Google\Cloud\Vision\V1\Block_BlockType::class);
         $this->block_type = $var;
+
+        return $this;
+    }
+
+    /**
+     * Confidence of the OCR results on the block. Range [0, 1].
+     *
+     * Generated from protobuf field <code>float confidence = 5;</code>
+     * @return float
+     */
+    public function getConfidence()
+    {
+        return $this->confidence;
+    }
+
+    /**
+     * Confidence of the OCR results on the block. Range [0, 1].
+     *
+     * Generated from protobuf field <code>float confidence = 5;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setConfidence($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->confidence = $var;
 
         return $this;
     }

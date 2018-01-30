@@ -9,33 +9,36 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * External image source (Google Cloud Storage image location).
+ * External image source (Google Cloud Storage or web URL image location).
  *
  * Generated from protobuf message <code>google.cloud.vision.v1.ImageSource</code>
  */
 class ImageSource extends \Google\Protobuf\Internal\Message
 {
     /**
-     * NOTE: For new code `image_uri` below is preferred.
-     * Google Cloud Storage image URI, which must be in the following form:
-     * `gs://bucket_name/object_name` (for details, see
+     * **Use `image_uri` instead.**
+     * The Google Cloud Storage  URI of the form
+     * `gs://bucket_name/object_name`. Object versioning is not supported. See
      * [Google Cloud Storage Request
-     * URIs](https://cloud.google.com/storage/docs/reference-uris)).
-     * NOTE: Cloud Storage object versioning is not supported.
+     * URIs](https://cloud.google.com/storage/docs/reference-uris) for more info.
      *
      * Generated from protobuf field <code>string gcs_image_uri = 1;</code>
      */
     private $gcs_image_uri = '';
     /**
-     * Image URI which supports:
-     * 1) Google Cloud Storage image URI, which must be in the following form:
-     * `gs://bucket_name/object_name` (for details, see
-     * [Google Cloud Storage Request
-     * URIs](https://cloud.google.com/storage/docs/reference-uris)).
-     * NOTE: Cloud Storage object versioning is not supported.
-     * 2) Publicly accessible image HTTP/HTTPS URL.
-     * This is preferred over the legacy `gcs_image_uri` above. When both
-     * `gcs_image_uri` and `image_uri` are specified, `image_uri` takes
+     * The URI of the source image. Can be either:
+     * 1. A Google Cloud Storage URI of the form
+     *    `gs://bucket_name/object_name`. Object versioning is not supported. See
+     *    [Google Cloud Storage Request
+     *    URIs](https://cloud.google.com/storage/docs/reference-uris) for more
+     *    info.
+     * 2. A publicly-accessible image HTTP/HTTPS URL. When fetching images from
+     *    HTTP/HTTPS URLs, Google cannot guarantee that the request will be
+     *    completed. Your request may fail if the specified host denies the
+     *    request (e.g. due to request throttling or DOS prevention), or if Google
+     *    throttles requests to the site for abuse prevention. You should not
+     *    depend on externally-hosted images for production applications.
+     * When both `gcs_image_uri` and `image_uri` are specified, `image_uri` takes
      * precedence.
      *
      * Generated from protobuf field <code>string image_uri = 2;</code>
@@ -48,12 +51,11 @@ class ImageSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * NOTE: For new code `image_uri` below is preferred.
-     * Google Cloud Storage image URI, which must be in the following form:
-     * `gs://bucket_name/object_name` (for details, see
+     * **Use `image_uri` instead.**
+     * The Google Cloud Storage  URI of the form
+     * `gs://bucket_name/object_name`. Object versioning is not supported. See
      * [Google Cloud Storage Request
-     * URIs](https://cloud.google.com/storage/docs/reference-uris)).
-     * NOTE: Cloud Storage object versioning is not supported.
+     * URIs](https://cloud.google.com/storage/docs/reference-uris) for more info.
      *
      * Generated from protobuf field <code>string gcs_image_uri = 1;</code>
      * @return string
@@ -64,12 +66,11 @@ class ImageSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * NOTE: For new code `image_uri` below is preferred.
-     * Google Cloud Storage image URI, which must be in the following form:
-     * `gs://bucket_name/object_name` (for details, see
+     * **Use `image_uri` instead.**
+     * The Google Cloud Storage  URI of the form
+     * `gs://bucket_name/object_name`. Object versioning is not supported. See
      * [Google Cloud Storage Request
-     * URIs](https://cloud.google.com/storage/docs/reference-uris)).
-     * NOTE: Cloud Storage object versioning is not supported.
+     * URIs](https://cloud.google.com/storage/docs/reference-uris) for more info.
      *
      * Generated from protobuf field <code>string gcs_image_uri = 1;</code>
      * @param string $var
@@ -84,15 +85,19 @@ class ImageSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Image URI which supports:
-     * 1) Google Cloud Storage image URI, which must be in the following form:
-     * `gs://bucket_name/object_name` (for details, see
-     * [Google Cloud Storage Request
-     * URIs](https://cloud.google.com/storage/docs/reference-uris)).
-     * NOTE: Cloud Storage object versioning is not supported.
-     * 2) Publicly accessible image HTTP/HTTPS URL.
-     * This is preferred over the legacy `gcs_image_uri` above. When both
-     * `gcs_image_uri` and `image_uri` are specified, `image_uri` takes
+     * The URI of the source image. Can be either:
+     * 1. A Google Cloud Storage URI of the form
+     *    `gs://bucket_name/object_name`. Object versioning is not supported. See
+     *    [Google Cloud Storage Request
+     *    URIs](https://cloud.google.com/storage/docs/reference-uris) for more
+     *    info.
+     * 2. A publicly-accessible image HTTP/HTTPS URL. When fetching images from
+     *    HTTP/HTTPS URLs, Google cannot guarantee that the request will be
+     *    completed. Your request may fail if the specified host denies the
+     *    request (e.g. due to request throttling or DOS prevention), or if Google
+     *    throttles requests to the site for abuse prevention. You should not
+     *    depend on externally-hosted images for production applications.
+     * When both `gcs_image_uri` and `image_uri` are specified, `image_uri` takes
      * precedence.
      *
      * Generated from protobuf field <code>string image_uri = 2;</code>
@@ -104,15 +109,19 @@ class ImageSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Image URI which supports:
-     * 1) Google Cloud Storage image URI, which must be in the following form:
-     * `gs://bucket_name/object_name` (for details, see
-     * [Google Cloud Storage Request
-     * URIs](https://cloud.google.com/storage/docs/reference-uris)).
-     * NOTE: Cloud Storage object versioning is not supported.
-     * 2) Publicly accessible image HTTP/HTTPS URL.
-     * This is preferred over the legacy `gcs_image_uri` above. When both
-     * `gcs_image_uri` and `image_uri` are specified, `image_uri` takes
+     * The URI of the source image. Can be either:
+     * 1. A Google Cloud Storage URI of the form
+     *    `gs://bucket_name/object_name`. Object versioning is not supported. See
+     *    [Google Cloud Storage Request
+     *    URIs](https://cloud.google.com/storage/docs/reference-uris) for more
+     *    info.
+     * 2. A publicly-accessible image HTTP/HTTPS URL. When fetching images from
+     *    HTTP/HTTPS URLs, Google cannot guarantee that the request will be
+     *    completed. Your request may fail if the specified host denies the
+     *    request (e.g. due to request throttling or DOS prevention), or if Google
+     *    throttles requests to the site for abuse prevention. You should not
+     *    depend on externally-hosted images for production applications.
+     * When both `gcs_image_uri` and `image_uri` are specified, `image_uri` takes
      * precedence.
      *
      * Generated from protobuf field <code>string image_uri = 2;</code>

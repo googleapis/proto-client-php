@@ -10,10 +10,6 @@ use Google\Protobuf\Internal\GPBUtil;
 
 /**
  * A face-specific landmark (for example, a face feature).
- * Landmark positions may fall outside the bounds of the image
- * if the face is near one or more edges of the image.
- * Therefore it is NOT guaranteed that `0 <= x < width` or
- * `0 <= y < height`.
  *
  * Generated from protobuf message <code>google.cloud.vision.v1.FaceAnnotation.Landmark</code>
  */

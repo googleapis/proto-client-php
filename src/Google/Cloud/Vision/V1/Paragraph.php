@@ -47,6 +47,12 @@ class Paragraph extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.cloud.vision.v1.Word words = 3;</code>
      */
     private $words;
+    /**
+     * Confidence of the OCR results for the paragraph. Range [0, 1].
+     *
+     * Generated from protobuf field <code>float confidence = 4;</code>
+     */
+    private $confidence = 0.0;
 
     public function __construct() {
         \GPBMetadata\Google\Cloud\Vision\V1\TextAnnotation::initOnce();
@@ -155,6 +161,32 @@ class Paragraph extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Word::class);
         $this->words = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Confidence of the OCR results for the paragraph. Range [0, 1].
+     *
+     * Generated from protobuf field <code>float confidence = 4;</code>
+     * @return float
+     */
+    public function getConfidence()
+    {
+        return $this->confidence;
+    }
+
+    /**
+     * Confidence of the OCR results for the paragraph. Range [0, 1].
+     *
+     * Generated from protobuf field <code>float confidence = 4;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setConfidence($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->confidence = $var;
 
         return $this;
     }
