@@ -138,7 +138,7 @@ class DataSource extends \Google\Protobuf\Internal\Message
      */
     private $manual_runs_disabled = false;
     /**
-     * The minimum interval between two consecutive scheduled runs.
+     * The minimum interval for scheduler to schedule runs.
      *
      * Generated from protobuf field <code>.google.protobuf.Duration minimum_schedule_interval = 18;</code>
      */
@@ -630,7 +630,7 @@ class DataSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The minimum interval between two consecutive scheduled runs.
+     * The minimum interval for scheduler to schedule runs.
      *
      * Generated from protobuf field <code>.google.protobuf.Duration minimum_schedule_interval = 18;</code>
      * @return \Google\Protobuf\Duration
@@ -641,7 +641,7 @@ class DataSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The minimum interval between two consecutive scheduled runs.
+     * The minimum interval for scheduler to schedule runs.
      *
      * Generated from protobuf field <code>.google.protobuf.Duration minimum_schedule_interval = 18;</code>
      * @param \Google\Protobuf\Duration $var

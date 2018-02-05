@@ -18,12 +18,6 @@ class TransferState
      */
     const TRANSFER_STATE_UNSPECIFIED = 0;
     /**
-     * Data transfer is inactive.
-     *
-     * Generated from protobuf enum <code>INACTIVE = 1;</code>
-     */
-    const INACTIVE = 1;
-    /**
      * Data transfer is scheduled and is waiting to be picked up by
      * data transfer backend.
      *

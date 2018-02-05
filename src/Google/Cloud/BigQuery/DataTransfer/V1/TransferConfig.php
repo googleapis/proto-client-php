@@ -15,6 +15,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * When a new transfer configuration is created, the specified
  * `destination_dataset_id` is created when needed and shared with the
  * appropriate data source service account.
+ * Next id: 20
  *
  * Generated from protobuf message <code>google.cloud.bigquery.datatransfer.v1.TransferConfig</code>
  */
@@ -112,6 +113,8 @@ class TransferConfig extends \Google\Protobuf\Internal\Message
      * Output only. Unique ID of the user on whose behalf transfer is done.
      * Applicable only to data sources that do not support service accounts.
      * When set to 0, the data source service account credentials are used.
+     * May be negative. Note, that this identifier is not stable.
+     * It may change over time even for the same user.
      *
      * Generated from protobuf field <code>int64 user_id = 11;</code>
      */
@@ -462,6 +465,8 @@ class TransferConfig extends \Google\Protobuf\Internal\Message
      * Output only. Unique ID of the user on whose behalf transfer is done.
      * Applicable only to data sources that do not support service accounts.
      * When set to 0, the data source service account credentials are used.
+     * May be negative. Note, that this identifier is not stable.
+     * It may change over time even for the same user.
      *
      * Generated from protobuf field <code>int64 user_id = 11;</code>
      * @return int|string
@@ -475,6 +480,8 @@ class TransferConfig extends \Google\Protobuf\Internal\Message
      * Output only. Unique ID of the user on whose behalf transfer is done.
      * Applicable only to data sources that do not support service accounts.
      * When set to 0, the data source service account credentials are used.
+     * May be negative. Note, that this identifier is not stable.
+     * It may change over time even for the same user.
      *
      * Generated from protobuf field <code>int64 user_id = 11;</code>
      * @param int|string $var

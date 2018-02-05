@@ -23,10 +23,8 @@ class CreateTransferConfigRequest extends \Google\Protobuf\Internal\Message
     /**
      * The BigQuery project id where the transfer configuration should be created.
      * Must be in the format /projects/{project_id}/locations/{location_id}
-     * or
-     * /projects/{project_id}/locations/-
-     * In case when '-' is specified as location_id, location is infered from
-     * the destination dataset region.
+     * If specified location and location of the destination bigquery dataset
+     * do not match - the request will fail.
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      */
@@ -66,10 +64,8 @@ class CreateTransferConfigRequest extends \Google\Protobuf\Internal\Message
     /**
      * The BigQuery project id where the transfer configuration should be created.
      * Must be in the format /projects/{project_id}/locations/{location_id}
-     * or
-     * /projects/{project_id}/locations/-
-     * In case when '-' is specified as location_id, location is infered from
-     * the destination dataset region.
+     * If specified location and location of the destination bigquery dataset
+     * do not match - the request will fail.
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @return string
@@ -82,10 +78,8 @@ class CreateTransferConfigRequest extends \Google\Protobuf\Internal\Message
     /**
      * The BigQuery project id where the transfer configuration should be created.
      * Must be in the format /projects/{project_id}/locations/{location_id}
-     * or
-     * /projects/{project_id}/locations/-
-     * In case when '-' is specified as location_id, location is infered from
-     * the destination dataset region.
+     * If specified location and location of the destination bigquery dataset
+     * do not match - the request will fail.
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @param string $var

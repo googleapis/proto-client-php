@@ -2,7 +2,7 @@
 // GENERATED CODE -- DO NOT EDIT!
 
 // Original file comments:
-// Copyright 2017 Google Inc.
+// Copyright 2018 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -138,7 +138,7 @@ class DataTransferServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Creates transfer runs for a time range [range_start_time, range_end_time].
+     * Creates transfer runs for a time range [start_time, end_time].
      * For each date - or whatever granularity the data source supports - in the
      * range, one transfer run is created.
      * Note that runs are created per UTC time in the time range.

@@ -10,7 +10,7 @@ use Google\Protobuf\Internal\GPBUtil;
 
 /**
  * Represents a data transfer run.
- * Next id: 23
+ * Next id: 27
  *
  * Generated from protobuf message <code>google.cloud.bigquery.datatransfer.v1.TransferRun</code>
  */
@@ -26,23 +26,11 @@ class TransferRun extends \Google\Protobuf\Internal\Message
      */
     private $name = '';
     /**
-     * The BigQuery target dataset id.
-     *
-     * Generated from protobuf field <code>string destination_dataset_id = 2;</code>
-     */
-    private $destination_dataset_id = '';
-    /**
      * Minimum time after which a transfer run can be started.
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp schedule_time = 3;</code>
      */
     private $schedule_time = null;
-    /**
-     * Data transfer specific parameters.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Struct params = 9;</code>
-     */
-    private $params = null;
     /**
      * For batch transfer runs, specifies the date and time that
      * data should be ingested.
@@ -50,6 +38,12 @@ class TransferRun extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Timestamp run_time = 10;</code>
      */
     private $run_time = null;
+    /**
+     * Status of the transfer run.
+     *
+     * Generated from protobuf field <code>.google.rpc.Status error_status = 21;</code>
+     */
+    private $error_status = null;
     /**
      * Output only. Time when transfer run was started.
      * Parameter ignored by server for input requests.
@@ -71,6 +65,18 @@ class TransferRun extends \Google\Protobuf\Internal\Message
      */
     private $update_time = null;
     /**
+     * Output only. Data transfer specific parameters.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Struct params = 9;</code>
+     */
+    private $params = null;
+    /**
+     * Output only. The BigQuery target dataset id.
+     *
+     * Generated from protobuf field <code>string destination_dataset_id = 2;</code>
+     */
+    private $destination_dataset_id = '';
+    /**
      * Output only. Data source id.
      *
      * Generated from protobuf field <code>string data_source_id = 7;</code>
@@ -86,7 +92,8 @@ class TransferRun extends \Google\Protobuf\Internal\Message
      * Output only. Unique ID of the user on whose behalf transfer is done.
      * Applicable only to data sources that do not support service accounts.
      * When set to 0, the data source service account credentials are used.
-     * May be negative.
+     * May be negative. Note, that this identifier is not stable.
+     * It may change over time even for the same user.
      *
      * Generated from protobuf field <code>int64 user_id = 11;</code>
      */
@@ -140,32 +147,6 @@ class TransferRun extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The BigQuery target dataset id.
-     *
-     * Generated from protobuf field <code>string destination_dataset_id = 2;</code>
-     * @return string
-     */
-    public function getDestinationDatasetId()
-    {
-        return $this->destination_dataset_id;
-    }
-
-    /**
-     * The BigQuery target dataset id.
-     *
-     * Generated from protobuf field <code>string destination_dataset_id = 2;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setDestinationDatasetId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->destination_dataset_id = $var;
-
-        return $this;
-    }
-
-    /**
      * Minimum time after which a transfer run can be started.
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp schedule_time = 3;</code>
@@ -187,32 +168,6 @@ class TransferRun extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->schedule_time = $var;
-
-        return $this;
-    }
-
-    /**
-     * Data transfer specific parameters.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Struct params = 9;</code>
-     * @return \Google\Protobuf\Struct
-     */
-    public function getParams()
-    {
-        return $this->params;
-    }
-
-    /**
-     * Data transfer specific parameters.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Struct params = 9;</code>
-     * @param \Google\Protobuf\Struct $var
-     * @return $this
-     */
-    public function setParams($var)
-    {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
-        $this->params = $var;
 
         return $this;
     }
@@ -241,6 +196,32 @@ class TransferRun extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->run_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * Status of the transfer run.
+     *
+     * Generated from protobuf field <code>.google.rpc.Status error_status = 21;</code>
+     * @return \Google\Rpc\Status
+     */
+    public function getErrorStatus()
+    {
+        return $this->error_status;
+    }
+
+    /**
+     * Status of the transfer run.
+     *
+     * Generated from protobuf field <code>.google.rpc.Status error_status = 21;</code>
+     * @param \Google\Rpc\Status $var
+     * @return $this
+     */
+    public function setErrorStatus($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Rpc\Status::class);
+        $this->error_status = $var;
 
         return $this;
     }
@@ -328,6 +309,58 @@ class TransferRun extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Output only. Data transfer specific parameters.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Struct params = 9;</code>
+     * @return \Google\Protobuf\Struct
+     */
+    public function getParams()
+    {
+        return $this->params;
+    }
+
+    /**
+     * Output only. Data transfer specific parameters.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Struct params = 9;</code>
+     * @param \Google\Protobuf\Struct $var
+     * @return $this
+     */
+    public function setParams($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
+        $this->params = $var;
+
+        return $this;
+    }
+
+    /**
+     * Output only. The BigQuery target dataset id.
+     *
+     * Generated from protobuf field <code>string destination_dataset_id = 2;</code>
+     * @return string
+     */
+    public function getDestinationDatasetId()
+    {
+        return $this->destination_dataset_id;
+    }
+
+    /**
+     * Output only. The BigQuery target dataset id.
+     *
+     * Generated from protobuf field <code>string destination_dataset_id = 2;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDestinationDatasetId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->destination_dataset_id = $var;
+
+        return $this;
+    }
+
+    /**
      * Output only. Data source id.
      *
      * Generated from protobuf field <code>string data_source_id = 7;</code>
@@ -383,7 +416,8 @@ class TransferRun extends \Google\Protobuf\Internal\Message
      * Output only. Unique ID of the user on whose behalf transfer is done.
      * Applicable only to data sources that do not support service accounts.
      * When set to 0, the data source service account credentials are used.
-     * May be negative.
+     * May be negative. Note, that this identifier is not stable.
+     * It may change over time even for the same user.
      *
      * Generated from protobuf field <code>int64 user_id = 11;</code>
      * @return int|string
@@ -397,7 +431,8 @@ class TransferRun extends \Google\Protobuf\Internal\Message
      * Output only. Unique ID of the user on whose behalf transfer is done.
      * Applicable only to data sources that do not support service accounts.
      * When set to 0, the data source service account credentials are used.
-     * May be negative.
+     * May be negative. Note, that this identifier is not stable.
+     * It may change over time even for the same user.
      *
      * Generated from protobuf field <code>int64 user_id = 11;</code>
      * @param int|string $var
