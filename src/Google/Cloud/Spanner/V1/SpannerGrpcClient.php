@@ -2,7 +2,7 @@
 // GENERATED CODE -- DO NOT EDIT!
 
 // Original file comments:
-// Copyright 2017 Google Inc.
+// Copyright 2018 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -253,6 +253,48 @@ class SpannerGrpcClient extends \Grpc\BaseStub {
         return $this->_simpleRequest('/google.spanner.v1.Spanner/Rollback',
         $argument,
         ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Creates a set of partition tokens that can be used to execute a query
+     * operation in parallel.  Each of the returned partition tokens can be used
+     * by [ExecuteStreamingSql][google.spanner.v1.Spanner.ExecuteStreamingSql] to specify a subset
+     * of the query result to read.  The same session and read-only transaction
+     * must be used by the PartitionQueryRequest used to create the
+     * partition tokens and the ExecuteSqlRequests that use the partition tokens.
+     * Partition tokens become invalid when the session used to create them
+     * is deleted or begins a new transaction.
+     * @param \Google\Cloud\Spanner\V1\PartitionQueryRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function PartitionQuery(\Google\Cloud\Spanner\V1\PartitionQueryRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.spanner.v1.Spanner/PartitionQuery',
+        $argument,
+        ['\Google\Cloud\Spanner\V1\PartitionResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Creates a set of partition tokens that can be used to execute a read
+     * operation in parallel.  Each of the returned partition tokens can be used
+     * by [StreamingRead][google.spanner.v1.Spanner.StreamingRead] to specify a subset of the read
+     * result to read.  The same session and read-only transaction must be used by
+     * the PartitionReadRequest used to create the partition tokens and the
+     * ReadRequests that use the partition tokens.
+     * Partition tokens become invalid when the session used to create them
+     * is deleted or begins a new transaction.
+     * @param \Google\Cloud\Spanner\V1\PartitionReadRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function PartitionRead(\Google\Cloud\Spanner\V1\PartitionReadRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/google.spanner.v1.Spanner/PartitionRead',
+        $argument,
+        ['\Google\Cloud\Spanner\V1\PartitionResponse', 'decode'],
         $metadata, $options);
     }
 

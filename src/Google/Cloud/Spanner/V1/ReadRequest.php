@@ -55,8 +55,10 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      * primary keys of the rows in [table][google.spanner.v1.ReadRequest.table] to be yielded, unless [index][google.spanner.v1.ReadRequest.index]
      * is present. If [index][google.spanner.v1.ReadRequest.index] is present, then [key_set][google.spanner.v1.ReadRequest.key_set] instead names
      * index keys in [index][google.spanner.v1.ReadRequest.index].
-     * Rows are yielded in table primary key order (if [index][google.spanner.v1.ReadRequest.index] is empty)
-     * or index key order (if [index][google.spanner.v1.ReadRequest.index] is non-empty).
+     * If the [partition_token][google.spanner.v1.ReadRequest.partition_token] field is empty, rows are yielded
+     * in table primary key order (if [index][google.spanner.v1.ReadRequest.index] is empty) or index key order
+     * (if [index][google.spanner.v1.ReadRequest.index] is non-empty).  If the [partition_token][google.spanner.v1.ReadRequest.partition_token] field is not
+     * empty, rows will be yielded in an unspecified order.
      * It is not an error for the `key_set` to name rows that do not
      * exist in the database. Read yields nothing for nonexistent rows.
      *
@@ -65,7 +67,8 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
     private $key_set = null;
     /**
      * If greater than zero, only the first `limit` rows are yielded. If `limit`
-     * is zero, the default is no limit.
+     * is zero, the default is no limit. A limit cannot be specified if
+     * `partition_token` is set.
      *
      * Generated from protobuf field <code>int64 limit = 8;</code>
      */
@@ -81,6 +84,15 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bytes resume_token = 9;</code>
      */
     private $resume_token = '';
+    /**
+     * If present, results will be restricted to the specified partition
+     * previously created using PartitionRead().    There must be an exact
+     * match for the values of fields common to this message and the
+     * PartitionReadRequest message used to create this partition_token.
+     *
+     * Generated from protobuf field <code>bytes partition_token = 10;</code>
+     */
+    private $partition_token = '';
 
     public function __construct() {
         \GPBMetadata\Google\Spanner\V1\Spanner::initOnce();
@@ -230,8 +242,10 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      * primary keys of the rows in [table][google.spanner.v1.ReadRequest.table] to be yielded, unless [index][google.spanner.v1.ReadRequest.index]
      * is present. If [index][google.spanner.v1.ReadRequest.index] is present, then [key_set][google.spanner.v1.ReadRequest.key_set] instead names
      * index keys in [index][google.spanner.v1.ReadRequest.index].
-     * Rows are yielded in table primary key order (if [index][google.spanner.v1.ReadRequest.index] is empty)
-     * or index key order (if [index][google.spanner.v1.ReadRequest.index] is non-empty).
+     * If the [partition_token][google.spanner.v1.ReadRequest.partition_token] field is empty, rows are yielded
+     * in table primary key order (if [index][google.spanner.v1.ReadRequest.index] is empty) or index key order
+     * (if [index][google.spanner.v1.ReadRequest.index] is non-empty).  If the [partition_token][google.spanner.v1.ReadRequest.partition_token] field is not
+     * empty, rows will be yielded in an unspecified order.
      * It is not an error for the `key_set` to name rows that do not
      * exist in the database. Read yields nothing for nonexistent rows.
      *
@@ -248,8 +262,10 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      * primary keys of the rows in [table][google.spanner.v1.ReadRequest.table] to be yielded, unless [index][google.spanner.v1.ReadRequest.index]
      * is present. If [index][google.spanner.v1.ReadRequest.index] is present, then [key_set][google.spanner.v1.ReadRequest.key_set] instead names
      * index keys in [index][google.spanner.v1.ReadRequest.index].
-     * Rows are yielded in table primary key order (if [index][google.spanner.v1.ReadRequest.index] is empty)
-     * or index key order (if [index][google.spanner.v1.ReadRequest.index] is non-empty).
+     * If the [partition_token][google.spanner.v1.ReadRequest.partition_token] field is empty, rows are yielded
+     * in table primary key order (if [index][google.spanner.v1.ReadRequest.index] is empty) or index key order
+     * (if [index][google.spanner.v1.ReadRequest.index] is non-empty).  If the [partition_token][google.spanner.v1.ReadRequest.partition_token] field is not
+     * empty, rows will be yielded in an unspecified order.
      * It is not an error for the `key_set` to name rows that do not
      * exist in the database. Read yields nothing for nonexistent rows.
      *
@@ -267,7 +283,8 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * If greater than zero, only the first `limit` rows are yielded. If `limit`
-     * is zero, the default is no limit.
+     * is zero, the default is no limit. A limit cannot be specified if
+     * `partition_token` is set.
      *
      * Generated from protobuf field <code>int64 limit = 8;</code>
      * @return int|string
@@ -279,7 +296,8 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * If greater than zero, only the first `limit` rows are yielded. If `limit`
-     * is zero, the default is no limit.
+     * is zero, the default is no limit. A limit cannot be specified if
+     * `partition_token` is set.
      *
      * Generated from protobuf field <code>int64 limit = 8;</code>
      * @param int|string $var
@@ -325,6 +343,38 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, False);
         $this->resume_token = $var;
+
+        return $this;
+    }
+
+    /**
+     * If present, results will be restricted to the specified partition
+     * previously created using PartitionRead().    There must be an exact
+     * match for the values of fields common to this message and the
+     * PartitionReadRequest message used to create this partition_token.
+     *
+     * Generated from protobuf field <code>bytes partition_token = 10;</code>
+     * @return string
+     */
+    public function getPartitionToken()
+    {
+        return $this->partition_token;
+    }
+
+    /**
+     * If present, results will be restricted to the specified partition
+     * previously created using PartitionRead().    There must be an exact
+     * match for the values of fields common to this message and the
+     * PartitionReadRequest message used to create this partition_token.
+     *
+     * Generated from protobuf field <code>bytes partition_token = 10;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPartitionToken($var)
+    {
+        GPBUtil::checkString($var, False);
+        $this->partition_token = $var;
 
         return $this;
     }

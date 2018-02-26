@@ -9,28 +9,32 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * The request for [ExecuteSql][google.spanner.v1.Spanner.ExecuteSql] and
- * [ExecuteStreamingSql][google.spanner.v1.Spanner.ExecuteStreamingSql].
+ * The request for [PartitionQuery][google.spanner.v1.Spanner.PartitionQuery]
  *
- * Generated from protobuf message <code>google.spanner.v1.ExecuteSqlRequest</code>
+ * Generated from protobuf message <code>google.spanner.v1.PartitionQueryRequest</code>
  */
-class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
+class PartitionQueryRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Required. The session in which the SQL query should be performed.
+     * Required. The session used to create the partitions.
      *
      * Generated from protobuf field <code>string session = 1;</code>
      */
     private $session = '';
     /**
-     * The transaction to use. If none is provided, the default is a
-     * temporary read-only transaction with strong concurrency.
+     * Read only snapshot transactions are supported, read/write and single use
+     * transactions are not.
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionSelector transaction = 2;</code>
      */
     private $transaction = null;
     /**
-     * Required. The SQL query string.
+     * The query request to generate partitions for. The request will fail if
+     * the query is not root partitionable. The query plan of a root
+     * partitionable query has a single distributed union operator. A distributed
+     * union operator conceptually divides one or more tables into multiple
+     * splits, remotely evaluates a subquery independently on each split, and
+     * then unions all results.
      *
      * Generated from protobuf field <code>string sql = 3;</code>
      */
@@ -54,7 +58,7 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     /**
      * It is not always possible for Cloud Spanner to infer the right SQL type
      * from a JSON value.  For example, values of type `BYTES` and values
-     * of type `STRING` both appear in [params][google.spanner.v1.ExecuteSqlRequest.params] as JSON strings.
+     * of type `STRING` both appear in [params][google.spanner.v1.PartitionQueryRequest.params] as JSON strings.
      * In these cases, `param_types` can be used to specify the exact
      * SQL type for some or all of the SQL query parameters. See the
      * definition of [Type][google.spanner.v1.Type] for more information
@@ -64,33 +68,11 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      */
     private $param_types;
     /**
-     * If this request is resuming a previously interrupted SQL query
-     * execution, `resume_token` should be copied from the last
-     * [PartialResultSet][google.spanner.v1.PartialResultSet] yielded before the interruption. Doing this
-     * enables the new SQL query execution to resume where the last one left
-     * off. The rest of the request parameters must exactly match the
-     * request that yielded this token.
+     * Additional options that affect how many partitions are created.
      *
-     * Generated from protobuf field <code>bytes resume_token = 6;</code>
+     * Generated from protobuf field <code>.google.spanner.v1.PartitionOptions partition_options = 6;</code>
      */
-    private $resume_token = '';
-    /**
-     * Used to control the amount of debugging information returned in
-     * [ResultSetStats][google.spanner.v1.ResultSetStats]. If [partition_token][google.spanner.v1.ExecuteSqlRequest.partition_token] is set, [query_mode][google.spanner.v1.ExecuteSqlRequest.query_mode] can only
-     * be set to [QueryMode.NORMAL][google.spanner.v1.ExecuteSqlRequest.QueryMode.NORMAL].
-     *
-     * Generated from protobuf field <code>.google.spanner.v1.ExecuteSqlRequest.QueryMode query_mode = 7;</code>
-     */
-    private $query_mode = 0;
-    /**
-     * If present, results will be restricted to the specified partition
-     * previously created using PartitionQuery().  There must be an exact
-     * match for the values of fields common to this message and the
-     * PartitionQueryRequest message used to create this partition_token.
-     *
-     * Generated from protobuf field <code>bytes partition_token = 8;</code>
-     */
-    private $partition_token = '';
+    private $partition_options = null;
 
     public function __construct() {
         \GPBMetadata\Google\Spanner\V1\Spanner::initOnce();
@@ -98,7 +80,7 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required. The session in which the SQL query should be performed.
+     * Required. The session used to create the partitions.
      *
      * Generated from protobuf field <code>string session = 1;</code>
      * @return string
@@ -109,7 +91,7 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required. The session in which the SQL query should be performed.
+     * Required. The session used to create the partitions.
      *
      * Generated from protobuf field <code>string session = 1;</code>
      * @param string $var
@@ -124,8 +106,8 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The transaction to use. If none is provided, the default is a
-     * temporary read-only transaction with strong concurrency.
+     * Read only snapshot transactions are supported, read/write and single use
+     * transactions are not.
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionSelector transaction = 2;</code>
      * @return \Google\Cloud\Spanner\V1\TransactionSelector
@@ -136,8 +118,8 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The transaction to use. If none is provided, the default is a
-     * temporary read-only transaction with strong concurrency.
+     * Read only snapshot transactions are supported, read/write and single use
+     * transactions are not.
      *
      * Generated from protobuf field <code>.google.spanner.v1.TransactionSelector transaction = 2;</code>
      * @param \Google\Cloud\Spanner\V1\TransactionSelector $var
@@ -152,7 +134,12 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required. The SQL query string.
+     * The query request to generate partitions for. The request will fail if
+     * the query is not root partitionable. The query plan of a root
+     * partitionable query has a single distributed union operator. A distributed
+     * union operator conceptually divides one or more tables into multiple
+     * splits, remotely evaluates a subquery independently on each split, and
+     * then unions all results.
      *
      * Generated from protobuf field <code>string sql = 3;</code>
      * @return string
@@ -163,7 +150,12 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required. The SQL query string.
+     * The query request to generate partitions for. The request will fail if
+     * the query is not root partitionable. The query plan of a root
+     * partitionable query has a single distributed union operator. A distributed
+     * union operator conceptually divides one or more tables into multiple
+     * splits, remotely evaluates a subquery independently on each split, and
+     * then unions all results.
      *
      * Generated from protobuf field <code>string sql = 3;</code>
      * @param string $var
@@ -226,7 +218,7 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     /**
      * It is not always possible for Cloud Spanner to infer the right SQL type
      * from a JSON value.  For example, values of type `BYTES` and values
-     * of type `STRING` both appear in [params][google.spanner.v1.ExecuteSqlRequest.params] as JSON strings.
+     * of type `STRING` both appear in [params][google.spanner.v1.PartitionQueryRequest.params] as JSON strings.
      * In these cases, `param_types` can be used to specify the exact
      * SQL type for some or all of the SQL query parameters. See the
      * definition of [Type][google.spanner.v1.Type] for more information
@@ -243,7 +235,7 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     /**
      * It is not always possible for Cloud Spanner to infer the right SQL type
      * from a JSON value.  For example, values of type `BYTES` and values
-     * of type `STRING` both appear in [params][google.spanner.v1.ExecuteSqlRequest.params] as JSON strings.
+     * of type `STRING` both appear in [params][google.spanner.v1.PartitionQueryRequest.params] as JSON strings.
      * In these cases, `param_types` can be used to specify the exact
      * SQL type for some or all of the SQL query parameters. See the
      * definition of [Type][google.spanner.v1.Type] for more information
@@ -262,99 +254,27 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * If this request is resuming a previously interrupted SQL query
-     * execution, `resume_token` should be copied from the last
-     * [PartialResultSet][google.spanner.v1.PartialResultSet] yielded before the interruption. Doing this
-     * enables the new SQL query execution to resume where the last one left
-     * off. The rest of the request parameters must exactly match the
-     * request that yielded this token.
+     * Additional options that affect how many partitions are created.
      *
-     * Generated from protobuf field <code>bytes resume_token = 6;</code>
-     * @return string
+     * Generated from protobuf field <code>.google.spanner.v1.PartitionOptions partition_options = 6;</code>
+     * @return \Google\Cloud\Spanner\V1\PartitionOptions
      */
-    public function getResumeToken()
+    public function getPartitionOptions()
     {
-        return $this->resume_token;
+        return $this->partition_options;
     }
 
     /**
-     * If this request is resuming a previously interrupted SQL query
-     * execution, `resume_token` should be copied from the last
-     * [PartialResultSet][google.spanner.v1.PartialResultSet] yielded before the interruption. Doing this
-     * enables the new SQL query execution to resume where the last one left
-     * off. The rest of the request parameters must exactly match the
-     * request that yielded this token.
+     * Additional options that affect how many partitions are created.
      *
-     * Generated from protobuf field <code>bytes resume_token = 6;</code>
-     * @param string $var
+     * Generated from protobuf field <code>.google.spanner.v1.PartitionOptions partition_options = 6;</code>
+     * @param \Google\Cloud\Spanner\V1\PartitionOptions $var
      * @return $this
      */
-    public function setResumeToken($var)
+    public function setPartitionOptions($var)
     {
-        GPBUtil::checkString($var, False);
-        $this->resume_token = $var;
-
-        return $this;
-    }
-
-    /**
-     * Used to control the amount of debugging information returned in
-     * [ResultSetStats][google.spanner.v1.ResultSetStats]. If [partition_token][google.spanner.v1.ExecuteSqlRequest.partition_token] is set, [query_mode][google.spanner.v1.ExecuteSqlRequest.query_mode] can only
-     * be set to [QueryMode.NORMAL][google.spanner.v1.ExecuteSqlRequest.QueryMode.NORMAL].
-     *
-     * Generated from protobuf field <code>.google.spanner.v1.ExecuteSqlRequest.QueryMode query_mode = 7;</code>
-     * @return int
-     */
-    public function getQueryMode()
-    {
-        return $this->query_mode;
-    }
-
-    /**
-     * Used to control the amount of debugging information returned in
-     * [ResultSetStats][google.spanner.v1.ResultSetStats]. If [partition_token][google.spanner.v1.ExecuteSqlRequest.partition_token] is set, [query_mode][google.spanner.v1.ExecuteSqlRequest.query_mode] can only
-     * be set to [QueryMode.NORMAL][google.spanner.v1.ExecuteSqlRequest.QueryMode.NORMAL].
-     *
-     * Generated from protobuf field <code>.google.spanner.v1.ExecuteSqlRequest.QueryMode query_mode = 7;</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setQueryMode($var)
-    {
-        GPBUtil::checkEnum($var, \Google\Cloud\Spanner\V1\ExecuteSqlRequest_QueryMode::class);
-        $this->query_mode = $var;
-
-        return $this;
-    }
-
-    /**
-     * If present, results will be restricted to the specified partition
-     * previously created using PartitionQuery().  There must be an exact
-     * match for the values of fields common to this message and the
-     * PartitionQueryRequest message used to create this partition_token.
-     *
-     * Generated from protobuf field <code>bytes partition_token = 8;</code>
-     * @return string
-     */
-    public function getPartitionToken()
-    {
-        return $this->partition_token;
-    }
-
-    /**
-     * If present, results will be restricted to the specified partition
-     * previously created using PartitionQuery().  There must be an exact
-     * match for the values of fields common to this message and the
-     * PartitionQueryRequest message used to create this partition_token.
-     *
-     * Generated from protobuf field <code>bytes partition_token = 8;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setPartitionToken($var)
-    {
-        GPBUtil::checkString($var, False);
-        $this->partition_token = $var;
+        GPBUtil::checkMessage($var, \Google\Cloud\Spanner\V1\PartitionOptions::class);
+        $this->partition_options = $var;
 
         return $this;
     }
