@@ -11,8 +11,9 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Describes how to combine multiple time series to provide different views of
  * the data.  Aggregation consists of an alignment step on individual time
- * series (`per_series_aligner`) followed by an optional reduction of the data
- * across different time series (`cross_series_reducer`).  For more details, see
+ * series (`alignment_period` and `per_series_aligner`) followed by an optional
+ * reduction step of the data across the aligned time series
+ * (`cross_series_reducer` and `group_by_fields`).  For more details, see
  * [Aggregation](/monitoring/api/learn_more#aggregation).
  *
  * Generated from protobuf message <code>google.monitoring.v3.Aggregation</code>

@@ -84,6 +84,15 @@ class Aggregation_Reducer
      */
     const REDUCE_COUNT_TRUE = 7;
     /**
+     * Reduce by computing the count of False-valued data points across time
+     * series for each alignment period. This reducer is valid for delta
+     * and gauge metrics of Boolean value type. The value type of
+     * the output is [INT64][google.api.MetricDescriptor.ValueType.INT64].
+     *
+     * Generated from protobuf enum <code>REDUCE_COUNT_FALSE = 15;</code>
+     */
+    const REDUCE_COUNT_FALSE = 15;
+    /**
      * Reduce by computing the fraction of True-valued data points across time
      * series for each alignment period. This reducer is valid for delta
      * and gauge metrics of Boolean value type. The output value is in the
