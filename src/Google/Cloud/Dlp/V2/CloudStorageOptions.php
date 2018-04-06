@@ -27,6 +27,14 @@ class CloudStorageOptions extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 bytes_limit_per_file = 4;</code>
      */
     private $bytes_limit_per_file = 0;
+    /**
+     * List of file type groups to include in the scan.
+     * If empty, all files are scanned and available data format processors
+     * are applied.
+     *
+     * Generated from protobuf field <code>repeated .google.privacy.dlp.v2.FileType file_types = 5;</code>
+     */
+    private $file_types;
 
     public function __construct() {
         \GPBMetadata\Google\Privacy\Dlp\V2\Storage::initOnce();
@@ -79,6 +87,36 @@ class CloudStorageOptions extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->bytes_limit_per_file = $var;
+
+        return $this;
+    }
+
+    /**
+     * List of file type groups to include in the scan.
+     * If empty, all files are scanned and available data format processors
+     * are applied.
+     *
+     * Generated from protobuf field <code>repeated .google.privacy.dlp.v2.FileType file_types = 5;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getFileTypes()
+    {
+        return $this->file_types;
+    }
+
+    /**
+     * List of file type groups to include in the scan.
+     * If empty, all files are scanned and available data format processors
+     * are applied.
+     *
+     * Generated from protobuf field <code>repeated .google.privacy.dlp.v2.FileType file_types = 5;</code>
+     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setFileTypes($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Google\Cloud\Dlp\V2\FileType::class);
+        $this->file_types = $arr;
 
         return $this;
     }

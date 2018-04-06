@@ -20,7 +20,6 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
     /**
      * Restricts what info_types to look for. The values must correspond to
      * InfoType values returned by ListInfoTypes or found in documentation.
-     * Empty info_types runs all enabled detectors.
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2.InfoType info_types = 1;</code>
      */
@@ -71,7 +70,6 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
     /**
      * Restricts what info_types to look for. The values must correspond to
      * InfoType values returned by ListInfoTypes or found in documentation.
-     * Empty info_types runs all enabled detectors.
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2.InfoType info_types = 1;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
@@ -84,7 +82,6 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
     /**
      * Restricts what info_types to look for. The values must correspond to
      * InfoType values returned by ListInfoTypes or found in documentation.
-     * Empty info_types runs all enabled detectors.
      *
      * Generated from protobuf field <code>repeated .google.privacy.dlp.v2.InfoType info_types = 1;</code>
      * @param \Google\Cloud\Dlp\V2\InfoType[]|\Google\Protobuf\Internal\RepeatedField $var

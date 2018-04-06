@@ -14,6 +14,10 @@ class ByteContentItem_BytesType
      */
     const BYTES_TYPE_UNSPECIFIED = 0;
     /**
+     * Generated from protobuf enum <code>IMAGE = 6;</code>
+     */
+    const IMAGE = 6;
+    /**
      * Generated from protobuf enum <code>IMAGE_JPEG = 1;</code>
      */
     const IMAGE_JPEG = 1;
