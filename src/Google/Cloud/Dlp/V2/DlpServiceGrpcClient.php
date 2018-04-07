@@ -117,7 +117,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Creates an inspect template for re-using frequently used configuration
+     * Creates an InspectTemplate for re-using frequently used configuration
      * for inspecting content, images, and storage.
      * @param \Google\Cloud\Dlp\V2\CreateInspectTemplateRequest $argument input argument
      * @param array $metadata metadata
@@ -132,7 +132,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Updates the inspect template.
+     * Updates the InspectTemplate.
      * @param \Google\Cloud\Dlp\V2\UpdateInspectTemplateRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -146,7 +146,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Gets an inspect template.
+     * Gets an InspectTemplate.
      * @param \Google\Cloud\Dlp\V2\GetInspectTemplateRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -160,7 +160,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Lists inspect templates.
+     * Lists InspectTemplates.
      * @param \Google\Cloud\Dlp\V2\ListInspectTemplatesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -174,7 +174,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Deletes an inspect template.
+     * Deletes an InspectTemplate.
      * @param \Google\Cloud\Dlp\V2\DeleteInspectTemplateRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -188,8 +188,8 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Creates a de-identify template for re-using frequently used configuration
-     * for Deidentifying content, images, and storage.
+     * Creates a DeidentifyTemplate for re-using frequently used configuration
+     * for de-identifying content, images, and storage.
      * @param \Google\Cloud\Dlp\V2\CreateDeidentifyTemplateRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -203,7 +203,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Updates the de-identify template.
+     * Updates the DeidentifyTemplate.
      * @param \Google\Cloud\Dlp\V2\UpdateDeidentifyTemplateRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -217,7 +217,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Gets a de-identify template.
+     * Gets a DeidentifyTemplate.
      * @param \Google\Cloud\Dlp\V2\GetDeidentifyTemplateRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -231,7 +231,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Lists de-identify templates.
+     * Lists DeidentifyTemplates.
      * @param \Google\Cloud\Dlp\V2\ListDeidentifyTemplatesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -245,7 +245,7 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Deletes a de-identify template.
+     * Deletes a DeidentifyTemplate.
      * @param \Google\Cloud\Dlp\V2\DeleteDeidentifyTemplateRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -330,8 +330,8 @@ class DlpServiceGrpcClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Creates a new job to inspect storage or calculate risk metrics [How-to
-     * guide](/dlp/docs/compute-risk-analysis).
+     * Creates a new job to inspect storage or calculate risk metrics.
+     * [How-to guide](/dlp/docs/compute-risk-analysis).
      * @param \Google\Cloud\Dlp\V2\CreateDlpJobRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options

@@ -10,7 +10,7 @@ use Google\Protobuf\Internal\GPBUtil;
 
 /**
  * Publish the results of a DlpJob to a pub sub channel.
- * Compatible with: Inpect, Risk
+ * Compatible with: Inspect, Risk
  *
  * Generated from protobuf message <code>google.privacy.dlp.v2.Action.PublishToPubSub</code>
  */

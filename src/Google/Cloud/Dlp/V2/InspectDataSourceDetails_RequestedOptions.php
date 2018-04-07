@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class InspectDataSourceDetails_RequestedOptions extends \Google\Protobuf\Internal\Message
 {
     /**
-     * If run with an inspect template, a snapshot of it's state at the time of
+     * If run with an InspectTemplate, a snapshot of its state at the time of
      * this run.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2.InspectTemplate snapshot_inspect_template = 1;</code>
@@ -31,7 +31,7 @@ class InspectDataSourceDetails_RequestedOptions extends \Google\Protobuf\Interna
     }
 
     /**
-     * If run with an inspect template, a snapshot of it's state at the time of
+     * If run with an InspectTemplate, a snapshot of its state at the time of
      * this run.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2.InspectTemplate snapshot_inspect_template = 1;</code>
@@ -43,7 +43,7 @@ class InspectDataSourceDetails_RequestedOptions extends \Google\Protobuf\Interna
     }
 
     /**
-     * If run with an inspect template, a snapshot of it's state at the time of
+     * If run with an InspectTemplate, a snapshot of its state at the time of
      * this run.
      *
      * Generated from protobuf field <code>.google.privacy.dlp.v2.InspectTemplate snapshot_inspect_template = 1;</code>
