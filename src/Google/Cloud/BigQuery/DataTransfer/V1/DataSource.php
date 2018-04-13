@@ -17,7 +17,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class DataSource extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Data source resource name.
+     * Output only. Data source resource name.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
@@ -57,9 +57,7 @@ class DataSource extends \Google\Protobuf\Internal\Message
      */
     private $scopes;
     /**
-     * Transfer type. Currently supports only batch transfers,
-     * which are transfers that use the BigQuery batch APIs (load or
-     * query) to ingest the data.
+     * Deprecated. This field has no effect.
      *
      * Generated from protobuf field <code>.google.cloud.bigquery.datatransfer.v1.TransferType transfer_type = 7;</code>
      */
@@ -150,7 +148,7 @@ class DataSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Data source resource name.
+     * Output only. Data source resource name.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @return string
@@ -161,7 +159,7 @@ class DataSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Data source resource name.
+     * Output only. Data source resource name.
      *
      * Generated from protobuf field <code>string name = 1;</code>
      * @param string $var
@@ -314,9 +312,7 @@ class DataSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Transfer type. Currently supports only batch transfers,
-     * which are transfers that use the BigQuery batch APIs (load or
-     * query) to ingest the data.
+     * Deprecated. This field has no effect.
      *
      * Generated from protobuf field <code>.google.cloud.bigquery.datatransfer.v1.TransferType transfer_type = 7;</code>
      * @return int
@@ -327,9 +323,7 @@ class DataSource extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Transfer type. Currently supports only batch transfers,
-     * which are transfers that use the BigQuery batch APIs (load or
-     * query) to ingest the data.
+     * Deprecated. This field has no effect.
      *
      * Generated from protobuf field <code>.google.cloud.bigquery.datatransfer.v1.TransferType transfer_type = 7;</code>
      * @param int $var

@@ -10,7 +10,6 @@ use Google\Protobuf\Internal\GPBUtil;
 
 /**
  * Represents a data transfer run.
- * Next id: 27
  *
  * Generated from protobuf message <code>google.cloud.bigquery.datatransfer.v1.TransferRun</code>
  */

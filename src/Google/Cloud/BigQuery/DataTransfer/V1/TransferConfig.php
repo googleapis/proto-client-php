@@ -15,7 +15,6 @@ use Google\Protobuf\Internal\GPBUtil;
  * When a new transfer configuration is created, the specified
  * `destination_dataset_id` is created when needed and shared with the
  * appropriate data source service account.
- * Next id: 20
  *
  * Generated from protobuf message <code>google.cloud.bigquery.datatransfer.v1.TransferConfig</code>
  */

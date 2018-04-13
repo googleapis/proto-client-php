@@ -5,7 +5,7 @@
 namespace Google\Cloud\BigQuery\DataTransfer\V1;
 
 /**
- * Represents data transfer type.
+ * DEPRECATED. Represents data transfer type.
  *
  * Protobuf enum <code>Google\Cloud\Bigquery\Datatransfer\V1\TransferType</code>
  */
