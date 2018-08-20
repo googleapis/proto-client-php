@@ -1,3 +1,10 @@
+\*\*\*WARNING! This library has been deprecated\*\*\* 
+=================================================================
+
+This library has been deprecated and is no longer being updated. Generated PHP protobuf classes for Google's Cloud APIs are now being distributed as part of the [google-cloud-php](https://github.com/GoogleCloudPlatform/google-cloud-php) repository. New APIs, and changes to existing APIs, will not be present in this repository.
+
+Users of the [google/proto-client](https://packagist.org/packages/google/proto-client) package should instead use [google/cloud](https://packagist.org/packages/google/cloud) or one of the API-specific child packages (e.g. [google/cloud-vision](https://packagist.org/packages/google/cloud-vision)).
+
 Generated proto and gRPC classes for Google Cloud Platform in PHP
 =================================================================
 
